@@ -9,6 +9,10 @@
   },
   "extension": [
     {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+      "valueInstant": "2020-01-02T04:05:06+01:00"
+    },
+    {
       "extension": [
         {
           "url": "domain",
@@ -37,7 +41,7 @@
           "valueString": "myvalue1"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -50,7 +54,7 @@
           "valueString": "myvalue2"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -63,7 +67,7 @@
           "valueString": "Tue Nov 30 00:00:00 CET 2021"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     }
   ],
   "status": "active",

@@ -82,6 +82,22 @@
         "mustSupport": true
       },
       {
+        "id": "ActivityDefinition.extension:created",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "created",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "ActivityDefinition.extension:externalProperty",
         "path": "ActivityDefinition.extension",
         "sliceName": "externalProperty",

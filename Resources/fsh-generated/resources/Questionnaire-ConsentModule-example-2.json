@@ -8,6 +8,12 @@
       "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule"
     ]
   },
+  "extension": [
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+      "valueInstant": "2020-01-02T04:05:06+01:00"
+    }
+  ],
   "language": "DE",
   "version": "1.6.d",
   "name": "MDAT_ErhebenSpeichernNutzen",

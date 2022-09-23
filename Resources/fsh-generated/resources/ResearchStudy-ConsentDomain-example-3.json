@@ -25,6 +25,10 @@
       ]
     },
     {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+      "valueInstant": "2020-01-02T04:05:06+01:00"
+    },
+    {
       "extension": [
         {
           "url": "resourceType",

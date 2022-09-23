@@ -8,6 +8,7 @@ Description: "Einwilligungsinformationen"
 * ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung"
 * extension ^min = 0
 * extension contains
+    Created named created 0..1 MS and
     ExternalProperty named externalProperty 0..* MS and
     ExpirationProperty named expirationProperty 0..* MS
 * extension[externalProperty] ^min = 0
@@ -19,11 +20,9 @@ InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-06-17T14:02:21.285+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
-* extension.extension[0].url = "domain"
-* extension.extension[=].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
-* extension.extension[+].url = "status"
-* extension.extension[=].valueCoding = $publication-status#active
-* extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
+* extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
@@ -41,26 +40,15 @@ Instance: Consent-example-2
 InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-10-29T11:00:08.695+02:00"
-* extension[0].extension[0].url = "domain"
-* extension[=].extension[=].valueReference = Reference(ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f)
-* extension[=].extension[+].url = "status"
-* extension[=].extension[=].valueCoding = $publication-status#active
-* extension[=].url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
-* extension[+].extension[0].url = "key"
-* extension[=].extension[=].valueString = "mykey1"
-* extension[=].extension[+].url = "value"
-* extension[=].extension[=].valueString = "myvalue1"
-* extension[=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
-* extension[+].extension[0].url = "key"
-* extension[=].extension[=].valueString = "mykey2"
-* extension[=].extension[+].url = "value"
-* extension[=].extension[=].valueString = "myvalue2"
-* extension[=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
-* extension[+].extension[0].url = "key"
-* extension[=].extension[=].valueString = "EXPIRATION_DATE"
-* extension[=].extension[+].url = "value"
-* extension[=].extension[=].valueString = "Tue Nov 30 00:00:00 CET 2021"
-* extension[=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f)
+* extension[domainReference].extension[status].valueCoding = $publication-status#active
+* extension[externalProperty][0].extension[key].valueString = "mykey1"
+* extension[externalProperty][=].extension[value].valueString = "myvalue1"
+* extension[externalProperty][+].extension[key].valueString = "mykey2"
+* extension[externalProperty][=].extension[value].valueString = "myvalue2"
+* extension[externalProperty][+].extension[key].valueString = "EXPIRATION_DATE"
+* extension[externalProperty][=].extension[value].valueString = "Tue Nov 30 00:00:00 CET 2021"
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#59284-0
@@ -134,11 +122,9 @@ InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
-* extension.extension[0].url = "domain"
-* extension.extension[=].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
-* extension.extension[+].url = "status"
-* extension.extension[=].valueCoding = $publication-status#active
-* extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
+* extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8

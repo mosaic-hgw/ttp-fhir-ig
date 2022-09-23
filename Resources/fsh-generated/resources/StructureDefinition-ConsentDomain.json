@@ -58,6 +58,22 @@
         "short": "Herstellung des Patientenbezugs je Kontext"
       },
       {
+        "id": "ResearchStudy.extension:created",
+        "path": "ResearchStudy.extension",
+        "sliceName": "created",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "ResearchStudy.extension:policyVersionFormat",
         "path": "ResearchStudy.extension",
         "sliceName": "policyVersionFormat",

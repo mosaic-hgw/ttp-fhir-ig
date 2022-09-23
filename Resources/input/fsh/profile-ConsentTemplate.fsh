@@ -5,6 +5,7 @@ Title: "Consent Template"
 Description: "Einwilligungsvorlage auf Basis des ConsentManagementTemplateFrame erweitertet um ausgewählte gICS Eigenschaften"
 * insert meta-profile
 * extension contains
+    Created named created 0..1 MS and
     ExternalProperty named externalProperty 0..* MS N and
     ExpirationProperty named expirationProperty 0..* MS N and
     QuestionnaireLabel named label 0..* MS N and
@@ -28,8 +29,8 @@ Instance: ConsentTemplate-example-1
 InstanceOf: ConsentTemplate
 Usage: #example
 * language = #DE
-* extension[0].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"
-* extension[=].valueString = "Patienteneinwilligung MII 1.6.f inkl Z-Modul (TMF V0.8)"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[label].valueString = "Patienteneinwilligung MII 1.6.f inkl Z-Modul (TMF V0.8)"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired"
 * extension[=].valueCodeableConcept = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired"

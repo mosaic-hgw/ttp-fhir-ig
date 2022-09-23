@@ -9,7 +9,9 @@ Description: "Abbildung aller relevanten Information zur Verwaltung wiederverwen
 * meta 1.. MS N
 * meta.lastUpdated 1.. MS N
 * meta.lastUpdated ^short = "updateDate"
-* extension contains ExternalProperty named externalProperty 0..* MS N
+* extension contains
+    Created named created 0..1 MS and
+    ExternalProperty named externalProperty 0..* MS N
 * extension[externalProperty] ^label = "externalProperties"
 * extension[externalProperty] ^short = "externalProperties"
 * extension[externalProperty] ^definition = "Liste frei konfigurierbarer external Properties nach dem KeyValuePrinzip zur Auswertung durch externe Anwendersysteme"
@@ -95,11 +97,9 @@ Instance: ConsentPolicy-example-1
 InstanceOf: ConsentPolicy
 Usage: #example
 * meta.lastUpdated = "2020-11-04T19:13:38.269+00:00"
-* extension.extension[0].url = "key"
-* extension.extension[=].valueString = "semantic_code"
-* extension.extension[+].url = "value"
-* extension.extension[=].valueString = "12345"
-* extension.url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[externalProperty][0].extension[key].valueString = "semantic_code"
+* extension[externalProperty][=].extension[value].valueString = "12345"
 * version = "1.0"
 * name = "MDAT_erheben"
 * title = "Medizinische Daten erheben"
@@ -113,6 +113,7 @@ Instance: ConsentPolicy-example-2
 InstanceOf: ConsentPolicy
 Usage: #example
 * meta.lastUpdated = "2020-11-04T19:13:32.449+00:00"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.0"
 * name = "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
 * title = "Medizinische Daten nutzen"
@@ -126,6 +127,7 @@ Instance: ConsentPolicy-example-3
 InstanceOf: ConsentPolicy
 Usage: #example
 * meta.lastUpdated = "2020-11-04T19:13:24.374+00:00"
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.0"
 * name = "MDAT_speichern_verarbeiten"
 * title = "Medizinische Daten speichern"

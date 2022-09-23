@@ -5,6 +5,8 @@ Title: "Consent Module"
 Description: "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
 * insert meta-profile
 * ^purpose = "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
+* extension contains
+    Created named created 0..1 MS
 * useContext.value[x] only Reference(ConsentDomain)
 * useContext.value[x] N
 * item.extension contains
@@ -35,6 +37,7 @@ Instance: ConsentModule-example-1
 InstanceOf: ConsentModule
 Usage: #example
 * language = #DE
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.6"
 * name = "BIOMAT_erheben_lagern_nutzen"
 * status = #draft
@@ -80,6 +83,7 @@ Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2021-06-24T08:30:00.000+00:00"
 * language = #DE
+* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.6.d"
 * name = "MDAT_ErhebenSpeichernNutzen"
 * title = "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung"
