@@ -1,0 +1,59 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "AllConsentsForPerson",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForPerson",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "language": "de-DE",
+  "name": "AllConsentsForPerson",
+  "title": "All consents for person",
+  "kind": "operation",
+  "description": "Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent einen Bundle-Entry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unter https://simplifier.net/guide/einwilligungsmanagement/igeinwilligungsmanagement",
+  "purpose": "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",
+  "affectsState": false,
+  "code": "allConsentsForPerson",
+  "comment": "Liefert alle Consente einer Person einer spezifischen Einwilligungsdomaene. Die Rückgabe erfolgt als Bundle vom Typ \"collection\". Das Bundle enthält je Consent einen BundleEntry, der alle für den spezifischen Consent relevanten Ressourcen (z.B. TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance) enthält. Details zu den verwendeten Profilen unter https://simplifier.net/guide/einwilligungsmanagement/igeinwilligungsmanagement",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "personIdentifier",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Um den Bezug zwischen Person und Einwilligung herzustellen, ist die Angabe von mindestens einem eindeutigen Personenidentifikator erforderlich. Dies kann je nach Anforderungen die Fallnummer, ein Patienten-Identifikator, die Angabe eines Bevollmächtigten oder ein Studienpseudonym, o.ä. sein und erfolgt unter Verwendung des passenden Patienten-Profils der AG Einwilligungsmanagement: https://simplifier.net/guide/Einwilligungsmanagement/Patient.\r\nBei Angabe von mehreren Identifikatoren werden diese ODER-verknüpft.",
+      "type": "Identifier"
+    },
+    {
+      "name": "domain",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Einwilligungsdomaene",
+      "type": "string"
+    },
+    {
+      "name": "_profile",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.",
+      "type": "canonical"
+    }
+  ]
+}

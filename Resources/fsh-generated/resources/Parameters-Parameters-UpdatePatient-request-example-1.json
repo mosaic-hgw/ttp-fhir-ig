@@ -1,0 +1,51 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-UpdatePatient-request-example-1",
+  "parameter": [
+    {
+      "name": "domain",
+      "valueString": "MIRACUM"
+    },
+    {
+      "name": "source",
+      "valueString": "KlinikumXY"
+    },
+    {
+      "name": "mpiIdentifier",
+      "valueIdentifier": {
+        "system": "https://ths-greifswald.de/fhir/identifier/BeispielMpiId",
+        "value": "1001000000066"
+      }
+    },
+    {
+      "name": "identity",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+          ]
+        },
+        "name": [
+          {
+            "family": "xxxxx",
+            "given": [
+              "Stefanie"
+            ]
+          }
+        ],
+        "birthDate": "1962-12-16",
+        "address": [
+          {
+            "city": "Spöck",
+            "postalCode": "76297"
+          }
+        ]
+      }
+    },
+    {
+      "name": "force",
+      "valueBoolean": false
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ConsentStatus",
+  "id": "ConsentStatusCS",
+  "description": " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+  "concept": [
+    {
+      "code": "ACCEPTED",
+      "display": "ACCEPTED",
+      "designation": [
+        {
+          "use": {
+            "code": "consent",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
+          },
+          "value": "Ja"
+        },
+        {
+          "use": {
+            "code": "refusal",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
+          },
+          "value": "Einwilligen"
+        },
+        {
+          "use": {
+            "code": "withdrawal",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
+          },
+          "value": "Erneut einwilligen"
+        }
+      ]
+    },
+    {
+      "code": "DECLINED",
+      "display": "DECLINED",
+      "designation": [
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "consent"
+          },
+          "value": "Nein"
+        },
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "refusal"
+          },
+          "value": "Ja"
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN",
+      "display": "UNKNOWN"
+    },
+    {
+      "code": "NOT_ASKED",
+      "display": "NOT ASKED",
+      "designation": [
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "consent"
+          },
+          "value": "Nicht gefragt"
+        },
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "refusal"
+          },
+          "value": "Nicht gefragt"
+        },
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "withdrawal"
+          },
+          "value": "Nicht gefragt"
+        }
+      ]
+    },
+    {
+      "code": "NOT_CHOSEN",
+      "display": "NOT CHOSEN",
+      "designation": [
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "consent"
+          },
+          "value": "Überspringen"
+        },
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "refusal"
+          },
+          "value": "Nein"
+        },
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "withdrawal"
+          },
+          "value": "Nein"
+        }
+      ]
+    },
+    {
+      "code": "WITHDRAWN",
+      "display": "WITHDRAWN",
+      "designation": [
+        {
+          "use": {
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+            "code": "withdrawal"
+          },
+          "value": "Ja"
+        }
+      ]
+    },
+    {
+      "code": "INVALIDATED",
+      "display": "INVALIDATED"
+    },
+    {
+      "code": "REFUSED",
+      "display": "REFUSED"
+    },
+    {
+      "code": "EXPIRED",
+      "display": "EXPIRED"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "caseSensitive": true,
+  "count": 9
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-RequestPsnWorkflow-request-example-1",
+  "parameter": [
+    {
+      "name": "study",
+      "valueString": "num"
+    },
+    {
+      "name": "original",
+      "valueString": "dic_1H51T"
+    },
+    {
+      "name": "source",
+      "valueString": "dic_erlangen"
+    },
+    {
+      "name": "target",
+      "valueString": "codex"
+    },
+    {
+      "name": "apikey",
+      "valueString": "abcdef12345"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "AddPatient",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "AddPatient",
+  "title": "addPatient",
+  "kind": "operation",
+  "description": "Fügt eine oder mehrere Patientenidentitäten hinzu.",
+  "affectsState": true,
+  "code": "addPatient",
+  "comment": "Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix). \r\n\r\nDabei werden eine oder mehrere Patienten-Identitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der **Master Person Index (MPI ID)**, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "domain",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Matching-Domaene",
+      "type": "string"
+    },
+    {
+      "name": "source",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Datenquelle",
+      "type": "string"
+    },
+    {
+      "name": "identity",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Patient-Ressource (analog zu Patienten-Identität).",
+      "type": "Patient"
+    },
+    {
+      "name": "saveAction",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "Coding",
+      "binding": {
+        "strength": "required",
+        "valueSet": "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"
+      }
+    },
+    {
+      "name": "forceReferenceUpdate",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "matchResult",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "documentation": "Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben.",
+      "part": [
+        {
+          "name": "sourceIdentity",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht.",
+          "type": "Patient"
+        },
+        {
+          "name": "matchStatus",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Match-Status aus dem Matching der übermittelten Patienten-Identität",
+          "type": "Coding",
+          "binding": {
+            "strength": "required",
+            "valueSet": "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
+          }
+        },
+        {
+          "name": "mpiPerson",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+          "type": "Person"
+        },
+        {
+          "name": "identity",
+          "use": "out",
+          "min": 0,
+          "max": "*",
+          "documentation": "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+          "type": "Patient"
+        }
+      ]
+    }
+  ]
+}

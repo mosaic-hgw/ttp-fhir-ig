@@ -1,0 +1,177 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ConsentPolicyAction",
+  "id": "ConsentPolicyActionCS",
+  "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun). ",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActionCS",
+  "concept": [
+    {
+      "code": "bereitstellen",
+      "display": "bereitstellen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Weitergabe von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "uebertragen_eigentum",
+      "display": "uebertragen_eigentum",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Übertragung des Eigentums an [PERSPEKTIVE] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank"
+        }
+      ]
+    },
+    {
+      "code": "einsehen",
+      "display": "einsehen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Einsicht in [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "View i dontknowthat verb"
+        }
+      ]
+    },
+    {
+      "code": "entnehmen",
+      "display": "entnehmen",
+      "designation": [
+        {
+          "language": "de-DE"
+        },
+        {
+          "value": "Entnahme von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "erheben",
+      "display": "erheben",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Erhebung neuer [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "analysieren_genetisch",
+      "display": "analysieren_genetisch",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Gewinnung von genetischen Daten aus [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "informieren",
+      "display": "informieren",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Information"
+        }
+      ]
+    },
+    {
+      "code": "lagern",
+      "display": "lagern",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Lagerung von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "lagern_verarbeiten",
+      "display": "lagern_verarbeiten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Lagerung und Verarbeitung von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "rekontaktieren",
+      "display": "rekontaktieren",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Rekontaktierung des Teilnehmers"
+        }
+      ]
+    },
+    {
+      "code": "speichern",
+      "display": "speichern",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Langfristige Speicherung von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "speichern_verarbeiten",
+      "display": "speichern_verarbeiten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Langfristige Speicherung und Verarbeitung von [PERSPEKTIVE]"
+        }
+      ]
+    },
+    {
+      "code": "wissenschaftlich_nutzen",
+      "display": "wissenschaftlich_nutzen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Bereitstellung von [PERSPEKTIVE] für wissenschaftliche Nutzung / Analysen / zu Auswertezwecken"
+        }
+      ]
+    },
+    {
+      "code": "zusammenfuehren",
+      "display": "zusammenfuehren",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Zusammenführung von [PERSPEKTIVE]"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "purpose": "Zweite Achse 'Tätigkeit' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.action",
+  "caseSensitive": true,
+  "count": 14
+}

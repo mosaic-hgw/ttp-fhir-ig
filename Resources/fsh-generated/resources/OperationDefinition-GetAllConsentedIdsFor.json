@@ -1,0 +1,87 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "GetAllConsentedIdsFor",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gics/getAllConsentedIdsFor",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "language": "de-DE",
+  "name": "GetAllConsentedIdsFor",
+  "title": "Get all consented Identifiers for person and template",
+  "kind": "operation",
+  "description": "Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy.",
+  "purpose": "Teil des FHIR Gateway für gICS. Weitere Infos unter https://ths-greifswald.de/gics",
+  "affectsState": false,
+  "code": "getAllConsentedIdsFor",
+  "comment": "Abruf aller Identifier eines bestimmten benannten Identifier-Typs (z.b. studyPsn) für eine bestimmte Policy (Coding) und Domäne. Zurück geliefert wird eine Liste von eingewilligten Identifiern in Bezug auf die spezifizierte Policy.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "domain",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Einwilligungsdomaene",
+      "type": "string"
+    },
+    {
+      "name": "signerIdTypeName",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe des Signer-ID-Typs",
+      "type": "string"
+    },
+    {
+      "name": "policy",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "Coding",
+      "binding": {
+        "strength": "extensible",
+        "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gics/Policy"
+      }
+    },
+    {
+      "name": "version",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Version der Policy",
+      "type": "string"
+    },
+    {
+      "name": "config",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Parameters",
+      "targetProfile": [
+        "https://ths-greifswald.de/fhir/StructureDefinition/gics/Parameters/Config"
+      ]
+    },
+    {
+      "name": "personIdentifier",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Identifier"
+    }
+  ]
+}

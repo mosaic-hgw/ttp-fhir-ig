@@ -1,0 +1,125 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "DePseudonymize",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/dePseudonymize",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "DePseudonymize",
+  "title": "dePseudonymize",
+  "kind": "operation",
+  "description": "Abfrage je eines Originalwertes für eine Liste von 1-n Pseudonymen und eine spezifische Domäne.",
+  "affectsState": false,
+  "code": "dePseudonymize",
+  "comment": "Abfrage je eines Originalwertes für eine Liste von 1-n Pseudonymen und eine spezifische Domäne.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "target",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Domäne auf Basis derer für das angegebene Pseudonym ein vorhandener eindeutiger Originalwert gesucht wird",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "pseudonym",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Angabe einer Liste von 1-n Pseudonymen für die in der angegebenen Domäne zugeordnete eindeutige Originalwerte gesucht werden",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "original",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Original-Identifikation zum übermittelten Pseudonym",
+      "part": [
+        {
+          "name": "original",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "target",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "pseudonym",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Patient-Identifier",
+          "type": "Identifier"
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Fehlerrückgabe bei Teil-Fehlern",
+      "part": [
+        {
+          "name": "original",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "target",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "pseudonym",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Patient-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "error-code",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Fehlercode",
+          "type": "Coding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ConsentPolicyPurpose",
+  "id": "ConsentPolicyPurposeCS",
+  "description": "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungskontext und/oder Geltungsbereich einer ConsentPolicy (Warum/Wofür/Woher/Wohin/Für wen/Wie/...)",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurposeCS",
+  "concept": [
+    {
+      "code": "Arzt",
+      "display": "Arzt",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "des Arztes"
+        }
+      ]
+    },
+    {
+      "code": "CRO",
+      "display": "CRO",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "an eine  Clinical Research Organization"
+        }
+      ]
+    },
+    {
+      "code": "Datenergaenzung",
+      "display": "Datenergaenzung",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "zum Zwecke der Datenergänzung"
+        }
+      ]
+    },
+    {
+      "code": "Dritte",
+      "display": "Dritte",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "an Dritte /mit Dritten Forschungspartner(n)"
+        }
+      ]
+    },
+    {
+      "code": "EU_DSGVO_NIVEAU",
+      "display": "EU_DSGVO_NIVEAU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "an Länder mit EU Datenschutzniveau"
+        }
+      ]
+    },
+    {
+      "code": "non_EU_DSGVO_NIVEAU",
+      "display": "non_EU_DSGVO_NIVEAU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "an Länder ohne EU Datenschutzniveau"
+        }
+      ]
+    },
+    {
+      "code": "Hausarzt",
+      "display": "Hausarzt",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "des Hausarztes"
+        }
+      ]
+    },
+    {
+      "code": "intern",
+      "display": "intern",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "innerhalb des Forschungsvorhabens/Projektes"
+        }
+      ]
+    },
+    {
+      "code": "Krankenunterlagen",
+      "display": "Krankenunterlagen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "durch Übertrag aus Krankenunterlagen"
+        }
+      ]
+    },
+    {
+      "code": "Monitoring",
+      "display": "Monitoring",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "im Rahmen des Monitoring"
+        }
+      ]
+    },
+    {
+      "code": "non_profit",
+      "display": "non_profit",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "eingeschränkt auf Non-Profit-Organisationen"
+        }
+      ]
+    },
+    {
+      "code": "pharma",
+      "display": "pharma",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "an eine am Sponsoring beteiligte Pharmafirma"
+        }
+      ]
+    },
+    {
+      "code": "prospektiv",
+      "display": "prospektiv",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "prospektiv"
+        }
+      ]
+    },
+    {
+      "code": "retrospektiv",
+      "display": "retrospektiv",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "retrospektiv"
+        }
+      ]
+    },
+    {
+      "code": "Vorhaben_spezifisch",
+      "display": "Vorhaben_spezifisch",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "im Rahmen des spezifischen Vorhabens/Projektes oder der spezifischen Studie"
+        }
+      ]
+    },
+    {
+      "code": "Vorhaben_intern",
+      "display": "Vorhaben_intern",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "innerhalb des spezifischen Vorhabens/Projektes oder der spezifischen Studie"
+        }
+      ]
+    },
+    {
+      "code": "Vorhaben_Teilnahme",
+      "display": "Vorhaben_Teilnahme",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "über die Teilnahme der betroffenen Person am spezifischen Vorhaben/Projekte oder der spezifischen Studie"
+        }
+      ]
+    },
+    {
+      "code": "Tod",
+      "display": "Tod",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "im Falle des Todes"
+        }
+      ]
+    },
+    {
+      "code": "uneingeschraenkt",
+      "display": "uneingeschraenkt",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "uneingeschraenkt"
+        }
+      ]
+    },
+    {
+      "code": "zeitlich_eingeschraenkt",
+      "display": "zeitlich_eingeschraenkt",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "mit zeitlicher Einschränkung"
+        }
+      ]
+    },
+    {
+      "code": "Verknuepfung_Datenbanken",
+      "display": "Verknuepfung_Datenbanken",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "zur Verknüpfung von Daten der betroffenen Person mit Informationen anderer Datenbanken"
+        }
+      ]
+    },
+    {
+      "code": "weitere_Erhebungen",
+      "display": "weitere_Erhebungen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "bezüglich der Erhebung zusätzlicher Daten"
+        }
+      ]
+    },
+    {
+      "code": "weitere_Studien",
+      "display": "weitere_Studien",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "bezüglich der Information zu neuen Vorhaben/Projekten oder Studien"
+        }
+      ]
+    },
+    {
+      "code": "Zufallsbefunde",
+      "display": "Zufallsbefunde",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "zur Mitteilung von Zufallsbefunden"
+        }
+      ]
+    },
+    {
+      "code": "KV",
+      "display": "KV",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "von Krankenversicherungen"
+        }
+      ]
+    },
+    {
+      "code": "RV",
+      "display": "RV",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "von Rentenversicherungen"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "purpose": "Dritte Achse 'Kontext' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.purpose",
+  "caseSensitive": true,
+  "count": 26
+}

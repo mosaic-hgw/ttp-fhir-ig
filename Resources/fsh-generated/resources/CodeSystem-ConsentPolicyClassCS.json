@@ -1,0 +1,131 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ConsentPolicyClass",
+  "id": "ConsentPolicyClassCS",
+  "description": "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentPolicy (z.B. ausgewählte Datensicht 'IDAT')",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyClassCS",
+  "concept": [
+    {
+      "code": "IDAT",
+      "display": "IDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Personenidentifizierende Daten"
+        }
+      ]
+    },
+    {
+      "code": "MDAT",
+      "display": "MDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Medizinische Daten"
+        }
+      ]
+    },
+    {
+      "code": "BIOMAT",
+      "display": "BIOMAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Biomaterialien"
+        }
+      ]
+    },
+    {
+      "code": "BIOMAT_Analysedaten",
+      "display": "BIOMAT_Analysedaten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Biomaterialien, insbesondere auf Biomaterialien basierende Analysedaten"
+        }
+      ]
+    },
+    {
+      "code": "IMGDAT",
+      "display": "IMGDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Bilder und Bilddaten"
+        }
+      ]
+    },
+    {
+      "code": "KDAT",
+      "display": "KDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Krankenkassendaten"
+        }
+      ]
+    },
+    {
+      "code": "KDAT_KVNR",
+      "display": "KDAT_KVNR",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Krankenkassendaten, insbesondere die Krankenkassenversichertennummer"
+        }
+      ]
+    },
+    {
+      "code": "MDAT_GECCO83",
+      "display": "MDAT_GECCO83",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Medizinische Daten, insbesondere GECCO83 Datensatz"
+        }
+      ]
+    },
+    {
+      "code": "MDAT_OMICS",
+      "display": "MDAT_OMICS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Medizinische Daten, insbesondere *OMICS-Daten"
+        }
+      ]
+    },
+    {
+      "code": "SDAT",
+      "display": "SDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Sozialdaten"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "purpose": "Erste Achse 'Perspektive' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.class",
+  "caseSensitive": true,
+  "count": 10
+}

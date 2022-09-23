@@ -1,0 +1,80 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ShortText",
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText",
+  "version": "2.2.0",
+  "name": "ShortText",
+  "title": "Short Text",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Kurztext zum Item",
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire.item"
+    },
+    {
+      "type": "element",
+      "expression": "Questionnaire.item.item"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Format von Policyversionsangaben",
+        "definition": "Format von Versionsangaben für Policies",
+        "comment": "Werden sowohl formatString als auch formatExpression angegeben, müssen diese synonym sein."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

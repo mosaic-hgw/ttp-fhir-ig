@@ -1,0 +1,537 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Patient",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
+  "version": "2.2.0",
+  "name": "Patient",
+  "title": "Patient",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Patienten-Identität (Variante/Schreibweise) einer realen Person (=> MPI Eintrag, Person-Profil).",
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "short": "Patienten-Profil zur Übermittlung von angeforderten IDAT",
+        "comment": "Die per $requestTasks vorgegebenen Element-Bezeichner sind wie folgt gemappt:\r\n\r\ngiven: name.given\r\nfamily: name.family (mit name.use!='maiden' oder nicht vorhanden)\r\nprefix: name.prefix\r\nsuffix: name.suffix\r\nbirthdate: birthDate\r\ngender: gender\r\naddress-line: address.line\r\naddress-city: address.city\r\naddress-postalcode: address.postalCode\r\nbirthplace: extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').city\r\nmaidenname: name.family (mit name.use='maiden')\r\ndegree: name.prefix (ggf. mit gesetzter Extension http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier mit Code 'AC')\r\nlanguage: communication.language (mit communication.preferred=true)\r\nnationality: extension(http://hl7.org/fhir/StructureDefinition/patient-nationality).valueCode.coding.code oder extension(http://hl7.org/fhir/StructureDefinition/patient-nationality).valueCode.textextension(http://hl7.org/fhir/StructureDefinition/patient-nationality).code.text\r\nmaritalstatus: maritalStatus.coding.code oder maritalStatus.text"
+      },
+      {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.versionId",
+        "path": "Patient.meta.versionId",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.lastUpdated",
+        "path": "Patient.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.meta.source",
+        "path": "Patient.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthPlace",
+        "path": "Patient.extension",
+        "sliceName": "birthPlace",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x]",
+        "path": "Patient.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].use",
+        "path": "Patient.extension.value[x].use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].type",
+        "path": "Patient.extension.value[x].type",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].text",
+        "path": "Patient.extension.value[x].text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].line",
+        "path": "Patient.extension.value[x].line",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].city",
+        "path": "Patient.extension.value[x].city",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].district",
+        "path": "Patient.extension.value[x].district",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].state",
+        "path": "Patient.extension.value[x].state",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].postalCode",
+        "path": "Patient.extension.value[x].postalCode",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].country",
+        "path": "Patient.extension.value[x].country",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:birthPlace.value[x].period",
+        "path": "Patient.extension.value[x].period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.extension:nationality",
+        "path": "Patient.extension",
+        "sliceName": "nationality",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code",
+        "path": "Patient.extension.extension",
+        "sliceName": "code"
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code.value[x]",
+        "path": "Patient.extension.extension.value[x]",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+        }
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code.value[x].coding",
+        "path": "Patient.extension.extension.value[x].coding",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code.value[x].coding.system",
+        "path": "Patient.extension.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code.value[x].coding.code",
+        "path": "Patient.extension.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:nationality.extension:code.value[x].text",
+        "path": "Patient.extension.extension.value[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:customIdatValues",
+        "path": "Patient.extension",
+        "sliceName": "customIdatValues",
+        "label": "customIdatValues",
+        "short": "Benutzerdefinierter Satz von IDAT Werten",
+        "definition": "Benutzerdefinierter Satz von von IDAT-Wert für flexible Erweiterung E-PIX IDAT-Datensatz",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.text",
+        "path": "Patient.name.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.prefix",
+        "path": "Patient.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.prefix.extension:academic",
+        "path": "Patient.name.prefix.extension",
+        "sliceName": "academic",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.prefix.extension:academic.value[x]",
+        "path": "Patient.name.prefix.extension.value[x]",
+        "fixedCode": "AC",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.suffix",
+        "path": "Patient.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.period",
+        "path": "Patient.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.text",
+        "path": "Patient.address.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.district",
+        "path": "Patient.address.district",
+        "max": "0"
+      },
+      {
+        "id": "Patient.address.state",
+        "path": "Patient.address.state",
+        "short": "Bundesland",
+        "definition": "Bundesland in ISO-Codierung",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/iso/bundeslaender"
+        }
+      },
+      {
+        "id": "Patient.address.postalCode",
+        "path": "Patient.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.country",
+        "path": "Patient.address.country",
+        "short": "Staat",
+        "definition": "Staat in ISO-Codierung (zweistellig nach ISO-3166-2)",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+        }
+      },
+      {
+        "id": "Patient.address.period",
+        "path": "Patient.address.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MaritalStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "The domestic partnership status of a person.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/marital-status"
+        }
+      },
+      {
+        "id": "Patient.maritalStatus.coding",
+        "path": "Patient.maritalStatus.coding",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.maritalStatus.coding.system",
+        "path": "Patient.maritalStatus.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.maritalStatus.coding.code",
+        "path": "Patient.maritalStatus.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.maritalStatus.text",
+        "path": "Patient.maritalStatus.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication.language",
+        "path": "Patient.communication.language",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "valueCanonical": "http://hl7.org/fhir/ValueSet/all-languages"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "A human language.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+        }
+      },
+      {
+        "id": "Patient.communication.language.coding",
+        "path": "Patient.communication.language.coding",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication.language.coding.system",
+        "path": "Patient.communication.language.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication.language.coding.code",
+        "path": "Patient.communication.language.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication.language.text",
+        "path": "Patient.communication.language.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication.preferred",
+        "path": "Patient.communication.preferred",
+        "min": 1,
+        "fixedBoolean": true,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "max": "0"
+      }
+    ]
+  }
+}

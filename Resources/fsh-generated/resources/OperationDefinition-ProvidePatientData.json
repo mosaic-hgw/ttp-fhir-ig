@@ -1,0 +1,68 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ProvidePatientData",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/providePatientData",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "ProvidePatientData",
+  "title": "providePatientData",
+  "kind": "operation",
+  "description": "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen.",
+  "affectsState": true,
+  "code": "providePatientData",
+  "comment": "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "taskId",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Identifikator der Aufgabe; Rückreferenzierung auf die aus der providePatientData Operation erhaltene Aufgabe.",
+      "type": "id"
+    },
+    {
+      "name": "target",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Ziel-Domain (Standort)",
+      "type": "string"
+    },
+    {
+      "name": "apikey",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
+      "type": "string"
+    },
+    {
+      "name": "patient",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Patient-Ressource die, soweit bekannt, die in der der taskId assoziierten Aufgabe definierten identifizierenden Datenelemente eines Patienten enthält.",
+      "type": "Patient",
+      "targetProfile": [
+        "https://ths-greifswald.de/fhir/StructureDefinition/dispatcher/Patient/Idat"
+      ]
+    }
+  ]
+}

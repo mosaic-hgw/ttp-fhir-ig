@@ -1,0 +1,8 @@
+{
+  "updated": "2022-08-26T11:20:32.1627164+02:00",
+  "dependencies": {
+    "de.einwilligungsmanagement": "1.0.1",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}

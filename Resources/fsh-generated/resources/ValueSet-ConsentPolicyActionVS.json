@@ -1,0 +1,107 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ConsentPolicyAction",
+  "id": "ConsentPolicyActionVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/ConsentPolicyActionVS",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2022-09-09T12:00:00Z",
+    "total": 14,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "bereitstellen",
+        "display": "bereitstellen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "uebertragen_eigentum",
+        "display": "uebertragen_eigentum"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "einsehen",
+        "display": "einsehen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "entnehmen",
+        "display": "entnehmen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "erheben",
+        "display": "erheben"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "analysieren_genetisch",
+        "display": "analysieren_genetisch"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "informieren",
+        "display": "informieren"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "lagern",
+        "display": "lagern"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "lagern_verarbeiten",
+        "display": "lagern_verarbeiten"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "rekontaktieren",
+        "display": "rekontaktieren"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "speichern",
+        "display": "speichern"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "speichern_verarbeiten",
+        "display": "speichern_verarbeiten"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "wissenschaftlich_nutzen",
+        "display": "wissenschaftlich_nutzen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyAction",
+        "code": "zusammenfuehren",
+        "display": "zusammenfuehren"
+      }
+    ]
+  }
+}

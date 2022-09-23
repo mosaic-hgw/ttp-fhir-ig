@@ -1,0 +1,31 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ActivityDefinitionCode",
+  "url": "https://ths-greifswald.de/fhir/SearchParameter/gics/activityDefinitionCode",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "activityDefinitionCode",
+  "description": "Eindeutiger Code der Consent Policy (ActivityDefiniton)",
+  "code": "code",
+  "base": [
+    "ActivityDefinition"
+  ],
+  "type": "token",
+  "expression": "code",
+  "multipleOr": false,
+  "multipleAnd": false
+}

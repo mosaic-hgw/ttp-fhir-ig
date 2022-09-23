@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "useContextIdentifier",
+  "url": "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "useContextIdentifier",
+  "description": "Eindeutiger Name (Identifikator) der referenzierten Consent Domain",
+  "code": "useContextIdentifier",
+  "base": [
+    "ActivityDefinition",
+    "Questionnaire"
+  ],
+  "type": "token",
+  "expression": "useContext.valueReference.identifier",
+  "multipleOr": false,
+  "multipleAnd": false
+}

@@ -1,0 +1,117 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "PseudonymizeAllowCreate",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "PseudonymizeAllowCreate",
+  "title": "pseudonymizeAllowCreate",
+  "kind": "operation",
+  "description": "Generierung je eines Pseudonyms für eine Liste von Originalwerten und eine spezifische Domäne sofern es noch nicht vorhanden ist. Sofern die Zuordnung Originalwert und Domäne bereits bekannt ist, wird das zugeordnete vorhandene Pseudonym zurückgegeben.",
+  "affectsState": true,
+  "code": "pseudonymizeAllowCreate",
+  "comment": "Generierung je eines Pseudonyms für eine Liste von 1-n Originalwerten und eine spezifische Domäne sofern es noch nicht vorhanden ist. Sofern die Zuordnung Originalwert und Domäne bereits bekannt ist, wird das zugeordnete vorhandene Pseudonym zurückgegeben.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "target",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Domäne auf Basis derer für den angegebenen Originalwert ein vorhandenens eindeutiges Pseudonym gesucht wird",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "original",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Angabe der Originalwerte auf Basis derer in der zusätzlich angegebenen Domäne eindeutige Pseudonym gesucht und sofern noch nicht vorhanden erzeugt werden",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "pseudonym",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym",
+      "part": [
+        {
+          "name": "original",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "target",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "pseudonym",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Pseudonym",
+          "type": "Identifier"
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Fehlerrückgabe bei Teil-Fehlern",
+      "part": [
+        {
+          "name": "target",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "original",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "error-code",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Fehlercode",
+          "type": "Coding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-example-29",
+  "parameter": [
+    {
+      "name": "dic_psn_available",
+      "part": [
+        {
+          "name": "bloomfilter",
+          "valueBase64Binary": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+        },
+        {
+          "name": "target",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "codex"
+          }
+        },
+        {
+          "name": "pseudonym",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "codex_6348Q7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "send_idat",
+      "part": [
+        {
+          "name": "expires",
+          "valueInstant": "2021-05-28T13:00:00.00+02:00"
+        },
+        {
+          "name": "taskId",
+          "valueId": "064ddebf-b20e-468a-97fd-88097bcdbc11"
+        },
+        {
+          "name": "pseudonym",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "codex_1244Q2"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "given",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "family",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "birthdate",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "gender",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "birthplace",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        },
+        {
+          "name": "element",
+          "valueCoding": {
+            "code": "degree",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+          }
+        }
+      ]
+    },
+    {
+      "name": "repeat_request",
+      "part": [
+        {
+          "name": "study",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "num"
+          }
+        },
+        {
+          "name": "bloomfilter",
+          "valueBase64Binary": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+        },
+        {
+          "name": "target",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "codex"
+          }
+        }
+      ]
+    }
+  ]
+}

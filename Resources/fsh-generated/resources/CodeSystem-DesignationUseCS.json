@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DesignationUse",
+  "id": "DesignationUseCS",
+  "description": "Use codes (contexts) for terminology designations",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
+  "concept": [
+    {
+      "code": "consent",
+      "display": "consent"
+    },
+    {
+      "code": "refusal",
+      "display": "refusal"
+    },
+    {
+      "code": "withdrawal",
+      "display": "withdrawal"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "caseSensitive": true,
+  "count": 3
+}

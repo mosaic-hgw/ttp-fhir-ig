@@ -1,0 +1,49 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ConsentPolicy-example-1",
+  "meta": {
+    "lastUpdated": "2020-11-04T19:13:38.269+00:00",
+    "profile": [
+      "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy"
+    ]
+  },
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "program"
+      },
+      "valueReference": {
+        "reference": "d7a65ce8-2810-401a-b0db-70782a7b19a6"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "key",
+          "valueString": "semantic_code"
+        },
+        {
+          "url": "value",
+          "valueString": "12345"
+        }
+      ],
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+    }
+  ],
+  "version": "1.0",
+  "name": "MDAT_erheben",
+  "title": "Medizinische Daten erheben",
+  "status": "active",
+  "description": "Beispiel Consent Policy für die Erhebung medizinischer Daten im Rahmen eines Forschungsprojektes",
+  "code": {
+    "coding": [
+      {
+        "code": "MDAT_erheben",
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
+      }
+    ]
+  }
+}

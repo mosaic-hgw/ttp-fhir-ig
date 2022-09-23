@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ConsentPolicyActor",
+  "id": "ConsentPolicyActorVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/ConsentPolicyActorVS",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2022-09-09T12:00:00Z",
+    "total": 7,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "TTP",
+        "display": "TTP"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "FTTP",
+        "display": "FTTP"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "RDP",
+        "display": "RDP"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "DIC",
+        "display": "DIC"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "LIMS",
+        "display": "LIMS"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "BDMS",
+        "display": "BDMS"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActor",
+        "code": "DTU",
+        "display": "DTU"
+      }
+    ]
+  }
+}

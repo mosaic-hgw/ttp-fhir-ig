@@ -1,0 +1,136 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponse-example-1",
+  "meta": {
+    "lastUpdated": "2021-05-19T17:50:23.000+02:00",
+    "profile": [
+      "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"
+    ]
+  },
+  "language": "DE",
+  "questionnaire": "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f",
+  "status": "completed",
+  "subject": {
+    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "display": "Pseudonym dic_1H51T"
+  },
+  "authored": "2021-05-19T00:00:00+02:00",
+  "author": {
+    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "display": "Pseudonym dic_1H51T"
+  },
+  "source": {
+    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "display": "Pseudonym dic_1H51T"
+  },
+  "item": [
+    {
+      "linkId": "PATDAT_erheben_speichern_nutzen|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "ACCEPTED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Ja"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "DECLINED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Nein"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "DECLINED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Nein"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "BIOMAT_erheben_lagern_nutzen|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "DECLINED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Nein"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "BIOMAT_Zusatzentnahme|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "DECLINED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Nein"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Rekontaktierung_Ergaenzungen|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "ACCEPTED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Ja"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Rekontaktierung_Zusatzbefund|1.6",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "ACCEPTED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Ja"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Z1_GECCO83_Nutzung_NUM_CODEX|1.0",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "ACCEPTED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Ja"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Z1_GECCO83_Weitergabe_NUM_CODEX_EU_DSGVO_nonkonform|1.0",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "DECLINED",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+            "display": "Nein"
+          }
+        }
+      ]
+    }
+  ]
+}

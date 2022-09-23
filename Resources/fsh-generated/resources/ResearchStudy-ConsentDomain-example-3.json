@@ -1,0 +1,69 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "ConsentDomain-example-3",
+  "meta": {
+    "lastUpdated": "2020-10-23T13:44:08.216+00:00",
+    "profile": [
+      "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier",
+      "extension": [
+        {
+          "url": "resourceType",
+          "valueCoding": {
+            "code": "Patient",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        },
+        {
+          "url": "system",
+          "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/CaseId"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "resourceType",
+          "valueCoding": {
+            "code": "Patient",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        },
+        {
+          "url": "system",
+          "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/PatId"
+        }
+      ],
+      "url": "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+    },
+    {
+      "extension": [
+        {
+          "url": "resourceType",
+          "valueCoding": {
+            "code": "Patient",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        },
+        {
+          "url": "system",
+          "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/SapId"
+        }
+      ],
+      "url": "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://ths-greifswald.de/fhir/gics/",
+      "value": "MIRACUM"
+    }
+  ],
+  "title": "MIRACUM",
+  "status": "in-review",
+  "description": "Test-Domain zur Veranschaulichung von FHIR-Aufrufen"
+}

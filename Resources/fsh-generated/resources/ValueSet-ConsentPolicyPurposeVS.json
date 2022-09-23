@@ -1,0 +1,167 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ConsentPolicyPurpose",
+  "id": "ConsentPolicyPurposeVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/ConsentPolicyPurposeVS",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2022-09-09T12:00:00Z",
+    "total": 26,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Arzt",
+        "display": "Arzt"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "CRO",
+        "display": "CRO"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Datenergaenzung",
+        "display": "Datenergaenzung"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Dritte",
+        "display": "Dritte"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "EU_DSGVO_NIVEAU",
+        "display": "EU_DSGVO_NIVEAU"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "non_EU_DSGVO_NIVEAU",
+        "display": "non_EU_DSGVO_NIVEAU"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Hausarzt",
+        "display": "Hausarzt"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "intern",
+        "display": "intern"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Krankenunterlagen",
+        "display": "Krankenunterlagen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Monitoring",
+        "display": "Monitoring"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "non_profit",
+        "display": "non_profit"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "pharma",
+        "display": "pharma"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "prospektiv",
+        "display": "prospektiv"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "retrospektiv",
+        "display": "retrospektiv"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Vorhaben_spezifisch",
+        "display": "Vorhaben_spezifisch"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Vorhaben_intern",
+        "display": "Vorhaben_intern"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Vorhaben_Teilnahme",
+        "display": "Vorhaben_Teilnahme"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Tod",
+        "display": "Tod"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "uneingeschraenkt",
+        "display": "uneingeschraenkt"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "zeitlich_eingeschraenkt",
+        "display": "zeitlich_eingeschraenkt"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Verknuepfung_Datenbanken",
+        "display": "Verknuepfung_Datenbanken"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "weitere_Erhebungen",
+        "display": "weitere_Erhebungen"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "weitere_Studien",
+        "display": "weitere_Studien"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "Zufallsbefunde",
+        "display": "Zufallsbefunde"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "KV",
+        "display": "KV"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose",
+        "code": "RV",
+        "display": "RV"
+      }
+    ]
+  }
+}

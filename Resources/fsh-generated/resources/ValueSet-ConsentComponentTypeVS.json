@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ConsentComponentType",
+  "id": "ConsentComponentTypeVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentComponentType",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2021-04-12T12:00:00Z",
+    "total": 6,
+    "contains": [
+      {
+        "system": "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
+        "code": "TemplateModule",
+        "display": "Template-Module"
+      },
+      {
+        "system": "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
+        "code": "TemplateFrame",
+        "display": "Template-Frame"
+      },
+      {
+        "system": "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents",
+        "code": "QuestionnaireComposed",
+        "display": "Composed Questionnaire"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
+        "code": "ConsentPolicy",
+        "display": "Consent-Policy"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
+        "code": "ConsentModule",
+        "display": "Consent-Module"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
+        "code": "ConsentTemplate",
+        "display": "Consent-Template"
+      }
+    ]
+  }
+}

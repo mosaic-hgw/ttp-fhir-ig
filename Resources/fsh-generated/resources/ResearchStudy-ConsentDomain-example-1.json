@@ -1,0 +1,90 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "ConsentDomain-example-1",
+  "meta": {
+    "profile": [
+      "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier",
+      "extension": [
+        {
+          "url": "resourceType",
+          "valueCoding": {
+            "code": "Patient",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        },
+        {
+          "url": "system",
+          "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/CaseId"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "resourceType",
+          "valueCoding": {
+            "code": "Patient",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        },
+        {
+          "url": "system",
+          "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/SapId"
+        }
+      ],
+      "url": "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+    },
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat",
+      "valueString": "major.minor"
+    },
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ModuleVersionFormat",
+      "valueString": "major.minor"
+    },
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat",
+      "valueString": "major.minor.char"
+    },
+    {
+      "extension": [
+        {
+          "url": "key",
+          "valueString": "REVOKE_IS_PERMANENT"
+        },
+        {
+          "url": "value",
+          "valueString": "true"
+        }
+      ],
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property"
+    },
+    {
+      "extension": [
+        {
+          "url": "key",
+          "valueString": "containsHtml"
+        },
+        {
+          "url": "value",
+          "valueString": "true"
+        }
+      ],
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://ths-greifswald.de/fhir/gics/",
+      "value": "MIRACUM"
+    }
+  ],
+  "title": "MIRACUM",
+  "status": "in-review",
+  "description": "Test-Domain zur Veranschaulichung von FHIR-Aufrufen"
+}

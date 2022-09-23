@@ -1,0 +1,147 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "RequestPsnWorkflow",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/requestPsnWorkflow",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "RequestPsnWorkflow",
+  "title": "requestPsnWorkflow",
+  "kind": "operation",
+  "description": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.",
+  "purpose": "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de",
+  "code": "requestPsnWorkflow",
+  "comment": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "original",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Liste studien- und standortspezifischer Originalwerte für die entsprechende Pseudonyme ermittelt bzw. erstellt werden.",
+      "type": "string"
+    },
+    {
+      "name": "study",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Studie",
+      "type": "string"
+    },
+    {
+      "name": "source",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Pseudonymisierungsquell-Domain (Herkunft des Originalwertes)",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Pseudonymisierungsziel-Domain",
+      "type": "string"
+    },
+    {
+      "name": "apikey",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
+      "type": "string"
+    },
+    {
+      "name": "event",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Optionaler Parameter. Auszulösendes, vorkonfiguriertes Pseudonymisierungsevents innerhalb des Workflow-Managers.",
+      "type": "string"
+    },
+    {
+      "name": "pseudonym",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym",
+      "part": [
+        {
+          "name": "original",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "target",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "pseudonym",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Pseudonym",
+          "type": "Identifier"
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Fehlerrückgabe bei Teil-Fehlern",
+      "part": [
+        {
+          "name": "original",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "target",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "error-code",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Fehlercode",
+          "type": "Coding"
+        }
+      ]
+    }
+  ]
+}

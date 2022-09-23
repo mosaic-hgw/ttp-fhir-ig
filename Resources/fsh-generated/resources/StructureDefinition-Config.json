@@ -1,0 +1,214 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Config",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    }
+  ],
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Parameters/Config",
+  "version": "2.2.0",
+  "name": "Config",
+  "title": "gics client definable configuration Config",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "giCS client definable configuration parameters for use as input parameters in multiple giCS operations.",
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Parameters",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Parameters",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Parameters.parameter",
+        "path": "Parameters.parameter",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "4"
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType",
+        "path": "Parameters.parameter",
+        "sliceName": "idMatchingType",
+        "min": 0,
+        "max": "1",
+        "meaningWhenMissing": "AT_LEAST_ONE"
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "idMatchingType"
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gics/IdMatchingType"
+        }
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.value[x].system",
+        "path": "Parameters.parameter.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.value[x].code",
+        "path": "Parameters.parameter.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.resource",
+        "path": "Parameters.parameter.resource",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:idMatchingType.part",
+        "path": "Parameters.parameter.part",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:ignoreVersionNumber",
+        "path": "Parameters.parameter",
+        "sliceName": "ignoreVersionNumber",
+        "min": 0,
+        "max": "1",
+        "meaningWhenMissing": "false"
+      },
+      {
+        "id": "Parameters.parameter:ignoreVersionNumber.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "ignoreVersionNumber"
+      },
+      {
+        "id": "Parameters.parameter:ignoreVersionNumber.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Parameters.parameter:ignoreVersionNumber.resource",
+        "path": "Parameters.parameter.resource",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:ignoreVersionNumber.part",
+        "path": "Parameters.parameter.part",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:unknownStateIsConsideredAsDecline",
+        "path": "Parameters.parameter",
+        "sliceName": "unknownStateIsConsideredAsDecline",
+        "min": 0,
+        "max": "1",
+        "meaningWhenMissing": "false"
+      },
+      {
+        "id": "Parameters.parameter:unknownStateIsConsideredAsDecline.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "unknownStateIsConsideredAsDecline"
+      },
+      {
+        "id": "Parameters.parameter:unknownStateIsConsideredAsDecline.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Parameters.parameter:unknownStateIsConsideredAsDecline.resource",
+        "path": "Parameters.parameter.resource",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:unknownStateIsConsideredAsDecline.part",
+        "path": "Parameters.parameter.part",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:requestDate",
+        "path": "Parameters.parameter",
+        "sliceName": "requestDate",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:requestDate.name",
+        "path": "Parameters.parameter.name",
+        "fixedString": "requestDate"
+      },
+      {
+        "id": "Parameters.parameter:requestDate.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Parameters.parameter:requestDate.resource",
+        "path": "Parameters.parameter.resource",
+        "max": "0"
+      },
+      {
+        "id": "Parameters.parameter:requestDate.part",
+        "path": "Parameters.parameter.part",
+        "max": "0"
+      }
+    ]
+  }
+}

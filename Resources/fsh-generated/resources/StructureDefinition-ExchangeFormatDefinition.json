@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExchangeFormatDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition",
+  "version": "2.2.0",
+  "name": "ExchangeFormatDefinition",
+  "title": "ExchangeFormatDefinition",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Die in diesem Bundle enthaltenen FHIR-Ressourcen definieren in ihrer Gesamtheit ein oder mehrere Einwiliigungs-Vorlagen (Templates, FHIR-Questionnaires) zu einem bestimmten Kontext.",
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "collection",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.type.extension",
+        "path": "Bundle.type.extension",
+        "min": 1
+      },
+      {
+        "id": "Bundle.type.extension:supportedVersion",
+        "path": "Bundle.type.extension",
+        "sliceName": "supportedVersion",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.type.extension:supportedVersion.value[x]",
+        "path": "Bundle.type.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.total",
+        "path": "Bundle.total",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.link",
+        "path": "Bundle.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.link",
+        "path": "Bundle.entry.link",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ActivityDefinition",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy"
+            ]
+          },
+          {
+            "code": "Questionnaire",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule",
+              "https://ths-greifswald.de/fhir/StructureDefinition/ConsentTemplate",
+              "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed"
+            ]
+          },
+          {
+            "code": "ResearchStudy",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry.search",
+        "path": "Bundle.entry.search",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.request",
+        "path": "Bundle.entry.request",
+        "max": "0"
+      },
+      {
+        "id": "Bundle.entry.response",
+        "path": "Bundle.entry.response",
+        "max": "0"
+      }
+    ]
+  }
+}

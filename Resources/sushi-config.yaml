@@ -1,0 +1,8 @@
+canonical: https://ths-greifswald.de/fhir
+version: 2.2.0
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+  de.einwilligungsmanagement: 1.0.1

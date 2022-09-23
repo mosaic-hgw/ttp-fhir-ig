@@ -1,0 +1,22 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-RequestPsnFromBfWorkflow-request-example-1",
+  "parameter": [
+    {
+      "name": "study",
+      "valueString": "num"
+    },
+    {
+      "name": "bloomfilter",
+      "valueBase64Binary": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+    },
+    {
+      "name": "target",
+      "valueString": "dic_erlangen"
+    },
+    {
+      "name": "apikey",
+      "valueString": "abcdef12345"
+    }
+  ]
+}

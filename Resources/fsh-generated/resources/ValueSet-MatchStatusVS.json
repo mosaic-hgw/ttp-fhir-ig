@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "MatchStatus",
+  "id": "MatchStatusVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2021-10-28T12:00:00.000+02:00",
+    "total": 8,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "EXTERNAL_MATCH",
+        "display": "external match"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "MATCH",
+        "display": "match"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "MATCH_ERROR",
+        "display": "match error"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "MULTIPLE_MATCH",
+        "display": "multiple match"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "NO_MATCH",
+        "display": "no match"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "PERFECT_MATCH",
+        "display": "perfect match"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "PERFECT_MATCH_WITH_UPDATE",
+        "display": "perfect match with update"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+        "code": "POSSIBLE_MATCH",
+        "display": "possible match"
+      }
+    ]
+  }
+}

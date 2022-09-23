@@ -1,0 +1,112 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "IdatElements",
+  "id": "IdatElementsVS",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2021-05-27T11:00:00+00:00",
+    "total": 15,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "given",
+        "display": "Vorname"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "family",
+        "display": "Nachname"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "prefix",
+        "display": "Namens-Präfix"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "suffix",
+        "display": "Namens-Suffix"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "birthdate",
+        "display": "Geburtsdatum"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "gender",
+        "display": "Geschlecht"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "address-line",
+        "display": "Straße, Hausnummer, Postfach"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "address-city",
+        "display": "Ort"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "address-postalcode",
+        "display": "Postleitzahl"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "birthplace",
+        "display": "Geburtsort"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "maidenname",
+        "display": "Geburtsname"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "degree",
+        "display": "akademischer Titel"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "language",
+        "display": "(Mutter-)Sprache"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "nationality",
+        "display": "Staatsangehörigkeit"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
+        "code": "maritalstatus",
+        "display": "Familienstand"
+      }
+    ]
+  }
+}

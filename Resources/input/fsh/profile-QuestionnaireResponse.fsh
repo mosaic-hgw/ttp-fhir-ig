@@ -1,0 +1,30 @@
+Instance: QuestionnaireResponse-example-1
+InstanceOf: QuestionnaireResponse
+Usage: #example
+* meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
+* meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"
+* language = #DE
+* questionnaire = "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"
+* status = #completed
+* subject = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
+* authored = "2021-05-19T00:00:00+02:00"
+* author = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
+* source = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
+* item[0].linkId = "PATDAT_erheben_speichern_nutzen|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#ACCEPTED "Ja"
+* item[+].linkId = "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#DECLINED "Nein"
+* item[+].linkId = "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#DECLINED "Nein"
+* item[+].linkId = "BIOMAT_erheben_lagern_nutzen|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#DECLINED "Nein"
+* item[+].linkId = "BIOMAT_Zusatzentnahme|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#DECLINED "Nein"
+* item[+].linkId = "Rekontaktierung_Ergaenzungen|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#ACCEPTED "Ja"
+* item[+].linkId = "Rekontaktierung_Zusatzbefund|1.6"
+* item[=].answer.valueCoding = $ConsentStatus#ACCEPTED "Ja"
+* item[+].linkId = "Z1_GECCO83_Nutzung_NUM_CODEX|1.0"
+* item[=].answer.valueCoding = $ConsentStatus#ACCEPTED "Ja"
+* item[+].linkId = "Z1_GECCO83_Weitergabe_NUM_CODEX_EU_DSGVO_nonkonform|1.0"
+* item[=].answer.valueCoding = $ConsentStatus#DECLINED "Nein"

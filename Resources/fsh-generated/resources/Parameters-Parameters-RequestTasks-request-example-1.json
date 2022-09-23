@@ -1,0 +1,18 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-RequestTasks-request-example-1",
+  "parameter": [
+    {
+      "name": "study",
+      "valueString": "num"
+    },
+    {
+      "name": "target",
+      "valueString": "codex"
+    },
+    {
+      "name": "apikey",
+      "valueString": "abcdef12345"
+    }
+  ]
+}

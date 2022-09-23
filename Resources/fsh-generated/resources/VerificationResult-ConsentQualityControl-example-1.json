@@ -1,0 +1,30 @@
+{
+  "resourceType": "VerificationResult",
+  "id": "ConsentQualityControl-example-1",
+  "meta": {
+    "profile": [
+      "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment",
+      "valueString": "Validated. No Errors found."
+    }
+  ],
+  "target": [
+    {
+      "reference": "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1"
+    }
+  ],
+  "status": "validated",
+  "statusDate": "2021-12-10T16:16:13+01:00",
+  "validationType": {
+    "text": "checked_no_faults"
+  },
+  "attestation": {
+    "who": {
+      "display": "Auditor1"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MatchStatus",
+  "id": "MatchStatusCS",
+  "description": "Possible match statuses in the context of adding patient identities.",
+  "version": "2.2.0",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
+  "concept": [
+    {
+      "code": "EXTERNAL_MATCH",
+      "display": "external match"
+    },
+    {
+      "code": "MATCH",
+      "display": "match"
+    },
+    {
+      "code": "MATCH_ERROR",
+      "display": "match error"
+    },
+    {
+      "code": "MULTIPLE_MATCH",
+      "display": "multiple match"
+    },
+    {
+      "code": "NO_MATCH",
+      "display": "no match"
+    },
+    {
+      "code": "PERFECT_MATCH",
+      "display": "perfect match"
+    },
+    {
+      "code": "PERFECT_MATCH_WITH_UPDATE",
+      "display": "perfect match with update"
+    },
+    {
+      "code": "POSSIBLE_MATCH",
+      "display": "possible match"
+    }
+  ],
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "caseSensitive": true,
+  "count": 8
+}

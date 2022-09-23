@@ -1,0 +1,283 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Person",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person",
+  "version": "2.2.0",
+  "name": "Person",
+  "title": "Person",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-09-23",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Allgemeines Personen-Profil. Repräsentiert die reale Person (=> MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil).\nDie Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level.",
+  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Person",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Person",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Person.meta.lastUpdated",
+        "path": "Person.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.extension:customIdatValues",
+        "path": "Person.extension",
+        "sliceName": "customIdatValues",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier",
+        "path": "Person.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.system",
+        "path": "Person.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.identifier.value",
+        "path": "Person.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name",
+        "path": "Person.name",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.use",
+        "path": "Person.name.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.text",
+        "path": "Person.name.text",
+        "max": "0"
+      },
+      {
+        "id": "Person.name.family",
+        "path": "Person.name.family",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.given",
+        "path": "Person.name.given",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.prefix",
+        "path": "Person.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.prefix.extension:academic",
+        "path": "Person.name.prefix.extension",
+        "sliceName": "academic",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Person.name.prefix.extension:academic.value[x]",
+        "path": "Person.name.prefix.extension.value[x]",
+        "fixedCode": "AC",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.name.suffix",
+        "path": "Person.name.suffix",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom",
+        "path": "Person.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Person.gender",
+        "path": "Person.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.birthDate",
+        "path": "Person.birthDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address",
+        "path": "Person.address",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.text",
+        "path": "Person.address.text",
+        "max": "0"
+      },
+      {
+        "id": "Person.address.line",
+        "path": "Person.address.line",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.city",
+        "path": "Person.address.city",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.district",
+        "path": "Person.address.district",
+        "max": "0"
+      },
+      {
+        "id": "Person.address.state",
+        "path": "Person.address.state",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.postalCode",
+        "path": "Person.address.postalCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.country",
+        "path": "Person.address.country",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.address.period",
+        "path": "Person.address.period",
+        "max": "0"
+      },
+      {
+        "id": "Person.photo",
+        "path": "Person.photo",
+        "max": "0"
+      },
+      {
+        "id": "Person.managingOrganization",
+        "path": "Person.managingOrganization",
+        "short": "Domäne",
+        "definition": "repräsentiert hier die Domäne, zur der der MPI-Eintrag gehört.",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.managingOrganization.identifier",
+        "path": "Person.managingOrganization.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.managingOrganization.identifier.system",
+        "path": "Person.managingOrganization.identifier.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.managingOrganization.identifier.value",
+        "path": "Person.managingOrganization.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.active",
+        "path": "Person.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link",
+        "path": "Person.link",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target",
+        "path": "Person.link.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.target.reference",
+        "path": "Person.link.target.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.link.assurance",
+        "path": "Person.link.assurance",
+        "mustSupport": true
+      }
+    ]
+  }
+}
