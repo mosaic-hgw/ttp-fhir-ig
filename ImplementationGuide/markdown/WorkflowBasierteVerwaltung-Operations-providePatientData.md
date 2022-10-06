@@ -1,7 +1,7 @@
 #### **{{link:ProvidePatientData}}**
 
 ##### **Zweck**
-Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor seine Tasks abgerufen (vgl. {{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/WorkflowBasierteVerwaltung-Operations/WorkflowBasierteVerwaltung-Operations-requestTasks.page.md}}) und eine Aufgabe "send-idat" zugewiesen bekommen.
+Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor seine Tasks abgerufen (vgl. {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}) und eine Aufgabe "send-idat" zugewiesen bekommen.
 
 ##### **Voraussetzung**
 - Der spezifizierte API-KEY muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.

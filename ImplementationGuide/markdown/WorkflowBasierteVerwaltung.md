@@ -9,7 +9,7 @@ Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt implementierten **fTTP**
 
 | TTP FHIR Gateway (REST)|Lokale Funktionalität| fTTP-Funktionalität|
 --- | ---
-|{{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/WorkflowBasierteVerwaltung-Operations/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.page.md}}||x|
-|{{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/WorkflowBasierteVerwaltung-Operations/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.page.md}}||x|
-|{{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/WorkflowBasierteVerwaltung-Operations/WorkflowBasierteVerwaltung-Operations-requestTasks.page.md}}||x|
-|{{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/WorkflowBasierteVerwaltung-Operations/WorkflowBasierteVerwaltung-Operations-providePatientData.page.md}}||x|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md}}||x|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}}||x|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}||x|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md}}||x|

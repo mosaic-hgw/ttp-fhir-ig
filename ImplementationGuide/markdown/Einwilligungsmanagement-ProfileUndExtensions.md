@@ -7,12 +7,12 @@ topic: ImplementationGuide-markdown-Einwilligungsmanagement-ProfileUndExtensions
 
 | Bezeichnung|Zweck|
 --- | ---
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-ConsentDomain.page.md}}|Abgeleitetes Profil von ResearchStudy gemäß AG Einwilligungsmanagement ergänzt um verschiedene DomainProperties und differenzierte Versionierungsangaben|
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-ConsentPolicy.page.md}}|Spezifikation von Einwilligungspolicies als Voraussetzung für Definition von Einwilligungsmodulen.|
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile-ConsentModule.page.md}}|Abgeleitetes Profil von TemplateModule gemäß AG Einwilligungsmanagement ergänzt um verschiedene Properties und ExternalProperties, sowie Referenzierungsmöglichkeit auf ConsentDomain|
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile-ConsentTemplate.page.md}}|Abgeleitetes Profil von TemplateFrame gemäß AG Einwilligungsmanagement ergänzt um verschiedene Properties und ExternalProperties, sowie Referenzierungsmöglichkeit auf ConsentDomain|
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-Consent.page.md}}|Abgeleitetes Profil von Consent gemäß AG Einwilligungsmanagement ergänzt um ExternalProperties|
-|{{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-ConsentQualityControl.page.md}}|Abgeleitetes Profil von VerificationResult ergänzt um ExternalProperties und Comment|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ConsentDomain.md}}|Abgeleitetes Profil von ResearchStudy gemäß AG Einwilligungsmanagement ergänzt um verschiedene DomainProperties und differenzierte Versionierungsangaben|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ConsentPolicy.md}}|Spezifikation von Einwilligungspolicies als Voraussetzung für Definition von Einwilligungsmodulen.|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile-ConsentModule.md}}|Abgeleitetes Profil von TemplateModule gemäß AG Einwilligungsmanagement ergänzt um verschiedene Properties und ExternalProperties, sowie Referenzierungsmöglichkeit auf ConsentDomain|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile-ConsentTemplate.md}}|Abgeleitetes Profil von TemplateFrame gemäß AG Einwilligungsmanagement ergänzt um verschiedene Properties und ExternalProperties, sowie Referenzierungsmöglichkeit auf ConsentDomain|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-Consent.md}}|Abgeleitetes Profil von Consent gemäß AG Einwilligungsmanagement ergänzt um ExternalProperties|
+|{{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ConsentQualityControl.md}}|Abgeleitetes Profil von VerificationResult ergänzt um ExternalProperties und Comment|
 
 ### Extensions
 

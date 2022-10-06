@@ -10,7 +10,7 @@ Das TTP FHIR Gateway wird schrittweise umgesetzt.
 Die erste Ausbaustufe des Gateway umfasst die Anbindung ausgewählter gPAS-Funktionalitäten zur domänenspezifischen Generierung neuer Pseudonyme und zur Abfrage von Mappings von Pseudonym- und Originalwerten jeweils für Einzelwert und Listen.
 
 Weitere Details unter:
-- {{pagelink:IGTTPFHIRGateway/Pseudonymmanagement/Index.page.md}}
+- {{pagelink:ImplementationGuide/markdown/Pseudonymmanagement.md}}
 
 ### Version 2.0 (Q2 2021)
 Die zweite Ausbaustufe des Gateway umfasst:
@@ -20,16 +20,16 @@ die Komponente "**fTTP - Wahrscheinlichkeit**" und "**fTTP - Eindeutigkeit (Clea
 - Vereinheitlichung der Pseudonymisierungsfunktionalitäten auf POST unter Verwendung von Parameters
 
 Weitere Details unter:
-- {{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Index.page.md}}
-- {{pagelink:IGTTPFHIRGateway/WorkflowBasierteVerwaltung/Index.page.md}}
-- {{pagelink:IGTTPFHIRGateway/Pseudonymmanagement/Index.page.md}}
+- {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement.md}}
+- {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung.md}}
+- {{pagelink:ImplementationGuide/markdown/Pseudonymmanagement.md}}
 
 ### Version 2.2.0 (Q4 2022)
 Die nächste Ausbaustufe des Gateway umfasst:
 - die Anbindung ausgewählter E-PIX-Funktionalitäten zum FHIR-konformen **Anlegen, Aktualisieren und Suchen von Personen** unter Berücksichtigung des Identitätenkonzeptes des E-PIX.
 
 Weitere Details unter:
-- {{pagelink:IGTTPFHIRGateway/RecordLinkageundIdentittsmanagement/Index.page.md}}
+- {{pagelink:ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement.md}}
 
 ### Version 2.3.0 (Q1 2023) - AUSBLICK
 Die nächste Ausbaustufe des Gateway umfasst:
