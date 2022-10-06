@@ -7,4 +7,4 @@ Der FHIR-Endpunkt ([base]) für das Pseudonymmanagement ist
 
 ### Übersicht der verfügbaren Operations
 
- {{index:Pseudonymmanagement-Operations}}
+{{index:ImplementationGuide-markdown-Pseudonymmanagement-Operations}}

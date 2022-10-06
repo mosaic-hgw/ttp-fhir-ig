@@ -16,4 +16,4 @@ Um alle für gICS relevanten Informationen per FHIR lesend bereitstellen zu kön
 
 ### Übersicht der verfügbaren Operations
 
- {{index:ImplementationGuide/markdown/Einwilligungsmanagement-Operations.md}}
+{{index:ImplementationGuide-markdown-Einwilligungsmanagement-Operations}}
