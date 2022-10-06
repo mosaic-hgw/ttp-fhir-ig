@@ -1,5 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
+  "id": "TtpFhirGatewayIg",
   "url": "/guide/ttp-fhir-gateway-ig?version=current",
   "version": "2.2.0",
   "name": "IG TTP-FHIR Gateway",
