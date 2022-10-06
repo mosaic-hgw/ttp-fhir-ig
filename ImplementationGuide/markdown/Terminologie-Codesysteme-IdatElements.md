@@ -1,0 +1,3 @@
+#### IdatElements
+
+{{render:codesystem-IdatElements}}
