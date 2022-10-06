@@ -11,11 +11,11 @@
 ##### **Beispiel**
 Beispielhafter Request-Body:
 
-{{xml:example-operation-policyStatesForPerson-request-1}}
+{{xml:Resources/fsh-generated/resources/example-operation-policyStatesForPerson-request-1}}
 
 Beispielhafte Rückmeldung:
 
-{{xml:example-operation-policyStatesForPerson-response-1}}
+{{xml:Resources/fsh-generated/resources/example-operation-policyStatesForPerson-response-1}}
 
 ##### **Error Codes**
 

@@ -24,10 +24,10 @@ Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten P
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Parameters-PseudonymizeAllowCreate-request-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-request-example-1.json}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:Parameters-PseudonymizeAllowCreate-response-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-response-example-1.json}}
 
 ##### **Error Codes**
 

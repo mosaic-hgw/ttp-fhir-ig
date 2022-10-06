@@ -20,10 +20,10 @@ Der Funktionsaufruf liefert ein Bundle vom Typ "collection". Das Bundle enthält
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:example-operation-allConsentsForDomain-request-1}}
+{{xml:Resources/fsh-generated/resources/example-operation-allConsentsForDomain-request-1}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:example-consent-bundle}}
+{{xml:Resources/fsh-generated/resources/example-consent-bundle}}
 
 ##### **Error Codes**
 

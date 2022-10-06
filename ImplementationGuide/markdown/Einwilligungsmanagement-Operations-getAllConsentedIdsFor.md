@@ -22,12 +22,12 @@ Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprech
 ##### **Beispiel**
 Beispielhafter Request-Body:
 
-{{xml:example-operation-getAllConsentedIdsFor-request-1.xml}}
+{{xml:Resources/fsh-generated/resources/example-operation-getAllConsentedIdsFor-request-1.xml}}
 
 
 
 Beispielhafte Rückmeldung:
-{{xml:example-operation-getAllConsentedIdsFor-response-1.xml}}
+{{xml:Resources/fsh-generated/resources/example-operation-getAllConsentedIdsFor-response-1.xml}}
 
 ##### **Error Codes**
 

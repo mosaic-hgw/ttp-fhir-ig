@@ -20,4 +20,4 @@ Zulässige Kombinationen von Suchparametern:
 * spezifische ConsentDomain<br><code>GET [base]/gics/ResearchStudy?identifier=MIRACUM</code><br><code>GET [base]/gics/ResearchStudy?identifier=MIRACUM&_profile=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy</code>
 
 ##### Beispiel
-{{xml:ConsentDomain-example-1}}
+{{xml:Resources/fsh-generated/resources/ResearchStudy-ConsentDomain-example-1.json}}

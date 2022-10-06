@@ -32,4 +32,4 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Parameters-ProvidePatientData-request-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-ProvidePatientData-request-example-1.json}}

@@ -19,13 +19,13 @@ Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprech
 
 ##### **Beispiel**
 Beispiel für einen Request auf Basis des Codesystems {{link:https://ths-greifswald.de/fhir/CodeSystem/gics/Policy}}:
-{{xml:example-operation-isConsented-request-1}}
+{{xml:Resources/fsh-generated/resources/example-operation-isConsented-request-1}}
 
 Beispiel für einen Request mit alternativem Codesystem:
-{{xml:example-operation-isConsented-request-2}}
+{{xml:Resources/fsh-generated/resources/example-operation-isConsented-request-2}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:example-operation-isConsented-response-1}}
+{{xml:Resources/fsh-generated/resources/example-operation-isConsented-response-1}}
 
 ##### **Error Codes**
 

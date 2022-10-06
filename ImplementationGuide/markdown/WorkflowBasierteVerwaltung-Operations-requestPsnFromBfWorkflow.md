@@ -34,7 +34,7 @@ Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbin
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Use Cases):
-{{xml:Parameters-RequestPsnFromBfWorkflow-request-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnFromBfWorkflow-request-example-1.json}}
 
 Eine beispielhafte Rückmeldung (orientiert am Beispiel der fTTP-NUM Use Cases) kann wie folgt aussehen:
-{{xml:Parameters-RequestPsnFromBfWorkflow-response-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnFromBfWorkflow-response-example-1.json}}

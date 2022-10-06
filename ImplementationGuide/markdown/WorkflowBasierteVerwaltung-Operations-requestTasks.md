@@ -25,7 +25,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Parameters-RequestTasks-request-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestTasks-request-example-1.json}}
 
 Beispielhafte Rückmeldung:
-{{xml:Parameters-RequestTasks-response-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestTasks-response-example-1.json}}

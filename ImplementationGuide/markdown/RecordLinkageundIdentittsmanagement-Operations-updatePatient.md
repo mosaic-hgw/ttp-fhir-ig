@@ -34,7 +34,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Parameters-UpdatePatient-request-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-UpdatePatient-request-example-1.json}}
 
 Beispielhafte Response:
-{{xml:Parameters-UpdatePatient-response-example-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-UpdatePatient-response-example-1.json}}

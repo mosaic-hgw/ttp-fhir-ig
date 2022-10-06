@@ -10,4 +10,4 @@ Dokumentation des Status der Qualitätsprüfung einer ausgefüllten Einwilligung
 Für dieses Profil sind keine Suchparameter definiert.
 
 ##### Beispiel
-{{xml:ConsentQualityControl-example-1}}
+{{xml:Resources/fsh-generated/resources/VerificationResult-ConsentQualityControl-example-1.json}}

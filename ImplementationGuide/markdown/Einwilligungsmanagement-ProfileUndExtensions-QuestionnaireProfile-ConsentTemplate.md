@@ -10,4 +10,4 @@ Einwilligungsvorlage auf Basis des ConsentManagementTemplateFrame erweitertet um
 Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. {{pagelink:Questionnaire-Suchparameter}}
 
 ##### Beispiel
-{{xml:ConsentTemplate-example-1}}
+{{xml:Resources/fsh-generated/resources/Questionnaire-ConsentTemplate-example-1.json}}

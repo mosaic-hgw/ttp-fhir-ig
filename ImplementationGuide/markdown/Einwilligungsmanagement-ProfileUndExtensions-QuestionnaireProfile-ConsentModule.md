@@ -10,6 +10,6 @@ Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules
 Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. {{pagelink:Questionnaire-Suchparameter}}
 
 ##### Beispiele
-{{xml:ConsentModule-example-1}}
+{{xml:Resources/fsh-generated/resources/Questionnaire-ConsentModule-example-1.json}}
 
-{{xml:ConsentModule-example-2}}
+{{xml:Resources/fsh-generated/resources/Questionnaire-ConsentModule-example-2.json}}

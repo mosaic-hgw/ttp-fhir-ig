@@ -15,8 +15,8 @@ Erweitertes Beispiel folgt.
 
 Multi Provision Consent:
 
-{{xml:Consent-example-1}}
+{{xml:Resources/fsh-generated/resources/Consent-Consent-example-1.json}}
 
 Single Provision Consent:
 
-{{xml:Consent-example-2}}
+{{xml:Resources/fsh-generated/resources/Consent-Consent-example-2.json}}

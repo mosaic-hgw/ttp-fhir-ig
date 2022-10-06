@@ -21,4 +21,4 @@ Zulässige Kombinationen von Suchparametern:
 * spezifische Policy einer Consent Domain nach Code<br><code>GET [base]/gics/ActivityDefinition?useContextIdentifier=MIRACUM&code=https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|MDAT_speichern&version=1.0</code>
 
 ##### Beispiel
-{{xml:ConsentPolicy-example-1}}
+{{xml:Resources/fsh-generated/resources/ActivityDefinition-ConsentPolicy-example-1.json}}
