@@ -7,7 +7,7 @@ Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules
 
 ##### Suchparameter
 
-Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. {{pagelink:Questionnaire-Suchparameter}}
+Die Suchparameter sind für alle Questionnaire-Profile identisch, vgl. {{pagelink:IGTTPFHIRGateway/Einwilligungsmanagement/Einwilligungsmanagement-ProfileUndExtensions/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile/Einwilligungsmanagement-ProfileUndExtensions-QuestionnaireProfile-Suchparameter.page.md}}.
 
 ##### Beispiele
 {{xml:Resources/fsh-generated/resources/Questionnaire-ConsentModule-example-1.json}}

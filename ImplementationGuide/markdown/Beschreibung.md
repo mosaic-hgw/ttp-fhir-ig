@@ -11,4 +11,4 @@ Bisherige Forschungsvorhaben (z.B. [NAKO Gesundheitsstudie](https://www.ths-grei
 ### Ziel
 Um sowohl bestehende Anwenderprojekte als auch künftige Nutzer bei der Umsetzung FHIR-orientierter Infrastrukturen und Prozesse zu unterstützen, soll künftig ein zusätzliches Treuhandstellen-FHIR-Gateway (kurz: TPP-FHIR Gateway) als Mittler von FHIR-spezifischen Infrastrukturkomponenten und den bestehenden THS-Werkzeugen dienen.
 
-Weitere Details unter: {{pagelink:ImplementationGuide/markdown/Kontext.md}}
+Weitere Details unter: {{pagelink:IGTTPFHIRGateway/Kontext.page.md}}.

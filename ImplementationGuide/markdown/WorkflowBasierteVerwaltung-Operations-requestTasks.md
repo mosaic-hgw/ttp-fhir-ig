@@ -17,7 +17,7 @@ Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Mu
 
 {{render:RequestTasks}}
 
-Das Coding des Parameters send_idat.element ist an das Value Set {{pagelink:IdatElements}} gebunden.
+Das Coding des Parameters send_idat.element ist an das Value Set {{pagelink:IGTTPFHIRGateway/Terminologie/Terminologie-ValueSets/Terminologie-ValueSets-IdatElements.page.md}} gebunden.
 
 Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: Fehlende oder fehlerhafte Parameter.
