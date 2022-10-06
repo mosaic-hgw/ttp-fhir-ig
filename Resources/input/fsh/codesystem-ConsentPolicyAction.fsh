@@ -18,7 +18,7 @@ Description: "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierend
 * #einsehen ^designation[=].value = "View i dontknowthat verb"
 * #entnehmen "entnehmen"
 * #entnehmen ^designation[0].language = #de-DE
-* #entnehmen ^designation[+].value = "Entnahme von [PERSPEKTIVE]"
+* #entnehmen ^designation[=].value = "Entnahme von [PERSPEKTIVE]"
 * #erheben "erheben"
 * #erheben ^designation.language = #de-DE
 * #erheben ^designation.value = "Erhebung neuer [PERSPEKTIVE]"

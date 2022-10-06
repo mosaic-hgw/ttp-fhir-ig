@@ -29,8 +29,10 @@ Instance: ConsentTemplate-example-1
 InstanceOf: ConsentTemplate
 Usage: #example
 * language = #DE
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
-* extension[label].valueString = "Patienteneinwilligung MII 1.6.f inkl Z-Modul (TMF V0.8)"
+* extension[+].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+* extension[=].valueInstant = "2020-01-02T04:05:06+01:00"
+* extension[+].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"
+* extension[=].valueString = "Patienteneinwilligung MII 1.6.f inkl Z-Modul (TMF V0.8)"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired"
 * extension[=].valueCodeableConcept = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired"
@@ -108,40 +110,40 @@ Usage: #example
 * item[=].text = "Einwilligung in die Nutzung von Patientendaten, [falls zutreffend: Krankenkassendaten und Biomaterialien (Gewebe und Körperflüssigkeiten)] für medizinische Forschungszwecke"
 * item[=].type = #display
 * item[=].extension[position].valueInteger = 0
-* item[=].linkId = "PATDAT_Intro|1.6"
+* item[+].linkId = "PATDAT_Intro|1.6"
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/rendering-xhtml"
 * item[=].text.extension.valueString = "<div style=\"text-align: justify;\"><strong>1.1 </strong>die Verarbeitung und Nutzung meiner Patientendaten für die medizinische Forschung ausschließlich wie in der Patienteninformation beschrieben und mit getrennter Verwaltung des Namens und anderer direkt identifizierender Daten (Codierung). Unter der Adresse <strong>www.medizininformatik-initiative.de/datennutzung</strong> kann ich mich für einen E-Mail-Verteiler registrieren, der per E-Mail über alle neuen Studien, die mit den Patientendaten durchgeführt werden, vor deren Durchführung informiert (siehe Punkte 1.1, 1.2 und 1.3 der Patienteninformation).</div><div style=\"text-align: justify;\"><br></div><div style=\"text-align: justify;\"><strong>1.2 </strong>die wissenschaftliche Analyse und Nutzung meiner codierten Patientendaten durch Dritte wie z.B. durch andere Universitäten/Institute/forschende Unternehmen; dies kann auch eine Weitergabe für Forschungsprojekte im Ausland umfassen, wenn in diesen europäisches Datenschutzrecht gilt oder die Europäische Kommission ein angemessenes Datenschutzniveau bestätigt hat. An einem etwaigen kommerziellen Nutzen aus der Forschung werde ich nicht beteiligt. Vor einer Weitergabe an Forscher außerhalb meiner behandelnden Einrichtung erfolgt zudem eine weitere Ersetzung des internen Kennzeichens durch eine neue Zeichenkombination.</div><div style=\"text-align: justify;\"><br></div><div style=\"text-align: justify;\"><strong>1.3 </strong>die Möglichkeit einer Zusammenführung meiner Patientendaten mit Daten in Datenbanken anderer Forschungspartner. <strong>Voraussetzung ist, dass ich dieser Nutzung bei den entsprechenden Forschungspartnern auch zugestimmt habe.</strong></div>"
 * item[=].text = "1.1 die Verarbeitung und Nutzung meiner Patientendaten für die medizinische Forschung ausschließlich wie in der Patienteninformation beschrieben und mit getrennter Verwaltung des Namens und anderer direkt identifizierender Daten (Codierung). Unter der Adresse www.medizininformatik-initiative.de/datennutzung kann ich mich für einen E-Mail-Verteiler registrieren, der per E-Mail über alle neuen Studien, die mit den Patientendaten durchgeführt werden, vor deren Durchführung informiert (siehe Punkte 1.1, 1.2 und 1.3 der Patienteninformation).1.2 die wissenschaftliche Analyse und Nutzung meiner codierten Patientendaten durch Dritte wie z.B. durch andere Universitäten/Institute/forschende Unternehmen; dies kann auch eine Weitergabe für Forschungsprojekte im Ausland umfassen, wenn in diesen europäisches Datenschutzrecht gilt oder die Europäische Kommission ein angemessenes Datenschutzniveau bestätigt hat. An einem etwaigen kommerziellen Nutzen aus der Forschung werde ich nicht beteiligt. Vor einer Weitergabe an Forscher außerhalb meiner behandelnden Einrichtung erfolgt zudem eine weitere Ersetzung des internen Kennzeichens durch eine neue Zeichenkombination.1.3 die Möglichkeit einer Zusammenführung meiner Patientendaten mit Daten in Datenbanken anderer Forschungspartner. Voraussetzung ist, dass ich dieser Nutzung bei den entsprechenden Forschungspartnern auch zugestimmt habe."
 * item[=].type = #display
 * item[=].extension[subQuestionnaire].valueReference = Reference(Questionnaire/3386fb6-d2046-42bc-b6b0-9ac181c0d490)
 * item[=].extension[position].valueInteger = 1
-* item[=].linkId = "PATDAT_erheben_speichern_nutzen|1.6"
+* item[+].linkId = "PATDAT_erheben_speichern_nutzen|1.6"
 * item[=].type = #choice
 * item[=].required = true
 * item[=].answerOption[0].valueCoding = $ConsentStatus#ACCEPTED "ACCEPTED"
 * item[=].answerOption[+].valueCoding = $ConsentStatus#DECLINED "DECLINED"
 * item[=].extension[position].valueInteger = 2
-* item[=].linkId = "KKDAT_Intro|1.6"
+* item[+].linkId = "KKDAT_Intro|1.6"
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/rendering-xhtml"
 * item[=].text.extension.valueString = "<div style=\"text-align: justify;\">Hiermit ermächtige ich meine Krankenkasse auf Anforderung durch [<span style=\"background-color: rgb(240, 102, 102);\">zuständige Stelle</span>] Daten über von mir in Anspruch genommene ärztliche Leistungen in der ambulanten Versorgung und bei stationären Aufenthalten, über verordnete Heil- und Hilfsmittel sowie Arzneimittel und Angaben zum Bereich Pflege an [<span style=\"background-color: rgb(240, 102, 102);\">Name der behandelnden Einrichtung</span>] sowie in der Patienteninformation beschrieben, zu übermitteln, und zwar:</div><div><br></div>"
 * item[=].text = "Hiermit ermächtige ich meine Krankenkasse auf Anforderung durch [zuständige Stelle] Daten über von mir in Anspruch genommene ärztliche Leistungen in der ambulanten Versorgung und bei stationären Aufenthalten, über verordnete Heil- und Hilfsmittel sowie Arzneimittel und Angaben zum Bereich Pflege an [Name der behandelnden Einrichtung] sowie in der Patienteninformation beschrieben, zu übermitteln, und zwar:"
 * item[=].type = #display
 * item[=].extension[subQuestionnaire].valueReference = Reference(Questionnaire/b6d309e-f3f7e-48b2-b742-b15146aba355)
 * item[=].extension[position].valueInteger = 3
-* item[=].linkId = "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6"
+* item[+].linkId = "KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.6"
 * item[=].type = #choice
 * item[=].required = false
 * item[=].answerOption[0].valueCoding = $ConsentStatus#ACCEPTED "ACCEPTED"
 * item[=].answerOption[+].valueCoding = $ConsentStatus#DECLINED "DECLINED"
 * item[=].extension[subQuestionnaire].valueReference = Reference(Questionnaire/6ab9bba-5cf5f-48ee-b78c-99fe979aaf9c)
 * item[=].extension[position].valueInteger = 4
-* item[=].linkId = "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6"
+* item[+].linkId = "KKDAT_prospektiv_uebertragen_speichern_nutzen|1.6"
 * item[=].type = #choice
 * item[=].required = false
 * item[=].answerOption[0].valueCoding = $ConsentStatus#ACCEPTED "ACCEPTED"
 * item[=].answerOption[+].valueCoding = $ConsentStatus#DECLINED "DECLINED"
 * item[=].extension[position].valueInteger = 5
-* item[=].linkId = "BIOMAT_Intro|1.6"
+* item[+].linkId = "BIOMAT_Intro|1.6"
 * item[=].text.extension.url = "http://hl7.org/fhir/StructureDefinition/rendering-xhtml"
 * item[=].text.extension.valueString = "<div style=\"text-align: justify;\"><strong>3.1 </strong>die Lagerung und Verarbeitung meiner Biomaterialien in [<span style=\"background-color: rgb(240, 102, 102);\">der/dem Träger der Biobank(en) bzw. Archive</span>] für medizinische Forschungszwecke ausschließlich wie in der Patienteninformation beschrieben und mit getrennter Verwaltung des Namens und anderer direkt identifizierender Daten (Codierung, siehe Punkte 3.1 bis 3.3 der Patienteninformation).</div><div style=\"text-align: justify;\"><br></div><div style=\"text-align: justify;\"><strong>3.2 </strong>die wissenschaftliche Analyse meiner codierten Biomaterialien sowie deren Weitergabe und Nutzung durch Dritte z.B. Universitäten/Institute/forschende Unternehmen für genauer bestimmte und beantragte medizinische Forschungszwecke; dies kann auch eine Weitergabe für Forschungsprojekte im Ausland umfassen, wenn in diesen europäisches Datenschutzrecht gilt oder die Europäische Kommission ein angemessenes Datenschutzniveau bestätigt hat. Vor einer Weitergabe an Forscher außerhalb meiner behandelnden Einrichtung erfolgt zudem eine weitere Ersetzung des internen Kennzeichens durch eine neue Zeichenkombination.</div><div style=\"text-align: justify;\"><br></div><div style=\"text-align: justify;\">Ebenso willige ich in die Möglichkeit einer Zusammenführung von Analyse-Daten meiner Biomaterialien mit Analyse-Daten in Datenbanken anderer Forschungspartner ein. <strong>Voraussetzung ist, dass ich dieser Nutzung bei den entsprechenden Forschungspartnern auch zugestimmt habe.</strong></div><div style=\"text-align: justify;\"><br></div><div style=\"text-align: justify;\"><strong>3.3 Das Eigentum an meinen Biomaterialien übertrage ich an [</strong><strong style=\"background-color: rgb(240, 102, 102);\">den/die/das Träger der Biobank(en) bzw. Archive</strong><strong>]</strong>. Mein Recht, über die Verarbeitung meiner dem Biomaterial zu entnehmenden personenbezogenen Daten selbst zu bestimmen, bleibt von der Eigentumsübertragung unberührt (siehe Punkt 3.3 der Patienteninformation).</div><div><br></div>"
 * item[=].text = "3.1 die Lagerung und Verarbeitung meiner Biomaterialien in [der/dem Träger der Biobank(en) bzw. Archive] für medizinische Forschungszwecke ausschließlich wie in der Patienteninformation beschrieben und mit getrennter Verwaltung des Namens und anderer direkt identifizierender Daten (Codierung, siehe Punkte 3.1 bis 3.3 der Patienteninformation).3.2 die wissenschaftliche Analyse meiner codierten Biomaterialien sowie deren Weitergabe und Nutzung durch Dritte z.B. Universitäten/Institute/forschende Unternehmen für genauer bestimmte und beantragte medizinische Forschungszwecke; dies kann auch eine Weitergabe für Forschungsprojekte im Ausland umfassen, wenn in diesen europäisches Datenschutzrecht gilt oder die Europäische Kommission ein angemessenes Datenschutzniveau bestätigt hat. Vor einer Weitergabe an Forscher außerhalb meiner behandelnden Einrichtung erfolgt zudem eine weitere Ersetzung des internen Kennzeichens durch eine neue Zeichenkombination.Ebenso willige ich in die Möglichkeit einer Zusammenführung von Analyse-Daten meiner Biomaterialien mit Analyse-Daten in Datenbanken anderer Forschungspartner ein. Voraussetzung ist, dass ich dieser Nutzung bei den entsprechenden Forschungspartnern auch zugestimmt habe.3.3 Das Eigentum an meinen Biomaterialien übertrage ich an [den/die/das Träger der Biobank(en) bzw. Archive]. Mein Recht, über die Verarbeitung meiner dem Biomaterial zu entnehmenden personenbezogenen Daten selbst zu bestimmen, bleibt von der Eigentumsübertragung unberührt (siehe Punkt 3.3 der Patienteninformation)."

@@ -47,9 +47,7 @@
       "display": "entnehmen",
       "designation": [
         {
-          "language": "de-DE"
-        },
-        {
+          "language": "de-DE",
           "value": "Entnahme von [PERSPEKTIVE]"
         }
       ]

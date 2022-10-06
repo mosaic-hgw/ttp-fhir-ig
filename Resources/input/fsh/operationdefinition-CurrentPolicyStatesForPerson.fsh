@@ -32,4 +32,3 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].type = #Parameters
-* parameter[=].targetProfile = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Parameters/Config"

@@ -37,7 +37,7 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Patient-Ressource die, soweit bekannt, die in der der taskId assoziierten Aufgabe definierten identifizierenden Datenelemente eines Patienten enthält."
 * parameter[=].type = #Patient
-* parameter[=].targetProfile = "https://ths-greifswald.de/fhir/StructureDefinition/dispatcher/Patient/Idat"
+
 
 
 Instance: Parameters-ProvidePatientData-request-example-1
