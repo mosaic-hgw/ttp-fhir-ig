@@ -1,6 +1,6 @@
-![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 #### ConsentPolicy
-{{tree:profile-ActivityDefinition-ConsentPolicy}}
+{{tree:ConsentPolicy}}
 
 ##### Zweck
 Abbildung aller relevanten Information zur Verwaltung wiederverwendbarer Einwilligungspolicies mit gICS
@@ -21,4 +21,4 @@ Zulässige Kombinationen von Suchparametern:
 * spezifische Policy einer Consent Domain nach Code<br><code>GET [base]/gics/ActivityDefinition?useContextIdentifier=MIRACUM&code=https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|MDAT_speichern&version=1.0</code>
 
 ##### Beispiel
-{{xml:example-ActivityDefinition-ConsentPolicy-1}}
+{{xml:ConsentPolicy-example-1}}

@@ -1,13 +1,13 @@
-#### **{{link:operationdefinition-requestPsnWorkflow}}**
+#### **{{link:RequestPsnWorkflow}}**
 
-##### **Zweck** 
+##### **Zweck**
 Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.
 
 <p align="center">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2021/03/request-psn-workflow.png">
 </p>
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die spezifizierte Quell-Domäne (source) muss im Zielsystem bekannt und angelegt sein.
 - Die standortspezifische Domäne (target) muss im Zielsystem bekannt und angelegt sein.
@@ -21,7 +21,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:operationdefinition-requestPsnWorkflow}}
+{{render:RequestPsnWorkflow}}
 
 Im Erfolgsfall wird jeweils ein pseudonym-Parameter zurückgegeben mit folgenden Teilen:
 1. original = der zu pseudonymisierende Werte (Teil des Requests)
@@ -35,7 +35,7 @@ Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbin
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Standort Use Cases):
-{{xml:example-operation-requestPsnWorkflow-request-1}}
+{{xml:Parameters-RequestPsnWorkflow-request-example-1}}
 
 Eine beispielhafte Rückmeldung (orientiert am Beispiel der fTTP-NUM Standort Use Cases) kann wie folgt aussehen:
-{{xml:example-operation-requestPsnWorkflow-response-1}}
+{{xml:Parameters-RequestPsnWorkflow-response-example-1}}

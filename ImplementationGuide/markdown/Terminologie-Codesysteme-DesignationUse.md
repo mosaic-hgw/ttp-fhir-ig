@@ -1,3 +1,3 @@
 #### DesignationUse
 
-{{render:codesystem-DesignationUse}}
+{{render:DesignationUseCS}}

@@ -1,10 +1,10 @@
-#### **{{link:operationdefinition-getAllConsentedIdsFor}}**
+#### **{{link:GetAllConsentedIdsFor}}**
 
 <p align="left">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2021/06/fhirgateway-gics.png">
 </p>
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 
 - Spezifizierte Domäne muss angelegt sein
 - Es muss eine gültige Einwilligung mit dem gegebenen personIdentifierType existieren
@@ -13,11 +13,11 @@
 
 
 ##### **Aufruf und Rückgabe**
-{{render:operationdefinition-getAllConsentedIdsFor}}
+{{render:GetAllConsentedIdsFor}}
 
 Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprechend dem Config-Profil:
 
-{{tree:profile-Parameters-Config}}
+{{tree:Config}}
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
@@ -32,7 +32,7 @@ Beispielhafte Rückmeldung:
 ##### **Error Codes**
 
 | Beschreibung|HTTP Error Code|
---- | --- 
+--- | ---
 |Fehlende Parameter|400 Bad Request|
 |Parameter mit unbekanntem Inhalt|404 Not found|
 |Leere Ergebnismenge trotz gültiger Parameter|200 Ok|

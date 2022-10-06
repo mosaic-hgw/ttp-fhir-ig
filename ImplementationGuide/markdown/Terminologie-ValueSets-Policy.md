@@ -1,3 +1,3 @@
 #### Policy
 
-{{render:codesystem-Policy}}
+{{render:PolicyVS}}

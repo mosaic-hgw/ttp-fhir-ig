@@ -1,13 +1,13 @@
-#### **{{link:operationDefinition-requestPsnFromBfworkflow}}**
+#### **{{link:RequestPsnFromBfWorkflow}}**
 
-##### **Zweck** 
+##### **Zweck**
 Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Sofern noch nicht vorhanden, wird eine valide Ziel-Domäne automatisch angelegt. Rückgabe der generierten Pseudonyme (z.b. DIC-PSN(s)) als Params.
 
 <p align="center">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2021/03/request-psn-from-bloomfilter-workflow.png">
 </p>
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die übermittelten Bloomfilter müssen valide sein.
 - Der spezifizierte API-KEY muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
@@ -20,7 +20,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:operationdefinition-requestPsnFromBfworkflow}}
+{{render:RequestPsnFromBfWorkflow}}
 
 Im Erfolgsfall wird jeweils ein pseudonym-bf-Parameter zurückgegeben mit folgenden Teilen:
 1. bloomfilter = der zu für PPRL erforderliche Bloomfilter (Teil des Requests)
@@ -34,7 +34,7 @@ Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbin
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Use Cases):
-{{xml:example-operation-requestPsnFromBfWorkflow-request-1}}
+{{xml:Parameters-RequestPsnFromBfWorkflow-request-example-1}}
 
 Eine beispielhafte Rückmeldung (orientiert am Beispiel der fTTP-NUM Use Cases) kann wie folgt aussehen:
-{{xml:example-operation-requestPsnFromBfWorkflow-response-1}}
+{{xml:Parameters-RequestPsnFromBfWorkflow-response-example-1}}

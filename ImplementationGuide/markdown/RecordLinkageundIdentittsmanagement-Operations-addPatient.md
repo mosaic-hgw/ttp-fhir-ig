@@ -1,11 +1,11 @@
 #### {{page-title}}
 
-##### **Zweck** 
-Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix). 
+##### **Zweck**
+Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix).
 
 Dabei werden eine oder mehrere Patientenidentitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der **Master Person Index (MPI ID)**, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben.
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 Die angegebenen Parameter zur Spezifikation der Matching-Domäne und der Datenquelle müssen im E-PIX konfiguriert sein.
 
 ##### **Aufruf und Rückgabe**
@@ -15,15 +15,15 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem oder mehreren Multi-Part-Parametern zurück.
 
-{{render:operationdefinition-addPatient}}
+{{render:AddPatient}}
 
 Die Parameter "identity" und "sourceIdentity" enthalten eine Patient-Ressource entsprechend dem allgemeinen Patient-Profil:
 
-{{tree:profile-Patient}}
+{{tree:Patient}}
 
 Der Parameter "mpiPerson" enthält eine Person-Ressource entsprechend dem allgemeinen Person-Profil. Die Angabe link.assurance='level4' kennzeichnet hierbei die Referenz-Identität:
 
-{{tree:profile-Person}}
+{{tree:Person}}
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
@@ -36,7 +36,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:example-operation-addPatient-request-1}}
+{{xml:Parameters-AddPatient-request-example-1}}
 
 Beispielhafte Response:
-{{xml:example-operation-addPatient-response-1}}
+{{xml:Parameters-AddPatient-response-example-1}}

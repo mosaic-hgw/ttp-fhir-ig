@@ -1,9 +1,9 @@
-#### **{{link:operationdefinition-requestTasks}}**
+#### **{{link:RequestTasks}}**
 
-##### **Zweck** 
+##### **Zweck**
 Ein Standort kann seine offenen Aufgaben abrufen.
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die standortspezifische Domäne (target) muss im Zielsystem bekannt und angelegt sein.
 - Der spezifizierte API-KEY muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
@@ -15,7 +15,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:operationdefinition-requestTasks}}
+{{render:RequestTasks}}
 
 Das Coding des Parameters send_idat.element ist an das Value Set {{pagelink:IdatElements}} gebunden.
 
@@ -25,7 +25,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:example-operation-requestTasks-request-1}}
+{{xml:Parameters-RequestTasks-request-example-1}}
 
 Beispielhafte Rückmeldung:
-{{xml:example-operation-requestTasks-response-1}}
+{{xml:Parameters-RequestTasks-response-example-1}}

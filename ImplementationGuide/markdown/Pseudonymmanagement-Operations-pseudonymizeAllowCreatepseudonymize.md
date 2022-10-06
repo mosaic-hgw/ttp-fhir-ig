@@ -1,17 +1,17 @@
 #### pseudonymize
 
-##### **Suche von Pseudonymen** 
+##### **Suche von Pseudonymen**
 Abfrage **je eines** Pseudonym-Wertes für eine gegebene **Liste von 1-n Originalwerten** und eine spezifische Domäne.
 
 <p align="center">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2020/11/pseudonymize.png">
 </p>
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 Die angegebene Pseudonym-Domäne muss in gPAS konfiguriert und der angegebene Originalwert in dieser Domäne bereits vorhanden sein.
 
 ##### **Aufruf und Rückgabe**
-{{render:operationdefinition-pseudonymize}}
+{{render:Pseudonymize}}
 
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
@@ -25,17 +25,17 @@ Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten P
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:example-operation-pseudonymize-request-1}}
+{{xml:Parameters-Pseudonymize-request-example-1}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:example-operation-pseudonymize-response-1}}
+{{xml:Parameters-Pseudonymize-response-example-1}}
 
-Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert. 
+Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
 
-{{xml:example-operation-pseudonymize-response-2}}
+{{xml:Parameters-Pseudonymize-response-example-2}}
 
 ##### **Error Codes**
 
 | Beschreibung|HTTP Error Code|
---- | --- 
+--- | ---
 |Fehlende oder fehlende Parameter|400 Bad Request|

@@ -1,7 +1,7 @@
-![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 #### ConsentDomain
 
-{{tree:profile-ResearchStudy-ConsentDomain}}
+{{tree:ConsentDomain}}
 
 ##### Zweck
 Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domain-Infos für gICS über entsprechende Extensions
@@ -20,4 +20,4 @@ Zulässige Kombinationen von Suchparametern:
 * spezifische ConsentDomain<br><code>GET [base]/gics/ResearchStudy?identifier=MIRACUM</code><br><code>GET [base]/gics/ResearchStudy?identifier=MIRACUM&_profile=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy</code>
 
 ##### Beispiel
-{{xml:example-ResearchStudy-ConsentDomain-1}}
+{{xml:ConsentDomain-example-1}}

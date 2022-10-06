@@ -1,17 +1,17 @@
 #### pseudonymizeAllowCreate
 
-##### **Suche und ggf. Erzeugung von Pseudonymen** 
+##### **Suche und ggf. Erzeugung von Pseudonymen**
 Generierung **je eines** Pseudonyms für **eine Liste von 1-n Originalwerten** und eine spezifische Domäne sofern es noch nicht vorhanden ist. Sofern die Zuordnung Originalwert und Domäne bereits bekannt ist, wird das zugeordnete vorhandene Pseudonym zurückgegeben.
 
 <p align="center">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2020/11/pseudonymize-allow-create.png">
 </p>
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 Die angegebene Pseudonym-Domäne muss in gPAS konfiguriert sein.
 
 ##### **Aufruf und Rückgabe**
-{{render:operationdefinition-pseudonymizeAllowCreate}}
+{{render:PseudonymizeAllowCreate}}
 
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
@@ -24,13 +24,13 @@ Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten P
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:example-operation-pseudonymizeAllowCreate-request-1}}
+{{xml:Parameters-PseudonymizeAllowCreate-request-example-1}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:example-operation-pseudonymizeAllowCreate-response-1}}
+{{xml:Parameters-PseudonymizeAllowCreate-response-example-1}}
 
 ##### **Error Codes**
 
 | Beschreibung|HTTP Error Code|
---- | --- 
+--- | ---
 |Fehlende oder fehlende Parameter|400 Bad Request|

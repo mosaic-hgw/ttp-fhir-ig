@@ -1,3 +1,3 @@
 #### IdMatchingType
 
-{{render:codesystem-IdMatchingType}}
+{{render:IdMatchingTypeVS}}

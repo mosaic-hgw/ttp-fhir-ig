@@ -4,11 +4,11 @@ Fügt Einwilligungsinformationen für einen Patienten hinzu. Es darf sich um ein
 
 Zurückgegeben wird der errechnete strukturierte Consent.
 
-##### **Voraussetzung** 
+##### **Voraussetzung**
 - Spezifizierte Domäne muss angelegt sein
 
 ##### **Aufruf und Rückgabe**
-{{render:operationdefinition-addConsent}}
+{{render:AddConsent}}
 
 ##### **Beispiel**
 (Q3/2022)
@@ -16,7 +16,7 @@ Zurückgegeben wird der errechnete strukturierte Consent.
 ##### **Error Codes**
 
 | Beschreibung|HTTP Error Code|
---- | --- 
+--- | ---
 |Fehlende Parameter|400 Bad Request|
 |Parameter mit unbekanntem Inhalt|404 Not found|
 |Leere Ergebnismenge trotz gültiger Parameter|200 Ok|

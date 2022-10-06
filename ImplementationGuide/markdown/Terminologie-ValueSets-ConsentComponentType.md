@@ -1,3 +1,3 @@
 #### ConsentComponentType
 
-{{render:codesystem-ConsentComponentType}}
+{{render:ConsentComponentTypeVS}}

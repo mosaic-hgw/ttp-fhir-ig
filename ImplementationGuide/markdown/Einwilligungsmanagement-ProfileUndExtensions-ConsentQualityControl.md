@@ -1,7 +1,7 @@
-![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 #### ConsentQualityControl
 
-{{tree:profile-VerificationResult-ConsentQualityControl}}
+{{tree:ConsentQualityControl}}
 
 ##### Zweck
 Dokumentation des Status der Qualitätsprüfung einer ausgefüllten Einwilligung (QuestionnaireResponse)
@@ -10,4 +10,4 @@ Dokumentation des Status der Qualitätsprüfung einer ausgefüllten Einwilligung
 Für dieses Profil sind keine Suchparameter definiert.
 
 ##### Beispiel
-{{xml:VerificationResult-Example}}
+{{xml:ConsentQualityControl-example-1}}

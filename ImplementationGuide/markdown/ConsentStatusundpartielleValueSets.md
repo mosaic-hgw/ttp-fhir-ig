@@ -1,18 +1,18 @@
 #### ConsentStatus und partielle Value Sets
 
-{{render:valueset-ConsentStatus}}
+{{render:ConsentStatusVS}}
 
 Je nach Kontext sind für den Benutzer jeweils nur einige Codes aus dem Consent-Status-Codesystem relevant. Weiterhin ergeben sich für diese aus dem Kontext auch unterschiedliche Display-Texte.
 Daher sind die nachfolgenden weiteren kontextabhängigen Value Sets definiert, deren Display-Texte sich aus den jeweiligen Designations ergeben.
 
-{{render:valueset-ConsentStatusConsentFullValues}}
+{{render:ConsentStatusConsentFullValuesVS}}
 
-{{render:valueset-ConsentStatusConsentShortValues}}
+{{render:ConsentStatusConsentShortValuesVS}}
 
-{{render:valueset-ConsentStatusRefusalFullValues}}
+{{render:ConsentStatusRefusalFullValuesVS}}
 
-{{render:valueset-ConsentStatusRefusalShortValues}}
+{{render:ConsentStatusRefusalShortValuesVS}}
 
-{{render:valueset-ConsentStatusWithdrawalFullValues}}
+{{render:ConsentStatusWithdrawalFullValuesVS}}
 
-{{render:valueset-ConsentStatusWithdrawalShortValues}}
+{{render:ConsentStatusWithdrawalShortValuesVS}}

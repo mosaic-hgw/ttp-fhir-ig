@@ -1,3 +1,3 @@
 #### ConsentStatus
 
-{{render:codesystem-ConsentStatus}}
+{{render:ConsentStatusCS}}

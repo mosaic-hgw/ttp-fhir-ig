@@ -1,3 +1,3 @@
 #### IdatElements
 
-{{render:codesystem-IdatElements}}
+{{render:IdatElementsVS}}

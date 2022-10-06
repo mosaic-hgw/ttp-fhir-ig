@@ -1,4 +1,4 @@
-![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 ## Einwilligungsmanagement
 
 
@@ -15,5 +15,5 @@ Um alle für gICS relevanten Informationen per FHIR lesend bereitstellen zu kön
 </p>
 
 ### Übersicht der verfügbaren Operations
- 
- {{index:Operations2}}
+
+ {{index:ImplementationGuide/markdown/Einwilligungsmanagement-Operations.md}}

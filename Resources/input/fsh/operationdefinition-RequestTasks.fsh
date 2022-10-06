@@ -138,7 +138,7 @@ Usage: #example
 * parameter[+].name = "apikey"
 * parameter[=].valueString = "abcdef12345"
 
-Instance: Parameters-example-29
+Instance: Parameters-RequestTasks-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0].name = "dic_psn_available"
