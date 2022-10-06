@@ -6,10 +6,18 @@
   "name": "IG TTP-FHIR Gateway",
   "status": "draft",
   "description": "Implementation Guide für die Verwendung der angepassten und erweiterten Profile / Extensions im Kontext von E-PIX, gPAS und gICS",
+  "packageId": "ths-greifswald.ttp-fhir-gw",
   "fhirVersion": [
     "4.0.1"
   ],
   "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Patient/dummy"
+        }
+      }
+    ],
     "page": {
       "nameUrl": "ImplementationGuide/markdown/IGTTPFHIRGateway.md",
       "title": "IG TTP FHIR Gateway",
