@@ -45,3 +45,17 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement."
 * parameter[=].type = #canonical
+
+
+Instance: CurrentConsentForPersonAndTemplate-request-example-1
+InstanceOf: Parameters
+Usage: #example
+* parameter[0].name = "personIdentifier"
+* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
+* parameter[=].valueIdentifier.value = "dic_1H51T"
+* parameter[+].name = "domain"
+* parameter[=].valueString = "MII"
+* parameter[+].name = "template"
+* parameter[=].valueString = "MII;Patienteneinwilligung MII;1.6.f"
+* parameter[+].name = "ignore-version-number"
+* parameter[=].valueBoolean = false

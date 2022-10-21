@@ -14,10 +14,10 @@
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Resources/fsh-generated/resources/example-operation-currentConsentForPersonAndTemplate-request-1.xml}}
+{{xml:Resources/fsh-generated/resources/Parameters-CurrentConsentForPersonAndTemplate-request-example-1.json}}
 
 Beispielhafte Rückmeldung:
-{{xml:Resources/fsh-generated/resources/example-consent-bundle.xml}}
+{{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForDomain-response-example-1.json}}
 
 ##### **Error Codes**
 

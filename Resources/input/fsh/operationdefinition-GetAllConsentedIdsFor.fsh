@@ -50,3 +50,33 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "*"
 * parameter[=].type = #Identifier
+
+
+Instance: GetAllConsentedIdsFor-request-example-1
+InstanceOf: Parameters
+Usage: #example
+* parameter[0].name = "signerIdTypeName"
+* parameter[=].valueString = "Pseudonym"
+* parameter[+].name = "domain"
+* parameter[=].valueString = "MII"
+* parameter[+].name = "policy"
+* parameter[=].valueCoding = $Policy#MDAT_erheben
+* parameter[+].name = "version"
+* parameter[=].valueString = "1.1"
+* parameter[+].name = "config"
+* parameter[=].resource.resourceType = "Parameters"
+* parameter[=].resource.parameter[0].name = "idMatchingType"
+* parameter[=].resource.parameter[=].valueCoding = $IdMatchingType#EXACT
+* parameter[=].resource.parameter[+].name = "ignoreVersionNumber"
+* parameter[=].resource.parameter[=].valueBoolean = false
+* parameter[=].resource.parameter[+].name = "unknownStateIsConsideredAsDecline"
+* parameter[=].resource.parameter[=].valueBoolean = false
+* parameter[=].resource.parameter[+].name = "requestDate"
+* parameter[=].resource.parameter[=].valueDate = "2021-06-18"
+
+Instance: GetAllConsentedIdsFor-response-example-1
+InstanceOf: Parameters
+Usage: #example
+* parameter.name = "personIdentifier"
+* parameter.valueIdentifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
+* parameter.valueIdentifier.value = "dic_1H51T"

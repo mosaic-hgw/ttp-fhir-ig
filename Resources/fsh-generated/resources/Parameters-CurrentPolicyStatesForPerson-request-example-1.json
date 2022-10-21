@@ -1,0 +1,44 @@
+{
+  "resourceType": "Parameters",
+  "id": "CurrentPolicyStatesForPerson-request-example-1",
+  "parameter": [
+    {
+      "name": "personIdentifier",
+      "valueIdentifier": {
+        "system": "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym",
+        "value": "dic_1H51T"
+      }
+    },
+    {
+      "name": "domain",
+      "valueString": "MII"
+    },
+    {
+      "name": "config",
+      "resource": {
+        "resourceType": "Parameters",
+        "parameter": [
+          {
+            "name": "idMatchingType",
+            "valueCoding": {
+              "code": "AT_LEAST_ONE",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"
+            }
+          },
+          {
+            "name": "ignoreVersionNumber",
+            "valueBoolean": false
+          },
+          {
+            "name": "unknownStateIsConsideredAsDecline",
+            "valueBoolean": false
+          },
+          {
+            "name": "requestDate",
+            "valueDate": "2022-01-13"
+          }
+        ]
+      }
+    }
+  ]
+}

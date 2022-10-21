@@ -11,16 +11,16 @@
   "questionnaire": "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f",
   "status": "completed",
   "subject": {
-    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "reference": "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
     "display": "Pseudonym dic_1H51T"
   },
   "authored": "2021-05-19T00:00:00+02:00",
   "author": {
-    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "reference": "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
     "display": "Pseudonym dic_1H51T"
   },
   "source": {
-    "reference": "d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
+    "reference": "Patient/d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1",
     "display": "Pseudonym dic_1H51T"
   },
   "item": [

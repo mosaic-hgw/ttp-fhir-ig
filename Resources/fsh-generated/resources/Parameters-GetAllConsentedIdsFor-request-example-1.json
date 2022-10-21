@@ -1,0 +1,52 @@
+{
+  "resourceType": "Parameters",
+  "id": "GetAllConsentedIdsFor-request-example-1",
+  "parameter": [
+    {
+      "name": "signerIdTypeName",
+      "valueString": "Pseudonym"
+    },
+    {
+      "name": "domain",
+      "valueString": "MII"
+    },
+    {
+      "name": "policy",
+      "valueCoding": {
+        "code": "MDAT_erheben",
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
+      }
+    },
+    {
+      "name": "version",
+      "valueString": "1.1"
+    },
+    {
+      "name": "config",
+      "resource": {
+        "resourceType": "Parameters",
+        "parameter": [
+          {
+            "name": "idMatchingType",
+            "valueCoding": {
+              "code": "EXACT",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType"
+            }
+          },
+          {
+            "name": "ignoreVersionNumber",
+            "valueBoolean": false
+          },
+          {
+            "name": "unknownStateIsConsideredAsDecline",
+            "valueBoolean": false
+          },
+          {
+            "name": "requestDate",
+            "valueDate": "2021-06-18"
+          }
+        ]
+      }
+    }
+  ]
+}

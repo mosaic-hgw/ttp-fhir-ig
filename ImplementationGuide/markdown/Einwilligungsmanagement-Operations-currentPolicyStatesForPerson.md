@@ -11,10 +11,10 @@
 ##### **Beispiel**
 Beispielhafter Request-Body:
 
-{{xml:Resources/fsh-generated/resources/example-operation-currentPolicyStatesForPerson-request-1}}
+{{xml:Resources/fsh-generated/resources/Parameters-CurrentPolicyStatesForPerson-request-example-1.json}}
 
 Beispielhafte Rückmeldung:
-{{xml:Resources/fsh-generated/resources/example-operation-currentPolicyStatesForPerson-response-1}}
+{{xml:Resources/fsh-generated/resources/Bundle-CurrentPolicyStatesForPerson-response-example-1.json}}
 
 ##### **Error Codes**
 

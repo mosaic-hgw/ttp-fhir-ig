@@ -49,3 +49,46 @@ Usage: #definition
 * parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].type = #boolean
+
+
+Instance: IsConsented-request-example-1
+InstanceOf: Parameters
+Usage: #example
+* parameter[0].name = "personIdentifier"
+* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
+* parameter[=].valueIdentifier.value = "dic_1H51T"
+* parameter[+].name = "domain"
+* parameter[=].valueString = "num"
+* parameter[+].name = "policy"
+* parameter[=].valueCoding = $Policy#MDAT_erheben
+* parameter[+].name = "version"
+* parameter[=].valueString = "1.1"
+* parameter[+].name = "config"
+* parameter[=].resource.resourceType = "Parameters"
+* parameter[=].resource.parameter[0].name = "idMatchingType"
+* parameter[=].resource.parameter[=].valueCoding = $IdMatchingType#AT_LEAST_ONE
+* parameter[=].resource.parameter[+].name = "ignoreVersionNumber"
+* parameter[=].resource.parameter[=].valueBoolean = false
+* parameter[=].resource.parameter[+].name = "unknownStateIsConsideredAsDecline"
+* parameter[=].resource.parameter[=].valueBoolean = false
+* parameter[=].resource.parameter[+].name = "requestDate"
+* parameter[=].resource.parameter[=].valueDate = "2019-06-30"
+
+Instance: IsConsented-request-example-2
+InstanceOf: Parameters
+Usage: #example
+* parameter[0].name = "personIdentifier"
+* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
+* parameter[=].valueIdentifier.value = "dic_1H51T"
+* parameter[+].name = "domain"
+* parameter[=].valueString = "num"
+* parameter[+].name = "policy"
+* parameter[=].valueCoding = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6
+* parameter[+].name = "version"
+* parameter[=].valueString = "1.1"
+
+Instance: IsConsented-response-example-1
+InstanceOf: Parameters
+Usage: #example
+* parameter.name = "consented"
+* parameter.valueBoolean = true
