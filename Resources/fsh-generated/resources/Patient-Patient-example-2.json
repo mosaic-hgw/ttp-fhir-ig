@@ -1,0 +1,37 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-example-2",
+  "meta": {
+    "lastUpdated": "2021-05-19T17:50:23.000+02:00",
+    "profile": [
+      "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "city": "Musterhausen"
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": "Mustermann",
+      "given": [
+        "Manfred"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1953-12-11",
+  "address": [
+    {
+      "line": [
+        "Musterweg 22"
+      ],
+      "city": "Musterstadt",
+      "postalCode": "12345"
+    }
+  ]
+}

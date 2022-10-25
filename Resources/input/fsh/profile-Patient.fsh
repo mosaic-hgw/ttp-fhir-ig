@@ -100,3 +100,19 @@ Usage: #example
 * identifier.type = $#ANON "Anonymous identifier"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
 * identifier.value = "dic_1H51T"
+
+Instance: Patient-example-2
+InstanceOf: Patient
+Usage: #example
+* meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
+* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+* extension[birthPlace].valueAddress.city = "Musterhausen"
+* name
+  * family = "Mustermann"
+  * given = "Manfred"
+* gender = #male
+* birthDate = "1953-12-11"
+* address
+  * line[0] = "Musterweg 22"
+  * city = "Musterstadt"
+  * postalCode = "12345"
