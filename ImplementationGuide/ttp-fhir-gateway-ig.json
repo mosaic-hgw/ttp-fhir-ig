@@ -51,7 +51,19 @@
             {
               "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions.md",
               "title": "Profile und Extensions",
-              "generation": "markdown"
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions-Person.md",
+                  "title": "Person",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions-Patient.md",
+                  "title": "Patient",
+                  "generation": "markdown"
+                }
+              ]
             },
             {
               "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations.md",
@@ -299,8 +311,18 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-MatchStatus.md",
+                  "title": "MatchStatus",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-Policy.md",
                   "title": "Policy",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-SaveAction.md",
+                  "title": "SaveAction",
                   "generation": "markdown"
                 }
               ]
@@ -331,8 +353,18 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-MatchStatus.md",
+                  "title": "MatchStatus",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-Policy.md",
                   "title": "Policy",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-SaveAction.md",
+                  "title": "SaveAction",
                   "generation": "markdown"
                 }
               ]

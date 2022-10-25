@@ -49,3 +49,16 @@ Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch 
 * link.target MS
 * link.target.reference 1.. MS
 * link.assurance MS
+
+Instance: Person-example-1
+InstanceOf: Person
+Usage: #example
+* meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
+* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
+* identifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+* identifier.value = "1001000000066"
+* managingOrganization.identifier.value = "MIRACUM"
+* active = true
+* link[0].target.reference = "Patient/52"
+* link[+].target.reference = "Patient/53"
+* link[=].assurance = #level4
