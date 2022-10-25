@@ -2,11 +2,6 @@
 
 ##### **Suche von Originalwerten**
 Abfrage **je eines** Originalwertes für **eine Liste von 1-n Pseudonymen** und eine spezifische Domäne.
-
-<p align="center">
-  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2020/11/depseudonymize.png">
-</p>
-
 ##### **Voraussetzung**
 Die angegebene Pseudonym-Domäne muss in gPAS konfiguriert und das angegebene Pseudonym in dieser Domäne bereits vorhanden sein.
 

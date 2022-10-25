@@ -3,10 +3,6 @@
 ##### **Suche und ggf. Erzeugung von Pseudonymen**
 Generierung **je eines** Pseudonyms für **eine Liste von 1-n Originalwerten** und eine spezifische Domäne sofern es noch nicht vorhanden ist. Sofern die Zuordnung Originalwert und Domäne bereits bekannt ist, wird das zugeordnete vorhandene Pseudonym zurückgegeben.
 
-<p align="center">
-  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2020/11/pseudonymize-allow-create.png">
-</p>
-
 ##### **Voraussetzung**
 Die angegebene Pseudonym-Domäne muss in gPAS konfiguriert sein.
 

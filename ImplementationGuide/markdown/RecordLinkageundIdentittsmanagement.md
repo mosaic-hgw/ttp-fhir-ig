@@ -1,5 +1,13 @@
-## {{page-title}}
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
+## Pseudonymmanagement
 
-### Übersicht der verfügbaren Funktionsumfänge
- 
- {{index:current}}
+Der FHIR-Endpunkt ([base]) für das Pseudonymmanagement ist
+
+<strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/epix```</strong>
+
+<p align="center">
+  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-epix.png">
+</p>
+
+### Übersicht der verfügbaren Operations
+{{index:ImplementationGuide-markdown-RecordLinkageundIdentittsmanagement-Operations}}

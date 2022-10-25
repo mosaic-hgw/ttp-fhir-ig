@@ -5,6 +5,8 @@ Der FHIR-Endpunkt ([base]) für die Workflow-basierte Verwaltung ist
 
 <strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/dispatcher```</strong>
 
+### Übersicht der verfügbaren Operations
+
 Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt implementierten **fTTP**-Funktionalitäten (**federated Trusted Third Party**) des  REST-basierten TTP FHIR Gateway.
 
 | TTP FHIR Gateway (REST)|Lokale Funktionalität| fTTP-Funktionalität|

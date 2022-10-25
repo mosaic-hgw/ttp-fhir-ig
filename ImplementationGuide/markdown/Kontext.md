@@ -1,7 +1,7 @@
 ![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
 ## Kontext und Konzept
 <p align="center">
-  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2020/09/ttp-fhir-gw-common.png">
+  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-concept.png">
 </p>
 
 ### Keep it simple!

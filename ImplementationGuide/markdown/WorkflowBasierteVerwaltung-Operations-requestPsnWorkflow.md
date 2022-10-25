@@ -4,7 +4,7 @@
 Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.
 
 <p align="center">
-  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2021/03/request-psn-workflow.png">
+  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-requestpsnworkflow.png">
 </p>
 
 ##### **Voraussetzung**

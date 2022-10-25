@@ -5,6 +5,9 @@ Der FHIR-Endpunkt ([base]) für das Pseudonymmanagement ist
 
 <strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/gpas```</strong>
 
-### Übersicht der verfügbaren Operations
+<p align="center">
+  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-gpas.png">
+</p>
 
+### Übersicht der verfügbaren Operations
 {{index:ImplementationGuide-markdown-Pseudonymmanagement-Operations}}
