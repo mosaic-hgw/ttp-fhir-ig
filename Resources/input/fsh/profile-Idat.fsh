@@ -74,3 +74,14 @@ Description: "Patienten-Profil zur Übermittlung von angeforderten IDAT an die f
 * generalPractitioner ..0
 * managingOrganization ..0
 * link ..0
+
+Instance: Idat-example-1
+InstanceOf: Idat
+Usage: #example
+* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace].valueAddress.city = "Musterhausen"
+* name.family = "Mustermann"
+* name.given = "Martin"
+* name.prefix = "Dr. med."
+* name.prefix.extension[http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier].valueCode = #AC
+* gender = #male
+* birthDate = "1965-12-03"
