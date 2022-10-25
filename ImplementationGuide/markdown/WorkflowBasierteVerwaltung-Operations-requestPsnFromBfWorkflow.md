@@ -4,7 +4,7 @@
 Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Sofern noch nicht vorhanden, wird eine valide Ziel-Domäne automatisch angelegt. Rückgabe der generierten Pseudonyme (z.b. DIC-PSN(s)) als Params.
 
 <p align="center">
-  <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-requestpsnbfworkflow.png">
+  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-requestpsnbfworkflow.png">
 </p>
 
 ##### **Voraussetzung**
