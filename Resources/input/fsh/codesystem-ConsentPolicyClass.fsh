@@ -1,7 +1,7 @@
 CodeSystem: ConsentPolicyClass
 Id: ConsentPolicyClassCS
 Description: "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentPolicy (z.B. ausgewählte Datensicht 'IDAT')"
-* insert meta-profileF
+* insert meta-profile
 * ^purpose = "Erste Achse 'Perspektive' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.class"
 * ^caseSensitive = true
 * ^content = #complete
