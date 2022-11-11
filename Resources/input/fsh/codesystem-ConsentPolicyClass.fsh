@@ -11,11 +11,6 @@ Description: "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentP
 * #BIOMAT  ^designation[=].value = "Biomaterialien" 
 * #BIOMAT  ^designation[+].language = #en-UK 
 * #BIOMAT  ^designation[=].value = "biosamples"
-* #BIOMAT "BIOMAT" 
-* #BIOMAT  ^designation[0].language = #de-DE 
-* #BIOMAT  ^designation[=].value = "Biomaterialien" 
-* #BIOMAT  ^designation[+].language = #en-UK 
-* #BIOMAT  ^designation[=].value = "biosamples"
 * #BIOMAT_analysed_data "BIOMAT_analysed_data" 
 * #BIOMAT_analysed_data  ^designation[0].language = #de-DE 
 * #BIOMAT_analysed_data  ^designation[=].value = "Auf Biomaterialien basierende Analysedaten" 
