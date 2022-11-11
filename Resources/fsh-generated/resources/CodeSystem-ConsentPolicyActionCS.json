@@ -4,33 +4,41 @@
   "content": "complete",
   "name": "ConsentPolicyAction",
   "id": "ConsentPolicyActionCS",
-  "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun). ",
+  "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun).",
   "version": "2.2.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActionCS",
   "concept": [
     {
-      "code": "bereitstellen",
-      "display": "bereitstellen",
+      "code": "provide",
+      "display": "provide",
       "designation": [
         {
           "language": "de-DE",
           "value": "Weitergabe von [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "transfer of [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "uebertragen_eigentum",
-      "display": "uebertragen_eigentum",
+      "code": "transfer_ownership",
+      "display": "transfer_ownership",
       "designation": [
         {
           "language": "de-DE",
           "value": "Übertragung des Eigentums an [PERSPEKTIVE] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank"
+        },
+        {
+          "language": "en-UK",
+          "value": "transfer the ownership of [PERSPECTIVE] from the participant to the controller/data processor/carrier of the biobank."
         }
       ]
     },
     {
-      "code": "einsehen",
-      "display": "einsehen",
+      "code": "view",
+      "display": "view",
       "designation": [
         {
           "language": "de-DE",
@@ -38,117 +46,161 @@
         },
         {
           "language": "en-UK",
-          "value": "View i dontknowthat verb"
+          "value": "insight into [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "entnehmen",
-      "display": "entnehmen",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Entnahme von [PERSPEKTIVE]"
-        }
-      ]
-    },
-    {
-      "code": "erheben",
-      "display": "erheben",
+      "code": "collect",
+      "display": "collect",
       "designation": [
         {
           "language": "de-DE",
           "value": "Erhebung neuer [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "collection of new [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "analysieren_genetisch",
-      "display": "analysieren_genetisch",
+      "code": "analyse_genetic",
+      "display": "analyse_genetic",
       "designation": [
         {
           "language": "de-DE",
           "value": "Gewinnung von genetischen Daten aus [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "obtaining genetic data from [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "informieren",
-      "display": "informieren",
+      "code": "inform",
+      "display": "inform",
       "designation": [
         {
           "language": "de-DE",
           "value": "Information"
+        },
+        {
+          "language": "en-UK",
+          "value": "information "
         }
       ]
     },
     {
-      "code": "lagern",
-      "display": "lagern",
+      "code": "store_process",
+      "display": "store_process",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Lagerung von [PERSPEKTIVE]"
+          "value": "Speicherung und Verarbeitung von [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "storage and processing of [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "lagern_verarbeiten",
-      "display": "lagern_verarbeiten",
+      "code": "contact",
+      "display": "contact",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Lagerung und Verarbeitung von [PERSPEKTIVE]"
+          "value": "Rekontaktierung des Teilnehmers (ggf. in Bezug auf [TAETIGKEIT|KONTEXT])"
+        },
+        {
+          "language": "en-UK",
+          "value": "contact participant (if necessary, regarding [ACTIVITY|KONTEXT])"
         }
       ]
     },
     {
-      "code": "rekontaktieren",
-      "display": "rekontaktieren",
+      "code": "use",
+      "display": "use",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Rekontaktierung des Teilnehmers"
+          "value": "Bereitstellung von [PERSPEKTIVE] für Nutzung / Analysen / zu Auswertezwecken [KONTEXT]"
+        },
+        {
+          "language": "en-UK",
+          "value": "provision of [PERSPECTIVE] for use / analyses / for evaluation purposes [CONTEXT]."
         }
       ]
     },
     {
-      "code": "speichern",
-      "display": "speichern",
+      "code": "process",
+      "display": "process",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Langfristige Speicherung von [PERSPEKTIVE]"
+          "value": "Verarbeitung von [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "processing of [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "speichern_verarbeiten",
-      "display": "speichern_verarbeiten",
+      "code": "merge",
+      "display": "merge",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Langfristige Speicherung und Verarbeitung von [PERSPEKTIVE]"
+          "value": "Zusammenführung und ggf. überführen von [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "merging and, if necessary, transferring of [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "wissenschaftlich_nutzen",
-      "display": "wissenschaftlich_nutzen",
+      "code": "query",
+      "display": "query",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Bereitstellung von [PERSPEKTIVE] für wissenschaftliche Nutzung / Analysen / zu Auswertezwecken"
+          "value": "Abfrage von [Kontext]"
+        },
+        {
+          "language": "en-UK",
+          "value": "query with/from [Context]"
         }
       ]
     },
     {
-      "code": "zusammenfuehren",
-      "display": "zusammenfuehren",
+      "code": "supplement",
+      "display": "supplement",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Zusammenführung von [PERSPEKTIVE]"
+          "value": "Ergänzende / kompletttierende Erhebung zusätzlicher [PERSPEKTIVE] mit / aus [Kontext]"
+        },
+        {
+          "language": "en-UK",
+          "value": "supplementary / complementary collection of additional [PERSPECTIVE] with / from [context]."
+        }
+      ]
+    },
+    {
+      "code": "link",
+      "display": "link",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Verknüpfung von Daten der betroffenen Person mit [KONTEXT]"
+        },
+        {
+          "language": "en-UK",
+          "value": "linking data of the data subject to [CONTEXT]"
         }
       ]
     }

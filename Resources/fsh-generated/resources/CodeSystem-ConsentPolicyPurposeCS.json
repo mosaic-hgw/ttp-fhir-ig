@@ -9,12 +9,44 @@
   "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurposeCS",
   "concept": [
     {
-      "code": "Arzt",
-      "display": "Arzt",
+      "code": "health_state",
+      "display": "health_state",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "des Gesundheitszustandes"
+        },
+        {
+          "language": "en-UK",
+          "value": "the state of health"
+        }
+      ]
+    },
+    {
+      "code": "general_practitioner",
+      "display": "general_practitioner",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "des Hausarztes"
+        },
+        {
+          "language": "en-UK",
+          "value": "from/to the general practitioner /family doctor"
+        }
+      ]
+    },
+    {
+      "code": "physician",
+      "display": "physician",
       "designation": [
         {
           "language": "de-DE",
           "value": "des Arztes"
+        },
+        {
+          "language": "en-UK",
+          "value": "from/to the physician"
         }
       ]
     },
@@ -24,87 +56,95 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "an eine  Clinical Research Organization"
-        }
-      ]
-    },
-    {
-      "code": "Datenergaenzung",
-      "display": "Datenergaenzung",
-      "designation": [
+          "value": "von/an eine Contract Research Organization und oder eine klinische Koordinierungsstelle (KKS)"
+        },
         {
-          "language": "de-DE",
-          "value": "zum Zwecke der Datenergänzung"
+          "language": "en-UK",
+          "value": "from/to a clinical research organization"
         }
       ]
     },
     {
-      "code": "Dritte",
-      "display": "Dritte",
+      "code": "third_parties",
+      "display": "third_parties",
       "designation": [
         {
           "language": "de-DE",
           "value": "an Dritte /mit Dritten Forschungspartner(n)"
+        },
+        {
+          "language": "en-UK",
+          "value": "to third parties /with third party research partner(s)"
         }
       ]
     },
     {
-      "code": "EU_DSGVO_NIVEAU",
-      "display": "EU_DSGVO_NIVEAU",
+      "code": "EU_GDPR_LEVEL",
+      "display": "EU_GDPR_LEVEL",
       "designation": [
         {
           "language": "de-DE",
           "value": "an Länder mit EU Datenschutzniveau"
+        },
+        {
+          "language": "en-UK",
+          "value": "to countries with EU data protection level"
         }
       ]
     },
     {
-      "code": "non_EU_DSGVO_NIVEAU",
-      "display": "non_EU_DSGVO_NIVEAU",
+      "code": "non_EU_GDPR_LEVEL",
+      "display": "non_EU_GDPR_LEVEL",
       "designation": [
         {
           "language": "de-DE",
           "value": "an Länder ohne EU Datenschutzniveau"
+        },
+        {
+          "language": "en-UK",
+          "value": "to countries without EU data protection level"
         }
       ]
     },
     {
-      "code": "Hausarzt",
-      "display": "Hausarzt",
+      "code": "industry",
+      "display": "industry",
       "designation": [
         {
           "language": "de-DE",
-          "value": "des Hausarztes"
+          "value": "an Partner aus dem Bereich der Industrie"
+        },
+        {
+          "language": "en-UK",
+          "value": "to partners from the industrial sector"
         }
       ]
     },
     {
-      "code": "intern",
-      "display": "intern",
+      "code": "health_records",
+      "display": "health_records",
       "designation": [
         {
           "language": "de-DE",
-          "value": "innerhalb des Forschungsvorhabens/Projektes"
+          "value": "durch Übertrag in/aus (elektronischen) Krankenunterlagen/Patientenakten"
+        },
+        {
+          "language": "en-UK",
+          "value": "by transfer to/from (electronic) health records"
         }
       ]
     },
     {
-      "code": "Krankenunterlagen",
-      "display": "Krankenunterlagen",
+      "code": "monitoring",
+      "display": "monitoring",
       "designation": [
         {
           "language": "de-DE",
-          "value": "durch Übertrag aus Krankenunterlagen"
-        }
-      ]
-    },
-    {
-      "code": "Monitoring",
-      "display": "Monitoring",
-      "designation": [
+          "value": "im Rahmen eines Monitoring"
+        },
         {
-          "language": "de-DE",
-          "value": "im Rahmen des Monitoring"
+          "language": "en-UK",
+          "value": "as part of a monitoring"
         }
       ]
     },
@@ -114,7 +154,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "eingeschränkt auf Non-Profit-Organisationen"
+          "value": "an Partner aus Non-Profit-Organisationen"
+        },
+        {
+          "language": "en-UK",
+          "value": "to partners from non-profit organisations"
         }
       ]
     },
@@ -125,146 +169,234 @@
         {
           "language": "de-DE",
           "value": "an eine am Sponsoring beteiligte Pharmafirma"
-        }
-      ]
-    },
-    {
-      "code": "prospektiv",
-      "display": "prospektiv",
-      "designation": [
+        },
         {
-          "language": "de-DE",
-          "value": "prospektiv"
+          "language": "en-UK",
+          "value": "to a pharmaceutical company involved in the sponsorship"
         }
       ]
     },
     {
-      "code": "retrospektiv",
-      "display": "retrospektiv",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "retrospektiv"
-        }
-      ]
-    },
-    {
-      "code": "Vorhaben_spezifisch",
-      "display": "Vorhaben_spezifisch",
+      "code": "project_specific",
+      "display": "project_specific",
       "designation": [
         {
           "language": "de-DE",
           "value": "im Rahmen des spezifischen Vorhabens/Projektes oder der spezifischen Studie"
+        },
+        {
+          "language": "en-UK",
+          "value": "for a  specific research project or study"
         }
       ]
     },
     {
-      "code": "Vorhaben_intern",
-      "display": "Vorhaben_intern",
+      "code": "project_participation",
+      "display": "project_participation",
       "designation": [
         {
           "language": "de-DE",
-          "value": "innerhalb des spezifischen Vorhabens/Projektes oder der spezifischen Studie"
+          "value": "über die Teilnahme der betroffenen Person am spezifischen Vorhaben/Projekt oder einer spezifischen Studie"
+        },
+        {
+          "language": "en-UK",
+          "value": "on the participation of the data subject in the specific project or a specific study"
         }
       ]
     },
     {
-      "code": "Vorhaben_Teilnahme",
-      "display": "Vorhaben_Teilnahme",
+      "code": "death",
+      "display": "death",
       "designation": [
         {
           "language": "de-DE",
-          "value": "über die Teilnahme der betroffenen Person am spezifischen Vorhaben/Projekte oder der spezifischen Studie"
+          "value": "im Falle des Todes der betroffenen Person"
+        },
+        {
+          "language": "en-UK",
+          "value": "in the event of the death of the person concerned"
         }
       ]
     },
     {
-      "code": "Tod",
-      "display": "Tod",
+      "code": "timely_unrestricted",
+      "display": "timely_unrestricted ",
       "designation": [
         {
           "language": "de-DE",
-          "value": "im Falle des Todes"
-        }
-      ]
-    },
-    {
-      "code": "uneingeschraenkt",
-      "display": "uneingeschraenkt",
-      "designation": [
+          "value": "ohne zeitliche Einschränkung"
+        },
         {
-          "language": "de-DE",
-          "value": "uneingeschraenkt"
+          "language": "en-UK",
+          "value": " without timely restriction"
         }
       ]
     },
     {
-      "code": "zeitlich_eingeschraenkt",
-      "display": "zeitlich_eingeschraenkt",
+      "code": "timely_restricted",
+      "display": "timely_restricted",
       "designation": [
         {
           "language": "de-DE",
           "value": "mit zeitlicher Einschränkung"
+        },
+        {
+          "language": "en-UK",
+          "value": "with timely restriction"
         }
       ]
     },
     {
-      "code": "Verknuepfung_Datenbanken",
-      "display": "Verknuepfung_Datenbanken",
+      "code": "once",
+      "display": "once",
       "designation": [
         {
           "language": "de-DE",
-          "value": "zur Verknüpfung von Daten der betroffenen Person mit Informationen anderer Datenbanken"
+          "value": "einmalig"
+        },
+        {
+          "language": "en-UK",
+          "value": "once"
         }
       ]
     },
     {
-      "code": "weitere_Erhebungen",
-      "display": "weitere_Erhebungen",
+      "code": "databases",
+      "display": "databases",
       "designation": [
         {
           "language": "de-DE",
-          "value": "bezüglich der Erhebung zusätzlicher Daten"
+          "value": "Informationen anderer Datenbanken"
+        },
+        {
+          "language": "en-UK",
+          "value": "information from other databases"
         }
       ]
     },
     {
-      "code": "weitere_Studien",
-      "display": "weitere_Studien",
+      "code": "additional_collection",
+      "display": "additional_collection",
       "designation": [
         {
           "language": "de-DE",
-          "value": "bezüglich der Information zu neuen Vorhaben/Projekten oder Studien"
+          "value": "Erhebung zusätzlicher [PERSPEKTIVE]"
+        },
+        {
+          "language": "en-UK",
+          "value": "collection of additional [PERSPECTIVE]"
         }
       ]
     },
     {
-      "code": "Zufallsbefunde",
-      "display": "Zufallsbefunde",
+      "code": "additional_studies",
+      "display": "additional_studies",
       "designation": [
         {
           "language": "de-DE",
-          "value": "zur Mitteilung von Zufallsbefunden"
+          "value": "Informationen zu neuen Vorhaben/Projekten oder Studien"
+        },
+        {
+          "language": "en-UK",
+          "value": "information on new projects or studies"
         }
       ]
     },
     {
-      "code": "KV",
-      "display": "KV",
+      "code": "additional_findings",
+      "display": "additional_findings",
       "designation": [
         {
           "language": "de-DE",
-          "value": "von Krankenversicherungen"
+          "value": "Mitteilung von Zusatz- oder Nebenbefunden"
+        },
+        {
+          "language": "en-UK",
+          "value": "notification of additional or incidental findings"
         }
       ]
     },
     {
-      "code": "RV",
-      "display": "RV",
+      "code": "HI",
+      "display": "HI",
       "designation": [
         {
           "language": "de-DE",
-          "value": "von Rentenversicherungen"
+          "value": "von/an Krankenversicherungen"
+        },
+        {
+          "language": "en-UK",
+          "value": "from/to health insurances"
+        }
+      ]
+    },
+    {
+      "code": "PI",
+      "display": "PI",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "von/an Rentenversicherungen"
+        },
+        {
+          "language": "en-UK",
+          "value": "from/to pension insurances"
+        }
+      ]
+    },
+    {
+      "code": "results",
+      "display": "results",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Mitteilung von Forschungsergebnissen"
+        },
+        {
+          "language": "en-UK",
+          "value": "communication of research results"
+        }
+      ]
+    },
+    {
+      "code": "significant",
+      "display": "significant",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "[KONTEXT] mit erheblicher Bedeutung"
+        },
+        {
+          "language": "en-UK",
+          "value": "[CONTEXT] with considerable significance"
+        }
+      ]
+    },
+    {
+      "code": "quality_assurance",
+      "display": "quality_assurance ",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "zu Zwecken der Qualitätssicherung"
+        },
+        {
+          "language": "en-UK",
+          "value": "for quality assurance purposes"
+        }
+      ]
+    },
+    {
+      "code": "scientific",
+      "display": "scientific",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "im wissenschaftlichen Kontext"
+        },
+        {
+          "language": "en-UK",
+          "value": "in a scientific context"
         }
       ]
     }
@@ -287,5 +419,5 @@
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "purpose": "Dritte Achse 'Kontext' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.purpose",
   "caseSensitive": true,
-  "count": 26
+  "count": 28
 }

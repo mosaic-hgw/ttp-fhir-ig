@@ -9,42 +9,86 @@
   "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyClassCS",
   "concept": [
     {
-      "code": "IDAT",
-      "display": "IDAT",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Personenidentifizierende Daten"
-        }
-      ]
-    },
-    {
-      "code": "MDAT",
-      "display": "MDAT",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Medizinische Daten"
-        }
-      ]
-    },
-    {
       "code": "BIOMAT",
       "display": "BIOMAT",
       "designation": [
         {
           "language": "de-DE",
           "value": "Biomaterialien"
+        },
+        {
+          "language": "en-UK",
+          "value": "biosamples"
         }
       ]
     },
     {
-      "code": "BIOMAT_Analysedaten",
-      "display": "BIOMAT_Analysedaten",
+      "code": "BIOMAT_analysed_data",
+      "display": "BIOMAT_analysed_data",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Biomaterialien, insbesondere auf Biomaterialien basierende Analysedaten"
+          "value": "Auf Biomaterialien basierende Analysedaten"
+        },
+        {
+          "language": "en-UK",
+          "value": "analysed data based on biosamples"
+        }
+      ]
+    },
+    {
+      "code": "BIOMAT_retrospective",
+      "display": "BIOMAT_retrospective",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Retrospektive Biomaterialien"
+        },
+        {
+          "language": "en-UK",
+          "value": "retrospective biosamples"
+        }
+      ]
+    },
+    {
+      "code": "BIOMAT_analysed_data_retrospective",
+      "display": "BIOMAT_analysed_data_retrospective",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Auf retrospektiven Biomaterialien basierende Analysedaten"
+        },
+        {
+          "language": "en-UK",
+          "value": "analysed data based on retrospective biosamples"
+        }
+      ]
+    },
+    {
+      "code": "BIOMAT_additional_sampling",
+      "display": "BIOMAT_additional_sampling",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Biomaterialien, insbesondere zusätzlicher Mengen"
+        },
+        {
+          "language": "en-UK",
+          "value": "biosamples, especially additional sampling"
+        }
+      ]
+    },
+    {
+      "code": "PII",
+      "display": "PII",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Personenidentifizierende Daten"
+        },
+        {
+          "language": "en-UK",
+          "value": "personal identifying information"
         }
       ]
     },
@@ -55,26 +99,66 @@
         {
           "language": "de-DE",
           "value": "Bilder und Bilddaten"
+        },
+        {
+          "language": "en-UK",
+          "value": "images and image data"
         }
       ]
     },
     {
-      "code": "KDAT",
-      "display": "KDAT",
+      "code": "HIDAT",
+      "display": "HIDAT",
       "designation": [
         {
           "language": "de-DE",
           "value": "Krankenkassendaten"
+        },
+        {
+          "language": "en-UK",
+          "value": "health insurance data"
         }
       ]
     },
     {
-      "code": "KDAT_KVNR",
-      "display": "KDAT_KVNR",
+      "code": "HIDAT_HIPN",
+      "display": "HIDAT_HIPN",
       "designation": [
         {
           "language": "de-DE",
           "value": "Krankenkassendaten, insbesondere die Krankenkassenversichertennummer"
+        },
+        {
+          "language": "en-UK",
+          "value": "health insurance data, especially the health insurance member ID or policy number"
+        }
+      ]
+    },
+    {
+      "code": "HIDAT_retrospective",
+      "display": "HIDAT_retrospective",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Retrospektive Krankenkassendaten"
+        },
+        {
+          "language": "en-UK",
+          "value": "retrospective health insurance data"
+        }
+      ]
+    },
+    {
+      "code": "MDAT",
+      "display": "MDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Medizinische Daten"
+        },
+        {
+          "language": "en-UK",
+          "value": "medical data"
         }
       ]
     },
@@ -85,26 +169,38 @@
         {
           "language": "de-DE",
           "value": "Medizinische Daten, insbesondere GECCO83 Datensatz"
+        },
+        {
+          "language": "en-UK",
+          "value": "medical data, especially the GECCO83 data set"
         }
       ]
     },
     {
-      "code": "MDAT_OMICS",
-      "display": "MDAT_OMICS",
+      "code": "MDAT_retrospective",
+      "display": "MDAT_retrospective",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Medizinische Daten, insbesondere *OMICS-Daten"
+          "value": "Retrospektive medizinische Daten"
+        },
+        {
+          "language": "en-UK",
+          "value": "retrospective medical data"
         }
       ]
     },
     {
-      "code": "SDAT",
-      "display": "SDAT",
+      "code": "BIOMAT_metadata",
+      "display": "BIOMAT_metadata",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Sozialdaten"
+          "value": "Biomaterialien-spezifische Metadaten wie zum Beispiel zu Lagerung und Prozessierung"
+        },
+        {
+          "language": "en-UK",
+          "value": "metadata regarding biosamples such as storage and processing"
         }
       ]
     }
@@ -127,5 +223,5 @@
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "purpose": "Erste Achse 'Perspektive' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.class",
   "caseSensitive": true,
-  "count": 10
+  "count": 14
 }

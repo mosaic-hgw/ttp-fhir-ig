@@ -9,62 +9,6 @@
   "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActorCS",
   "concept": [
     {
-      "code": "TTP",
-      "display": "TTP",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Treuhandstelle/Vertrauensstelle"
-        },
-        {
-          "language": "en-GB",
-          "value": "Trusted Third Party"
-        }
-      ]
-    },
-    {
-      "code": "FTTP",
-      "display": "FTTP",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Föderierte Treuhandstelle/Vertrauensstelle"
-        },
-        {
-          "language": "en-GB",
-          "value": "Federated Trusted Third Party"
-        }
-      ]
-    },
-    {
-      "code": "RDP",
-      "display": "RDP",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Forschungsdatenplattform"
-        },
-        {
-          "language": "en-GB",
-          "value": "Research data platform"
-        }
-      ]
-    },
-    {
-      "code": "DIC",
-      "display": "DIC",
-      "designation": [
-        {
-          "language": "de-DE",
-          "value": "Datenintegrationszentrum"
-        },
-        {
-          "language": "en-GB",
-          "value": "Data integration centre"
-        }
-      ]
-    },
-    {
       "code": "LIMS",
       "display": "LIMS",
       "designation": [
@@ -73,22 +17,22 @@
           "value": "Laborinformationsmanagementsystem"
         },
         {
-          "language": "en-GB",
+          "language": "en-UK",
           "value": "Laboratory information management system"
         }
       ]
     },
     {
-      "code": "BDMS",
-      "display": "BDMS",
+      "code": "TTP",
+      "display": "TTP",
       "designation": [
         {
           "language": "de-DE",
-          "value": "Bilddatenmanagementsystem"
+          "value": "Treuhandstelle/Vertrauensstelle"
         },
         {
-          "language": "en-GB",
-          "value": "Image data management system"
+          "language": "en-UK",
+          "value": "Trusted Third Party"
         }
       ]
     },
@@ -101,8 +45,64 @@
           "value": "Datentransferstelle"
         },
         {
-          "language": "en-GB",
-          "value": "Data transfer unit"
+          "language": "en-UK",
+          "value": "Data Transfer Unit"
+        }
+      ]
+    },
+    {
+      "code": "BDMS",
+      "display": "BDMS",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Bilddatenmanagementsystem"
+        },
+        {
+          "language": "en-UK",
+          "value": "Image data management system"
+        }
+      ]
+    },
+    {
+      "code": "RDP",
+      "display": "RDP",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Forschungsplattform"
+        },
+        {
+          "language": "en-UK",
+          "value": "Research data platform"
+        }
+      ]
+    },
+    {
+      "code": "DIC",
+      "display": "DIC",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Datenintegrationszenrum"
+        },
+        {
+          "language": "en-UK",
+          "value": "Data integration centre"
+        }
+      ]
+    },
+    {
+      "code": "FTTP",
+      "display": "FTTP",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Föderierte Treuhandstelle/Vertrauensstelle"
+        },
+        {
+          "language": "en-UK",
+          "value": "Federated Trusted Third Party"
         }
       ]
     }
