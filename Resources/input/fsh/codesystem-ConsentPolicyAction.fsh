@@ -2,6 +2,7 @@ CodeSystem: ConsentPolicyAction
 Id: ConsentPolicyActionCS
 Description: "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun)."
 * insert meta-profile
+* ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
 * ^purpose = "Zweite Achse 'Tätigkeit' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.action"
 * ^caseSensitive = true
 * ^content = #complete

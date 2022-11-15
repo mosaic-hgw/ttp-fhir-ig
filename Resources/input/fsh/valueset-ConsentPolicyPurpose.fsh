@@ -1,6 +1,7 @@
 ValueSet: ConsentPolicyPurpose
 Id: ConsentPolicyPurposeVS
 * insert meta-profile
+* ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyPurpose"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyPurpose"
 * ^expansion.timestamp = "2022-09-09T12:00:00Z"
 * ^expansion.total = 26

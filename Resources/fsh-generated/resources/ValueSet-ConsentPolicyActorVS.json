@@ -4,9 +4,9 @@
   "name": "ConsentPolicyActor",
   "id": "ConsentPolicyActorVS",
   "version": "2.2.0",
-  "url": "https://ths-greifswald.de/fhir/ValueSet/ConsentPolicyActorVS",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyActor",
   "experimental": false,
-  "date": "2022-09-23",
+  "date": "2022-11-15",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

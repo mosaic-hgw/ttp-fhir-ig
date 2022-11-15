@@ -1,6 +1,7 @@
 ValueSet: ConsentPolicyClass
 Id: ConsentPolicyClassVS
 * insert meta-profile
+* ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyClass"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyClass"
 * ^expansion.timestamp = "2022-09-09T12:00:00Z"
 * ^expansion.total = 10

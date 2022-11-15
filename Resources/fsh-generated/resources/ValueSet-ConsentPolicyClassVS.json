@@ -4,9 +4,9 @@
   "name": "ConsentPolicyClass",
   "id": "ConsentPolicyClassVS",
   "version": "2.2.0",
-  "url": "https://ths-greifswald.de/fhir/ValueSet/ConsentPolicyClassVS",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyClass",
   "experimental": false,
-  "date": "2022-09-23",
+  "date": "2022-11-15",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

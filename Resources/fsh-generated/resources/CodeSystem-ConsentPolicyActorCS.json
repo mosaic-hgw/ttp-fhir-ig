@@ -6,7 +6,7 @@
   "id": "ConsentPolicyActorCS",
   "description": "Erweiterbare Kategorisierung von Konsument/Anfragesteller eines Einwilligungsumsetzungsanfrage (Enforcement) bezogen auf einen Einwilligungsbestandteil",
   "version": "2.2.0",
-  "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActorCS",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor",
   "concept": [
     {
       "code": "LIMS",
@@ -108,7 +108,7 @@
     }
   ],
   "experimental": false,
-  "date": "2022-09-23",
+  "date": "2022-11-15",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

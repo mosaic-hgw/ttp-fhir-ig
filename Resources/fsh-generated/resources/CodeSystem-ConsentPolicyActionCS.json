@@ -6,7 +6,7 @@
   "id": "ConsentPolicyActionCS",
   "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun).",
   "version": "2.2.0",
-  "url": "https://ths-greifswald.de/fhir/CodeSystem/ConsentPolicyActionCS",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction",
   "concept": [
     {
       "code": "provide",
@@ -206,7 +206,7 @@
     }
   ],
   "experimental": false,
-  "date": "2022-09-23",
+  "date": "2022-11-15",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
