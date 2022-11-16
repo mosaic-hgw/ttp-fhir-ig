@@ -42,9 +42,13 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0].resource = dfd5edc6-3a8a-4796-a9bb-f9572cf15c96
+* entry[=].fullUrl = "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
 * entry[+].resource = d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90
+* entry[=].fullUrl = "urn:uuid:d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"
 * entry[+].resource = ab52ee3d-0616-4b07-8449-65264f97e5ad
+* entry[=].fullUrl = "urn:uuid:ab52ee3d-0616-4b07-8449-65264f97e5ad"
 * entry[+].resource = d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1
+* entry[=].fullUrl = "urn:uuid:d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1"
 
 Instance: dfd5edc6-3a8a-4796-a9bb-f9572cf15c96
 InstanceOf: QuestionnaireResponse

@@ -43,18 +43,31 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0].resource = c52ebb8f-3ca0-4978-9116-22c92aaccb18
+* entry[=].fullUrl = "urn:uuid:c52ebb8f-3ca0-4978-9116-22c92aaccb18"
 * entry[+].resource = 68148751-1a10-4e5a-84cd-2290950c3793
+* entry[=].fullUrl = "urn:uuid:68148751-1a10-4e5a-84cd-2290950c3793"
 * entry[+].resource = 32fa19b1-f6fb-4fd5-b199-4d4dceb69e53
+* entry[=].fullUrl = "urn:uuid:32fa19b1-f6fb-4fd5-b199-4d4dceb69e53"
 * entry[+].resource = 343a8482-a00f-4ae4-974b-884932bdf44a
+* entry[=].fullUrl = "urn:uuid:343a8482-a00f-4ae4-974b-884932bdf44a"
 * entry[+].resource = f250a5a5-20e3-4b6b-97a5-f134b0b34d50
+* entry[=].fullUrl = "urn:uuid:f250a5a5-20e3-4b6b-97a5-f134b0b34d50"
 * entry[+].resource = 7159f7db-a76f-41a5-b831-10c972a3a282
+* entry[=].fullUrl = "urn:uuid:7159f7db-a76f-41a5-b831-10c972a3a282"
 * entry[+].resource = b790946a-8a5c-48ed-926b-02ab9342e0ab
+* entry[=].fullUrl = "urn:uuid:b790946a-8a5c-48ed-926b-02ab9342e0ab"
 * entry[+].resource = 29e8f702-9949-48d0-82b8-64afae92354e
+* entry[=].fullUrl = "urn:uuid:29e8f702-9949-48d0-82b8-64afae92354e"
 * entry[+].resource = 7726b2ea-ea25-4848-a666-2135bf384cff
+* entry[=].fullUrl = "urn:uuid:7726b2ea-ea25-4848-a666-2135bf384cff"
 * entry[+].resource = 3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6
+* entry[=].fullUrl = "urn:uuid:3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6"
 * entry[+].resource = 9d317d12-e34f-4b4f-a9c1-693ecf7e1615
+* entry[=].fullUrl = "urn:uuid:9d317d12-e34f-4b4f-a9c1-693ecf7e1615"
 * entry[+].resource = 8fead334-f5a9-4025-b604-5e38f9ad44c3
+* entry[=].fullUrl = "urn:uuid:8fead334-f5a9-4025-b604-5e38f9ad44c3"
 * entry[+].resource = a778fd9a-e68a-4b98-ab9d-2d788db705d5
+* entry[=].fullUrl = "urn:uuid:a778fd9a-e68a-4b98-ab9d-2d788db705d5"
 
 Instance: c52ebb8f-3ca0-4978-9116-22c92aaccb18
 InstanceOf: Consent
