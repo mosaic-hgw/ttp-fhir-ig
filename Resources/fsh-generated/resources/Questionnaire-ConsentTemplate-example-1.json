@@ -2,6 +2,12 @@
   "resourceType": "Questionnaire",
   "id": "ConsentTemplate-example-1",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/ConsentTemplate"
     ]
@@ -430,10 +436,6 @@
   "language": "DE",
   "extension": [
     {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
-    },
-    {
       "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel",
       "valueString": "Patienteneinwilligung MII 1.6.f inkl Z-Modul (TMF V0.8)"
     },
@@ -472,7 +474,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.5.2"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -485,7 +487,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.5.2.2"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -498,7 +500,7 @@
           "valueString": "mii"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -511,7 +513,7 @@
           "valueString": "https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -524,7 +526,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.11.30"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -537,7 +539,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.5.2.3"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -550,7 +552,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.5.3"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -563,7 +565,7 @@
           "valueString": "false"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -576,7 +578,7 @@
           "valueString": "1"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [
@@ -589,7 +591,7 @@
           "valueString": "2.16.840.1.113883.3.1937.777.24.5.2.1"
         }
       ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
     },
     {
       "extension": [

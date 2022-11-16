@@ -2,15 +2,17 @@
   "resourceType": "VerificationResult",
   "id": "ConsentQualityControl-example-1",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"
     ]
   },
   "extension": [
-    {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
-    },
     {
       "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment",
       "valueString": "Validated. No Errors found."

@@ -7,7 +7,7 @@
   "title": "Einwilligungsinformationen",
   "status": "draft",
   "experimental": false,
-  "date": "2022-11-15",
+  "date": "2022-11-16",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -55,8 +55,8 @@
   "differential": {
     "element": [
       {
-        "id": "Consent.extension:created",
-        "path": "Consent.extension",
+        "id": "Consent.meta.extension:created",
+        "path": "Consent.meta.extension",
         "sliceName": "created",
         "min": 0,
         "max": "1",

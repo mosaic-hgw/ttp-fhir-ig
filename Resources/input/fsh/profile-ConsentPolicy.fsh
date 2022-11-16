@@ -70,7 +70,7 @@ Description: "Abbildung aller relevanten Information zur Verwaltung wiederverwen
 * kind ..0 N
 * profile ..0 N
 * code 1.. MS N
-* code from $Policy (extensible)
+* code from $vsPolicy (extensible)
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension.valueString = "ActivityDefinitionType"
 * code.coding 1.. MS N

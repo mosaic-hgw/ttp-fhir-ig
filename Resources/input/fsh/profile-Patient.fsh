@@ -97,7 +97,7 @@ InstanceOf: $prEinwPatient
 Usage: #example
 * meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
-* identifier.type = $#ANON "Anonymous identifier"
+* identifier.type = $cs0203#ANON "Anonymous identifier"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
 * identifier.value = "dic_1H51T"
 

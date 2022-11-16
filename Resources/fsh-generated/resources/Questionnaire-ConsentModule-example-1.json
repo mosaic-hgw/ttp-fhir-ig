@@ -2,16 +2,16 @@
   "resourceType": "Questionnaire",
   "id": "ConsentModule-example-1",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule"
     ]
   },
-  "extension": [
-    {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
-    }
-  ],
   "language": "DE",
   "version": "1.6",
   "name": "BIOMAT_erheben_lagern_nutzen",
@@ -109,7 +109,7 @@
               "valueString": "2.16.840.1.113883.3.1937.777.24.5.3.18"
             }
           ],
-          "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+          "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
         }
       ],
       "linkId": "BIOMAT_erheben_lagern_nutzen|1.6",

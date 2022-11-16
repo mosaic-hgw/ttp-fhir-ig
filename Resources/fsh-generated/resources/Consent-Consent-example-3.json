@@ -2,6 +2,12 @@
   "resourceType": "Consent",
   "id": "Consent-example-3",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "lastUpdated": "2021-05-19T17:50:23.000+02:00",
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
@@ -9,10 +15,6 @@
     ]
   },
   "extension": [
-    {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
-    },
     {
       "extension": [
         {

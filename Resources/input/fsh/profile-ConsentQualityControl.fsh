@@ -6,9 +6,10 @@ Description: "Status and additional Information about quality control of a Conse
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"
 * extension contains
-    Created named created 0..1 MS and
     Comment named comment 0..1 MS and
     ExternalProperty named externalProperty 0..* MS
+* meta.extension contains
+    Created named created 0..1 MS
 * extension[comment].value[x] MS
 * target 1.. MS
 * target only Reference($QuestionnaireResponse)
@@ -34,7 +35,7 @@ Description: "Status and additional Information about quality control of a Conse
 Instance: ConsentQualityControl-example-1
 InstanceOf: ConsentQualityControl
 Usage: #example
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[comment].valueString = "Validated. No Errors found."
 * target = Reference(QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1)
 * status = #validated

@@ -139,7 +139,8 @@
             ]
           }
         ]
-      }
+      },
+      "fullUrl": "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
     },
     {
       "resource": {
@@ -613,7 +614,8 @@
             }
           ]
         }
-      }
+      },
+      "fullUrl": "urn:uuid:d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"
     },
     {
       "resource": {
@@ -675,7 +677,8 @@
             "data": "ZHVtbXk="
           }
         ]
-      }
+      },
+      "fullUrl": "urn:uuid:ab52ee3d-0616-4b07-8449-65264f97e5ad"
     },
     {
       "resource": {
@@ -703,7 +706,8 @@
             "value": "dic_1H51T"
           }
         ]
-      }
+      },
+      "fullUrl": "urn:uuid:d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1"
     }
   ]
 }

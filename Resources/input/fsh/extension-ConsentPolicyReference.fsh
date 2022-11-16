@@ -4,8 +4,10 @@ Title: "Consent Policy Reference"
 Description: "Referenz auf eine Consent Policy zur Verwendung innerhalb eines Consent Moduls"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConsentPolicyReference"
-* ^context.type = #element
-* ^context.expression = "Questionnaire"
+* ^context[0].type = #element
+* ^context[=].expression = "Questionnaire"
+* ^context[+].type = #element
+* ^context[=].expression = "Questionnaire.item"
 * extension contains
     reference 1..1 N and
     comment 0..1 N and

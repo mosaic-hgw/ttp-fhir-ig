@@ -2,18 +2,18 @@
   "resourceType": "Questionnaire",
   "id": "ConsentModule-example-2",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "versionId": "1",
     "lastUpdated": "2021-06-24T08:30:00.000+00:00",
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule"
     ]
   },
-  "extension": [
-    {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
-    }
-  ],
   "language": "DE",
   "version": "1.6.d",
   "name": "MDAT_ErhebenSpeichernNutzen",

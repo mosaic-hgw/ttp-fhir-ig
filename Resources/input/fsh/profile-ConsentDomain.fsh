@@ -6,8 +6,9 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 * insert meta-profile
 * ^purpose = "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domain-Infos für gICS"
 * meta.lastUpdated MS N
+* meta.extension contains
+    Created named created 0..1 MS
 * extension contains
-    Created named created 0..1 MS and
     PolicyVersionFormat named policyVersionFormat 0..1 MS and
     ModuleVersionFormat named moduleVersionFormat 0..1 MS and
     TemplateVersionFormat named templateVersionFormat 0..1 MS and
@@ -56,7 +57,7 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 Instance: ConsentDomain-example-1
 InstanceOf: ConsentDomain
 Usage: #example
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[contextIdentifier][0].extension[resourceType].valueCoding = $resource-types#Patient
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/CaseId"
 * extension[contextIdentifier][+].extension[resourceType].valueCoding = $resource-types#Patient
@@ -79,7 +80,7 @@ Usage: #example
 Instance: ConsentDomain-example-2
 InstanceOf: ConsentDomain
 Usage: #example
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[policyVersionFormat].valueString = "major.minor"
 * extension[moduleVersionFormat].valueString = "major.minor"
 * extension[templateVersionFormat].valueString = "major.minor.char"
@@ -110,7 +111,7 @@ Instance: ConsentDomain-example-3
 InstanceOf: ConsentDomain
 Usage: #example
 * meta.lastUpdated = "2020-10-23T13:44:08.216+00:00"
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[contextIdentifier][0].extension[resourceType].valueCoding = $resource-types#Patient
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/CaseId"
 * extension[contextIdentifier][+].extension[resourceType].valueCoding = $resource-types#Patient

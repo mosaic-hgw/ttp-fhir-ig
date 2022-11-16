@@ -7,7 +7,7 @@
   "title": "Consent Domain",
   "status": "draft",
   "experimental": false,
-  "date": "2022-11-15",
+  "date": "2022-11-16",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -33,6 +33,22 @@
   "differential": {
     "element": [
       {
+        "id": "ResearchStudy.meta.extension:created",
+        "path": "ResearchStudy.meta.extension",
+        "sliceName": "created",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "ResearchStudy.meta.lastUpdated",
         "path": "ResearchStudy.meta.lastUpdated",
         "mustSupport": true
@@ -56,22 +72,6 @@
         "sliceName": "contextIdentifier",
         "label": "SignerIDTypes",
         "short": "Herstellung des Patientenbezugs je Kontext"
-      },
-      {
-        "id": "ResearchStudy.extension:created",
-        "path": "ResearchStudy.extension",
-        "sliceName": "created",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
-            ]
-          }
-        ],
-        "mustSupport": true
       },
       {
         "id": "ResearchStudy.extension:policyVersionFormat",

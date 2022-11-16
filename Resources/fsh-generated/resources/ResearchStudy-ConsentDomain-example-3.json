@@ -2,6 +2,12 @@
   "resourceType": "ResearchStudy",
   "id": "ConsentDomain-example-3",
   "meta": {
+    "extension": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
+        "valueInstant": "2020-01-02T04:05:06+01:00"
+      }
+    ],
     "lastUpdated": "2020-10-23T13:44:08.216+00:00",
     "profile": [
       "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain"
@@ -23,10 +29,6 @@
           "valueUri": "https://ths-greifswald.de/fhir/gics/identifiers/CaseId"
         }
       ]
-    },
-    {
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-      "valueInstant": "2020-01-02T04:05:06+01:00"
     },
     {
       "extension": [

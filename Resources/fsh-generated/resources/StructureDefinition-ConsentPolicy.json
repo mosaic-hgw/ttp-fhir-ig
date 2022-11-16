@@ -16,7 +16,7 @@
   "name": "ConsentPolicy",
   "status": "draft",
   "experimental": false,
-  "date": "2022-11-15",
+  "date": "2022-11-16",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -349,7 +349,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gics/Policy",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",

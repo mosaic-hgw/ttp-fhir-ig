@@ -8,11 +8,12 @@ Description: "Einwilligungsinformationen"
 * ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung"
 * extension ^min = 0
 * extension contains
-    Created named created 0..1 MS and
     ExternalProperty named externalProperty 0..* MS and
     ExpirationProperty named expirationProperty 0..* MS
 * extension[externalProperty] ^min = 0
 * extension[externalProperty].extension 2..
+* meta.extension contains
+    Created named created 0..1 MS
 
 
 Instance: Consent-example-1
@@ -20,7 +21,7 @@ InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-06-17T14:02:21.285+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
 * extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active
@@ -40,7 +41,7 @@ Instance: Consent-example-2
 InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-10-29T11:00:08.695+02:00"
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/b0b83c00-e230-4c52-8d3a-cbb882e0a72f)
 * extension[domainReference].extension[status].valueCoding = $publication-status#active
 * extension[externalProperty][0].extension[key].valueString = "mykey1"
@@ -122,7 +123,7 @@ InstanceOf: Consent
 Usage: #example
 * meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * extension[domainReference].extension[domain].valueReference = Reference(ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb)
 * extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active

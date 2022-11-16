@@ -5,7 +5,7 @@ Title: "Consent Module"
 Description: "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
 * insert meta-profile
 * ^purpose = "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
-* extension contains
+* meta.extension contains
     Created named created 0..1 MS
 * useContext.value[x] only Reference(ConsentDomain)
 * useContext.value[x] N
@@ -37,7 +37,7 @@ Instance: ConsentModule-example-1
 InstanceOf: ConsentModule
 Usage: #example
 * language = #DE
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.6"
 * name = "BIOMAT_erheben_lagern_nutzen"
 * status = #draft
@@ -71,7 +71,7 @@ Usage: #example
 * item.extension[=].extension[=].valueString = "mii_question_oid"
 * item.extension[=].extension[+].url = "value"
 * item.extension[=].extension[=].valueString = "2.16.840.1.113883.3.1937.777.24.5.3.18"
-* item.extension[=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalPropertyElement"
+* item.extension[=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
 * item.linkId = "BIOMAT_erheben_lagern_nutzen|1.6"
 * item.text.extension.url = "http://hl7.org/fhir/StructureDefinition/rendering-xhtml"
 * item.text.extension.valueString = "<div style=\"text-align: justify;\">Ich willige ein in die Gewinnung, Lagerung und wissenschaftliche Nutzung meiner <strong>Biomaterialien </strong>(Gewebe und Körperflüssigkeiten), wie in Punkt 3.1 bis 3.3 der Einwilligungserklärung und Punkt 3 der Patienteninformation beschrieben.</div>"
@@ -83,7 +83,7 @@ Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2021-06-24T08:30:00.000+00:00"
 * language = #DE
-* extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
+* meta.extension[created].valueInstant = "2020-01-02T04:05:06+01:00"
 * version = "1.6.d"
 * name = "MDAT_ErhebenSpeichernNutzen"
 * title = "Verarbeitung und Nutzung von Patientendaten für die medizinische Forschung"

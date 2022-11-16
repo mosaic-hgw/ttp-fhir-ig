@@ -7,7 +7,7 @@
   "title": "Consent Module",
   "status": "draft",
   "experimental": false,
-  "date": "2022-11-15",
+  "date": "2022-11-16",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -33,8 +33,8 @@
   "differential": {
     "element": [
       {
-        "id": "Questionnaire.extension:created",
-        "path": "Questionnaire.extension",
+        "id": "Questionnaire.meta.extension:created",
+        "path": "Questionnaire.meta.extension",
         "sliceName": "created",
         "min": 0,
         "max": "1",
