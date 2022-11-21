@@ -1,17 +1,17 @@
 ![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
-                                                                  
+
 ### Einleitung
 
-Infrastrukturen für vernetzte medizinische Forschung, wie sie aktuell in der [Medizininformatik-Initiative (MII)](https://www.medizininformatik-initiative.de/) und dem [Netzwerk Universitätsmedizin (NUM)](https://www.netzwerk-universitaetsmedizin.de/) prospektiv deutschlandweit etabliert werden, sollen die Datenbestände der einzelnen Klinika für gemeinsame Verbundforschung verfügbar machen und somit die Bearbeitung komplexer und längsschnittlicher medizinischer Fragestellungen anhand von Daten aus der realen Versorgung ermöglichen. 
+Infrastrukturen für vernetzte medizinische Forschung, wie sie aktuell in der [Medizininformatik-Initiative (MII)](https://www.medizininformatik-initiative.de/) und dem [Netzwerk Universitätsmedizin (NUM)](https://www.netzwerk-universitaetsmedizin.de/) prospektiv deutschlandweit etabliert werden, sollen die Datenbestände der einzelnen Klinika für gemeinsame Verbundforschung verfügbar machen und somit die Bearbeitung komplexer und längsschnittlicher medizinischer Fragestellungen anhand von Daten aus der realen Versorgung ermöglichen.
 
 Ein Kernstück dieser Infrastrukturen sind Prozesse und Schnittstellen zwischen den dann vernetzten Einrichtungen, die es so zusätzlich zu den lokalen und oftmals bereits etablierten Prozessen erlauben, Daten in einer “föderierten” Weise lokal zu selektieren und anschließend übergreifend über mehrere Einrichtungen zusammenzuführen. Die [federated Trusted Third Party (fTTP)](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet) ist einer der erforderlichen Lösungsbausteine zum erfolgreichen Aufbau solcher Infrastrukturen im Rahmen des Vorhabens NUM-Routine Data Platform (NUM-RDP). Sie ermöglicht es, diese Zusammenführung konform zu den für personenbezogene Patientendaten geltenden Regularien von Ethik und Datenschutz umzusetzen. Wesentliches Element dieser föderierten Arbeitsweise ist der Verbleib der Hoheit über die Daten in den jeweiligen lokalen Einrichtungen.
 
-Die [Treuhandstelle der Universitätsmedizin Greifswald](https://www.ths-greifswald.de) stellt Open Source Lösungen in den Bereichen [Einwilligungsmanagement](https://www.ths-greifswald.de/gics), [Pseudonymisierung](https://www.ths-greifswald.de/gpas) und [Record Linkage](https://www.ths-greifswald.de/e-pix) für die datenschutzkonforme Durchführung medizinischer Forschungsvorhaben bereit. 
+Die [Treuhandstelle der Universitätsmedizin Greifswald](https://www.ths-greifswald.de) stellt Open Source Lösungen in den Bereichen [Einwilligungsmanagement](https://www.ths-greifswald.de/gics), [Pseudonymisierung](https://www.ths-greifswald.de/gpas) und [Record Linkage](https://www.ths-greifswald.de/e-pix) für die datenschutzkonforme Durchführung medizinischer Forschungsvorhaben bereit.
 
 Gleichzeitig ist sie für den Betrieb der [fTTP im Rahmen von NUM-RDP](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet) verantwortlich. Die fTTP Wahrscheinlichkeit ermöglicht auf Basis codierter Personendaten die pseudonymisierte und verlässliche, konsistente und korrekte Zusammenführung medizinischer Daten desselben Patienten in vernetzten Forschungsvorhaben. Die fTTP Clearing ermöglicht in mehrdeutigen Fällen die Nachlieferung identifizierender Daten für spezifische betroffene Datensätze . Diese werden nur für den Zweck des Record Linkage zur eindeutigen Bestimmung temporär verarbeitet und anschließend unwiederbringlich gelöscht.
 
 ### FHIR Implementierungsleitfaden der fTTP (Wahrscheinlichkeit, Clearing)
-Der hier vorgelegte Leitfaden beschreibt, wie die nötigen fachlichen Operationen zur Realisierung der *fTTP-Schnittstellen (Wahrscheinlichkeit, Clearing)* auf Basis von HL7 FHIR technisch abgebildet wurden. 
+Der hier vorgelegte Leitfaden beschreibt, wie die nötigen fachlichen Operationen zur Realisierung der *fTTP-Schnittstellen (Wahrscheinlichkeit, Clearing)* auf Basis von HL7 FHIR technisch abgebildet wurden.
 Erforderliche FHIR-Operations und Profile wurden in Form eines TTP-FHIR Gateway bereits 2021 [umgesetzt](https://doi.org/10.21203/rs.3.rs-1053445/v1).
-                                                                           
+
 Wir bitten nun um Kommentierung zur weiteren Optimierung der Schnittstelle.

@@ -24,13 +24,8 @@
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "ImplementationGuide/markdown/Beschreibung_fTTP.md",
+          "nameUrl": "ImplementationGuide/markdown/BeschreibungBallotFttp.md",
           "title": "Beschreibung zum Kommentierungsverfahren",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/Kontext.md",
-          "title": "Kontext",
           "generation": "markdown"
         },
         {
