@@ -3,6 +3,7 @@ Id: ConsentPolicyPurposeCS
 Description: "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungskontext und/oder Geltungsbereich einer ConsentPolicy (Warum/Wofür/Woher/Wohin/Für wen/Wie/...)"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
+* ^version = "1.0"
 * ^purpose = "Dritte Achse 'Kontext' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.purpose"
 * ^caseSensitive = true
 * ^content = #complete

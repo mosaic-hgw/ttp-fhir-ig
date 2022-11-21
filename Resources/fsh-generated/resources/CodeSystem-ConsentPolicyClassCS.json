@@ -5,7 +5,7 @@
   "name": "ConsentPolicyClass",
   "id": "ConsentPolicyClassCS",
   "description": "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentPolicy (z.B. ausgewählte Datensicht 'IDAT')",
-  "version": "2.2.0",
+  "version": "1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass",
   "concept": [
     {

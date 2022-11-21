@@ -5,7 +5,7 @@
   "name": "ConsentPolicyActor",
   "id": "ConsentPolicyActorCS",
   "description": "Erweiterbare Kategorisierung von Konsument/Anfragesteller eines Einwilligungsumsetzungsanfrage (Enforcement) bezogen auf einen Einwilligungsbestandteil",
-  "version": "2.2.0",
+  "version": "1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor",
   "concept": [
     {

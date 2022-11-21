@@ -3,6 +3,7 @@ Id: ConsentPolicyActorCS
 Description: "Erweiterbare Kategorisierung von Konsument/Anfragesteller eines Einwilligungsumsetzungsanfrage (Enforcement) bezogen auf einen Einwilligungsbestandteil"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+* ^version = "1.0"
 * ^purpose = "Achse 'Akteur' des 'Semantic Consent Code (SCC)' zur optionalen Verwendung"
 * ^caseSensitive = true
 * ^content = #complete

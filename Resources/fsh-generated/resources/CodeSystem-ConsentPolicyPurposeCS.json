@@ -5,7 +5,7 @@
   "name": "ConsentPolicyPurpose",
   "id": "ConsentPolicyPurposeCS",
   "description": "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungskontext und/oder Geltungsbereich einer ConsentPolicy (Warum/Wofür/Woher/Wohin/Für wen/Wie/...)",
-  "version": "2.2.0",
+  "version": "1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose",
   "concept": [
     {

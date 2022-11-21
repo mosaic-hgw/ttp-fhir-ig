@@ -5,7 +5,7 @@
   "name": "ConsentPolicyAction",
   "id": "ConsentPolicyActionCS",
   "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun).",
-  "version": "2.2.0",
+  "version": "1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction",
   "concept": [
     {
