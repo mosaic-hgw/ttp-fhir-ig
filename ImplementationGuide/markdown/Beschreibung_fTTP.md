@@ -1,14 +1,17 @@
 ![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
-## Beschreibung fTTP
+                                                                  
+### Einleitung
 
-### Hintergrund
-Die Treuhandstelle der Universitätsmedizin Greifswald stellt Open Source Lösungen in den Bereichen [Einwilligungsmanagement](https://www.ths-greifswald.de/gics), [Pseudonymisierung](https://www.ths-greifswald.de/gpas) und [Record Linkage](https://www.ths-greifswald.de/e-pix) für die datenschutzkonforme Durchführung medizinischer Forschungsvorhaben bereit. Für die Umsetzung der informationellen Gewaltenteilung hat sich der [Aufbau einer Unabhängigen Treuhandstelle](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4467617/) (a.k.a Datentreuhänder, kurz: THS, engl. TTP) bewährt.
+Infrastrukturen für vernetzte medizinische Forschung, wie sie aktuell in der [Medizininformatik-Initiative (MII)](https://www.medizininformatik-initiative.de/) und dem [Netzwerk Universitätsmedizin (NUM)](https://www.netzwerk-universitaetsmedizin.de/) prospektiv deutschlandweit etabliert werden, sollen die Datenbestände der einzelnen Klinika für gemeinsame Verbundforschung verfügbar machen und somit die Bearbeitung komplexer und längsschnittlicher medizinischer Fragestellungen anhand von Daten aus der realen Versorgung ermöglichen. 
 
-Die [Treuhandstellen-Werkzeuge gICS, gPAS und E-PIX](https://www.ths-greifswald.de/forscher/) setzen einheitlich auf Service-orientierte Architekturen (SOAP). Funktionalitäten lassen sich problemlos unter Zuhilfenahme eines Workflow-Managers ([Dispatcher](https://www.ths-greifswald.de/dispatcher-spezifikation-online-verfuegbar/)) orchestrieren und per REST-Interface ansteuern.
+Ein Kernstück dieser Infrastrukturen sind Prozesse und Schnittstellen zwischen den dann vernetzten Einrichtungen, die es so zusätzlich zu den lokalen und oftmals bereits etablierten Prozessen erlauben, Daten in einer “föderierten” Weise lokal zu selektieren und anschließend übergreifend über mehrere Einrichtungen zusammenzuführen. Die [federated Trusted Third Party (fTTP)](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet) ist einer der erforderlichen Lösungsbausteine zum erfolgreichen Aufbau solcher Infrastrukturen im Rahmen des Vorhabens NUM-Routine Data Platform (NUM-RDP). Sie ermöglicht es, diese Zusammenführung konform zu den für personenbezogene Patientendaten geltenden Regularien von Ethik und Datenschutz umzusetzen. Wesentliches Element dieser föderierten Arbeitsweise ist der Verbleib der Hoheit über die Daten in den jeweiligen lokalen Einrichtungen.
 
-Bisherige Forschungsvorhaben (z.B. [NAKO Gesundheitsstudie](https://www.ths-greifswald.de/projekte/nako/), [DZHK e.V.](https://www.ths-greifswald.de/projekte/dzhk/), dem [MII-Konsortium MIRACUM](https://www.miracum.org/miracolix-tools/)) konnten unter Verwendung dieser Web-Services und entsprechender Integrationsarbeit vollumfänglich realisiert werden.
+Die [Treuhandstelle der Universitätsmedizin Greifswald](https://www.ths-greifswald.de) stellt Open Source Lösungen in den Bereichen [Einwilligungsmanagement](https://www.ths-greifswald.de/gics), [Pseudonymisierung](https://www.ths-greifswald.de/gpas) und [Record Linkage](https://www.ths-greifswald.de/e-pix) für die datenschutzkonforme Durchführung medizinischer Forschungsvorhaben bereit. 
 
-### Ziel
-Um sowohl bestehende Anwenderprojekte als auch künftige Nutzer bei der Umsetzung FHIR-orientierter Infrastrukturen und Prozesse zu unterstützen, soll künftig ein zusätzliches Treuhandstellen-FHIR-Gateway (kurz: TPP-FHIR Gateway) als Mittler von FHIR-spezifischen Infrastrukturkomponenten und den bestehenden THS-Werkzeugen dienen.
+Gleichzeitig ist sie für den Betrieb der [fTTP im Rahmen von NUM-RDP](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet) verantwortlich. Die fTTP Wahrscheinlichkeit ermöglicht auf Basis codierter Personendaten die pseudonymisierte und verlässliche, konsistente und korrekte Zusammenführung medizinischer Daten desselben Patienten in vernetzten Forschungsvorhaben. Die fTTP Clearing ermöglicht in mehrdeutigen Fällen die Nachlieferung identifizierender Daten für spezifische betroffene Datensätze . Diese werden nur für den Zweck des Record Linkage zur eindeutigen Bestimmung temporär verarbeitet und anschließend unwiederbringlich gelöscht.
 
-Weitere Details unter: {{pagelink:ImplementationGuide/markdown/Kontext.md}}.
+### FHIR Implementierungsleitfaden der fTTP (Wahrscheinlichkeit, Clearing)
+Der hier vorgelegte Leitfaden beschreibt, wie die nötigen fachlichen Operationen zur Realisierung der *fTTP-Schnittstellen (Wahrscheinlichkeit, Clearing)* auf Basis von HL7 FHIR technisch abgebildet wurden. 
+Erforderliche FHIR-Operations und Profile wurden in Form eines TTP-FHIR Gateway bereits 2021 [umgesetzt](https://doi.org/10.21203/rs.3.rs-1053445/v1).
+                                                                           
+Wir bitten nun um Kommentierung zur weiteren Optimierung der Schnittstelle.
