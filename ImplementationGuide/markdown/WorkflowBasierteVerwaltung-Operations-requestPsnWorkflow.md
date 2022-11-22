@@ -31,7 +31,7 @@ This operation changes content
 
 | **Name**    | **Cardinality** | **Type** |**Documentation**|
 |-------------|-----------------|---|---|
-| original    | 1..*            |string|AListe studien- und standortspezifischer Originalwerte f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
+| original    | 1..*            |string|Liste studien- und standortspezifischer Originalwerte f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
 | study       | 1..1            |string|Angabe der Studie|
 | source      | 1..1            |string|Angabe der Pseudonymisierungsquell-Domain (Herkunft des Originalwertes)|
 | target      | 1..1            |string|Angabe der Pseudonymisierungsziel-Domain|
