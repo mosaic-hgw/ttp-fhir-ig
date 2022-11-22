@@ -48,9 +48,15 @@ Im Einzel-Fehlerfall wird jeweils ein error-Parameter zurückgegeben, ebenfalls 
 Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: fehlende oder fehlerhafte Parameter
 
-##### **Beispiel**
+##### **Beispiele**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Standort Use Cases):
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-request-example-1.json}}
 
 Eine beispielhafte Rückmeldung (orientiert am Beispiel der fTTP-NUM Standort Use Cases) kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-response-example-1.json}}
+
+Beispielhafter Request-Body zur Anforderung von Drittpseudonymen (orientiert am Beispiel der Zentralen Plattform im Vorhaben NUM-RDP):
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-request-example-2.json}}
+
+Eine beispielhafte Rückmeldung (orientiert am Beispiel der Zentralen Plattform im Vorhaben NUM-RDP) kann wie folgt aussehen:
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-response-example-2.json}}
