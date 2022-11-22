@@ -21,7 +21,22 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:RequestPsnWorkflow}}
+### Invocations
+
+`URL: [base]/$requestPsnWorkflow`
+
+This operation changes content
+
+### Parameters (In)
+
+| **Name**    | **Cardinality** | **Type** |**Documentation**|
+|-------------|-----------------|---|---|
+| original    | 1..*            |string|AListe studien- und standortspezifischer Originalwerte f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
+| study       | 1..1            |string|Angabe der Studie|
+| source      | 1..1            |string|Angabe der Pseudonymisierungsquell-Domain (Herkunft des Originalwertes)|
+| target      | 1..1            |string|Angabe der Pseudonymisierungsziel-Domain|
+| apikey      | 1..1            |string|G&#252;ltiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
+| event | 0..1            |string|Optionaler Parameter. Auszul&#246;sendes, vorkonfiguriertes Pseudonymisierungsevents innerhalb des Workflow-Managers.|
 
 Im Erfolgsfall wird jeweils ein pseudonym-Parameter zurückgegeben mit folgenden Teilen:
 1. original = der zu pseudonymisierende Werte (Teil des Requests)

@@ -20,7 +20,20 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:RequestPsnFromBfWorkflow}}
+### Invocations
+
+`URL: [base]/$requestPsnFromBfWorkflow`
+
+This operation changes content
+
+### Parameters (In)
+
+|**Name** | **Cardinality** | **Type** |**Documentation**|
+|---|-----------------|---|---|
+|study| 1..1            |string|Angabe der Studie|
+|bloomfilter| 1..*          |base64Binary|Liste studien- und standortspezifischer Bloomfilter (base64-codiert)|
+|target| 1..1            |string|Angabe des Bloomfilter sendenden Standorts (Ziel-Dom&#228;ne)|
+|apikey| 1..1            |string|G&#252;ltiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
 
 Im Erfolgsfall wird jeweils ein pseudonym-bf-Parameter zurückgegeben mit folgenden Teilen:
 1. bloomfilter = der zu für PPRL erforderliche Bloomfilter (Teil des Requests)

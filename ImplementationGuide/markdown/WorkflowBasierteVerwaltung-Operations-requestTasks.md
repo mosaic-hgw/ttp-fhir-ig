@@ -15,7 +15,19 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-{{render:RequestTasks}}
+### Invocations
+
+`URL: [base]/$requestTasks`
+
+This operation changes content
+
+### Parameters (In)
+
+ |**Name** | **Cardinality** | **Type** |**Documentation**|
+|---|-----------------|---|---|
+|study| 1..1|string|Angabe der Studie|
+ |target| 1..1|string|Angabe der Pseudonymisierungsziel-Domain|
+ |apikey| 1..1|string|G&#252;ltiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
 
 Das Coding des Parameters send_idat.element ist an das Value Set {{pagelink:ImplementationGuide/markdown/Terminologie-ValueSets-IdatElements.md}} gebunden.
 

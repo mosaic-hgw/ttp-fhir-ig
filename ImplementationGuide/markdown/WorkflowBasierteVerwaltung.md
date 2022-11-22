@@ -7,11 +7,11 @@ Der FHIR-Endpunkt ([base]) für die Workflow-basierte Verwaltung lautet
 
 ### Übersicht der fTTP-Operations
 
-Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funktionalitäten ([federated Trusted Third Party](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet)) des REST-basierten TTP-FHIR Gateway.
+Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funktionalitäten ([federated Trusted Third Party](https://www.ths-greifswald.de/forscher/num/fttp-fact-sheet)).
 
 | Operation|erforderlich für fTTP-Modul|
 -- | ---
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md}}|Wahrscheinlichkeit|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}}|Wahrscheinlichkeit|
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}|Clearing|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}|Wahrscheinlichkeit/Clearing|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md}}|Clearing|
