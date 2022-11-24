@@ -21,7 +21,7 @@ Der Parameter "patient" enthält eine Patient-Ressource entsprechend dem IDAT-Pr
 
 {{tree:Idat}}
 
-Im Erfolgsfall wird er HTTP Statuscode 200 zurückgegeben.
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
 Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 
