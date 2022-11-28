@@ -4,6 +4,7 @@ Id: Idat
 Title: "IDAT"
 Description: "Patienten-Profil zur Übermittlung von angeforderten IDAT an die fTTP für den Clearing-Prozess."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/dispatcher/Patient/Idat"
 * . ^short = "Patienten-Profil zur Übermittlung von angeforderten IDAT"
 * . ^comment = "Die per $requestTasks vorgegebenen Element-Bezeichner sind wie folgt gemappt:\r\n\r\ngiven: name.given\r\nfamily: name.family (mit name.use!='maiden' oder nicht vorhanden)\r\nprefix: name.prefix\r\nsuffix: name.suffix\r\nbirthdate: birthDate\r\ngender: gender\r\naddress-line: address.line\r\naddress-city: address.city\r\naddress-postalcode: address.postalCode\r\nbirthplace: extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').city\r\nmaidenname: name.family (mit name.use='maiden')\r\ndegree: name.prefix (ggf. mit gesetzter Extension http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier mit Code 'AC')\r\nlanguage: communication.language (mit communication.preferred=true)\r\nnationality: extension(http://hl7.org/fhir/StructureDefinition/patient-nationality).valueCode.coding.code oder extension(http://hl7.org/fhir/StructureDefinition/patient-nationality).valueCode.textextension(http://hl7.org/fhir/StructureDefinition/patient-nationality).code.text\r\nmaritalstatus: maritalStatus.coding.code oder maritalStatus.text"

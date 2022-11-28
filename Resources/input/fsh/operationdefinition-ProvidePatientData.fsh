@@ -2,6 +2,7 @@ Instance: ProvidePatientData
 InstanceOf: OperationDefinition
 Usage: #definition
 * insert meta-instance
+* ^status = #active
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/providePatientData"
 * name = "ProvidePatientData"
 * title = "providePatientData"

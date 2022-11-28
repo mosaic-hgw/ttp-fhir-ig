@@ -1,6 +1,7 @@
 ValueSet: IdatElements
 Id: IdatElementsVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
 * ^expansion.timestamp = "2021-05-27T11:00:00+00:00"

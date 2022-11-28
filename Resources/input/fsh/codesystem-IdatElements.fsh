@@ -2,6 +2,7 @@ CodeSystem: IdatElements
 Id: IdatElementsCS
 Description: "Element names for use in $requestTasks operation."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements"
 * ^caseSensitive = true
 * ^content = #complete

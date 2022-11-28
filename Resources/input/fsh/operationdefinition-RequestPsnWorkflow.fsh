@@ -2,6 +2,7 @@ Instance: RequestPsnWorkflow
 InstanceOf: OperationDefinition
 Usage: #definition
 * insert meta-instance
+* ^status = #active
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/requestPsnWorkflow"
 * name = "RequestPsnWorkflow"
 * title = "requestPsnWorkflow"
