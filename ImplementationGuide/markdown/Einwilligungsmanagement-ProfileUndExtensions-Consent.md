@@ -58,9 +58,7 @@ GET [base]/Consent?domain:identifier=MIRACUM&category=2.16.840.1.113883.3.1937.7
 findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Consent (entsprechend der hier beispielhaften OID) entsprechen.
 
 ###### Typ der Provision (permit, deny)
-Der Suchparameter **provisionType**, definiert im Rahmen des Implementierungsleitfaden Consent der MII, wird unterstützt.
-
-{{render:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype}}
+Der Suchparameter **provisionType**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
 ```
@@ -68,9 +66,7 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit
 ```
 
 ###### Provision-Code
-Der Suchparameter **provisionCode**, definiert im Rahmen des Implementierungsleitfaden Consent der MII, wird unterstützt.
-
-{{render:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode}}
+Der Suchparameter **provisionCode**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
 ```
@@ -78,18 +74,16 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionCode=urn:oid:2.16.840.1.11
 ```
 
 ###### Provisions-Zeitraum
-Der Suchparameter **provisionPeriod**, definiert im Rahmen des Implementierungsleitfaden Consent der MII, wird unterstützt.
+Der Suchparameter **provisionPeriod**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei ausdrücklich auf den entsprechenden Abschnitt der FHIR-Spezifikation und die dortigen Beispiele zur Inklusion bzw. Exklusion von Suchergebnissen verwiesen: http://hl7.org/fhir/r4/search.html#date .
-
-{{render:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod}}
 
 Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&provisionPeriod=2020-12-15
 ```
 ###### Policy URI (versionsspezifischer MII Broad Consent)
-Der Suchparameter **policyUri**, definiert im Rahmen des Implementierungsleitfaden Consent der MII, wird unterstützt.
+Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 {{render:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri}}
 
