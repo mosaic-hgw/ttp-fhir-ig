@@ -38,7 +38,7 @@ Usage: #definition
 * description = "Eindeutiger Name (Identifikator) der referenzierten Consent Domain"
 * code = #domain
 * base[0] = #Consent
-* type = #string
+* type = #reference
 * expression = "extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference"
 * multipleOr = false
 * multipleAnd = false

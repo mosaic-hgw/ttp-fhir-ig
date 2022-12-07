@@ -24,7 +24,7 @@
   "base": [
     "Consent"
   ],
-  "type": "string",
+  "type": "reference",
   "expression": "extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference",
   "multipleOr": false,
   "multipleAnd": false
