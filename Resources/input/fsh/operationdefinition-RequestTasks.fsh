@@ -2,7 +2,7 @@ Instance: RequestTasks
 InstanceOf: OperationDefinition
 Usage: #definition
 * insert meta-instance
-* ^status = #active
+* status = #active
 * url = "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/requestTasks"
 * name = "RequestTasks"
 * title = "requestTasks"

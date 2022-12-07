@@ -27,3 +27,18 @@ Usage: #definition
 * expression = "useContext.valueReference.identifier"
 * multipleOr = false
 * multipleAnd = false
+
+
+Instance: domain
+InstanceOf: SearchParameter
+Usage: #definition
+* insert meta-instance
+* url = "https://ths-greifswald.de/fhir/SearchParameter/gics/domain"
+* name = "domain"
+* description = "Eindeutiger Name (Identifikator) der referenzierten Consent Domain"
+* code = #domain
+* base[0] = #Consent
+* type = #string
+* expression = "extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference"
+* multipleOr = false
+* multipleAnd = false

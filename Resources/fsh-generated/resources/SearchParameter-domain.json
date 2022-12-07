@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
-  "id": "useContextIdentifier",
-  "url": "https://ths-greifswald.de/fhir/SearchParameter/gics/useContextIdentifier",
+  "id": "domain",
+  "url": "https://ths-greifswald.de/fhir/SearchParameter/gics/domain",
   "version": "2.2.0",
   "status": "draft",
   "date": "2022-12-07",
@@ -18,15 +18,14 @@
       ]
     }
   ],
-  "name": "useContextIdentifier",
+  "name": "domain",
   "description": "Eindeutiger Name (Identifikator) der referenzierten Consent Domain",
-  "code": "useContextIdentifier",
+  "code": "domain",
   "base": [
-    "ActivityDefinition",
-    "Questionnaire"
+    "Consent"
   ],
-  "type": "token",
-  "expression": "useContext.valueReference.identifier",
+  "type": "string",
+  "expression": "extension('http://fhir.de/ConsentManagement/StructureDefinition/DomainReference').extension('domain').valueReference",
   "multipleOr": false,
   "multipleAnd": false
 }
