@@ -13,7 +13,13 @@
 {{render:AllConsentsForTemplate}}
 
 ##### **Beispiel**
-(Q4/2021)
+Beispielhafter Request-Body:
+
+{{xml:Resources/fsh-generated/resources/Parameters-AllConsentsForTemplate-request-example-1.json}}
+
+Beispielhafte Rückmeldung:
+
+{{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForTemplate-response-example-1.json}}
 
 ##### **Error Codes**
 
