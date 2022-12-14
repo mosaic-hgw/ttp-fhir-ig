@@ -13,10 +13,10 @@
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Resources/fsh-generated/resources/Parameters-AllConsentsForPerson-request-example-1.md}}
+{{xml:Resources/fsh-generated/resources/Parameters-AllConsentsForPerson-request-example-1.json}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
-{{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForPerson-response-example-1.md}}
+{{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForPerson-response-example-1.json}}
 
 
 ##### **Error Codes**
