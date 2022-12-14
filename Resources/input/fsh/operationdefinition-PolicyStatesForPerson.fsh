@@ -39,3 +39,9 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Ist dieser Parameter false (= Defaultwert), werden alle jemals existierenden Policies mit Status \"permit\" übermittelt. Wird er auf true gesetzt, werden alle Policy-Status berücksichtigt (permit/deny/unknown)."
 * parameter[=].type = #boolean
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bundle mit den beschriebenen Inhalten"
+* parameter[=].type = #Bundle

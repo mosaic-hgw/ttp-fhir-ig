@@ -45,6 +45,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement."
 * parameter[=].type = #canonical
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bundle mit den beschriebenen Inhalten"
+* parameter[=].type = #Bundle
 
 
 Instance: CurrentConsentForPersonAndTemplate-request-example-1

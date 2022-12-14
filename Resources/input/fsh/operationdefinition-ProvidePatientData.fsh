@@ -38,6 +38,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Patient-Ressource die, soweit bekannt, die in der der taskId assoziierten Aufgabe definierten identifizierenden Datenelemente eines Patienten enthält."
 * parameter[=].type = #Patient
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bundle mit den beschriebenen Inhalten"
+* parameter[=].type = #Bundle
 
 
 

@@ -27,6 +27,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Einwilligungsdomaene"
 * parameter[=].type = #string
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bundle mit den beschriebenen Inhalten"
+* parameter[=].type = #Bundle
 
 
 Instance: AllPolicyStatesForPerson-request-example-1

@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/gics/allConsentsForTemplate",
   "version": "2.2.0",
   "status": "draft",
-  "date": "2022-12-07",
+  "date": "2022-12-14",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -54,6 +54,14 @@
       "max": "1",
       "documentation": "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.",
       "type": "canonical"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bundle mit den beschriebenen Inhalten",
+      "type": "Bundle"
     }
   ]
 }

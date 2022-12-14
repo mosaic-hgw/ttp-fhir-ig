@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/gics/policyStatesForPerson",
   "version": "2.2.0",
   "status": "draft",
-  "date": "2022-12-07",
+  "date": "2022-12-14",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -62,6 +62,14 @@
       "max": "1",
       "documentation": "Ist dieser Parameter false (= Defaultwert), werden alle jemals existierenden Policies mit Status \"permit\" übermittelt. Wird er auf true gesetzt, werden alle Policy-Status berücksichtigt (permit/deny/unknown).",
       "type": "boolean"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bundle mit den beschriebenen Inhalten",
+      "type": "Bundle"
     }
   ]
 }

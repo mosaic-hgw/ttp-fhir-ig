@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/providePatientData",
   "version": "2.2.0",
   "status": "active",
-  "date": "2022-12-07",
+  "date": "2022-12-14",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -60,6 +60,14 @@
       "max": "1",
       "documentation": "Patient-Ressource die, soweit bekannt, die in der der taskId assoziierten Aufgabe definierten identifizierenden Datenelemente eines Patienten enthält.",
       "type": "Patient"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bundle mit den beschriebenen Inhalten",
+      "type": "Bundle"
     }
   ]
 }

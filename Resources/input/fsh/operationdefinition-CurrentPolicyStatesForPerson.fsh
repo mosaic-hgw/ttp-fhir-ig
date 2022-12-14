@@ -32,6 +32,12 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].type = #Parameters
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bundle mit den beschriebenen Inhalten"
+* parameter[=].type = #Bundle
 
 
 Instance: CurrentPolicyStatesForPerson-request-example-1

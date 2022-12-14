@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/gics/currentPolicyStatesForPerson",
   "version": "2.2.0",
   "status": "draft",
-  "date": "2022-12-07",
+  "date": "2022-12-14",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -53,6 +53,14 @@
       "min": 0,
       "max": "1",
       "type": "Parameters"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bundle mit den beschriebenen Inhalten",
+      "type": "Bundle"
     }
   ]
 }
