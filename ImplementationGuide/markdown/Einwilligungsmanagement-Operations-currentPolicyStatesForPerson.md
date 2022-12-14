@@ -8,6 +8,10 @@
 ##### **Aufruf und Rückgabe**
 {{render:CurrentPolicyStatesForPerson}}
 
+Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprechend dem Config-Profil:
+
+{{tree:Config}}
+
 ##### **Beispiel**
 Beispielhafter Request-Body:
 
