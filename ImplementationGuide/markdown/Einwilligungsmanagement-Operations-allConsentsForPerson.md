@@ -12,7 +12,12 @@
 {{render:AllConsentsForPerson}}
 
 ##### **Beispiel**
-(Q4/2021)
+Beispielhafter Request-Body:
+{{xml:Resources/fsh-generated/resources/Parameters-AllConsentsForPerson-request-example-1}}
+
+Eine beispielhafte Rückmeldung kann wie folgt aussehen:
+{{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForPerson-response-example-1}}
+
 
 ##### **Error Codes**
 
