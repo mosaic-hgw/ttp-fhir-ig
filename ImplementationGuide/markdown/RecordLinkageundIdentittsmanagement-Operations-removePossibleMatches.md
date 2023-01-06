@@ -9,11 +9,11 @@ Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX ko
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
-`<HOST>:<PORT>/ttp-fhir/fhir/epix/$queryPossibleMatches`
+`<HOST>:<PORT>/ttp-fhir/fhir/epix/$removePossibleMatches`
 
 Der Funktionsaufruf liefert eine Parameters-Ressource TODO zurück.
 
-{{render:QueryPossibleMatches}}
+{{render:RemovePossibleMatches}}
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
