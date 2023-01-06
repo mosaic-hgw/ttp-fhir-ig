@@ -79,6 +79,16 @@
                   "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-updatePatient.md",
                   "title": "updatePatient",
                   "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-queryPossibleMatches.md",
+                  "title": "queryPossibleMatches",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-removePossibleMatches.md",
+                  "title": "removePossibleMatches",
+                  "generation": "markdown"
                 }
               ]
             },

@@ -1,0 +1,17 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-QueryPossibleMatches-request-example-1",
+  "parameter": [
+    {
+      "name": "domain",
+      "valueString": "MIRACUM"
+    },
+    {
+      "name": "mpiId",
+      "valueIdentifier": {
+        "system": "https://ths-greifswald.de/fhir/identifier/BeispielMpiId",
+        "value": "1001000000066"
+      }
+    }
+  ]
+}
