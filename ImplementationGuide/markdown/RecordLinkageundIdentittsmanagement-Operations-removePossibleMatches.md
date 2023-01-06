@@ -1,7 +1,7 @@
 #### {{page-title}}
 
 ##### **Zweck**
-Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.
+Entfernt Matches aus einer Domäne.
 
 ##### **Voraussetzung**
 Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX konfiguriert sein.
@@ -11,7 +11,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$queryPossibleMatches`
 
-Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem oder mehreren Multi-Part-Parametern zurück.
+Der Funktionsaufruf liefert eine Parameters-Ressource TODO zurück.
 
 {{render:QueryPossibleMatches}}
 
@@ -25,7 +25,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-request-example-1.json}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RemovePossibleMatches-request-example-1.json}}
 
 Beispielhafte Response:
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-response-example-1.json}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RemovePossibleMatches-response-example-1.json}}
