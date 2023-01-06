@@ -40,7 +40,7 @@
     {
       "name": "linkId",
       "use": "in",
-      "min": 0,
+      "min": 1,
       "max": "*",
       "documentation": "Link-ID eines zu löschen Matches.",
       "type": "integer"

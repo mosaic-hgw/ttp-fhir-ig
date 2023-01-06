@@ -22,7 +22,7 @@ Usage: #definition
 * parameter[=].type = #string
 * parameter[+].name = #linkId
 * parameter[=].use = #in
-* parameter[=].min = 0
+* parameter[=].min = 1
 * parameter[=].max = "*"
 * parameter[=].documentation = "Link-ID eines zu löschen Matches."
 * parameter[=].type = #integer
