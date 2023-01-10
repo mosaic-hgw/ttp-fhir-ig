@@ -32,6 +32,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Anmerkung zum Löschvorgang"
 * parameter[=].type = #string
+* parameter[+].name = #return
+* parameter[=].use = #out
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "Rückinformation zum Löschvorgang."
+* parameter[=].type = #OperationOutcome
 
 
 Instance: Parameters-RemovePossibleMatches-request-example-1
@@ -44,6 +50,10 @@ Usage: #example
 * parameter.part[+].name = "comment"
 * parameter.part[=].valueString = "Dieser Match war völliger Unsinn!"
 
-Instance: Parameters-RemovePossibleMatches-response-example-1
-InstanceOf: Parameters
+Instance: OperationOutcome-RemovePossibleMatches-response-example-1
+InstanceOf: OperationOutcome
 Usage: #example
+* issue
+  * severity = #information
+  * code = #informational
+  * diagnostics = "removed 1 possible match(es)."
