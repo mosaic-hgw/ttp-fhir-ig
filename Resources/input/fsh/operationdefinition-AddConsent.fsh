@@ -19,7 +19,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+* parameter[=].documentation = "Patient-Ressource, entsprechend dem Profil http://fhir.de/ConsentManagement/StructureDefinition/Patient. Für Identifier in dieser Ressource muss der Namensraum (identifier.system) mit der Zeichenfolge 'https://ths-greifswald.de/fhir/gics/identifiers/' beginnen. Angehängt hieran wird der Bezeichner eines im System konfigurierten SignerIDTypes. Abweichungen hiervon führen zu einem Fehler, indiziert durch HTTP Status 422."
 * parameter[=].type = #Patient
 * parameter[+].name = #domain
 * parameter[=].use = #in
