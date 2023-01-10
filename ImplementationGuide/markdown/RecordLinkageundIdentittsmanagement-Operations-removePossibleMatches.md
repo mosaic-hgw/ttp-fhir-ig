@@ -11,7 +11,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$removePossibleMatches`
 
-Der Funktionsaufruf liefert eine Parameters-Ressource TODO zurück.
+Der Funktionsaufruf liefert eine OperationOutcome-Ressource zurück.
 
 {{render:RemovePossibleMatches}}
 

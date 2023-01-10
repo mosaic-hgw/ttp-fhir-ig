@@ -1,0 +1,22 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-UpdateBf-request-example-1",
+  "parameter": [
+    {
+      "name": "study",
+      "valueString": "num"
+    },
+    {
+      "name": "bloomfilter",
+      "valueBase64Binary": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+    },
+    {
+      "name": "source",
+      "valueString": "dic_erlangen"
+    },
+    {
+      "name": "apikey",
+      "valueString": "abcdef12345"
+    }
+  ]
+}

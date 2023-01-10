@@ -1,0 +1,14 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "OperationOutcome-UpdateBf-response-example-1",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "text": "FIXME TODO"
+      },
+      "diagnostics": "FIXME TODO"
+    }
+  ]
+}

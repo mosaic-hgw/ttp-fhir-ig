@@ -1,0 +1,71 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "UpdateBf",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/UpdateBf",
+  "version": "2.2.0",
+  "status": "draft",
+  "date": "2023-01-10",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "UpdateBf",
+  "title": "updateBf",
+  "kind": "operation",
+  "description": "Fügt anhand eines bestehenden DIZ-Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu.",
+  "code": "updateBf",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "study",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Studie",
+      "type": "string"
+    },
+    {
+      "name": "bloomfilter",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "der hinzu zu fügende Bloomfilter (base64-codiert)",
+      "type": "base64Binary"
+    },
+    {
+      "name": "source",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe des Bloomfilter sendenden Standorts (Quell-Domäne, DIZ-Pseudonym)",
+      "type": "string"
+    },
+    {
+      "name": "apikey",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
+      "type": "string"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Rückinformation.",
+      "type": "OperationOutcome"
+    }
+  ]
+}

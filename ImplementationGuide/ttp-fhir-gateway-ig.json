@@ -162,6 +162,11 @@
                   "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md",
                   "title": "providePatientData",
                   "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md",
+                  "title": "updateBf",
+                  "generation": "markdown"
                 }
               ]
             }
