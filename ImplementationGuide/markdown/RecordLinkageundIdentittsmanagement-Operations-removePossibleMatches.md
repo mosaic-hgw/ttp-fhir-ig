@@ -28,4 +28,4 @@ Beispielhafter Request-Body:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-RemovePossibleMatches-request-example-1.json}}
 
 Beispielhafte Response:
-{{xml:Resources/fsh-generated/resources/OperationDefinition-OperationDefinition-RemovePossibleMatches-response-example-1.json}}
+{{xml:Resources/fsh-generated/resources/OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.json}}
