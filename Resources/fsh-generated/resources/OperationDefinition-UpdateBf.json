@@ -60,6 +60,14 @@
       "type": "string"
     },
     {
+      "name": "bfVersion",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bloomfilter-Version.",
+      "type": "string"
+    },
+    {
       "name": "return",
       "use": "out",
       "min": 1,

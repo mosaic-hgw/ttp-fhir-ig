@@ -36,6 +36,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
 * parameter[=].type = #string
+* parameter[+].name = #bfVersion
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bloomfilter-Version."
+* parameter[=].type = #string
 * parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 1
@@ -55,6 +61,8 @@ Usage: #example
 * parameter[=].valueString = "dic_erlangen"
 * parameter[+].name = "apikey"
 * parameter[=].valueString = "abcdef12345"
+* parameter[+].name = "bfVersion"
+* parameter[=].valueString = "2"
 
 Instance: OperationOutcome-UpdateBf-response-example-1
 InstanceOf: OperationOutcome
