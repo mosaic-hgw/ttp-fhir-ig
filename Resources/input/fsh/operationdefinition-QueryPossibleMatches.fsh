@@ -7,14 +7,26 @@ Usage: #definition
 * title = "queryPossibleMatches"
 * status = #draft
 * kind = #operation
-* description = "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus."
+* description = "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgenden den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung."
 * affectsState = false
 * code = #queryPossibleMatches
 * comment = "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben."
 * system = true
 * type = false
 * instance = false
-* parameter[0].name = #domain
+* parameter[0].name = #_offset
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Offset für Paging (Anzahl der zu überspringenden match-Parameter)"
+* parameter[=].type = #integer
+* parameter[+].name = #_count
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Anzahl der zurück zu gebenden match-Parameter (Paging)"
+* parameter[=].type = #string
+* parameter[+].name = #domain
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
@@ -26,6 +38,24 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben."
 * parameter[=].type = #Identifier
+* parameter[+].name = #prev
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bei Paging: URL der vorausgehenden Seite."
+* parameter[=].type = #uri
+* parameter[+].name = #self
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bei Paging: URL der aktuellen Seite."
+* parameter[=].type = #uri
+* parameter[+].name = #next
+* parameter[=].use = #out
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Bei Paging: URL der folgenden Seite."
+* parameter[=].type = #uri
 * parameter[+].name = #match
 * parameter[=].use = #out
 * parameter[=].min = 0

@@ -21,7 +21,7 @@
   "name": "QueryPossibleMatches",
   "title": "queryPossibleMatches",
   "kind": "operation",
-  "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+  "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgenden den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.",
   "affectsState": false,
   "code": "queryPossibleMatches",
   "comment": "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.",
@@ -29,6 +29,22 @@
   "type": false,
   "instance": false,
   "parameter": [
+    {
+      "name": "_offset",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Offset für Paging (Anzahl der zu überspringenden match-Parameter)",
+      "type": "integer"
+    },
+    {
+      "name": "_count",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Anzahl der zurück zu gebenden match-Parameter (Paging)",
+      "type": "string"
+    },
     {
       "name": "domain",
       "use": "in",
@@ -44,6 +60,30 @@
       "max": "1",
       "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben.",
       "type": "Identifier"
+    },
+    {
+      "name": "prev",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bei Paging: URL der vorausgehenden Seite.",
+      "type": "uri"
+    },
+    {
+      "name": "self",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bei Paging: URL der aktuellen Seite.",
+      "type": "uri"
+    },
+    {
+      "name": "next",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Bei Paging: URL der folgenden Seite.",
+      "type": "uri"
     },
     {
       "name": "match",
