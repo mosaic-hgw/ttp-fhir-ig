@@ -7,7 +7,8 @@ Usage: #definition
 * name = "UpdateBf"
 * title = "updateBf"
 * kind = #operation
-* description = "Fügt anhand eines bestehenden DIZ-Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu."
+* description = "Fügt anhand eines bestehenden Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu."
+* affectsState = true
 * code = #updateBf
 * system = true
 * type = false
@@ -28,7 +29,13 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Angabe des Bloomfilter sendenden Standorts (Quell-Domäne, DIZ-Pseudonym)"
+* parameter[=].documentation = "Angabe des Bloomfilter sendenden Standorts (Quell-Domäne)"
+* parameter[=].type = #string
+* parameter[+].name = #pseudonym
+* parameter[=].use = #in
+* parameter[=].min = 1
+* parameter[=].max = "1"
+* parameter[=].documentation = "Das Pseudonym, dessen Bloomfilter aktualisiert werden soll."
 * parameter[=].type = #string
 * parameter[+].name = #apikey
 * parameter[=].use = #in
@@ -70,5 +77,6 @@ Usage: #example
 * issue
   * severity = #information
   * code = #informational
-  * details.text = "FIXME TODO"
-  * diagnostics = "FIXME TODO"
+  * details.coding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
+  * details.coding.code = #MSG_UPDATED
+  * diagnostics = "Bloomfilter updated."

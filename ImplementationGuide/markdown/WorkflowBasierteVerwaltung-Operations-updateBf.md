@@ -1,7 +1,7 @@
 #### **{{link:UpdateBf}}**
 
 ##### **Zweck**
-Fügt anhand eines bestehenden DIZ-Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu.
+Fügt anhand eines bestehenden Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu.
 
 ##### **Voraussetzung**
 TODO
@@ -17,6 +17,7 @@ Der Funktionsaufruf liefert eine OperationOutcome-Ressource mit codierten Status
 
 Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: fehlende oder fehlerhafte Parameter
+* 401: Fehlende Authentifizierung oder Autorisierung
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
