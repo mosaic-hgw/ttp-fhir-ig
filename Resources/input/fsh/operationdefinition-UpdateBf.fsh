@@ -77,6 +77,5 @@ Usage: #example
 * issue
   * severity = #information
   * code = #informational
-  * details.coding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
-  * details.coding.code = #MSG_UPDATED
+  * details.coding = http://terminology.hl7.org/CodeSystem/operation-outcome#MSG_UPDATED
   * diagnostics = "Bloomfilter updated."

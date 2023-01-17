@@ -8,8 +8,8 @@
       "details": {
         "coding": [
           {
-            "system": "http://terminology.hl7.org/CodeSystem/operation-outcome",
-            "code": "MSG_UPDATED"
+            "code": "MSG_UPDATED",
+            "system": "http://terminology.hl7.org/CodeSystem/operation-outcome"
           }
         ]
       },
