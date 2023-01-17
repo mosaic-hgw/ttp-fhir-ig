@@ -11,6 +11,8 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$queryPossibleMatches`
 
+Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgenden den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.
+
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem oder mehreren Multi-Part-Parametern zurück.
 
 {{render:QueryPossibleMatches}}

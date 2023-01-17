@@ -21,7 +21,7 @@
   "name": "QueryPossibleMatches",
   "title": "queryPossibleMatches",
   "kind": "operation",
-  "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgenden den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.",
+  "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
   "affectsState": false,
   "code": "queryPossibleMatches",
   "comment": "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.",
