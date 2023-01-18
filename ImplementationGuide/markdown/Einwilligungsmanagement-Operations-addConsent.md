@@ -6,12 +6,13 @@ Zurückgegeben wird der errechnete strukturierte Consent.
 
 ##### **Voraussetzung**
 - Spezifizierte Domäne muss angelegt sein
+- In der Patient-Resource verwendete Angaben des Identifier.system müssen in Form von SignerIdTypes, wie z.B. 'Pseudonym','CaseId','StudyPsn' in der entsprechenden Domäne konfiguriert sein
 
 ##### **Aufruf und Rückgabe**
 {{render:AddConsent}}
 
 ##### **Beispiel**
-(Q3/2022)
+(Q2/2023)
 
 ##### **Error Codes**
 
