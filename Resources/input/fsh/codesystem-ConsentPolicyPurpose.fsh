@@ -1,10 +1,10 @@
 CodeSystem: ConsentPolicyPurpose
 Id: ConsentPolicyPurposeCS
-Description: "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungskontext und/oder Geltungsbereich einer ConsentPolicy (Warum/Wofür/Woher/Wohin/Für wen/Wie/...)"
+Description: "Expandable specification and/or limitation of the application context and/or scope of a consent policy or module"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
-* ^version = "1.0"
-* ^purpose = "Dritte Achse 'Kontext' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.purpose"
+* ^version = "1.1"
+* ^purpose = "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose"
 * ^caseSensitive = true
 * ^content = #complete
 * #health_state "health_state"
@@ -104,9 +104,9 @@ Description: "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungsko
 * #databases  ^designation[=].value = "information from other databases"
 * #additional_collection "additional_collection"
 * #additional_collection  ^designation[0].language = #de-DE
-* #additional_collection  ^designation[=].value = "Erhebung zusätzlicher [PERSPEKTIVE]"
+* #additional_collection  ^designation[=].value = "Erhebung zusätzlicher [CLASS]"
 * #additional_collection  ^designation[+].language = #en-UK
-* #additional_collection  ^designation[=].value = "collection of additional [PERSPECTIVE]"
+* #additional_collection  ^designation[=].value = "collection of additional [CLASS]"
 * #additional_studies "additional_studies"
 * #additional_studies  ^designation[0].language = #de-DE
 * #additional_studies  ^designation[=].value = "Informationen zu neuen Vorhaben/Projekten oder Studien"
@@ -134,9 +134,9 @@ Description: "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungsko
 * #results  ^designation[=].value = "communication of research results"
 * #significant "significant"
 * #significant  ^designation[0].language = #de-DE
-* #significant  ^designation[=].value = "[KONTEXT] mit erheblicher Bedeutung"
+* #significant  ^designation[=].value = "[PURPOSE] mit erheblicher Bedeutung"
 * #significant  ^designation[+].language = #en-UK
-* #significant  ^designation[=].value = "[CONTEXT] with considerable significance"
+* #significant  ^designation[=].value = "[PURPOSE] with considerable significance"
 * #quality_assurance "quality_assurance "
 * #quality_assurance  ^designation[0].language = #de-DE
 * #quality_assurance  ^designation[=].value = "zu Zwecken der Qualitätssicherung"

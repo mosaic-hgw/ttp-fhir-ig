@@ -1,10 +1,10 @@
 CodeSystem: ConsentPolicyClass
 Id: ConsentPolicyClassCS
-Description: "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentPolicy (z.B. ausgewählte Datensicht 'IDAT')"
+Description: "Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT')"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
-* ^version = "1.0"
-* ^purpose = "Erste Achse 'Perspektive' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.class"
+* ^version = "1.1"
+* ^purpose = "First axis 'Class' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.class"
 * ^caseSensitive = true
 * ^content = #complete
 
