@@ -22,15 +22,15 @@ Concept and Implementation: M. Bialke, P. Penndorf, L. Geidel
 
 FHIR Specification and consulting: S. Lang
 
-Keycloak and Docker: R. Schuldt
+Keycloak and Docker: R. Schuldt, FMM. Moser
 
 #### License ####
 
 **License:** AGPLv3, https://www.gnu.org/licenses/agpl-3.0.en.html<br>
-**Copyright:** 2021 - 2022 University Medicine Greifswald<br>
+**Copyright:** 2021 - 2023 University Medicine Greifswald<br>
 **Contact:** https://www.ths-greifswald.de/kontakt/
 
 #### Publications ####
 
+- https://doi.org/10.1186/s12911-022-02081-4
 - https://doi.org/10.1186/s12967-018-1631-3
-- https://dx.doi.org/10.21203/rs.3.rs-939316/v1 (PREPRINT!)
