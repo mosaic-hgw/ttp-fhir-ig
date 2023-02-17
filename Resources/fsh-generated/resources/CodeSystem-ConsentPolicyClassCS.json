@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ConsentPolicyClass",
   "id": "ConsentPolicyClassCS",
-  "description": "Erweiterbare Beschreibung der Anwendungsperspektive einer ConsentPolicy (z.B. ausgewählte Datensicht 'IDAT')",
-  "version": "1.0",
+  "description": "Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT')",
+  "version": "1.1",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass",
   "concept": [
     {
@@ -221,7 +221,7 @@
     }
   ],
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "purpose": "Erste Achse 'Perspektive' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.class",
+  "purpose": "First axis 'Class' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.class",
   "caseSensitive": true,
   "count": 14
 }

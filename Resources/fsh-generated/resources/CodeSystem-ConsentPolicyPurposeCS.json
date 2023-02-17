@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ConsentPolicyPurpose",
   "id": "ConsentPolicyPurposeCS",
-  "description": "Erweiterbare Konkretisierung und/oder Eingrenzung des Anwendungskontext und/oder Geltungsbereich einer ConsentPolicy (Warum/Wofür/Woher/Wohin/Für wen/Wie/...)",
-  "version": "1.0",
+  "description": "Expandable specification and/or limitation of the application context and/or scope of a consent policy or module",
+  "version": "1.1",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose",
   "concept": [
     {
@@ -280,11 +280,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Erhebung zusätzlicher [PERSPEKTIVE]"
+          "value": "Erhebung zusätzlicher [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "collection of additional [PERSPECTIVE]"
+          "value": "collection of additional [CLASS]"
         }
       ]
     },
@@ -364,11 +364,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "[KONTEXT] mit erheblicher Bedeutung"
+          "value": "[PURPOSE] mit erheblicher Bedeutung"
         },
         {
           "language": "en-UK",
-          "value": "[CONTEXT] with considerable significance"
+          "value": "[PURPOSE] with considerable significance"
         }
       ]
     },
@@ -417,7 +417,7 @@
     }
   ],
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "purpose": "Dritte Achse 'Kontext' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.purpose",
+  "purpose": "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose",
   "caseSensitive": true,
   "count": 28
 }

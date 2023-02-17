@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ConsentPolicyActor",
   "id": "ConsentPolicyActorCS",
-  "description": "Erweiterbare Kategorisierung von Konsument/Anfragesteller eines Einwilligungsumsetzungsanfrage (Enforcement) bezogen auf einen Einwilligungsbestandteil",
-  "version": "1.0",
+  "description": "Expandable categorisation of consumer/requestor of a consent enforcement request  related to a specific consent component (e.g. policy or module)",
+  "version": "1.1",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor",
   "concept": [
     {
@@ -123,7 +123,7 @@
     }
   ],
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "purpose": "Achse 'Akteur' des 'Semantic Consent Code (SCC)' zur optionalen Verwendung",
+  "purpose": "Axis 'actor' of the 'Semantic Consent Code (SCC)' for optional use",
   "caseSensitive": true,
   "count": 7
 }

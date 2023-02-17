@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "ConsentPolicyAction",
   "id": "ConsentPolicyActionCS",
-  "description": "Erweiterbare Beschreibung der aus einer ConsentPolicy resultierenden zulässigen Tätigkeit (Was darf ich tun).",
-  "version": "1.0",
+  "description": "Extensible description of the permissible (data processing-) action resulting from consented module or policy.",
+  "version": "1.1",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction",
   "concept": [
     {
@@ -14,11 +14,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Weitergabe von [PERSPEKTIVE]"
+          "value": "Weitergabe von [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "transfer of [PERSPECTIVE]"
+          "value": "transfer of [CLASS]"
         }
       ]
     },
@@ -28,11 +28,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Übertragung des Eigentums an [PERSPEKTIVE] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank"
+          "value": "Übertragung des Eigentums an [CLASS] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank"
         },
         {
           "language": "en-UK",
-          "value": "transfer the ownership of [PERSPECTIVE] from the participant to the controller/data processor/carrier of the biobank."
+          "value": "transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank."
         }
       ]
     },
@@ -42,11 +42,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Einsicht in [PERSPEKTIVE]"
+          "value": "Einsicht in [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "insight into [PERSPECTIVE]"
+          "value": "insight into [CLASS]"
         }
       ]
     },
@@ -56,11 +56,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Erhebung neuer [PERSPEKTIVE]"
+          "value": "Erhebung neuer [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "collection of new [PERSPECTIVE]"
+          "value": "collection of new [CLASS]"
         }
       ]
     },
@@ -70,11 +70,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Gewinnung von genetischen Daten aus [PERSPEKTIVE]"
+          "value": "Gewinnung von genetischen Daten aus [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "obtaining genetic data from [PERSPECTIVE]"
+          "value": "obtaining genetic data from [CLASS]"
         }
       ]
     },
@@ -98,11 +98,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Speicherung und Verarbeitung von [PERSPEKTIVE]"
+          "value": "Speicherung und Verarbeitung von [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "storage and processing of [PERSPECTIVE]"
+          "value": "storage and processing of [CLASS]"
         }
       ]
     },
@@ -126,11 +126,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Bereitstellung von [PERSPEKTIVE] für Nutzung / Analysen / zu Auswertezwecken [KONTEXT]"
+          "value": "Bereitstellung von [CLASS] für Nutzung / Analysen / zu Auswertezwecken [PURPOSE]"
         },
         {
           "language": "en-UK",
-          "value": "provision of [PERSPECTIVE] for use / analyses / for evaluation purposes [CONTEXT]."
+          "value": "provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE]."
         }
       ]
     },
@@ -140,11 +140,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Verarbeitung von [PERSPEKTIVE]"
+          "value": "Verarbeitung von [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "processing of [PERSPECTIVE]"
+          "value": "processing of [CLASS]"
         }
       ]
     },
@@ -154,11 +154,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Zusammenführung und ggf. überführen von [PERSPEKTIVE]"
+          "value": "Zusammenführung und ggf. überführen von [CLASS]"
         },
         {
           "language": "en-UK",
-          "value": "merging and, if necessary, transferring of [PERSPECTIVE]"
+          "value": "merging and, if necessary, transferring of [CLASS]"
         }
       ]
     },
@@ -168,11 +168,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Abfrage von [Kontext]"
+          "value": "Abfrage von [PURPOSE]"
         },
         {
           "language": "en-UK",
-          "value": "query with/from [Context]"
+          "value": "query with/from [PURPOSE]"
         }
       ]
     },
@@ -182,11 +182,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Ergänzende / kompletttierende Erhebung zusätzlicher [PERSPEKTIVE] mit / aus [Kontext]"
+          "value": "Ergänzende / kompletttierende Erhebung zusätzlicher [CLASS] mit / aus [PURPOSE]"
         },
         {
           "language": "en-UK",
-          "value": "supplementary / complementary collection of additional [PERSPECTIVE] with / from [context]."
+          "value": "supplementary / complementary collection of additional [CLASS] with / from [PURPOSE]."
         }
       ]
     },
@@ -196,11 +196,11 @@
       "designation": [
         {
           "language": "de-DE",
-          "value": "Verknüpfung von Daten der betroffenen Person mit [KONTEXT]"
+          "value": "Verknüpfung von Daten der betroffenen Person mit [PURPOSE]"
         },
         {
           "language": "en-UK",
-          "value": "linking data of the data subject to [CONTEXT]"
+          "value": "linking data of the data subject to [PURPOSE]"
         }
       ]
     }
@@ -221,7 +221,7 @@
     }
   ],
   "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "purpose": "Zweite Achse 'Tätigkeit' des 'Semantic Consent Code (SCC)' zur Verwendung als Consent.provision.action",
+  "purpose": "Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action",
   "caseSensitive": true,
   "count": 14
 }
