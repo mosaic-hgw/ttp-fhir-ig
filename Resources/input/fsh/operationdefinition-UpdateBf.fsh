@@ -45,7 +45,7 @@ Usage: #definition
 * parameter[=].type = #string
 * parameter[+].name = #bfVersion
 * parameter[=].use = #in
-* parameter[=].min = 0
+* parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "Bloomfilter-Version."
 * parameter[=].type = #string
