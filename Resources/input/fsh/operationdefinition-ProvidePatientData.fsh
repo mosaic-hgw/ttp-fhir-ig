@@ -7,7 +7,7 @@ Usage: #definition
 * name = "ProvidePatientData"
 * title = "providePatientData"
 * kind = #operation
-* description = "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen."
+* description = "Identifizierende Daten (IDAT) werden für einen Clearing-Prozess an die fTTP übertragen. Die darin enthaltenen Attribute (z.B. Vorname, Nachname, usw.) dienen für ein konventionelles Record Linkage und werden danach in der fTTP unwiederbringlich gelöscht."
 * affectsState = true
 * code = #providePatientData
 * comment = "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen."
