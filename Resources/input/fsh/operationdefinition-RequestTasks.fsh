@@ -7,7 +7,7 @@ Usage: #definition
 * name = "RequestTasks"
 * title = "requestTasks"
 * kind = #operation
-* description = "Ein Standort kann seine offenen Aufgaben abrufen. Antwort ist eine Liste von Tasks."
+* description = "Abruf offener Standort-Aufgaben (Tasks) von der föderierten Treuhandstelle (fTTP)."
 * affectsState = false
 * code = #requestTasks
 * comment = "Ein Standort kann seine offenen Aufgaben abrufen. Antwort ist eine Liste von Tasks."
@@ -24,7 +24,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Angabe der Pseudonymisierungsziel-Domain"
+* parameter[=].documentation = "Angabe der Ziel-Domäne bzw. des abrufenden Standorts"
 * parameter[=].type = #string
 * parameter[+].name = #apikey
 * parameter[=].use = #in
