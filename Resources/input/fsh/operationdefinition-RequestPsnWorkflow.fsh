@@ -7,10 +7,10 @@ Usage: #definition
 * name = "RequestPsnWorkflow"
 * title = "requestPsnWorkflow"
 * kind = #operation
-* description = "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params."
+* description = "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Die Rückgabe der generierten standort- und studienspezifischen-Pseudonyme erfolgt als Params."
 * purpose = "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de"
 * code = #requestPsnWorkflow
-* comment = "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params."
+* comment = "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Die Rückgabe der generierten standort- und studienspezifischen-Pseudonyme erfolgt als Params."
 * system = true
 * type = false
 * instance = false
@@ -30,13 +30,13 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Angabe der Pseudonymisierungsquell-Domain (Herkunft des Originalwertes)"
+* parameter[=].documentation = "Angabe der Quell-Domäne (Herkunft des Originalwertes)"
 * parameter[=].type = #string
 * parameter[+].name = #target
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Angabe der Pseudonymisierungsziel-Domain"
+* parameter[=].documentation = "Angabe der Ziel-Domäne"
 * parameter[=].type = #string
 * parameter[+].name = #apikey
 * parameter[=].use = #in
@@ -59,36 +59,36 @@ Usage: #definition
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Original-Identifikator"
+* parameter[=].part[=].documentation = "der zu pseudonymisierende Wert (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #target
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Target-Identifikator"
+* parameter[=].part[=].documentation = "die verwendete Ziel-Domäne (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #pseudonym
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Pseudonym"
+* parameter[=].part[=].documentation = "das in der Ziel-Domäne erzeugte Pseudonym."
 * parameter[=].part[=].type = #Identifier
 * parameter[+].name = #error
 * parameter[=].use = #out
 * parameter[=].min = 0
 * parameter[=].max = "*"
-* parameter[=].documentation = "Fehlerrückgabe bei Teil-Fehlern"
+* parameter[=].documentation = "Wenn einzelne übergebene Parameter fehlerhaft bzw. nicht valide sind, wird statt eines Pseudonyms ein Fehler-Parameter (error-Parameter) mit der Fehlerbeschreibung zurückgeliefert."
 * parameter[=].part[0].name = #original
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 0
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Original-Identifikator"
+* parameter[=].part[=].documentation = "der zu pseudonymisierende Wert (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #target
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 0
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Target-Identifikator"
+* parameter[=].part[=].documentation = "die verwendete Ziel-Domäne (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #error-code
 * parameter[=].part[=].use = #out
