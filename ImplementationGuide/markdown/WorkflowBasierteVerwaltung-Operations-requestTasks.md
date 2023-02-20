@@ -44,6 +44,13 @@ This operation changes content
 
 Das Coding des Parameters send_idat.element ist an das Value Set {{pagelink:ImplementationGuide/markdown/Terminologie-ValueSets-IdatElements.md}} gebunden.
 
+### Arten von Tasks
+|**Task**|**Beschreibung**| **Ergebnis-Parameter**                                                                                                                                          |
+|---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|dic_psn_available|Die Task gibt an, dass nun nach einem abgeschlossenen Clearing-Prozess, zu einer zuvor übermittelten Person, ein Pseudonym vorliegt.| bloomfilter, target, pseudonym                                                                                                                                  |
+|send_idat|Die Task gibt an, dass zu einer zuvor übermittelten Person für einen Clearing-Prozess die Übermittlung identifizierender Daten erforderlich ist.| taskId, requestedData aus dem Wertebereich von {{pagelink:ImplementationGuide/markdown/Terminologie-ValueSets-IdatElements.md}}, pseudonym **ODER** bloomfilter |
+|repeat_request|Die Task fordert den Standort auf, einen zuvor durchgeführten Request zu wiederholen.| study, bloomfilter, target                                                                                                                                      |
+
 Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: Fehlende oder fehlerhafte Parameter.
 * 401: Fehlende Authentifizierung oder Autorisierung.
