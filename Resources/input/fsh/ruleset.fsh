@@ -1,7 +1,7 @@
 RuleSet: meta-profile
 * ^status = #draft
 * ^experimental = false
-* ^date = "2023-01-10"
+* ^date = "2023-02-24"
 * ^publisher = "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
 * ^contact.name = "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
 * ^contact.telecom.system = #url
@@ -12,7 +12,7 @@ RuleSet: meta-profile
 RuleSet: meta-instance
 * version = "2.2.0"
 * status = #draft
-* date = "2023-01-10"
+* date = "2023-02-24"
 * publisher = "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
 * contact
   * name = "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
