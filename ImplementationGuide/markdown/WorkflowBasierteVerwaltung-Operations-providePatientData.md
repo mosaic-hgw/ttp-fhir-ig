@@ -1,12 +1,20 @@
 #### **{{link:ProvidePatientData}}**
 
 ##### **Zweck**
-Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor seine Tasks abgerufen (vgl. {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}) und eine Aufgabe "send-idat" zugewiesen bekommen.
+Identifizierende Daten (IDAT) werden für einen Clearing-Prozess an
+die fTTP übertragen. Die darin enthaltenen Attribute (z.B. Vorname, Nachname, usw.)
+dienen für ein konventionelles Record Linkage und werden danach in der fTTP
+unwiederbringlich gelöscht.
+
+<p align="center">
+  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2023/02/fhirgw-providePatientData.png">
+</p>
 
 ##### **Voraussetzung**
-- Der spezifizierte API-KEY muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
-- Die übermittelten IDAT müssen valide sein
-- Die TaskId muss valide sein
+- API-KEY: Der spezifizierte API-KEY muss valide und zum Aufruf der Methode autorisiert sein.
+- Die übermittelten IDAT müssen valide sein.
+- Die TaskId muss valide sein.
+- Der Standort hat zuvor seine Tasks abgerufen (vgl. requestTasks) und eine Aufgabe "send-idat" zugewiesen bekommen haben.
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.

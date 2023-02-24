@@ -7,7 +7,7 @@ Usage: #definition
 * name = "UpdateBf"
 * title = "updateBf"
 * kind = #operation
-* description = "Fügt anhand eines bestehenden Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu."
+* description = "Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguration oder vorheriger fehlerhafter Übermittlung) bezogen auf ein bereits bekanntes Pseudonym."
 * affectsState = true
 * code = #updateBf
 * system = true
@@ -45,7 +45,7 @@ Usage: #definition
 * parameter[=].type = #string
 * parameter[+].name = #bfVersion
 * parameter[=].use = #in
-* parameter[=].min = 0
+* parameter[=].min = 1
 * parameter[=].max = "1"
 * parameter[=].documentation = "Bloomfilter-Version."
 * parameter[=].type = #string

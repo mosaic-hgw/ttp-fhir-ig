@@ -1,7 +1,11 @@
 #### **{{link:UpdateBf}}**
 
 ##### **Zweck**
-Fügt anhand eines bestehenden Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu.
+Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguration oder vorheriger fehlerhafter Übermittlung) bezogen auf ein bereits bekanntes Pseudonym.
+
+<p align="center">
+  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2023/02/fhirgw-updateBf.png">
+</p>
 
 ##### **Voraussetzung**
 TODO
