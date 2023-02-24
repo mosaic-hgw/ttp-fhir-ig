@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/UpdateBf",
   "version": "2.2.0",
   "status": "draft",
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -21,7 +21,7 @@
   "name": "UpdateBf",
   "title": "updateBf",
   "kind": "operation",
-  "description": "Fügt anhand eines bestehenden Pseudonyms einen neuen Bloomfilter zu einer bereits vorhandenen Person hinzu.",
+  "description": "Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguration oder vorheriger fehlerhafter Übermittlung) bezogen auf ein bereits bekanntes Pseudonym.",
   "affectsState": true,
   "code": "updateBf",
   "system": true,
@@ -71,7 +71,7 @@
     {
       "name": "bfVersion",
       "use": "in",
-      "min": 0,
+      "min": 1,
       "max": "1",
       "documentation": "Bloomfilter-Version.",
       "type": "string"

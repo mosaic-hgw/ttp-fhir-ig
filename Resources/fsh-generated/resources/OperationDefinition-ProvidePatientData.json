@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/providePatientData",
   "version": "2.2.0",
   "status": "active",
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -21,10 +21,10 @@
   "name": "ProvidePatientData",
   "title": "providePatientData",
   "kind": "operation",
-  "description": "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen.",
+  "description": "Identifizierende Daten (IDAT) werden für einen Clearing-Prozess an die föderierte Treuhandstelle (fTTP) übertragen. Die darin enthaltenen Attribute (z.B. Vorname, Nachname, usw.) dienen für ein konventionelles Record Linkage und werden danach in der fTTP unwiederbringlich gelöscht.",
   "affectsState": true,
   "code": "providePatientData",
-  "comment": "Ein Standort liefert an die fTTP die angeforderten Patientendaten. Der Standort hat zuvor Tasks abgerufen und die hier mittels taskId referenzierte Aufgabe 'send-idat' zugewiesen bekommen.",
+  "comment": "Identifizierende Daten (IDAT) werden für einen Clearing-Prozess an die föderierte Treuhandstelle (fTTP) übertragen. Die darin enthaltenen Attribute (z.B. Vorname, Nachname, usw.) dienen für ein konventionelles Record Linkage und werden danach in der fTTP unwiederbringlich gelöscht.",
   "system": true,
   "type": false,
   "instance": false,
@@ -42,7 +42,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Angabe der Ziel-Domain (Standort)",
+      "documentation": "Angabe der Ziel-Domäne bzw. des abrufenden Standorts",
       "type": "string"
     },
     {

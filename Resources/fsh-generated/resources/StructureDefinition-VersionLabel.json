@@ -7,7 +7,7 @@
   "title": "Version Label",
   "status": "draft",
   "experimental": false,
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "description": "Versions-Label",
-  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
