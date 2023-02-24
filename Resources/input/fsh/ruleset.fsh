@@ -7,7 +7,7 @@ RuleSet: meta-profile
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.ths-greifswald.de/"
 * ^contact.telecom.use = #work
-* ^copyright = "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
+* ^copyright = "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"
 
 RuleSet: meta-instance
 * version = "2.2.0"
