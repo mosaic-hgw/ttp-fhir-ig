@@ -1,13 +1,13 @@
 #### **{{link:RequestPsnWorkflow}}**
 
 ##### **Zweck**
-Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort).
+Abfragen bzw. Anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort).
 
-Dabei wird stets ein oder mehrere Originalwerte einer Quell-Domäne in ein oder mehrere Pseudonyme der Ziel-Domäne pseudonymisiert. Ist der Originalwert bereits bekannt, wird das bereits zuvor generierte Pseudonym der Ziel-Domäne geliefert. 
+Dabei wird stets ein oder mehrere Originalwerte einer Quell-Domäne in ein oder mehrere Pseudonyme der Ziel-Domäne pseudonymisiert. Ist der Originalwert bereits bekannt, wird das bereits zuvor generierte Pseudonym der Ziel-Domäne geliefert.
 
 Diese Methode überführt Pseudonyme einer Stufe in eine andere Stufe. Dabei werden entweder bekannte Pseudonyme zurückgeliefert (Um-Pseudonymisierung) oder neue Pseudonyme generiert (Dritt-Pseudonymisierung).
 
-Die Rückgabe der generierten standort- und studienspezifischen-Pseudonyme erfolgt als Params.
+Die Rückgabe der generierten standort- und studienspezifischen Pseudonyme erfolgt als Parameter.
 
 <p align="center">
   <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-requestpsnworkflow.png">
@@ -37,7 +37,7 @@ This operation changes content
 
 | **Name**    | **Cardinality** | **Type** |**Documentation**|
 |-------------|-----------------|---|---|
-| original    | 1..*            |string|Liste studien- und standortspezifischer Originalwerte f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
+| original    | 1..*            |string|Liste studien- und standortspezifischer Originalwerte, f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
 | study       | 1..1            |string|Angabe der Studie|
 | source      | 1..1            |string|Angabe der Quell-Domäne (Herkunft des Originalwertes)|
 | target      | 1..1            |string|Angabe der Ziel-Domäne|

@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/requestPsnWorkflow",
   "version": "2.2.0",
   "status": "active",
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -21,10 +21,10 @@
   "name": "RequestPsnWorkflow",
   "title": "requestPsnWorkflow",
   "kind": "operation",
-  "description": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.",
+  "description": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Die Rückgabe der generierten standort- und studienspezifischen-Pseudonyme erfolgt als Parameter.",
   "purpose": "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de",
   "code": "requestPsnWorkflow",
-  "comment": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten standort- und studienspezifischen-Pseudonyme als Params.",
+  "comment": "Abfragen bzw. anlegen von Pseudonymen auf Basis eines vorkonfigurierten Pseudonymisierungsablaufs (Workflow) für einen gegebenen Geltungsbereich (Studie und Standort). Die Rückgabe der generierten standort- und studienspezifischen-Pseudonyme erfolgt als Parameter.",
   "system": true,
   "type": false,
   "instance": false,
@@ -50,7 +50,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Angabe der Pseudonymisierungsquell-Domain (Herkunft des Originalwertes)",
+      "documentation": "Angabe der Quell-Domäne (Herkunft des Originalwertes)",
       "type": "string"
     },
     {
@@ -58,7 +58,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Angabe der Pseudonymisierungsziel-Domain",
+      "documentation": "Angabe der Ziel-Domäne",
       "type": "string"
     },
     {
@@ -89,7 +89,7 @@
           "use": "out",
           "min": 1,
           "max": "1",
-          "documentation": "Original-Identifikator",
+          "documentation": "der zu pseudonymisierende Wert (im Request übergeben)",
           "type": "Identifier"
         },
         {
@@ -97,7 +97,7 @@
           "use": "out",
           "min": 1,
           "max": "1",
-          "documentation": "Target-Identifikator",
+          "documentation": "die verwendete Ziel-Domäne (im Request übergeben)",
           "type": "Identifier"
         },
         {
@@ -105,7 +105,7 @@
           "use": "out",
           "min": 1,
           "max": "1",
-          "documentation": "Pseudonym",
+          "documentation": "das in der Ziel-Domäne erzeugte Pseudonym.",
           "type": "Identifier"
         }
       ]
@@ -115,14 +115,14 @@
       "use": "out",
       "min": 0,
       "max": "*",
-      "documentation": "Fehlerrückgabe bei Teil-Fehlern",
+      "documentation": "Wenn einzelne übergebene Parameter fehlerhaft bzw. nicht valide sind, wird statt eines Pseudonyms ein Fehler-Parameter (error-Parameter) mit der Fehlerbeschreibung zurückgeliefert.",
       "part": [
         {
           "name": "original",
           "use": "out",
           "min": 0,
           "max": "1",
-          "documentation": "Original-Identifikator",
+          "documentation": "der zu pseudonymisierende Wert (im Request übergeben)",
           "type": "Identifier"
         },
         {
@@ -130,7 +130,7 @@
           "use": "out",
           "min": 0,
           "max": "1",
-          "documentation": "Target-Identifikator",
+          "documentation": "die verwendete Ziel-Domäne (im Request übergeben)",
           "type": "Identifier"
         },
         {

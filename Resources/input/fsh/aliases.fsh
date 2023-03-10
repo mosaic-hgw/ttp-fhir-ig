@@ -1,4 +1,5 @@
 Alias: $cs0203 = http://hl7.org/fhir/v2/0203/
+Alias: $csIso3166 = urn:iso:std:iso:3166
 Alias: $extPatientBirthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $extPatientNationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $prEinwConsent = http://fhir.de/ConsentManagement/StructureDefinition/Consent

@@ -7,7 +7,7 @@
   "title": "Consent Domain",
   "status": "draft",
   "experimental": false,
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -23,7 +23,7 @@
   ],
   "description": "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domain-Infos für gICS über entsprechende Extensions",
   "purpose": "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domain-Infos für gICS",
-  "copyright": "Copyright 2020-2022 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

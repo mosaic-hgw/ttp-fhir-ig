@@ -1,7 +1,7 @@
 #### **{{link:RequestPsnFromBfWorkflow}}**
 
 ##### **Zweck**
-Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Sofern noch nicht vorhanden, wird eine valide Ziel-Domäne automatisch angelegt. Rückgabe der generierten Pseudonyme (z.b. DIC-PSN(s)) als Params.
+Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten Pseudonyme (z.b. DIC-PSN(s)) als Parameter.
 
 <p align="center">
   <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-requestpsnbfworkflow.png">
@@ -36,7 +36,7 @@ This operation changes content
 |apikey| 1..1            |string|G&#252;ltiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
 
 Im Erfolgsfall wird jeweils ein pseudonym-bf-Parameter zurückgegeben mit folgenden Teilen:
-1. bloomfilter = der zu für PPRL erforderliche Bloomfilter (Teil des Requests)
+1. bloomfilter = der für PPRL erforderliche Bloomfilter (Teil des Requests)
 2. target = die (erzeugte und) verwendete Pseudonymisierungsdomäne
 3. pseudonym = das fTTP-seitig erzeugte Pseudonym.
 

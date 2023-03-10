@@ -7,7 +7,7 @@ Usage: #definition
 * name = "RequestPsnFromBfWorkflow"
 * title = "requestPsnFromBfWorkflow"
 * kind = #operation
-* description = "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten DIC-PSN(s) als Params."
+* description = "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten DIC-PSN(s) als Parameter."
 * purpose = "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de"
 * code = #requestPsnFromBfWorkflow
 * comment = "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort)."

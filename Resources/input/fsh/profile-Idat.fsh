@@ -79,7 +79,8 @@ Description: "Patienten-Profil zur Übermittlung von angeforderten IDAT an die f
 Instance: Idat-example-1
 InstanceOf: Idat
 Usage: #example
-* extension[http://hl7.org/fhir/StructureDefinition/patient-birthPlace].valueAddress.city = "Musterhausen"
+* extension[birthPlace].valueAddress.city = "Musterhausen"
+* extension[nationality].extension[code].valueCodeableConcept.coding = $csIso3166|#DE
 * name.family = "Mustermann"
 * name.given = "Martin"
 * name.prefix = "Dr. med."

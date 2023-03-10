@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/requestPsnFromBfWorkflow",
   "version": "2.2.0",
   "status": "active",
-  "date": "2023-01-10",
+  "date": "2023-02-24",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -21,7 +21,7 @@
   "name": "RequestPsnFromBfWorkflow",
   "title": "requestPsnFromBfWorkflow",
   "kind": "operation",
-  "description": "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten DIC-PSN(s) als Params.",
+  "description": "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten DIC-PSN(s) als Parameter.",
   "purpose": "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de",
   "code": "requestPsnFromBfWorkflow",
   "comment": "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort).",
