@@ -28,6 +28,8 @@ Nachfolgend werden Konkretisierungen in Bezug auf die Vorgaben der [HL7 Deutschl
 
 ##### **Aufruf und Rückgabe**
 {{render:AddConsent}}
+                
+TODO Meldung der Rückgabe anpassen
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
