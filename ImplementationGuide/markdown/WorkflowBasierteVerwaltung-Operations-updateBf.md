@@ -4,7 +4,7 @@
 Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguration oder vorheriger fehlerhafter Übermittlung) bezogen auf ein bereits bekanntes Pseudonym.
 
 <p align="center">
-  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2023/02/fhirgw-updateBf.png">
+  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2023/03/fhirgw-updateBf.png">
 </p>
 
 ##### **Voraussetzung**
