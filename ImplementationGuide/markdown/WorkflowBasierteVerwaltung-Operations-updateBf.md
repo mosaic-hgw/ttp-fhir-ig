@@ -8,18 +8,21 @@ Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguratio
 </p>
 
 ##### **Voraussetzung**
-TODO
+- Die spezifizierte Studie (study) muss im Zielsystem bekannt und angelegt sein.
+- Die spezifizierte Quell-Domäne (source) muss im Zielsystem bekannt und angelegt sein.
+- Das spezifizierte Pseudonym (pseudonym) muss im Zielsystem bekannt und angelegt sein.
+- API-KEY: Der spezifizierte API-KEY muss valide und zum Aufruf der Methode autorisiert sein.
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
 `<HOST>:<PORT>/ttp-fhir/fhir/dispatcher/$updateBf`
 
-Der Funktionsaufruf liefert eine OperationOutcome-Ressource mit codierten Statusinformationen zurück.
+Der Funktionsaufruf liefert eine OperationOutcome-Ressource mit codierter Statusinformationen zurück.
 
 {{render:UpdateBf}}
 
-Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: fehlende oder fehlerhafte Parameter
 * 401: Fehlende Authentifizierung oder Autorisierung
 
