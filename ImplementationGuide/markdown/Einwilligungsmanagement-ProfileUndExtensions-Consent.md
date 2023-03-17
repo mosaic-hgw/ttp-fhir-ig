@@ -41,7 +41,7 @@ Die Suche erfolgt auf dem Consent-Endpoint mittels der nachfolgend beschriebenen
 **Hinweis: Die Angabe des Suchparameters "domain" ist verpflichtend. Existiert dieser nicht im Request, wird der HTTP-Statuscode 400 zurück gegeben.**
 
 
-###### Domain
+###### Domäne
 Der Suchparameter **domain** ist im Rahmen dieses Leitfadens wie folgt definiert:
 
 {{render:https://ths-greifswald.de/fhir/SearchParameter/gics/domain}}

@@ -14,7 +14,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten Parametern zurück:
 1. original = der zu pseudonymisierende Werte (Teil des Requests)
-2. target = die genutzte Pseudonymisierungsdomäne (Teil des Requests)
+2. target = die genutzte Ziel-Domäne (Teil des Requests)
 3. pseudonym = das erzeugte Pseudonym.
 
 

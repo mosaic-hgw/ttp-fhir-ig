@@ -30,7 +30,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
+* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
 * parameter[=].type = #string
 * parameter[+].name = #dic_psn_available
 * parameter[=].use = #out
@@ -94,7 +94,7 @@ Usage: #definition
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "*"
-* parameter[=].part[=].documentation = "Vorgabe, welche Elemente in den IDAT von providePatientData enthalten sein sollen."
+* parameter[=].part[=].documentation = "Vorgabe, welche Elemente in den IDAT von providePatientData enthalten sein sollen. Das Coding ist an das Value Set IdatElements gebunden."
 * parameter[=].part[=].type = #Coding
 * parameter[=].part[=].binding.strength = #required
 * parameter[=].part[=].binding.valueSet = "https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements"

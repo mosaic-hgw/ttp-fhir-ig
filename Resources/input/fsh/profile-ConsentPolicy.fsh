@@ -42,7 +42,7 @@ Description: "Abbildung aller relevanten Information zur Verwaltung wiederverwen
 * description ^definition = "administrative comment"
 * useContext 1..1 MS TU
 * useContext ^short = "domainName"
-* useContext ^definition = "Verweis auf die Domain"
+* useContext ^definition = "Verweis auf die Domäne"
 * useContext.code MS N
 * useContext.code.system 1.. MS N
 * useContext.code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type" (exactly)

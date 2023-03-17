@@ -11,7 +11,7 @@ unwiederbringlich gelöscht.
 </p>
 
 ##### **Voraussetzung**
-- API-KEY: Der spezifizierte API-KEY muss valide und zum Aufruf der Methode autorisiert sein.
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein.
 - Die übermittelten IDAT müssen valide sein.
 - Die TaskId muss valide sein.
 - Der Standort hat zuvor seine Tasks abgerufen (vgl. requestTasks) und eine Aufgabe "send-idat" zugewiesen bekommen haben.

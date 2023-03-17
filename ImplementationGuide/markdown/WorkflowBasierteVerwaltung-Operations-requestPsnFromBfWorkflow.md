@@ -10,7 +10,7 @@ Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für e
 ##### **Voraussetzung**
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die übermittelten Bloomfilter müssen valide sein.
-- Der spezifizierte API-KEY muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
+- Der spezifizierte API-Key muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
 - Die standortspezifische Domäne (target) muss im Zielsystem bekannt und angelegt sein.
 
 ##### **Aufruf und Rückgabe**
@@ -33,17 +33,28 @@ This operation changes content
 |study| 1..1            |string|Angabe der Studie|
 |bloomfilter| 1..*          |base64Binary|Liste studien- und standortspezifischer Bloomfilter (base64-codiert)|
 |target| 1..1            |string|Angabe des Bloomfilter sendenden Standorts (Ziel-Dom&#228;ne)|
-|apikey| 1..1            |string|G&#252;ltiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
+|apikey| 1..1            |string|G&#252;ltiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
 
-Im Erfolgsfall wird jeweils ein pseudonym-bf-Parameter zurückgegeben mit folgenden Teilen:
-1. bloomfilter = der für PPRL erforderliche Bloomfilter (Teil des Requests)
-2. target = die (erzeugte und) verwendete Pseudonymisierungsdomäne
-3. pseudonym = das fTTP-seitig erzeugte Pseudonym.
+### Return Values (Out)
 
-Im Einzel-Fehlerfall wird jeweils ein error-Parameter zurückgegeben, ebenfalls mit den Teilen bloomfilter und target sowie einem error-code anstelle des Pseudonyms.
+|**Name** | **Cardinality** | **Type** | **Documentation**                                                                                                                         |
+|---|-----------------|---|-------------------------------------------------------------------------------------------------------------------------------------------|
+|pseudonym-bf|0..*||Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym|
+|pseudonym-bf.bloomfilter|1..1|base64Binary|Bloomfilter|
+|pseudonym-bf.target|1..1|Identifier|die verwendete Ziel-Domäne (im Request übergeben)|
+|pseudonym-bf.pseudonym|1..1|Identifier|das in der Ziel-Domäne erzeugte Pseudonym.|
+|error|0..*||Fehlerrückgabe bei Teil-Fehlern|
+|error.bloomfilter|0..1|base64Binary|Bloomfilter|
+|error.target|0..1|Identifier|die verwendete Ziel-Domäne (im Request übergeben)|
+|error.error-code|1..1|Coding|Fehlercode|
 
-Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Wenn einzelne übergebene Parameter fehlerhaft bzw. nicht valide sind, wird statt eines Pseudonyms ein Fehler-Parameter (error-Parameter) mit der Fehlerbeschreibung zurückgeliefert.
+
+Ist der Request gänzlich ungültig, wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: fehlende oder fehlerhafte Parameter
+* 401: Fehlende Authentifizierung oder Autorisierung
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Use Cases):

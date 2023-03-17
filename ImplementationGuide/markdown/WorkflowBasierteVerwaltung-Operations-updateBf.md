@@ -19,6 +19,8 @@ Der Funktionsaufruf liefert eine OperationOutcome-Ressource mit codierten Status
 
 {{render:UpdateBf}}
 
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
 Im vollständigen Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
 * 400: fehlende oder fehlerhafte Parameter
 * 401: Fehlende Authentifizierung oder Autorisierung

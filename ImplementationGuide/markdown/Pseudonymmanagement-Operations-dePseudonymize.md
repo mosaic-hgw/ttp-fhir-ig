@@ -14,7 +14,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 `<HOST>:<PORT>/ttp-fhir/fhir/gpas/$dePseudonymize`
 
 Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten Parametern zurück:
-1. target = die genutzte Pseudonymisierungsdomäne (Teil des Requests)
+1. target = die genutzte Ziel-Domäne (Teil des Requests)
 2. pseudonym = das angefragte Pseudonym (Teil des Requests)
 3. original = der ermittelte Originalwert
 
