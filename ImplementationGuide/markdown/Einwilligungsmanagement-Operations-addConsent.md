@@ -14,7 +14,7 @@ Zurückgegeben wird der auf dieser Basis errechnete strukturierte Consent im Bun
 - übermittelte Ressourcen müssen untereinander konsistent referenziert werden.
 - eventuell vorhandene IDs (UUIDs) werden während der Verarbeitung durch gICS-eigene UUIDs ersetzt.
 - Aktuell werden nur deutschsprachige Einwilligungsvorlagen unterstützt
-     
+
 #### **Hinweise**
 Nachfolgend werden Konkretisierungen in Bezug auf die Vorgaben der [HL7 Deutschland Arbeitsgruppe "Einwilligungsmanagement"](https://ig.fhir.de/einwilligungsmanagement/stable/) erlätuert
 
@@ -28,7 +28,14 @@ Nachfolgend werden Konkretisierungen in Bezug auf die Vorgaben der [HL7 Deutschl
 
 ##### **Aufruf und Rückgabe**
 {{render:AddConsent}}
-                
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
 TODO Meldung der Rückgabe anpassen
 
 ##### **Beispiel**
@@ -43,11 +50,3 @@ Eine beispielhafte Rückmeldung:
 TODO @SL
 
 {{xml:Resources/fsh-generated/resources/<filename>.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende Parameter|400 Bad Request|
-|Parameter mit unbekanntem Inhalt|404 Not found|
-|Objekt nicht verarbeitbar |422 Unprocessable Entity|

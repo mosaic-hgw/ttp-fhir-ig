@@ -17,6 +17,12 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert ein Bundle vom Typ "collection". Das Bundle enthält je Consent jeweils ein Bundle mit allen für den spezifischen Consent relevanten Ressourcen (TemplateFrame, QuestionnaireComposed, QuestionnaireResponse, Provenance,Patient und i.a. DocumentReference). Details zu den verwendeten Profilen unter https://simplifier.net/guide/einwilligungsmanagement/igeinwilligungsmanagement.
 
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 422: Fehlende oder falsche Patienten-Attribute.
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
@@ -24,11 +30,3 @@ Beispielhafter Request-Body:
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Bundle-AllConsentsForDomain-response-example-1.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende Parameter|400 Bad Request|
-|Parameter mit unbekanntem Inhalt|404 Not found|
-|Leere Ergebnismenge trotz gültiger Parameter|200 Ok|

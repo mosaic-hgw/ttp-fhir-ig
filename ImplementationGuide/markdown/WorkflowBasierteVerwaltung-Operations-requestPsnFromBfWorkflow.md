@@ -53,11 +53,13 @@ Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 Wenn einzelne übergebene Parameter fehlerhaft bzw. nicht valide sind, wird statt eines Pseudonyms ein Fehler-Parameter (error-Parameter) mit der Fehlerbeschreibung zurückgeliefert.
 
 Ist der Request gänzlich ungültig, wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
-* 400: fehlende oder fehlerhafte Parameter
-* 401: Fehlende Authentifizierung oder Autorisierung
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
 
 ##### **Hinweis zu zukünftigen Änderungen**
-Das Pseudonym wird künftig nur dann geliefert, wenn kein Clearing-Prozess angestoßen wird. Ist dieser erforderlich, muss dieser zunächst vollständig abgeschlossen sein und das Pseudonym kann über requestTasks abgerufen werden.
+Das Pseudonym wird künftig nur dann geliefert, wenn kein Clearing-Prozess angestoßen wird. Ist dieser erforderlich, muss dieser zunächst vollständig abgeschlossen sein und das Pseudonym kann über {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}} abgerufen werden.
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Use Cases):

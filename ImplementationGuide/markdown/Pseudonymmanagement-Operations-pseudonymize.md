@@ -17,6 +17,13 @@ Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten P
 2. target = die genutzte Ziel-Domäne (Teil des Requests)
 3. pseudonym = das erzeugte Pseudonym.
 
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
@@ -28,9 +35,3 @@ Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
 
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-Pseudonymize-response-example-2.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende oder fehlende Parameter|400 Bad Request|

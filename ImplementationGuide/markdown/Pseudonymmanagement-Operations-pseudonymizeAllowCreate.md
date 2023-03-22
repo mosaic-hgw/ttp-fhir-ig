@@ -18,15 +18,17 @@ Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten P
 2. original = der zu pseudonymisierende Werte (Teil des Requests)
 3. pseudonym = das erzeugte Pseudonym.
 
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
 ##### **Beispiel**
 Beispielhafter Request-Body:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-request-example-1.json}}
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeAllowCreate-response-example-1.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende oder fehlende Parameter|400 Bad Request|

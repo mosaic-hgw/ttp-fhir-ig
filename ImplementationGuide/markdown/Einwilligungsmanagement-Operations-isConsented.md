@@ -17,6 +17,14 @@ Der Parameter config enthält eine verschachtelte Parameters-Ressource entsprech
 
 {{tree:Config}}
 
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+
 ##### **Beispiel**
 Beispiel für einen Request auf Basis des Codesystems {{link:https://ths-greifswald.de/fhir/CodeSystem/gics/Policy}}:
 {{xml:Resources/fsh-generated/resources/Parameters-IsConsented-request-example-1.json}}
@@ -26,11 +34,3 @@ Beispiel für einen Request mit alternativem Codesystem:
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-IsConsented-response-example-1.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende Parameter|400 Bad Request|
-|Parameter mit unbekanntem Inhalt|404 Not found|
-|Leere Ergebnismenge trotz gültiger Parameter|200 Ok|

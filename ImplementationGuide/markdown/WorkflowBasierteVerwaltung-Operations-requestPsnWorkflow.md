@@ -67,9 +67,12 @@ Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 Wenn einzelne übergebene Parameter fehlerhaft bzw. nicht valide sind, wird statt eines Pseudonyms ein Fehler-Parameter (error-Parameter) mit der Fehlerbeschreibung zurückgeliefert.
 
 Ist der Request gänzlich ungültig, wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
-* 400: fehlende oder fehlerhafte Parameter
-* 401: Fehlende Authentifizierung oder Autorisierung
-* 404: Parameter mit unbekanntem Inhalt, z.B. unbekannte Studienangabe
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+
 
 ##### **Beispiele**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Standort Use Cases):
