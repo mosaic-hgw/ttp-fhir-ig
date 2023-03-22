@@ -25,6 +25,17 @@ Usage: #definition
 * parameter[=].min = 1
 * parameter[=].max = "*"
 * parameter[=].documentation = "Liste studien- und standortspezifischer Bloomfilter (base64-codiert)"
+* parameter[=].part[0].name = #bloomfilter
+* parameter[=].part[=].use = #out
+* parameter[=].part[=].min = 1
+* parameter[=].part[=].max = "1"
+* parameter[=].part[=].documentation = "Bloomfilter"
+* parameter[=].type = #base64Binary
+* parameter[=].part[+].name = #version
+* parameter[=].part[=].use = #out
+* parameter[=].part[=].min = 1
+* parameter[=].part[=].max = "1"
+* parameter[=].part[=].documentation = "Version des Bloomfilters"
 * parameter[=].type = #base64Binary
 * parameter[+].name = #target
 * parameter[=].use = #in
