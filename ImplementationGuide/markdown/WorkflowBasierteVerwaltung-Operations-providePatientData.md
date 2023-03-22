@@ -11,7 +11,7 @@ unwiederbringlich gelöscht.
 </p>
 
 ##### **Voraussetzung**
-- API-KEY: Der spezifizierte API-KEY muss valide und zum Aufruf der Methode autorisiert sein.
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein.
 - Die übermittelten IDAT müssen valide sein.
 - Die TaskId muss valide sein.
 - Der Standort hat zuvor seine Tasks abgerufen (vgl. requestTasks) und eine Aufgabe "send-idat" zugewiesen bekommen haben.
@@ -32,10 +32,10 @@ Der Parameter "patient" enthält eine Patient-Ressource entsprechend dem IDAT-Pr
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
 Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
-
 * 400: Fehlende oder fehlerhafte Parameter.
 * 401: Fehlende Authentifizierung oder Autorisierung.
-* 422: Fehlende oder falsche IDAT-Attribute.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
 
 
 ##### **Beispiel**

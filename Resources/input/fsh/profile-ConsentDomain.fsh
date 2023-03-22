@@ -2,9 +2,9 @@ Profile: ConsentDomain
 Parent: $prEinwResearchStudy
 Id: ConsentDomain
 Title: "Consent Domain"
-Description: "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domain-Infos für gICS über entsprechende Extensions"
+Description: "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domänen-Infos für gICS über entsprechende Extensions"
 * insert meta-profile
-* ^purpose = "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domain-Infos für gICS"
+* ^purpose = "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domänen-Infos für gICS"
 * meta.lastUpdated MS N
 * meta.extension contains
     Created named created 0..1 MS
@@ -37,14 +37,14 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 * extension[expirationProperty] ^short = "expirationProperties"
 * extension[expirationProperty] ^definition = "Liste von automatisierbaren Ablaufeigenschaften der nach dem KeyValuePrinzip"
 * extension[expirationProperty] ^min = 0
-* identifier ^short = "Domain name"
+* identifier ^short = "Domänen-Name"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/" (exactly)
-* identifier.system ^short = "Instanzspezifischer Gültigkeitsbereich des Domain Namens"
-* identifier.system ^definition = "Instanzspezifischer Gültigkeitsbereich des Domain Namens"
-* identifier.value ^label = "Domain Name"
+* identifier.system ^short = "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens"
+* identifier.system ^definition = "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens"
+* identifier.value ^label = "Domänen-Name"
 * identifier.value ^short = "Name der Consent Domain"
 * identifier.value ^definition = "Maschinenlesbarer Name der Consent Domain, innerhalb der gICS Instanz eindeutig"
-* title ^label = "Domain Label"
+* title ^label = "Domänen-Label"
 * title ^short = "Label der Consent Domain"
 * title ^definition = "Menschenlesbarer Name der Consent Domain, sollte innerhalb der gICS Instanz eindeutig sein."
 * status ^label = "Finalized"
@@ -75,7 +75,7 @@ Usage: #example
 * identifier.value = "MIRACUM"
 * title = "MIRACUM"
 * status = #in-review
-* description = "Test-Domain zur Veranschaulichung von FHIR-Aufrufen"
+* description = "Test-Domäne zur Veranschaulichung von FHIR-Aufrufen"
 
 Instance: ConsentDomain-example-2
 InstanceOf: ConsentDomain
@@ -122,4 +122,4 @@ Usage: #example
 * identifier.value = "MIRACUM"
 * title = "MIRACUM"
 * status = #in-review
-* description = "Test-Domain zur Veranschaulichung von FHIR-Aufrufen"
+* description = "Test-Domäne zur Veranschaulichung von FHIR-Aufrufen"

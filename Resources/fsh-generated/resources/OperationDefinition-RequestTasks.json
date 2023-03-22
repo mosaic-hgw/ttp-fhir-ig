@@ -50,7 +50,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
+      "documentation": "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
       "type": "string"
     },
     {
@@ -138,7 +138,7 @@
           "use": "out",
           "min": 1,
           "max": "*",
-          "documentation": "Vorgabe, welche Elemente in den IDAT von providePatientData enthalten sein sollen.",
+          "documentation": "Vorgabe, welche Elemente in den IDAT von providePatientData enthalten sein sollen. Das Coding ist an das Value Set IdatElements gebunden.",
           "type": "Coding",
           "binding": {
             "strength": "required",

@@ -10,7 +10,7 @@ Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe E
 
 |Name|Typ|Beschreibung|Pfad|
 |-
-|identifier|token|Eindeutiger Name (Identifikator) der Domain|ResearchStudy.identifier|
+|identifier|token|Eindeutiger Name (Identifikator) der Domäne|ResearchStudy.identifier|
 |_profile|reference|Angabe um Ausgabeprofil festzulegen.<br>default: https://ths-greifswald.de/fhir/StructureDefinition/gics/ResearchStudy/ConsentDomain<br> alternativ: http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy |ResearchStudy.meta.profile|
 
 Zulässige Kombinationen von Suchparametern:

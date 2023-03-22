@@ -7,10 +7,10 @@ Usage: #definition
 * name = "RequestPsnFromBfWorkflow"
 * title = "requestPsnFromBfWorkflow"
 * kind = #operation
-* description = "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort). Rückgabe der generierten DIC-PSN(s) als Parameter."
+* description = "Personenregistrierung und Privacy-Preserving Record Linkage (PPRL) auf Basis von Bloomfiltern (BF) innerhalb eines Geltungsbereiches (Studie, Standort). Die Erzeugung eines standortspezifischen Pseudonyms erfolgt innerhalb der angegebenen Ziel-Domäne. Diese wird automatisch erzeugt, sofern noch nicht vorhanden. Die Rückgabe eines standortspezifischen Pseudonyms (z.B. DIZPseudonym) erfolgt als Parameter."
 * purpose = "Teil des FHIR Gateway für Dispatcher und gPAS. Weitere Infos unter https://ths-greifswald.de"
 * code = #requestPsnFromBfWorkflow
-* comment = "Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern  (PPRL) für einen gegebenen Geltungsbereich (Studie und Standort)."
+* comment = "Personenregistrierung und Privacy-Preserving Record Linkage (PPRL) auf Basis von Bloomfiltern (BF) innerhalb eines Geltungsbereiches (Studie, Standort). Die Erzeugung eines standortspezifischen Pseudonyms erfolgt innerhalb der angegebenen Ziel-Domäne. Diese wird automatisch erzeugt, sofern noch nicht vorhanden. Die Rückgabe eines standortspezifischen Pseudonyms (z.B. DIZPseudonym) erfolgt als Parameter."
 * system = true
 * type = false
 * instance = false
@@ -25,6 +25,17 @@ Usage: #definition
 * parameter[=].min = 1
 * parameter[=].max = "*"
 * parameter[=].documentation = "Liste studien- und standortspezifischer Bloomfilter (base64-codiert)"
+* parameter[=].part[0].name = #bloomfilter
+* parameter[=].part[=].use = #out
+* parameter[=].part[=].min = 1
+* parameter[=].part[=].max = "1"
+* parameter[=].part[=].documentation = "Bloomfilter"
+* parameter[=].type = #base64Binary
+* parameter[=].part[+].name = #version
+* parameter[=].part[=].use = #out
+* parameter[=].part[=].min = 1
+* parameter[=].part[=].max = "1"
+* parameter[=].part[=].documentation = "Version des Bloomfilters"
 * parameter[=].type = #base64Binary
 * parameter[+].name = #target
 * parameter[=].use = #in
@@ -36,7 +47,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 1
 * parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-KEY zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
+* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
 * parameter[=].type = #string
 * parameter[+].name = #pseudonym-bf
 * parameter[=].use = #out
@@ -53,13 +64,13 @@ Usage: #definition
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Target-Identifikator"
+* parameter[=].part[=].documentation = "die verwendete Ziel-Domäne (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #pseudonym
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 1
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Pseudonym"
+* parameter[=].part[=].documentation = "das in der Ziel-Domäne erzeugte Pseudonym."
 * parameter[=].part[=].type = #Identifier
 * parameter[+].name = #error
 * parameter[=].use = #out
@@ -76,7 +87,7 @@ Usage: #definition
 * parameter[=].part[=].use = #out
 * parameter[=].part[=].min = 0
 * parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Target-Identifikator"
+* parameter[=].part[=].documentation = "die verwendete Ziel-Domäne (im Request übergeben)"
 * parameter[=].part[=].type = #Identifier
 * parameter[=].part[+].name = #error-code
 * parameter[=].part[=].use = #out

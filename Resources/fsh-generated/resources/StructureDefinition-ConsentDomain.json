@@ -21,8 +21,8 @@
       ]
     }
   ],
-  "description": "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domain-Infos für gICS über entsprechende Extensions",
-  "purpose": "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domain-Infos für gICS",
+  "description": "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domänen-Infos für gICS über entsprechende Extensions",
+  "purpose": "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domänen-Infos für gICS",
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -187,26 +187,26 @@
       {
         "id": "ResearchStudy.identifier",
         "path": "ResearchStudy.identifier",
-        "short": "Domain name"
+        "short": "Domänen-Name"
       },
       {
         "id": "ResearchStudy.identifier.system",
         "path": "ResearchStudy.identifier.system",
-        "short": "Instanzspezifischer Gültigkeitsbereich des Domain Namens",
-        "definition": "Instanzspezifischer Gültigkeitsbereich des Domain Namens",
+        "short": "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens",
+        "definition": "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens",
         "fixedUri": "https://ths-greifswald.de/fhir/gics/"
       },
       {
         "id": "ResearchStudy.identifier.value",
         "path": "ResearchStudy.identifier.value",
-        "label": "Domain Name",
+        "label": "Domänen-Name",
         "short": "Name der Consent Domain",
         "definition": "Maschinenlesbarer Name der Consent Domain, innerhalb der gICS Instanz eindeutig"
       },
       {
         "id": "ResearchStudy.title",
         "path": "ResearchStudy.title",
-        "label": "Domain Label",
+        "label": "Domänen-Label",
         "short": "Label der Consent Domain",
         "definition": "Menschenlesbarer Name der Consent Domain, sollte innerhalb der gICS Instanz eindeutig sein."
       },

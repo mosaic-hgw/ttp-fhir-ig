@@ -14,9 +14,16 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 `<HOST>:<PORT>/ttp-fhir/fhir/gpas/$dePseudonymize`
 
 Der Funktionsaufruf liefert ein ParameterSet bestehend aus multiplen benannten Parametern zurück:
-1. target = die genutzte Pseudonymisierungsdomäne (Teil des Requests)
+1. target = die genutzte Ziel-Domäne (Teil des Requests)
 2. pseudonym = das angefragte Pseudonym (Teil des Requests)
 3. original = der ermittelte Originalwert
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 422: Fehlende oder falsche Patienten-Attribute.
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
@@ -27,9 +34,3 @@ Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 
 Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-Pseudonymize-response-example-2.json}}
-
-##### **Error Codes**
-
-| Beschreibung|HTTP Error Code|
---- | ---
-|Fehlende oder fehlende Parameter|400 Bad Request|
