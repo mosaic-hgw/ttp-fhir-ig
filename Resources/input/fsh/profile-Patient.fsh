@@ -70,7 +70,7 @@ Description: "Patienten-Identität (Variante/Schreibweise) einer realen Person (
 * address.country ^definition = "Staat in ISO-Codierung (zweistellig nach ISO-3166-2)"
 * address.period ..0
 * maritalStatus MS
-* maritalStatus ^binding.strength = #required
+* maritalStatus ^binding.strength = #preferred
 * maritalStatus.coding ..1 MS
 * maritalStatus.coding.system 1.. MS
 * maritalStatus.coding.code 1.. MS
