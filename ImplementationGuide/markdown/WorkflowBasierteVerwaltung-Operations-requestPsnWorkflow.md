@@ -27,35 +27,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-### Invocations
-
-`URL: [base]/$requestPsnWorkflow`
-
-This operation changes content
-
-### Parameters (In)
-
-| **Name**    | **Cardinality** | **Type** |**Documentation**|
-|-------------|-----------------|---|---|
-| original    | 1..*            |string|Liste studien- und standortspezifischer Originalwerte, f&#252;r die entsprechende Pseudonyme ermittelt bzw. erstellt werden.|
-| study       | 1..1            |string|Angabe der Studie|
-| source      | 1..1            |string|Angabe der Quell-Domäne (Herkunft des Originalwertes)|
-| target      | 1..1            |string|Angabe der Ziel-Domäne|
-| apikey      | 1..1            |string|G&#252;ltiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager|
-| event | 0..1            |string|Optionaler Parameter. Auszul&#246;sendes, vorkonfiguriertes Pseudonymisierungsevents innerhalb des Workflow-Managers.|
-
-### Return Values (Out)
-
-|**Name** | **Cardinality** | **Type** | **Documentation**                                                                                                                         |
-|---|-----------------|---|-------------------------------------------------------------------------------------------------------------------------------------------|
-|pseudonym|0..*||Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym|
-|pseudonym.original|1..1|Identifier|der zu pseudonymisierende Wert (im Request übergeben)|
-|pseudonym.target|1..1|Identifier|die verwendete Ziel-Domäne (im Request übergeben)|
-|pseudonym.pseudonym|1..1|Identifier|das in der Ziel-Domäne erzeugte Pseudonym.|
-|error|0..*||Fehlerrückgabe bei Teil-Fehlern|
-|error.original|0..1|Identifier|der zu pseudonymisierende Wert (im Request übergeben)|
-|error.target|0..1|Identifier|die verwendete Ziel-Domäne (im Request übergeben)|
-|error.error-code|1..1|Coding|Fehlercode|
+{{render:RequestPsnWorkflow}}
 
 Im Erfolgsfall wird ein pseudonym-Parameter pro übergebenen Originalwert zurückgegeben, welcher folgende Parameter enthält:
 1. original = der zu pseudonymisierende Wert (im Request übergeben)

@@ -28,40 +28,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus multiplen Multi-Part-Parametern zurück.
 
-### Invocations
-
-`URL: [base]/$requestTasks`
-
-This operation changes content
-
-### Parameters (In)
-
- |**Name** | **Cardinality** | **Type** | **Documentation**                                                                                                                         |
-|---|-----------------|---|-------------------------------------------------------------------------------------------------------------------------------------------|
-|study| 1..1|string| Angabe der Studie                                                                                                                         |
- |target| 1..1|string| Angabe der Ziel-Domäne bzw. des abrufenden Standorts                                                                                                           |
- |apikey| 1..1|string| G&#252;ltiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegen&#252;ber dem verarbeitenden Workflow-Manager |
-
-### Return Values (Out)
-
-|**Name** | **Cardinality** | **Type** | **Documentation**                                                                                                                         |
-|---|-----------------|---|-------------------------------------------------------------------------------------------------------------------------------------------|
-|dic_psn_available| 0..*||Pseudonym-Rückgabe aus einem Bloomfilter-Request.|
-|dic_psn_available.expires| 0..1|instant|Ablaufdatum (danach ist die Information ungültig)|
-|dic_psn_available.bloomfilter| 1..1|base64Binary|Bloomfilter|
-|dic_psn_available.target| 1..1|Identifier|Target-Identifikator|
-|dic_psn_available.pseudonym| 1..1|Identifier|Pseudonym|
-|send_idat| 0..*||Pseudonym-Rückgabe aus einem Bloomfilter-Request.|
-|send_idat.expires| 1..1|instant|Ablaufdatum (danach ist die Information ungültig)|
-|send_idat.taskId| 1..1|id|Identifikator der Aufgabe, dient der Rückreferenzierung in der providePatientData Operation|
-|send_idat.pseudonym| 0..1|Identifier|Pseudonym. Entweder Pseudonym oder Bloomfilter müssen enthalten sein.|
-|send_idat.bloomfilter| 0..1|base64Binary|Bloomfilter. Entweder Pseudonym oder Bloomfilter müssen enthalten sein.|
-|send_idat.element| 1..*|Coding|Vorgabe, welche Elemente in den IDAT von providePatientData enthalten sein sollen. Das Coding ist an das Value Set {{pagelink:ImplementationGuide/markdown/Terminologie-ValueSets-IdatElements.md}} gebunden.|
-|repeat_request| 0..*||Anforderung einen Bloomfilter-Request zu wiederholen.|
-|repeat_request.expires| 0..1|instant|Ablaufdatum (danach ist die Information ungültig)|
-|repeat_request.study| 1..1|Identifier|Angabe der Studie|
-|repeat_request.bloomfilter| 1..1|base64Binary|Bloomfilter|
-|repeat_request.target| 1..1|Identifier|Angabe des Bloomfilter sendenden Standorts (Ziel-Domäne)|
+{{render:RequestTasks}}
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
