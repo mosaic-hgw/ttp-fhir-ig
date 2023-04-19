@@ -42,4 +42,4 @@ Beispielhafter Request-Body:
 
 Eine beispielhafte Rückmeldung:
 
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-AddConsent-response-example-1.json}}
+{{xml:Resources/fsh-generated/resources/Bundle-AddConsent-response-example-1.json}}

@@ -139,7 +139,7 @@ Usage: #example
 * parameter[=].name = "provenance"
 
 
-Instance: Parameters-AddConsent-response-example-1
+Instance: AddConsent-response-example-1
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
