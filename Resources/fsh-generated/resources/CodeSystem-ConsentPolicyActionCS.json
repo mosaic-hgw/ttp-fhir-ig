@@ -14,10 +14,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Weitergabe von [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "bereitstellen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "transfer of [CLASS]"
         }
       ]
@@ -28,10 +44,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Übertragung des Eigentums an [CLASS] vom Teilnehmer an den Verantwortlichen/Datenverarbeiter/Träger der Biobank"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "uebertragen_eigentum"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "transfer the ownership of [CLASS] from the participant to the controller/data processor/carrier of the biobank."
         }
       ]
@@ -42,10 +74,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Einsicht in [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "einsehen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "insight into [CLASS]"
         }
       ]
@@ -56,10 +104,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Erhebung neuer [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "entnehmen; erheben"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "collection of new [CLASS]"
         }
       ]
@@ -70,10 +134,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Gewinnung von genetischen Daten aus [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "analysieren_genetisch"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "obtaining genetic data from [CLASS]"
         }
       ]
@@ -84,10 +164,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Information"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "informieren"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "information "
         }
       ]
@@ -98,10 +194,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Speicherung und Verarbeitung von [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "lagern_verarbeiten; speichern_verarbeiten"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "storage and processing of [CLASS]"
         }
       ]
@@ -112,10 +224,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Rekontaktierung des Teilnehmers (ggf. in Bezug auf [TAETIGKEIT|KONTEXT])"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "rekontaktieren"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "contact participant (if necessary, regarding [ACTIVITY|KONTEXT])"
         }
       ]
@@ -126,10 +254,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Bereitstellung von [CLASS] für Nutzung / Analysen / zu Auswertezwecken [PURPOSE]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "nutzen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "provision of [CLASS] for use / analyses / for evaluation purposes [PURPOSE]."
         }
       ]
@@ -140,10 +284,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Verarbeitung von [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "verarbeiten"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "processing of [CLASS]"
         }
       ]
@@ -154,10 +314,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Zusammenführung und ggf. überführen von [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "zusammenfuehren"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "merging and, if necessary, transferring of [CLASS]"
         }
       ]
@@ -168,10 +344,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Abfrage von [PURPOSE]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "abfragen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "query with/from [PURPOSE]"
         }
       ]
@@ -182,10 +374,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Ergänzende / kompletttierende Erhebung zusätzlicher [CLASS] mit / aus [PURPOSE]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "ergaenzen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "supplementary / complementary collection of additional [CLASS] with / from [PURPOSE]."
         }
       ]
@@ -196,10 +404,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Verknüpfung von Daten der betroffenen Person mit [PURPOSE]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "verknuepfen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "linking data of the data subject to [PURPOSE]"
         }
       ]

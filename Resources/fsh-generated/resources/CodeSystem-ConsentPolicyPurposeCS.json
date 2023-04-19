@@ -14,10 +14,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "des Gesundheitszustandes"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Gesundheitszustand"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "the state of health"
         }
       ]
@@ -28,10 +44,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "des Hausarztes"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Arzt"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "from/to the general practitioner /family doctor"
         }
       ]
@@ -42,10 +74,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "des Arztes"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Hausarzt"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "from/to the physician"
         }
       ]
@@ -56,10 +104,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "von/an eine Contract Research Organization und oder eine klinische Koordinierungsstelle (KKS)"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "CRO"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "from/to a clinical research organization"
         }
       ]
@@ -70,10 +134,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an Dritte /mit Dritten Forschungspartner(n)"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Dritte"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to third parties /with third party research partner(s)"
         }
       ]
@@ -84,10 +164,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an Länder mit EU Datenschutzniveau"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "EU_DSGVO_NIVEAU"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to countries with EU data protection level"
         }
       ]
@@ -98,10 +194,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an Länder ohne EU Datenschutzniveau"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "non_EU_DSGVO_NIVEAU"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to countries without EU data protection level"
         }
       ]
@@ -112,10 +224,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an Partner aus dem Bereich der Industrie"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Industrie"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to partners from the industrial sector"
         }
       ]
@@ -126,10 +254,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "durch Übertrag in/aus (elektronischen) Krankenunterlagen/Patientenakten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Krankenunterlagen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "by transfer to/from (electronic) health records"
         }
       ]
@@ -140,10 +284,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "im Rahmen eines Monitoring"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Monitoring"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "as part of a monitoring"
         }
       ]
@@ -154,10 +314,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an Partner aus Non-Profit-Organisationen"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "non_profit"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to partners from non-profit organisations"
         }
       ]
@@ -168,10 +344,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "an eine am Sponsoring beteiligte Pharmafirma"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "pharma"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "to a pharmaceutical company involved in the sponsorship"
         }
       ]
@@ -182,10 +374,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "im Rahmen des spezifischen Vorhabens/Projektes oder der spezifischen Studie"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Vorhaben_spezifisch"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "for a  specific research project or study"
         }
       ]
@@ -196,10 +404,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "über die Teilnahme der betroffenen Person am spezifischen Vorhaben/Projekt oder einer spezifischen Studie"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Vorhaben_Teilnahme"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "on the participation of the data subject in the specific project or a specific study"
         }
       ]
@@ -210,10 +434,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "im Falle des Todes der betroffenen Person"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Tod"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "in the event of the death of the person concerned"
         }
       ]
@@ -224,10 +464,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "ohne zeitliche Einschränkung"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "uneingeschraenkt"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": " without timely restriction"
         }
       ]
@@ -238,10 +494,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "mit zeitlicher Einschränkung"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "zeitlich_eingeschraenkt"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "with timely restriction"
         }
       ]
@@ -252,10 +524,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "einmalig"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
           "value": "einmalig"
         },
         {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "once"
         }
       ]
@@ -266,10 +554,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Informationen anderer Datenbanken"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Datenbanken"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "information from other databases"
         }
       ]
@@ -280,10 +584,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Erhebung zusätzlicher [CLASS]"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "weitere_Erhebungen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "collection of additional [CLASS]"
         }
       ]
@@ -294,10 +614,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Informationen zu neuen Vorhaben/Projekten oder Studien"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "weitere_Studien"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "information on new projects or studies"
         }
       ]
@@ -308,10 +644,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Mitteilung von Zusatz- oder Nebenbefunden"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Zusatzbefund"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "notification of additional or incidental findings"
         }
       ]
@@ -322,10 +674,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "von/an Krankenversicherungen"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "KV"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "from/to health insurances"
         }
       ]
@@ -336,10 +704,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "von/an Rentenversicherungen"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "RV"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "from/to pension insurances"
         }
       ]
@@ -350,10 +734,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Mitteilung von Forschungsergebnissen"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Ergebnisse"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "communication of research results"
         }
       ]
@@ -364,10 +764,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "[PURPOSE] mit erheblicher Bedeutung"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Erhebliche_Bedeutung"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "[PURPOSE] with considerable significance"
         }
       ]
@@ -378,10 +794,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "zu Zwecken der Qualitätssicherung"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "qualitaetssicherung"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "for quality assurance purposes"
         }
       ]
@@ -392,10 +824,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "im wissenschaftlichen Kontext"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "wissenschaftlich"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "in a scientific context"
         }
       ]

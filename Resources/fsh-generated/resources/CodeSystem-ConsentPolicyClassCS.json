@@ -28,10 +28,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Auf Biomaterialien basierende Analysedaten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "BIOMAT_Analysedaten"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "analysed data based on biosamples"
         }
       ]
@@ -42,10 +58,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Retrospektive Biomaterialien"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "BIOMAT_retrospektiv"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "retrospective biosamples"
         }
       ]
@@ -56,10 +88,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Auf retrospektiven Biomaterialien basierende Analysedaten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "BIOMAT_Analysedaten_retrospektiv"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "analysed data based on retrospective biosamples"
         }
       ]
@@ -70,10 +118,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Biomaterialien, insbesondere zusätzlicher Mengen"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "BIOMAT_Zusatzmengen"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "biosamples, especially additional sampling"
         }
       ]
@@ -84,10 +148,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Personenidentifizierende Daten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "IDAT"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "personal identifying information"
         }
       ]
@@ -98,10 +178,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Bilder und Bilddaten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "IMGDAT"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "images and image data"
         }
       ]
@@ -112,10 +208,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Krankenkassendaten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "KDAT"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "health insurance data"
         }
       ]
@@ -126,10 +238,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Krankenkassendaten, insbesondere die Krankenkassenversichertennummer"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "KDAT_KVNR"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "health insurance data, especially the health insurance member ID or policy number"
         }
       ]
@@ -140,10 +268,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Retrospektive Krankenkassendaten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "KDAT_retrospektiv"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "retrospective health insurance data"
         }
       ]
@@ -154,10 +298,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Medizinische Daten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "MDAT"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "medical data"
         }
       ]
@@ -168,10 +328,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Medizinische Daten, insbesondere GECCO83 Datensatz"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "MDAT_GECCO83"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "medical data, especially the GECCO83 data set"
         }
       ]
@@ -182,10 +358,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Retrospektive medizinische Daten"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "MDAT_retrospektiv"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "retrospective medical data"
         }
       ]
@@ -196,10 +388,26 @@
       "designation": [
         {
           "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "Biomaterialien-spezifische Metadaten wie zum Beispiel zu Lagerung und Prozessierung"
         },
         {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "BIOMAT_Metadaten"
+        },
+        {
           "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
           "value": "metadata regarding biosamples such as storage and processing"
         }
       ]
