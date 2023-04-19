@@ -414,7 +414,7 @@
               "valueBoolean": true
             }
           ],
-          "strength": "required",
+          "strength": "preferred",
           "description": "The domestic partnership status of a person.",
           "valueSet": "http://hl7.org/fhir/ValueSet/marital-status"
         }

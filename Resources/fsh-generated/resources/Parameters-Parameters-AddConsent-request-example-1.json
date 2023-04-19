@@ -1,4 +1,6 @@
 {
+  "resourceType": "Parameters",
+  "id": "Parameters-AddConsent-request-example-1",
   "parameter": [
     {
       "resource": {
@@ -9,8 +11,8 @@
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203",
                   "code": "ANON",
+                  "system": "http://hl7.org/fhir/v2/0203/",
                   "display": "Anonymous identifier"
                 }
               ]
@@ -36,8 +38,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "ungültig"
                 }
               }
@@ -48,8 +50,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "gültig"
                 }
               }
@@ -60,8 +62,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "gültig"
                 }
               }
@@ -72,8 +74,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "ungültig"
                 }
               }
@@ -84,8 +86,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "ungültig"
                 }
               }
@@ -96,8 +98,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.1",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "gültig"
                 }
               }
@@ -108,8 +110,8 @@
             "answer": [
               {
                 "valueCoding": {
-                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "code": "2.16.840.1.113883.3.1937.777.24.5.2.2",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
                   "display": "ungültig"
                 }
               }
@@ -153,8 +155,8 @@
             "type": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v2/0203/",
                   "code": "ANON",
+                  "system": "http://hl7.org/fhir/v2/0203/",
                   "display": "Anonymous identifier"
                 }
               ]
@@ -199,30 +201,17 @@
             "onBehalfOf": {
               "display": "Greifswald"
             },
-            "_data": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                  "valueCode": "error"
-                }
-              ]
-            },
             "when": "2022-12-21T00:00:00.000+01:00",
             "type": [
               {
-                "system": "urn:iso-astm:E1762-95:2013",
                 "code": "1.2.840.10065.1.12.1.7",
+                "system": "urn:iso-astm:E1762-95:2013",
                 "display": "Consent Signature"
               }
             ],
             "who": {
               "reference": "Patient/1",
               "display": "Pseudonym studypsn1"
-            }
-          },
-          {
-            "onBehalfOf": {
-              "display": "Greifswald"
             },
             "_data": {
               "extension": [
@@ -231,17 +220,30 @@
                   "valueCode": "error"
                 }
               ]
+            }
+          },
+          {
+            "onBehalfOf": {
+              "display": "Greifswald"
             },
             "when": "2022-12-21T00:00:00.000+01:00",
             "type": [
               {
-                "system": "urn:iso-astm:E1762-95:2013",
                 "code": "1.2.840.10065.1.12.1.5",
+                "system": "urn:iso-astm:E1762-95:2013",
                 "display": "Verification Signature"
               }
             ],
             "who": {
               "display": "Dr. Stephen Strange"
+            },
+            "_data": {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                  "valueCode": "error"
+                }
+              ]
             }
           }
         ],
@@ -271,6 +273,5 @@
       },
       "name": "provenance"
     }
-  ],
-  "resourceType": "Parameters"
+  ]
 }
