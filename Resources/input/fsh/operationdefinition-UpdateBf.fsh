@@ -66,6 +66,8 @@ Usage: #example
 * parameter[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[+].name = "source"
 * parameter[=].valueString = "dic_erlangen"
+* parameter[+].name = "pseudonym"
+* parameter[=].valueString = "dic_2Q42E"
 * parameter[+].name = "apikey"
 * parameter[=].valueString = "abcdef12345"
 * parameter[+].name = "bfVersion"
