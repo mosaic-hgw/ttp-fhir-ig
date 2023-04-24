@@ -93,20 +93,6 @@ Bei der Verwendung von provisionPeriod ist zu beachten, dass
 
 Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  `eq, ge, gt, le, lt, eb, sa`. Nicht unterstützt werden: `ne, ap`.
 
-#### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
-
-Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.
-
-Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters `provisionPeriod` abgefragt.
-
-Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details entnehmen Sie bitte nachstehender Tabelle.
-                  
-
-![](https://raw.githubusercontent.com/mosaic-hgw/ttp-fhir-ig/main/ImplementationGuide/media/PolicyStatus_TFCU_Consent_Suche.PNG){: align="center" width="500px"}
-
-
-
-
 ### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
@@ -130,3 +116,13 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=
 findet alle Consent-Ressourcen mit Permit-Provision, bei denen der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 ode auch der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.9 gesetzt sind.
 
 
+#### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
+
+Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.
+
+Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters `provisionPeriod` abgefragt.
+
+Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details entnehmen Sie bitte nachstehender Tabelle.
+
+
+![](https://raw.githubusercontent.com/mosaic-hgw/ttp-fhir-ig/main/ImplementationGuide/media/PolicyStatus_TFCU_Consent_Suche.PNG){: align="center" width="500px"}
