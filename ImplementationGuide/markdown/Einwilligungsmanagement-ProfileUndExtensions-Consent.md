@@ -8,13 +8,11 @@ Angepasstes FHIR Consent Profil auf Basis des offiziellen {{link:http://fhir.de/
 
 ##### Beispiel
 
-Erweitertes Beispiel folgt.
-
-Multi Provision Consent:
+Consent-Ressource mit mehreren Provision-Elementen (entspricht Repräsentation je Einwilligungsdokument)
 
 {{xml:Resources/fsh-generated/resources/Consent-Consent-example-1.json}}
 
-Single Provision Consent:
+Consent-Ressource mit je einem Provision-Element (entspricht SignedPolicy):
 
 {{xml:Resources/fsh-generated/resources/Consent-Consent-example-2.json}}
 
@@ -31,8 +29,6 @@ Unterstützt wird die logische UND-Verknüpfung gemäß [FHIR Search API](http:/
                 
 **Die Ergebnisse der FHIR Consent Suche sind nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
 **Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.**
-         
-
 
 <!--
 Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird unterstützt, namentlich die link-Elemente im Bundle sowie die Parameter
@@ -118,3 +114,14 @@ findet alle Consent-Ressourcen mit Permit-Provision, bei denen sowohl der Provis
 GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8,provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
 ```
 findet alle Consent-Ressourcen mit Permit-Provision, bei denen der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 ode auch der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.9 gesetzt sind.
+
+
+##### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
+
+Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.
+
+Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters `provisionPeriod` abgefragt.
+
+Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details entnehmen Sie bitte nachstehender Tabelle.
+
+![](https://raw.githubusercontent.com/mosaic-hgw/ttp-fhir-ig/main/ImplementationGuide/media/PolicyStatus_TFCU_Consent_Suche.PNG)
