@@ -1,5 +1,7 @@
 #### {{page-title}}
 
+**Unterstützt ab TTP-FHIR Gateway Version 2023.1.0**
+
 Legt eine neue Einwilligung im gICS für ein spezifisches Forschungsvorhaben (Domain) auf Basis der übermittelten Informationen gemäß den Profil-Vorgaben der [HL7 Deutschland Arbeitsgruppe "Einwilligungsmanagement"](https://ig.fhir.de/einwilligungsmanagement/stable/) an:
 - [Ausgefüllte Einwilligung](https://ig.fhir.de/einwilligungsmanagement/stable/QuestionnaireResponse.html)
 - [Personenbezug](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html)

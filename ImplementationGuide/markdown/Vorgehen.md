@@ -31,7 +31,12 @@ Die nächste Ausbaustufe des Gateway umfasst:
 Weitere Details unter:
 - {{pagelink:ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement.md}}
 
-### Version 2.3.0 (Q1 2023) - AUSBLICK
+### Version 2023.1.0 (Q2 2023)
 Die nächste Ausbaustufe des Gateway umfasst:
-- die Anbindung weiterer gICS-Funktionalitäten (u.a. Anlegen von Consenten per FHIR, Paging und verbesserte Validierung von Consent-Ressourcen)
-- die Anbindung weiterer E-PIX-Funktionalitäten zur Auflösung von doppelten Einträgen per FHIR.
+- die Anbindung weiterer gICS-Funktionalitäten (u.a. Anlegen von Consenten per FHIR und Validierung-Ressourcen)
+- Suche nach Consent-Ressourcen nach Vorgaben der MII Taskforce Consent-Umsetzung gemäß Vorgaben des [MII KDS Consent](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html)
+- Unterstützung [MII KDS Consent Profil](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html)
+
+Weitere Details unter:
+- {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-Operations-addConsent.md}}
+- {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-Consent.md}}

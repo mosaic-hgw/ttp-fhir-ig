@@ -20,12 +20,21 @@ Single Provision Consent:
 
 
 ##### Suchparameter
+
+**Unterstützt ab TTP-FHIR Gateway Version 2023.1.0**
+
 Die Suche nach Einwilligungsinformationen ist mittels der FHIR Search-API umgesetzt. Die Rückgabe erfolgt dementsprechend in Form eines Bundles vom Typ searchset.
 
 Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter {{pagelink:ImplementationGuide/markdown/TechnischeGrundlagen.md}} verwiesen.
 
 Unterstützt wird die logische UND-Verknüpfung gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
+                
+**Die Ergebnisse der FHIR Consent Suche sind nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
+**Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.**
+         
 
+
+<!--
 Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird unterstützt, namentlich die link-Elemente im Bundle sowie die Parameter
 * _count: (maximale) Anzahl der im Bundle enthaltenen Ressourcen
 * _offset: fortlaufende Nummer der ersten im Bundle enthaltenen Ressource
@@ -35,11 +44,11 @@ Der Default-Offset ist 0.
 Werden weder _count noch _offset angegeben, enthält das Bundle alle Ergebnisse.
 
 Die reine Anzahl der Suchergebnisse ohne deren Übermittlung kann mit Hilfe des Parameters _summary=count abgefragt werden, vgl. http://www.hl7.org/fhir/r4/search.html#count .
+-->
 
 Die Suche erfolgt auf dem Consent-Endpoint mittels der nachfolgend beschriebenen Suchparameter.
 
-**Hinweis: Die Angabe des Suchparameters "domain" ist verpflichtend. Existiert dieser nicht im Request, wird der HTTP-Statuscode 400 zurück gegeben.**
-
+**Hinweis: Die Angabe des Suchparameters "domain" ist optional. Gleichzeitig empfehlen wir die Nutzung dieses Parameters. Existiert dieser nicht im Request, werden ALLE im gICS vorhandenen Domänen durchsucht, was sich erheblich auf Laufzeiten auswirken kann.**
 
 ###### Domäne
 Der Suchparameter **domain** ist im Rahmen dieses Leitfadens wie folgt definiert:
@@ -82,6 +91,12 @@ Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&provisionPeriod=2020-12-15
 ```
+Bei der Verwendung von provisionPeriod ist zu beachten, dass 
+`provision.period.start` dem **Beginn der Gültigkeit der Einwilligung** (gemäß gICS: "consentLegalDate") entspricht und 
+`provision.period.end` dem errechneten **Gültigkeitsende einer Einwilligungspolicy** im gICS entspricht.
+
+Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  `eq, ge, gt, le, lt, eb, sa`. Nicht unterstützt werden: `ne, ap`.
+
 ###### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
