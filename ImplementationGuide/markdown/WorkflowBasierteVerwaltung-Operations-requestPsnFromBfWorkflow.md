@@ -33,7 +33,7 @@ Ist der Request gänzlich ungültig, wird einer der folgenden HTTP Statuscodes i
 * 422: Fehlende oder falsche Patienten-Attribute.
 
 ##### **Hinweis zu zukünftigen Änderungen**
-Das Pseudonym wird künftig nur dann geliefert, wenn kein Clearing-Prozess angestoßen wird. Ist dieser erforderlich, muss dieser zunächst vollständig abgeschlossen sein und das Pseudonym kann über {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}} abgerufen werden.
+Das Pseudonym wird künftig nur dann geliefert, wenn kein Clearing-Prozess angestoßen wird. Ist dieser erforderlich, muss dieser zunächst vollständig abgeschlossen sein und das Pseudonym kann über {{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}} abgerufen werden.
 
 ##### **Beispiel**
 Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Use Cases):
