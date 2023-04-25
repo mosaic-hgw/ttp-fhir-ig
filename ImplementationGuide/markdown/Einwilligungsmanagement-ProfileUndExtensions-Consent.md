@@ -25,7 +25,7 @@ Die Suche nach Einwilligungsinformationen ist mittels der FHIR Search-API umgese
 
 Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter {{pagelink:ImplementationGuide/markdown/TechnischeGrundlagen.md}} verwiesen.
 
-Unterstützt wird die logische UND-Verknüpfung gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
+Unterstützt wird die logische UND-Verknüpfung der einzelnen Parameter gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
                 
 **Die Ergebnisse der FHIR Consent Suche sind nicht dokumenten-spezifisch**, da ein Patient unterschiedliche Einwilligungen und auch Widerrufe zu unterschiedlichen Zeitpunkten unterzeichnet haben kann. Somit ändert sich das Set von zulässigen Policies des Patienten ('Signed Policies') über die Zeit regelhaft.
 **Je Signed Policy im gICS wird somit eine FHIR Consent Resource erzeugt** und dem SearchSet-Bundle beigefügt. Somit repräsentiert die **Bundle.Total**-Angabe nicht die Anzahl der vorhandenen Einwilligungen, sondern die **Anzahl der jeweiligen SignedPolicies mit Status `permit`.**
@@ -62,7 +62,7 @@ GET [base]/Consent?domain:identifier=MIRACUM&category=2.16.840.1.113883.3.1937.7
 ```
 findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Consent (entsprechend der hier beispielhaften OID) entsprechen.
 
-### Typ der Provision (permit, deny)
+### Typ der Provision (permit)
 Der Suchparameter **provisionType**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
@@ -72,6 +72,7 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit
 
 ### Provision-Code
 Der Suchparameter **provisionCode**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+*Hinweis: Die Verundung von multiplen provisionCode-Parametern ist im Release 2023.1.0 noch nicht möglich.*                   
 
 Beispiel:
 ```
@@ -106,9 +107,9 @@ GET [base]/Consent?domain:identifier=MIRACUM&policyUri=urn:oid:2.16.840.1.113883
 ### Komplexere Beispiele
 
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
+GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
-findet alle Consent-Ressourcen mit Permit-Provision, bei denen sowohl der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 als auch der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.9 gesetzt sind.
+findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MIRACUM' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 gesetzt ist.
 
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8,provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
