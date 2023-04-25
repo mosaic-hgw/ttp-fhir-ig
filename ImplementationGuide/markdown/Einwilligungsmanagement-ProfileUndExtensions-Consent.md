@@ -72,6 +72,7 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit
 
 ### Provision-Code
 Der Suchparameter **provisionCode**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+
 *Hinweis: Die Verundung von multiplen provisionCode-Parametern ist im Release 2023.1.0 noch nicht möglich.*                   
 
 Beispiel:
@@ -94,6 +95,8 @@ Bei der Verwendung von provisionPeriod ist zu beachten, dass
 
 Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  `eq, ge, gt, le, lt, eb, sa`. Nicht unterstützt werden: `ne, ap`.
 
+*Hinweis: Die Verundung von multiplen provisionPeriod-Parametern ist im Release 2023.1.0 noch nicht möglich.*
+
 ### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
@@ -111,11 +114,13 @@ GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MIRACUM' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 gesetzt ist.
 
+<!--
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8,provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
+GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
 ```
 findet alle Consent-Ressourcen mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 ode auch der Provison-Code 2.16.840.1.113883.3.1937.777.24.5.3.9 gesetzt sind.
 
+-->
 
 ### Abfrage von Einwilligungsständen zu unterschiedlichen Zeitpunkten unter Verwendung von Period-Komparatoren
 
