@@ -7,10 +7,4 @@
 Details folgen
 
 ##### Umsetzung
-Details folgen
-
-##### Suchparameter
-TODO (Q3/2021)
-
-##### Beispiel
-TODO (Q3/2021)
+Noch nicht implementiert. Details folgen

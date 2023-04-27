@@ -1,4 +1,5 @@
 #### {{page-title}}
+**Unterstützt ab TTP-FHIR Gateway Version 2.2.0**
 
 ##### **Zweck**
 Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix).

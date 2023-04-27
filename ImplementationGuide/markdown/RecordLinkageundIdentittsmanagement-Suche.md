@@ -1,5 +1,7 @@
 #### {{page-title}}
 
+**Unterstützt ab TTP-FHIR Gateway Version 2.2.0**
+
 Die Suche nach E-PIX-Personen bzw. den zugeordneten Patienten-Identitäten ist mittels der FHIR Search-API umgesetzt. Die Rückgabe erfolgt dementsprechend in Form eines Bundles vom Typ searchset.
 
 Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter {{pagelink:ImplementationGuide/markdown/TechnischeGrundlagen.md}} verwiesen.

@@ -1,4 +1,5 @@
 #### **{{link:CurrentPolicyStatesForPerson}}**
+**Unterstützt ab TTP-FHIR Gateway Version 2.1.0**
 
 ##### **Voraussetzung**
 - Spezifizierte Domäne muss angelegt sein

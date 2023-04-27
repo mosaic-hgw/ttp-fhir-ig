@@ -1,4 +1,5 @@
 #### **{{link:PolicyStatesForPerson}}**
+**Unterstützt ab TTP-FHIR Gateway Version 2.0.0**
 
 *HINWEIS: Ab TTP-FHIR-Gateway Release* **2.1.0** *ist diese Operation deprecated. Sie wird durch die Operations
 {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-Operations-allPolicyStatesForPerson.md}}

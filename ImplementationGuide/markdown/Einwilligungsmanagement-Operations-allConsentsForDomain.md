@@ -1,4 +1,5 @@
 #### **{{link:AllConsentsForDomain}}**
+**Unterstützt ab TTP-FHIR Gateway Version 2.0.0**
 
 <p align="left">
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2021/06/fhirgateway-gics.png">
