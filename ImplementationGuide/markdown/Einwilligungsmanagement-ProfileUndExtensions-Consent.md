@@ -1,23 +1,12 @@
 ![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 ## Consent
 
+### Zweck
+Angepasstes FHIR Consent Profil auf Basis des offiziellen [Consent-Profils](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html) der Hl7 AG 'Einwilligungsmanagement' erweitertet um ausgewählte gICS Eigenschaften.
+
 {{tree:Consent}}
 
-## Zweck
-Angepasstes FHIR Consent Profil auf Basis des offiziellen {{link:http://fhir.de/ConsentManagement/StructureDefinition/Consent}} erweitertet um ausgewählte gICS Eigenschaften.
-
-## Beispiel
-
-Consent-Ressource mit mehreren Provision-Elementen (entspricht Repräsentation je Einwilligungsdokument)
-
-{{xml:Resources/fsh-generated/resources/Consent-Consent-example-1.json}}
-
-Consent-Ressource mit je einem Provision-Element (entspricht SignedPolicy):
-
-{{xml:Resources/fsh-generated/resources/Consent-Consent-example-2.json}}
-
-
-## Suchparameter
+### Suchparameter
 
 **Unterstützt ab TTP-FHIR Gateway Version 2023.1.0**
 
@@ -133,3 +122,14 @@ Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details
 
 
 ![](https://raw.githubusercontent.com/mosaic-hgw/ttp-fhir-ig/main/ImplementationGuide/media/PolicyStatus_TFCU_Consent_Suche.PNG){: align="center" width="600px"}
+
+
+### Beispiel-Ressourcen
+
+Consent-Ressource mit mehreren Provision-Elementen (entspricht Repräsentation je Einwilligungsdokument)
+
+{{xml:Resources/fsh-generated/resources/Consent-Consent-example-1.json}}
+
+Consent-Ressource mit je einem Provision-Element (entspricht SignedPolicy):
+
+{{xml:Resources/fsh-generated/resources/Consent-Consent-example-2.json}}
