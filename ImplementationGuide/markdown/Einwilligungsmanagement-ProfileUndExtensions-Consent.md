@@ -92,8 +92,6 @@ Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Per
 ### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
-{{render:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri}}
-
 Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MII&policyUri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
@@ -316,7 +314,7 @@ Searchset-Bundle mit FHIR Consent-Ressource je gültiger Policy **gemäß MII KD
     </entry>    
 </Bundle>
 ```
-### Beispiel-Ressourcen FHIR Consent (angepasste gICS-Profil)
+### Beispiel-Ressourcen FHIR Consent (angepasstes gICS-Profil)
 
 Consent-Ressource mit mehreren Provision-Elementen (entspricht Repräsentation je Einwilligungsdokument)
 
