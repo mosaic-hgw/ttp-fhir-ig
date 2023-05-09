@@ -6,7 +6,6 @@ Angepasstes FHIR Consent Profil auf Basis des offiziellen [Consent-Profils](http
 
 {{tree:Consent}}
 
-
 ### Suchparameter
 
 **Unterstützt ab TTP-FHIR Gateway Version 2023.1.0**
