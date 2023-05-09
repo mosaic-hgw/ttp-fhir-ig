@@ -121,7 +121,7 @@ Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details
 #### Beispiel Response (MII KDS Consent Profil)
 Searchset-Bundle mit FHIR Consent-Ressource je gültiger Policy **gemäß MII KDS Consent-Profil** und Patientenbezug (SignerIdType=Pseudonym). In diesem Fall n=2.
 
-{{xml:Resources/fsh-generated/resources/Bundle-Consent-Bundle-example-1}}
+{{xml:Resources/fsh-generated/resources/Bundle-Consent-Bundle-example-1.json}}
 
 ### Beispiel-Ressourcen FHIR Consent (angepasstes gICS-Profil)
 
