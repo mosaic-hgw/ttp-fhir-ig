@@ -21,6 +21,10 @@
     {
       "name": "apikey",
       "valueString": "abcdef12345"
+    },
+    {
+      "name": "event",
+      "valueString": "num.getCodexPsn_codex"
     }
   ]
 }

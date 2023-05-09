@@ -101,16 +101,24 @@ Usage: #definition
 Instance: Parameters-RequestPsnWorkflow-request-example-1
 InstanceOf: Parameters
 Usage: #example
-* parameter[0].name = "study"
-* parameter[=].valueString = "num"
-* parameter[+].name = "original"
-* parameter[=].valueString = "dic_1H51T"
-* parameter[+].name = "source"
-* parameter[=].valueString = "dic_erlangen"
-* parameter[+].name = "target"
-* parameter[=].valueString = "codex"
-* parameter[+].name = "apikey"
-* parameter[=].valueString = "abcdef12345"
+* parameter[+]
+  * name = "study"
+  * valueString = "num"
+* parameter[+]
+  * name = "original"
+  * valueString = "dic_1H51T"
+* parameter[+]
+  * name = "source"
+  * valueString = "dic_erlangen"
+* parameter[+]
+  * name = "target"
+  * valueString = "codex"
+* parameter[+]
+  * name = "apikey"
+  * valueString = "abcdef12345"
+* parameter[+]
+  * name = "event"
+  * valueString = "num.getCodexPsn_codex"
 
 Instance: Parameters-RequestPsnWorkflow-response-example-1
 InstanceOf: Parameters

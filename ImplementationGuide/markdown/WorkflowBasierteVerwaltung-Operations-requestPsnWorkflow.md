@@ -47,14 +47,8 @@ Ist der Request gänzlich ungültig, wird einer der folgenden HTTP Statuscodes i
 
 
 ##### **Beispiele**
-Beispielhafter Request-Body (orientiert am Beispiel der fTTP-NUM Standort Use Cases):
+Beispielhafter Request-Body:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-request-example-1.json}}
 
-Eine beispielhafte Rückmeldung (orientiert am Beispiel der fTTP-NUM Standort Use Cases) kann wie folgt aussehen:
+Eine beispielhafte Rückmeldung:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-response-example-1.json}}
-
-Beispielhafter Request-Body zur Anforderung von Drittpseudonymen (orientiert am Beispiel der Zentralen Plattform im Vorhaben NUM-RDP):
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-request-example-2.json}}
-
-Eine beispielhafte Rückmeldung (orientiert am Beispiel der Zentralen Plattform im Vorhaben NUM-RDP) kann wie folgt aussehen:
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-RequestPsnWorkflow-response-example-2.json}}
