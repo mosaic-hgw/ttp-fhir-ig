@@ -215,3 +215,69 @@ Usage: #example
 * provision.provision[=].period.end = "2051-05-19T17:50:23+02:00"
 * provision.provision[=].code[0] = $MII#Rekontaktierung_Zusatzbefund "Rekontaktierung bezüglich Zusatzbefund"
 * provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.31
+
+Instance: Consent-Bundle-example-1
+InstanceOf: Bundle
+Usage: #example
+* meta.lastUpdated = "2023-04-28T11:01:33.912+02:00"
+* type = #searchset
+* total = 2
+* link.relation = "self"
+* link.url = "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"
+* entry[0].fullUrl = "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630"
+* entry[=].resource = 23db88b1-6e47-4907-8d9f-3fb4b2e97630
+* entry[+].fullUrl = "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22"
+* entry[=].resource = fab23c8e-6a94-49da-acfd-4df51098ca22
+
+Instance: 23db88b1-6e47-4907-8d9f-3fb4b2e97630
+InstanceOf: Consent
+Usage: #inline
+* id = "23db88b1-6e47-4907-8d9f-3fb4b2e97630"
+* meta.lastUpdated = "2023-04-27T16:13:49.367+02:00"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+* extension.extension[0].url = "domain"
+* extension.extension[=].valueReference = Reference(ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540)
+* extension.extension[+].url = "status"
+* extension.extension[=].valueCoding = $publication-status#active
+* extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+* status = #active
+* scope = $consentscope#research
+* category[0] = $loinc#57016-8
+* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
+* patient = Reference(Patient/d2850872-1e98-47a5-b345-62f133833094) "Pseudonym dic_1H51T"
+* dateTime = "2023-04-27T00:00:00+02:00"
+* organization.display = "MII"
+* sourceReference = Reference(QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565)
+* policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
+* policyRule = $MII#MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* provision.type = #permit
+* provision.period.start = "2023-04-27T00:00:00+02:00"
+* provision.period.end = "2053-04-27T00:00:00+02:00"
+* provision.code[0] = $MII#MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+
+Instance: fab23c8e-6a94-49da-acfd-4df51098ca22
+InstanceOf: Consent
+Usage: #inline
+* meta.lastUpdated = "2023-04-27T16:23:37.048+02:00"
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+* extension.extension[0].url = "domain"
+* extension.extension[=].valueReference = Reference(ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540)
+* extension.extension[+].url = "status"
+* extension.extension[=].valueCoding = $publication-status#active
+* extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+* status = #active
+* scope = $consentscope#research
+* category[0] = $loinc#57016-8
+* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
+* patient = Reference(Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0) "Pseudonym dic_R3M0V3"
+* dateTime = "2023-04-27T11:10:54+02:00"
+* organization.display = "MII"
+* sourceReference = Reference(QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9)
+* policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
+* policyRule = $MII#MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* provision.type = #permit
+* provision.period.start = "2023-04-27T11:10:54+02:00"
+* provision.period.end = "2053-04-27T11:10:54+02:00"
+* provision.code[0] = $MII#MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"

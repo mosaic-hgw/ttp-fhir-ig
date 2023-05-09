@@ -1,0 +1,247 @@
+{
+  "resourceType": "Bundle",
+  "id": "Consent-Bundle-example-1",
+  "meta": {
+    "lastUpdated": "2023-04-28T11:01:33.912+02:00"
+  },
+  "type": "searchset",
+  "total": 2,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "23db88b1-6e47-4907-8d9f-3fb4b2e97630",
+        "meta": {
+          "lastUpdated": "2023-04-27T16:13:49.367+02:00",
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ],
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "57016-8",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/d2850872-1e98-47a5-b345-62f133833094",
+          "display": "Pseudonym dic_1H51T"
+        },
+        "dateTime": "2023-04-27T00:00:00+02:00",
+        "organization": [
+          {
+            "display": "MII"
+          }
+        ],
+        "sourceReference": {
+          "reference": "QuestionnaireResponse/4ec9a105-1818-4c92-9986-2821d5bab565"
+        },
+        "policy": [
+          {
+            "uri": "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
+          }
+        ],
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+              "display": "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+            }
+          ]
+        },
+        "provision": {
+          "type": "permit",
+          "period": {
+            "start": "2023-04-27T00:00:00+02:00",
+            "end": "2053-04-27T00:00:00+02:00"
+          },
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                  "display": "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                  "display": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "fab23c8e-6a94-49da-acfd-4df51098ca22",
+        "meta": {
+          "lastUpdated": "2023-04-27T16:23:37.048+02:00",
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/91e74202-4a7b-43ba-a9b9-4017634c9540"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ],
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "57016-8",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "2.16.840.1.113883.3.1937.777.24.2.184",
+                "system": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/854f8281-50be-4848-b99d-7ae0aa0da9a0",
+          "display": "Pseudonym dic_R3M0V3"
+        },
+        "dateTime": "2023-04-27T11:10:54+02:00",
+        "organization": [
+          {
+            "display": "MII"
+          }
+        ],
+        "sourceReference": {
+          "reference": "QuestionnaireResponse/69886267-43c8-4e46-9301-8c44c9f2f6d9"
+        },
+        "policy": [
+          {
+            "uri": "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
+          }
+        ],
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+              "display": "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+            }
+          ]
+        },
+        "provision": {
+          "type": "permit",
+          "period": {
+            "start": "2023-04-27T11:10:54+02:00",
+            "end": "2053-04-27T11:10:54+02:00"
+          },
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                  "display": "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                  "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                  "display": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
