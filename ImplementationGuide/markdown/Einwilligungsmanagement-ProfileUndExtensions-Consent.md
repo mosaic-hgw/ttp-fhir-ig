@@ -31,6 +31,7 @@ Der Default-Offset ist 0.
 Werden weder _count noch _offset angegeben, enthält das Bundle alle Ergebnisse.
 
 Die reine Anzahl der Suchergebnisse ohne deren Übermittlung kann mit Hilfe des Parameters _summary=count abgefragt werden, vgl. http://www.hl7.org/fhir/r4/search.html#count .
+
 -->
 
 Die Suche erfolgt auf dem Consent-Endpoint mittels der nachfolgend beschriebenen Suchparameter.

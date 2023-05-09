@@ -37,6 +37,7 @@ Usage: #example
 * provision.code[0] = $Policy#MDAT_erheben "Erfassung medizinischer Daten"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6
 
+
 Instance: Consent-example-2
 InstanceOf: Consent
 Usage: #example
@@ -117,6 +118,7 @@ Usage: #example
 * provision.provision[=].period.start = "2021-10-29T11:00:08+02:00"
 * provision.provision[=].period.end = "2021-11-30T00:00:00+01:00"
 * provision.provision[=].code = $Policy#KDAT_retro_wissenschaftlich_nutzen "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen"
+
 
 Instance: Consent-example-3
 InstanceOf: Consent
@@ -215,6 +217,7 @@ Usage: #example
 * provision.provision[=].period.end = "2051-05-19T17:50:23+02:00"
 * provision.provision[=].code[0] = $MII#Rekontaktierung_Zusatzbefund "Rekontaktierung bezüglich Zusatzbefund"
 * provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.31
+
 
 Instance: Consent-Bundle-example-1
 InstanceOf: Bundle
