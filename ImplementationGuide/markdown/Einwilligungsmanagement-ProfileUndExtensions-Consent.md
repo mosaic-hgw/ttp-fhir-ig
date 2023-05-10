@@ -55,47 +55,62 @@ GET [base]/Consent?domain:identifier=MIRACUM&category=2.16.840.1.113883.3.1937.7
 ```
 findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Consent (entsprechend der hier beispielhaften OID) entsprechen.
 
-### Typ der Provision (permit)
-Der Suchparameter **provisionType**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
-
-Beispiel:
-```
-GET [base]/Consent?domain:identifier=MIRACUM&provisionType=permit
-```
-
 ### Provision-Code
-Der Suchparameter **provisionCode**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+Der Suchparameter **mii-provision-provision-code**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
-*Hinweis: Die Verundung von multiplen provisionCode-Parametern ist im Release 2023.1.0 noch nicht möglich.*                   
+*Hinweis: Die Verundung von multiplen mii-provision-provision-code-Parametern ist im Release 2023.1.0 noch nicht möglich.*                   
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 
+### Typ der Provision (permit)
+Der Suchparameter **mii-provision-provision-type**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-type=permit
+```
+#### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
+Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-type**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
+```
 ### Provisions-Zeitraum
-Der Suchparameter **provisionPeriod**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+Der Suchparameter **mii-provision-provision-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Bezüglich des Verhaltens bei der Suche in Elementen vom Datentyp period sei ausdrücklich auf den entsprechenden Abschnitt der FHIR-Spezifikation und die dortigen Beispiele zur Inklusion bzw. Exklusion von Suchergebnissen verwiesen: http://hl7.org/fhir/r4/search.html#date .
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&provisionPeriod=2020-12-15
+GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-period=2020-12-15
 ```
-Bei der Verwendung von provisionPeriod ist zu beachten, dass
+Bei der Verwendung von mii-provision-provision-period ist zu beachten, dass
 `provision.period.start` dem **Beginn der Gültigkeit der Einwilligung** (gemäß gICS: "consentLegalDate") entspricht und
 `provision.period.end` dem errechneten **Gültigkeitsende einer Einwilligungspolicy** im gICS entspricht.
 
 Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  `eq, ge, gt, le, lt, eb, sa`. Nicht unterstützt werden: `ne, ap`.
 
-*Hinweis: Die Verundung von multiplen provisionPeriod-Parametern ist im Release 2023.1.0 noch nicht möglich.*
+*Hinweis: Die Verundung von multiplen mii-provision-provision-period-Parametern ist im Release 2023.1.0 noch nicht möglich.*
 
-### Policy URI (versionsspezifischer MII Broad Consent)
-Der Suchparameter **policyUri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+#### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
+Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
 ```
-GET [base]/Consent?domain:identifier=MII&policyUri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
+```
+
+
+### Policy URI (versionsspezifischer MII Broad Consent)
+Der Suchparameter **mii-policy-uri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
+
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
 ```
 
 ### Komplexere Beispiele
@@ -103,7 +118,7 @@ GET [base]/Consent?domain:identifier=MII&policyUri=urn:oid:2.16.840.1.113883.3.1
 Hinweis: die Pipe '|' wird HTML-codiert als '%7C' verwendet.
 
 ```
-GET [base]/Consent?domain:identifier=MII&provisionType=permit&provisionCode=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
+GET [base]/Consent?domain:identifier=MII&mii-provision-provision-type=permit&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8
 ```
 findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provision, bei denen der Provision-Code 2.16.840.1.113883.3.1937.777.24.5.3.8 (entspricht der [TFCU-Policy](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-Terminologien.html) 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU') gesetzt ist. Eine Beispiel-Response ist weiter unten dargestellt.
 
@@ -111,7 +126,7 @@ findet alle Consent-Ressourcen einer Einwilligungsdomäne 'MII' mit Permit-Provi
 
 Nachfolgende Darstellung zeigt die Abfrage von dokumentierten Einwilligungspolicies (A-E), die zu unterschiedlichen Zeitpunkten beginnen und enden.
 
-Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters `provisionPeriod` abgefragt.
+Zu unterschiedlichen Zeitpunkten (T1 - T5) werden die gültige Einwilligungspolicies mit Hilfe des FHIR Consent Search Parameters `mii-provision-provision-period` abgefragt.
 
 Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details entnehmen Sie bitte nachstehender Tabelle.
 
