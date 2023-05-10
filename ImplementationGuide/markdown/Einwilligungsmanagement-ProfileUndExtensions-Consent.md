@@ -72,13 +72,15 @@ Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-type=permit
 ```
-#### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
+<!--
+### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
 Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-type**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
 ```
+-->
 ### Provisions-Zeitraum
 Der Suchparameter **mii-provision-provision-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
@@ -95,15 +97,15 @@ Bei der Verwendung von mii-provision-provision-period ist zu beachten, dass
 Unterstützt werden bei der Suche nach FHIR Consent-Ressourcen die folgenden Period-Komparatoren:  `eq, ge, gt, le, lt, eb, sa`. Nicht unterstützt werden: `ne, ap`.
 
 *Hinweis: Die Verundung von multiplen mii-provision-provision-period-Parametern ist im Release 2023.1.0 noch nicht möglich.*
-
-#### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
+<!--
+### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
 Der [composite Suchparameter](http://www.hl7.org/fhir/r4/search.html#combining) **mii-provision-provision-code-period**, definiert im Rahmen des [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
 Beispiel:
 ```
 GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
 ```
-
+-->
 
 ### Policy URI (versionsspezifischer MII Broad Consent)
 Der Suchparameter **mii-policy-uri**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
