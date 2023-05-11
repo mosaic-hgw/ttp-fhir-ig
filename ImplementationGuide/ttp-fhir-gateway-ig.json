@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "TtpFhirGatewayIg",
   "url": "/guide/ttp-fhir-gateway-ig?version=current",
-  "version": "2.2.0",
+  "version": "2023.1.0",
   "name": "IG TTP-FHIR Gateway",
   "status": "draft",
   "description": "Implementation Guide für die Verwendung der angepassten und erweiterten Profile / Extensions im Kontext von E-PIX, gPAS und gICS",

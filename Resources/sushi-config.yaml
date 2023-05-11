@@ -1,5 +1,5 @@
 canonical: https://ths-greifswald.de/fhir
-version: 2.2.0
+version: 2023.1.0
 fhirVersion: 4.0.1
 FSHOnly: true
 applyExtensionMetadataToRoot: false

@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "TemplateVersionFormat",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat",
-  "version": "2.2.0",
+  "version": "2023.1.0",
   "name": "TemplateVersionFormat",
   "title": "Template Version Format",
   "status": "draft",
   "experimental": false,
-  "date": "2023-05-09",
+  "date": "2023-05-11",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

@@ -5,7 +5,7 @@
   "name": "DesignationUse",
   "id": "DesignationUseCS",
   "description": "Use codes (contexts) for terminology designations",
-  "version": "2.2.0",
+  "version": "2023.1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
   "concept": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "experimental": false,
-  "date": "2023-05-09",
+  "date": "2023-05-11",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

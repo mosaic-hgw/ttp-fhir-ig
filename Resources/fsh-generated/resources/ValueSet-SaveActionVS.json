@@ -3,10 +3,10 @@
   "status": "draft",
   "name": "SaveAction",
   "id": "SaveActionVS",
-  "version": "2.2.0",
+  "version": "2023.1.0",
   "url": "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction",
   "experimental": false,
-  "date": "2023-05-09",
+  "date": "2023-05-11",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

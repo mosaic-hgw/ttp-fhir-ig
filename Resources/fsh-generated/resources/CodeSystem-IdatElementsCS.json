@@ -5,7 +5,7 @@
   "name": "IdatElements",
   "id": "IdatElementsCS",
   "description": "Element names for use in $requestTasks operation.",
-  "version": "2.2.0",
+  "version": "2023.1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
   "concept": [
     {
@@ -70,7 +70,7 @@
     }
   ],
   "experimental": false,
-  "date": "2023-05-09",
+  "date": "2023-05-11",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
