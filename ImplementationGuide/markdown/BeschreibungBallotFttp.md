@@ -13,5 +13,3 @@ Gleichzeitig ist sie für den Betrieb der [fTTP im Rahmen von NUM-RDP](https://w
 ### FHIR Implementierungsleitfaden der fTTP (Wahrscheinlichkeit, Clearing)
 Der hier vorgelegte Leitfaden beschreibt, wie die nötigen fachlichen Operationen zur Realisierung der *fTTP-Schnittstellen (Wahrscheinlichkeit, Clearing)* auf Basis von HL7 FHIR technisch abgebildet wurden.
 Erforderliche FHIR-Operations und Profile wurden in Form eines TTP-FHIR Gateway bereits 2021 [umgesetzt](https://doi.org/10.21203/rs.3.rs-1053445/v1).
-
-Wir bitten nun um Kommentierung zur weiteren Optimierung der Schnittstelle.
