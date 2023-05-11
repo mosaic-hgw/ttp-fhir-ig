@@ -13,5 +13,6 @@ Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funkt
 -- | ---
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md}}|Wahrscheinlichkeit|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}}|Wahrscheinlichkeit|
+|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md}}|Wahrscheinlichkeit|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}|Wahrscheinlichkeit/Clearing|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md}}|Clearing|
