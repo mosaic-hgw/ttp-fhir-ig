@@ -1,6 +1,6 @@
 CodeSystem: ConsentPolicyPurpose
 Id: ConsentPolicyPurposeCS
-Description: "Expandable specification and/or limitation of the application context and/or scope of a consent policy or module"
+Description: "Expandable specification of the application context and/or scope of a consent policy or module"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
 * ^version = "1.1"
