@@ -211,16 +211,19 @@ Usage: #inline
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
 * target = Reference(837335b5-41a6-4da7-b8a9-80cb1a0efba6)
 * recorded = "2021-05-19T17:50:23.000+02:00"
-* location.display = "Erlangen"
 * agent.who.display = "https://ths-greifswald.de/gics"
-* signature[0].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
-* signature[=].when = "2021-05-19T00:00:00.000+02:00"
-* signature[=].who = Reference(719ff1a3-ccac-4189-86f4-97793684b8e3) "Pseudonym dic_1H51T"
-* signature[=].data = "ZHVtbXky"
-* signature[+].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
-* signature[=].when = "2021-05-19T00:00:00.000+02:00"
-* signature[=].who.display = "arzt_12345"
-* signature[=].data = "ZHVtbXk="
+* signature[+]
+  * extension[signatureLocation].valueString = "Erlangen"
+  * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
+  * when = "2021-05-19T00:00:00.000+02:00"
+  * who = Reference(719ff1a3-ccac-4189-86f4-97793684b8e3) "Pseudonym dic_1H51T"
+  * data = "ZHVtbXky"
+* signature[+]
+  * extension[signatureLocation].valueString = "Erlangen"
+  * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
+  * when = "2021-05-19T00:00:00.000+02:00"
+  * who.display = "arzt_12345"
+  * data = "ZHVtbXk="
 
 Instance: 719ff1a3-ccac-4189-86f4-97793684b8e3
 InstanceOf: Patient
