@@ -220,6 +220,11 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-Provenance.md",
+                  "title": "Provenance",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ConsentQualityControl.md",
                   "title": "ConsentQualityControl",
                   "generation": "markdown"
