@@ -208,16 +208,15 @@ Usage: #inline
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
 * target = Reference(4638ac78-3d25-4610-a328-e4b145284573)
 * recorded = "2021-05-19T17:50:23.000+02:00"
+* location.display = "Erlangen"
 * agent.who.display = "https://ths-greifswald.de/gics"
 * signature[0].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
 * signature[=].when = "2021-05-19T00:00:00.000+02:00"
 * signature[=].who = Reference(6a49f9c8-9986-4bbf-9bb6-17a083b85515) "Pseudonym dic_1H51T"
-* signature[=].onBehalfOf.display = "Erlangen"
 * signature[=].data = "ZHVtbXky"
 * signature[+].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
 * signature[=].when = "2021-05-19T00:00:00.000+02:00"
 * signature[=].who.display = "arzt_12345"
-* signature[=].onBehalfOf.display = "Erlangen"
 * signature[=].data = "ZHVtbXk="
 
 Instance: 6a49f9c8-9986-4bbf-9bb6-17a083b85515

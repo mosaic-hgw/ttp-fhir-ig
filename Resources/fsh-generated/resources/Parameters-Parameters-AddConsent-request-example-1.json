@@ -196,11 +196,11 @@
             "reference": "QuestionnaireResponse/2"
           }
         ],
+        "location": {
+          "display": "Greifswald"
+        },
         "signature": [
           {
-            "onBehalfOf": {
-              "display": "Greifswald"
-            },
             "when": "2022-12-21T00:00:00.000+01:00",
             "type": [
               {
@@ -223,9 +223,6 @@
             }
           },
           {
-            "onBehalfOf": {
-              "display": "Greifswald"
-            },
             "when": "2022-12-21T00:00:00.000+01:00",
             "type": [
               {

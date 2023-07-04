@@ -560,6 +560,9 @@
           }
         ],
         "recorded": "2023-02-28T16:59:47.654+01:00",
+        "location": {
+          "display": "Greifswald"
+        },
         "agent": [
           {
             "who": {
@@ -589,9 +592,6 @@
               "reference": "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
               "display": "Pseudonym studypsn1"
             },
-            "onBehalfOf": {
-              "display": "Greifswald"
-            },
             "_data": {
               "extension": [
                 {
@@ -612,9 +612,6 @@
             "when": "2022-12-21T00:00:00.000+01:00",
             "who": {
               "display": "Dr. Stephen Strange"
-            },
-            "onBehalfOf": {
-              "display": "Greifswald"
             },
             "_data": {
               "extension": [

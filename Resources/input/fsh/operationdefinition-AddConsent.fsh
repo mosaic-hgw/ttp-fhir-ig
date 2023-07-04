@@ -116,15 +116,14 @@ Usage: #example
 * parameter[+].valueString = "MII"
 * parameter[=].name = "domain"
 * parameter[+].resource.target.reference = "QuestionnaireResponse/2"
-* parameter[=].resource.signature[0].onBehalfOf.display = "Greifswald"
-* parameter[=].resource.signature[=].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* parameter[=].resource.location.display = "Greifswald"
+* parameter[=].resource.signature[+].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * parameter[=].resource.signature[=].data.extension.valueCode = #error
 * parameter[=].resource.signature[=].when = "2022-12-21T00:00:00.000+01:00"
 * parameter[=].resource.signature[=].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
 * parameter[=].resource.signature[=].who.reference = "Patient/1"
 * parameter[=].resource.signature[=].who.display = "Pseudonym studypsn1"
-* parameter[=].resource.signature[+].onBehalfOf.display = "Greifswald"
-* parameter[=].resource.signature[=].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* parameter[=].resource.signature[+].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * parameter[=].resource.signature[=].data.extension.valueCode = #error
 * parameter[=].resource.signature[=].when = "2022-12-21T00:00:00.000+01:00"
 * parameter[=].resource.signature[=].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
@@ -275,19 +274,18 @@ Usage: #inline
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
 * target = Reference(bd56b7e3-336c-49a6-aa31-1987b02f26cf)
 * recorded = "2023-02-28T16:59:47.654+01:00"
+* location.display = "Greifswald"
 * agent.who.display = "https://ths-greifswald.de/gics"
 * entity.role = #source
 * entity.what = Reference(bf61b464-aea9-48c9-9f6c-38afc3cc78e7)
 * signature[0].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
 * signature[=].when = "2022-12-21T00:00:00.000+01:00"
 * signature[=].who = Reference(Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c) "Pseudonym studypsn1"
-* signature[=].onBehalfOf.display = "Greifswald"
 * signature[=].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * signature[=].data.extension.valueCode = #error
 * signature[+].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
 * signature[=].when = "2022-12-21T00:00:00.000+01:00"
 * signature[=].who.display = "Dr. Stephen Strange"
-* signature[=].onBehalfOf.display = "Greifswald"
 * signature[=].data.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * signature[=].data.extension.valueCode = #error
 

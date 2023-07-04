@@ -639,6 +639,9 @@
                 }
               ],
               "recorded": "2021-05-19T17:50:23.000+02:00",
+              "location": {
+                "display": "Erlangen"
+              },
               "agent": [
                 {
                   "who": {
@@ -660,9 +663,6 @@
                     "reference": "Patient/719ff1a3-ccac-4189-86f4-97793684b8e3",
                     "display": "Pseudonym dic_1H51T"
                   },
-                  "onBehalfOf": {
-                    "display": "Erlangen"
-                  },
                   "data": "ZHVtbXky"
                 },
                 {
@@ -676,9 +676,6 @@
                   "when": "2021-05-19T00:00:00.000+02:00",
                   "who": {
                     "display": "arzt_12345"
-                  },
-                  "onBehalfOf": {
-                    "display": "Erlangen"
                   },
                   "data": "ZHVtbXk="
                 }
