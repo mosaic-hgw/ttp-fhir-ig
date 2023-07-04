@@ -341,6 +341,26 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentPolicyAction.md",
+                  "title": "ConsentPolicyAction",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentPolicyActor.md",
+                  "title": "ConsentPolicyActor",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentPolicyClass.md",
+                  "title": "ConsentPolicyClass",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentPolicyPurpose.md",
+                  "title": "ConsentPolicyPurpose",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-SaveAction.md",
                   "title": "SaveAction",
                   "generation": "markdown"
@@ -380,6 +400,26 @@
                 {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-Policy.md",
                   "title": "Policy",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyAction.md",
+                  "title": "ConsentPolicyAction",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyActor.md",
+                  "title": "ConsentPolicyActor",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyClass.md",
+                  "title": "ConsentPolicyClass",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyPurpose.md",
+                  "title": "ConsentPolicyPurpose",
                   "generation": "markdown"
                 },
                 {

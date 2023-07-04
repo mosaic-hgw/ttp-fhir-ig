@@ -1,0 +1,3 @@
+#### ConsentPolicyClass
+
+{{render:ConsentPolicyClassVS}}

@@ -1,0 +1,3 @@
+#### ConsentPolicyPurpose
+
+{{render:ConsentPolicyPurposeCS}}
