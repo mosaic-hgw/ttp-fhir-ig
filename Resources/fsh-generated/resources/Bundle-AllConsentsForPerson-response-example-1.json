@@ -634,24 +634,14 @@
                   "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
                 ]
               },
-              "target": [
-                {
-                  "reference": "Consent/837335b5-41a6-4da7-b8a9-80cb1a0efba6"
-                }
-              ],
-              "recorded": "2021-05-19T17:50:23.000+02:00",
-              "location": {
-                "display": "Erlangen"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "display": "https://ths-greifswald.de/gics"
-                  }
-                }
-              ],
               "signature": [
                 {
+                  "extension": [
+                    {
+                      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                      "valueString": "Erlangen"
+                    }
+                  ],
                   "type": [
                     {
                       "code": "1.2.840.10065.1.12.1.7",
@@ -667,6 +657,12 @@
                   "data": "ZHVtbXky"
                 },
                 {
+                  "extension": [
+                    {
+                      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                      "valueString": "Erlangen"
+                    }
+                  ],
                   "type": [
                     {
                       "code": "1.2.840.10065.1.12.1.5",
@@ -679,6 +675,19 @@
                     "display": "arzt_12345"
                   },
                   "data": "ZHVtbXk="
+                }
+              ],
+              "target": [
+                {
+                  "reference": "Consent/837335b5-41a6-4da7-b8a9-80cb1a0efba6"
+                }
+              ],
+              "recorded": "2021-05-19T17:50:23.000+02:00",
+              "agent": [
+                {
+                  "who": {
+                    "display": "https://ths-greifswald.de/gics"
+                  }
                 }
               ]
             },

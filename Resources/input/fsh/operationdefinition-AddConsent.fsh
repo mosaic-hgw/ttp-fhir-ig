@@ -133,9 +133,9 @@ Usage: #example
       * data.extension
         * url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
         * valueCode = #error
-        * when = "2022-12-21T00:00:00.000+01:00"
-        * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
-        * who.display = "Dr. Stephen Strange"
+      * when = "2022-12-21T00:00:00.000+01:00"
+      * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.5 "Verification Signature"
+      * who.display = "Dr. Stephen Strange"
     * id = "fa414092-934e-45eb-a827-6c96b1371c29"
     * entity
       * role = #source

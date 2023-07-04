@@ -563,24 +563,14 @@
             }
           }
         ],
-        "target": [
-          {
-            "reference": "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
-          }
-        ],
-        "recorded": "2023-02-28T16:59:47.654+01:00",
-        "location": {
-          "display": "Greifswald"
-        },
-        "agent": [
-          {
-            "who": {
-              "display": "https://ths-greifswald.de/gics"
-            }
-          }
-        ],
         "signature": [
           {
+            "extension": [
+              {
+                "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                "valueString": "Greifswald"
+              }
+            ],
             "type": [
               {
                 "code": "1.2.840.10065.1.12.1.7",
@@ -603,6 +593,12 @@
             }
           },
           {
+            "extension": [
+              {
+                "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                "valueString": "Greifswald"
+              }
+            ],
             "type": [
               {
                 "code": "1.2.840.10065.1.12.1.5",
@@ -621,6 +617,19 @@
                   "valueCode": "error"
                 }
               ]
+            }
+          }
+        ],
+        "target": [
+          {
+            "reference": "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
+          }
+        ],
+        "recorded": "2023-02-28T16:59:47.654+01:00",
+        "agent": [
+          {
+            "who": {
+              "display": "https://ths-greifswald.de/gics"
             }
           }
         ]

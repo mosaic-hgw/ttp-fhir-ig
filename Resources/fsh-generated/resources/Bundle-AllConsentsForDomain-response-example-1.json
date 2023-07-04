@@ -628,24 +628,14 @@
             "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
           ]
         },
-        "target": [
-          {
-            "reference": "Consent/d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"
-          }
-        ],
-        "recorded": "2021-05-19T17:50:23.000+02:00",
-        "location": {
-          "display": "Erlangen"
-        },
-        "agent": [
-          {
-            "who": {
-              "display": "https://ths-greifswald.de/gics"
-            }
-          }
-        ],
         "signature": [
           {
+            "extension": [
+              {
+                "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                "valueString": "Erlangen"
+              }
+            ],
             "type": [
               {
                 "code": "1.2.840.10065.1.12.1.7",
@@ -661,6 +651,12 @@
             "data": "ZHVtbXky"
           },
           {
+            "extension": [
+              {
+                "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+                "valueString": "Erlangen"
+              }
+            ],
             "type": [
               {
                 "code": "1.2.840.10065.1.12.1.5",
@@ -673,6 +669,19 @@
               "display": "arzt_12345"
             },
             "data": "ZHVtbXk="
+          }
+        ],
+        "target": [
+          {
+            "reference": "Consent/d72bc4dc-1f2b-4c5d-8f3c-51fe6a9a5d90"
+          }
+        ],
+        "recorded": "2021-05-19T17:50:23.000+02:00",
+        "agent": [
+          {
+            "who": {
+              "display": "https://ths-greifswald.de/gics"
+            }
           }
         ]
       },

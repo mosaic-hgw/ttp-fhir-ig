@@ -277,11 +277,6 @@
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-Operations-policyStatesForPerson.md",
-                  "title": "policyStatesForPerson",
-                  "generation": "markdown"
-                },
-                {
                   "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-Operations-allPolicyStatesForPerson.md",
                   "title": "allPolicyStatesForPerson",
                   "generation": "markdown"
