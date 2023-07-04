@@ -5,6 +5,7 @@ Alias: $extPatientBirthPlace = http://hl7.org/fhir/StructureDefinition/patient-b
 Alias: $extPatientNationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $prEinwConsent = http://fhir.de/ConsentManagement/StructureDefinition/Consent
 Alias: $prEinwPatient = http://fhir.de/ConsentManagement/StructureDefinition/Patient
+Alias: $prEinwProvenance = http://fhir.de/ConsentManagement/StructureDefinition/Provenance
 Alias: $prEinwResearchStudy = http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy
 Alias: $prEinwTemplateFrame = http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame
 Alias: $prEinwTemplateModule = http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule

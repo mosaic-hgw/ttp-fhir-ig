@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Provenance",
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
+  "version": "2023.1.0",
+  "name": "Provenance",
+  "title": "Herkunftsinformationen und Signatur",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-07-04",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Herkunftsinformationen und Signatur",
+  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "fhirauditevent",
+      "uri": "http://hl7.org/fhir/auditevent",
+      "name": "FHIR AuditEvent Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://fhir.de/ConsentManagement/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.signature.extension:signatureLocation",
+        "path": "Provenance.signature.extension",
+        "sliceName": "signatureLocation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

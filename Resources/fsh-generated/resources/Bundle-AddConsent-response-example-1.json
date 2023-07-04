@@ -551,9 +551,18 @@
         "meta": {
           "lastUpdated": "2022-12-21T00:00:00.000+01:00",
           "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
             "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
           ]
         },
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DocumentReference/bf61b464-aea9-48c9-9f6c-38afc3cc78e7"
+            }
+          }
+        ],
         "target": [
           {
             "reference": "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
@@ -567,14 +576,6 @@
           {
             "who": {
               "display": "https://ths-greifswald.de/gics"
-            }
-          }
-        ],
-        "entity": [
-          {
-            "role": "source",
-            "what": {
-              "reference": "DocumentReference/bf61b464-aea9-48c9-9f6c-38afc3cc78e7"
             }
           }
         ],

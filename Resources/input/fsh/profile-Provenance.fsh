@@ -1,3 +1,15 @@
+Profile: Provenance
+Parent: $prEinwProvenance
+Id: Provenance
+Title: "Herkunftsinformationen und Signatur"
+Description: "Herkunftsinformationen und Signatur"
+* insert meta-profile
+* ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance"
+* extension ^min = 0
+* signature.extension contains
+    SignatureLocation named signatureLocation 0..1 MS
+
+
 Instance: Provenance-example-1
 InstanceOf: Provenance
 Usage: #example
