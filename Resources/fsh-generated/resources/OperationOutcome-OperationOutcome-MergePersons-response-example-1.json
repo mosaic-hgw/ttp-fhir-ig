@@ -1,0 +1,11 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "OperationOutcome-MergePersons-response-example-1",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "merged persons (MPI entries)."
+    }
+  ]
+}
