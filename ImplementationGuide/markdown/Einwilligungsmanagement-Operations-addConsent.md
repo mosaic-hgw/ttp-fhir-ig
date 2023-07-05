@@ -40,8 +40,15 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ##### **Beispiel**
 Beispielhafter Request-Body:
 
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-AddConsent-request-example-1.json}}
+Aufgrund von Darstellungsproblemen bei Simplifier, ist das Example derzeit nur als Link verfügbar: 
+
+[https://simplifier.net/ths-greifswald/fsh-generated-resources-parameters-parameters-addconsent-request-example-1](https://simplifier.net/ths-greifswald/addconsent-request-example-1)
+
+<!-- {{xml:Resources/fsh-generated/resources/Parameters-Parameters-AddConsent-request-example-1.json}} -->
 
 Eine beispielhafte Rückmeldung:
 
-{{xml:Resources/fsh-generated/resources/Bundle-AddConsent-response-example-1.json}}
+Aufgrund von Darstellungsproblemen bei Simplifier, ist das Example derzeit nur als Link verfügbar: 
+
+[https://simplifier.net/ths-greifswald/addconsent-response-example-1](https://simplifier.net/ths-greifswald/addconsent-response-example-1)
+<!-- {{xml:Resources/fsh-generated/resources/Bundle-AddConsent-response-example-1.json}} -->
