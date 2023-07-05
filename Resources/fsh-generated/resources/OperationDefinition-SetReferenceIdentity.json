@@ -1,0 +1,80 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "SetReferenceIdentity",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity",
+  "version": "2023.2.0-DEVEL",
+  "status": "draft",
+  "date": "2023-07-04",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "SetReferenceIdentity",
+  "title": "setReferenceIdentity",
+  "kind": "operation",
+  "description": "Ändert die Referenz-Identität einer Person (MPI-Eintrag), d.h. diejenigen Daten zur Person, die primäre Gültigkeit haben.",
+  "affectsState": true,
+  "code": "setReferenceIdentity",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "domain",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Matching-Domaene",
+      "type": "string"
+    },
+    {
+      "name": "mpiId",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).",
+      "type": "Identifier"
+    },
+    {
+      "name": "identityId",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "ID der Identität (Patient.id [TODO: KLÄREN OB SINNVOLL], die als Referenzidentität gesetzt werden soll.",
+      "type": "id"
+    },
+    {
+      "name": "comment",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Anmerkung zum Änderungsvorgang",
+      "type": "string"
+    },
+    {
+      "name": "mpiPerson",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+      "type": "Person"
+    },
+    {
+      "name": "identity",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "documentation": "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+      "type": "Patient"
+    }
+  ]
+}
