@@ -40,23 +40,23 @@ Description: "Expandable specification of the application context and/or scope o
 * #CRO "CRO"
 * #CRO  ^designation[0].language = #de-DE
 * #CRO  ^designation[=].use = $csSct#900000000000003001
-* #CRO  ^designation[=].value = "von/an eine Contract Research Organization und oder eine klinische Koordinierungsstelle (KKS)"
+* #CRO  ^designation[=].value = "von/an eine Contract Research Organisation und oder eine klinische Koordinierungsstelle (KKS)"
 * #CRO  ^designation[+].language = #de-DE
 * #CRO  ^designation[=].use = $csSct#900000000000013009
 * #CRO  ^designation[=].value = "CRO"
 * #CRO  ^designation[+].language = #en-UK
 * #CRO  ^designation[=].use = $csSct#900000000000003001
-* #CRO  ^designation[=].value = "from/to a clinical research organization"
+* #CRO  ^designation[=].value = "from/to a clinical research organisation"
 * #third_parties "third_parties"
 * #third_parties  ^designation[0].language = #de-DE
 * #third_parties  ^designation[=].use = $csSct#900000000000003001
-* #third_parties  ^designation[=].value = "an Dritte /mit Dritten Forschungspartner(n)"
+* #third_parties  ^designation[=].value = "von/an/mit Dritte(n) Forschungspartner(n)"
 * #third_parties  ^designation[+].language = #de-DE
 * #third_parties  ^designation[=].use = $csSct#900000000000013009
 * #third_parties  ^designation[=].value = "Dritte"
 * #third_parties  ^designation[+].language = #en-UK
 * #third_parties  ^designation[=].use = $csSct#900000000000003001
-* #third_parties  ^designation[=].value = "to third parties /with third party research partner(s)"
+* #third_parties  ^designation[=].value = "from/to third parties /with third party research partner(s)"
 * #EU_GDPR_LEVEL "EU_GDPR_LEVEL"
 * #EU_GDPR_LEVEL  ^designation[0].language = #de-DE
 * #EU_GDPR_LEVEL  ^designation[=].use = $csSct#900000000000003001

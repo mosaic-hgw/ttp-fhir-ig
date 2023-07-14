@@ -52,7 +52,7 @@ Description: "Extensible description of the application perspective of a Consent
 * #BIOMAT_additional_sampling  ^designation[=].value = "BIOMAT_Zusatzmengen"
 * #BIOMAT_additional_sampling  ^designation[+].language = #en-UK
 * #BIOMAT_additional_sampling  ^designation[=].use = $csSct#900000000000003001
-* #BIOMAT_additional_sampling  ^designation[=].value = "biosamples, especially additional sampling"
+* #BIOMAT_additional_sampling  ^designation[=].value = "biosamples, specifically additional sampling"
 * #PII "PII"
 * #PII  ^designation[0].language = #de-DE
 * #PII  ^designation[=].use = $csSct#900000000000003001
@@ -93,7 +93,7 @@ Description: "Extensible description of the application perspective of a Consent
 * #HIDAT_HIPN  ^designation[=].value = "KDAT_KVNR"
 * #HIDAT_HIPN  ^designation[+].language = #en-UK
 * #HIDAT_HIPN  ^designation[=].use = $csSct#900000000000003001
-* #HIDAT_HIPN  ^designation[=].value = "health insurance data, especially the health insurance member ID or policy number"
+* #HIDAT_HIPN  ^designation[=].value = "health insurance data, specifically the health insurance member ID or policy number"
 * #HIDAT_retrospective "HIDAT_retrospective"
 * #HIDAT_retrospective  ^designation[0].language = #de-DE
 * #HIDAT_retrospective  ^designation[=].use = $csSct#900000000000003001
@@ -123,7 +123,7 @@ Description: "Extensible description of the application perspective of a Consent
 * #MDAT_GECCO83  ^designation[=].value = "MDAT_GECCO83"
 * #MDAT_GECCO83  ^designation[+].language = #en-UK
 * #MDAT_GECCO83  ^designation[=].use = $csSct#900000000000003001
-* #MDAT_GECCO83  ^designation[=].value = "medical data, especially the GECCO83 data set"
+* #MDAT_GECCO83  ^designation[=].value = "medical data, specifically the GECCO83 data set"
 * #MDAT_retrospective "MDAT_retrospective"
 * #MDAT_retrospective  ^designation[0].language = #de-DE
 * #MDAT_retrospective  ^designation[=].use = $csSct#900000000000003001
