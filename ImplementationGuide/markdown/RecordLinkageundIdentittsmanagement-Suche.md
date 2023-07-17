@@ -8,7 +8,7 @@ Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des 
 
 Unterstützt wird die logische UND-Verknüpfung gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
 
-Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die die Parameter
+Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wird ab TTP-FHIR Gateway Version 2023.1.1 unterstützt, namentlich die Parameter
 * _count: (maximale) Anzahl der im Bundle enthaltenen Ressourcen
 * _offset: fortlaufende Nummer der ersten im Bundle enthaltenen Ressource
 
