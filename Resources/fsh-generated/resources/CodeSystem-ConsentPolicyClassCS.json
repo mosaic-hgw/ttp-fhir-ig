@@ -138,7 +138,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "biosamples, especially additional sampling"
+          "value": "biosamples, specifically additional sampling"
         }
       ]
     },
@@ -258,7 +258,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "health insurance data, especially the health insurance member ID or policy number"
+          "value": "health insurance data, specifically the health insurance member ID or policy number"
         }
       ]
     },
@@ -348,7 +348,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "medical data, especially the GECCO83 data set"
+          "value": "medical data, specifically the GECCO83 data set"
         }
       ]
     },

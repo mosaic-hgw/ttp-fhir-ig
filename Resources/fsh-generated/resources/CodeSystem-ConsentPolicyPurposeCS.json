@@ -108,7 +108,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "von/an eine Contract Research Organization und oder eine klinische Koordinierungsstelle (KKS)"
+          "value": "von/an eine Contract Research Organisation und oder eine klinische Koordinierungsstelle (KKS)"
         },
         {
           "language": "de-DE",
@@ -124,7 +124,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "from/to a clinical research organization"
+          "value": "from/to a clinical research organisation"
         }
       ]
     },
@@ -138,7 +138,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "an Dritte /mit Dritten Forschungspartner(n)"
+          "value": "von/an/mit Dritte(n) Forschungspartner(n)"
         },
         {
           "language": "de-DE",
@@ -154,7 +154,7 @@
             "code": "900000000000003001",
             "system": "http://snomed.info/sct"
           },
-          "value": "to third parties /with third party research partner(s)"
+          "value": "from/to third parties /with third party research partner(s)"
         }
       ]
     },
