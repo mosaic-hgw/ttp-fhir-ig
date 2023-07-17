@@ -28,12 +28,12 @@ Usage: #definition
   * documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
-  * name = #identityId
+  * name = #identityReference
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "ID der Identität (Patient.id [TODO: KLÄREN OB SINNVOLL], die als Referenzidentität gesetzt werden soll."
-  * type = #id
+  * documentation = "Referenz zur Identität (Patient-Ressource), die als Referenzidentität gesetzt werden soll."
+  * type = #Reference
 * parameter[+]
   * name = #comment
   * use = #in
@@ -69,7 +69,7 @@ Usage: #example
     * system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
     * value = "1001000000066"
 * parameter[+]
-  * name = "identityId"
+  * name = "identityReference"
   * valueId = "53"
 * parameter
   * name = "comment"

@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
-  "id": "MergePersons",
-  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/MergePersons",
+  "id": "AssignIdentity",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
   "version": "2023.2.0-DEVEL",
   "status": "draft",
   "date": "2023-07-04",
@@ -18,12 +18,12 @@
       ]
     }
   ],
-  "name": "MergePersons",
-  "title": "mergePersons",
+  "name": "AssignIdentity",
+  "title": "assignIdentity",
   "kind": "operation",
-  "description": "Führt zwei Referenz-Identitäten (MPI-Einträge) zu einer zusammen. Die neue Referenzidentität ist dabei diejenige zur winningMpiId. Alle Identitäten, die einem der beiden MPI-Einträge zugeordnet waren, werden dabei dem zusammengeführten MPI-Eintrag zugeordnet.",
+  "description": "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Entrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben.",
   "affectsState": true,
-  "code": "mergePersons",
+  "code": "assignIdentity",
   "system": true,
   "type": false,
   "instance": false,
@@ -37,20 +37,20 @@
       "type": "string"
     },
     {
-      "name": "winningMpiId",
+      "name": "linkId",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Identifikator des MPI-Entrags (MPI-ID, Person.identifier), der auch der neue MPI-Eintrag ist.",
-      "type": "Identifier"
+      "documentation": "Link-ID des Matches (Dubletteneintrag). Ermittelbar mittels Operation queryPossibleMatches.",
+      "type": "integer"
     },
     {
-      "name": "losingMpiId",
+      "name": "identityReference",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Identifikator des MPI-Entrags (MPI-ID, Person.identifier), der dem 'winning' MPI-Eintrag zugeordnet wird.",
-      "type": "Identifier"
+      "documentation": "Referenz zur korrekten Ausprägung (Identität, Match-Item, Patient-Ressource), die das Ziel der Verschiebung ist.",
+      "type": "Reference"
     },
     {
       "name": "comment",
