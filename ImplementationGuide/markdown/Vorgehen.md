@@ -36,7 +36,8 @@ Die nächste Ausbaustufe des Gateway umfasst:
 - die Anbindung weiterer gICS-Funktionalitäten (u.a. Anlegen von Consenten per FHIR und Validierung-Ressourcen)
 - Suche nach Consent-Ressourcen nach Vorgaben der MII Taskforce Consent-Umsetzung gemäß Vorgaben des [MII KDS Consent](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html)
 - Unterstützung [MII KDS Consent Profil](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent-TechnischeImplementierung-FHIRProfile-Consent.html)
-- Update v2023.1.1: Unterstützung für Paging (_count,_offset, Default-Pagesize) gemäß IG und [ReleaseNotes](https://www.ths-greifswald.de/fhirgw/releasenotes/2023-1-1)
+- Update v2023.1.1: *Unterstützung für Paging (_count,_offset, Default-Pagesize)* gemäß IG und [ReleaseNotes](https://www.ths-greifswald.de/fhirgw/releasenotes/2023-1-1)
+
 Weitere Details unter:
 - {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-Operations-addConsent.md}}
 - {{pagelink:ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-Consent.md}}
