@@ -7,7 +7,7 @@ Usage: #definition
 * title = "setReferenceIdentity"
 * status = #draft
 * kind = #operation
-* description = "Ändert die Referenz-Identität einer Person (MPI-Eintrag), d.h. diejenigen Daten zur Person, die primäre Gültigkeit haben."
+* description = "Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen."
 * affectsState = true
 * code = #setReferenceIdentity
 * system = true
@@ -25,7 +25,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
+  * documentation = "Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
   * name = #identityReference

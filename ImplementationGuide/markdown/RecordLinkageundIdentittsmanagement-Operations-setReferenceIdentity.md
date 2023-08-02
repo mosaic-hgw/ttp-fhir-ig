@@ -2,10 +2,10 @@
 **Unterstützt ab TTP-FHIR Gateway Version 2023.2.0**
 
 ##### **Zweck**
-TODO
+Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen.
 
 ##### **Voraussetzung**
-Die angegebenen Parameter zur Spezifikation der Matching-Domäne und der Datenquelle müssen im E-PIX konfiguriert sein.
+Die angegebenen Parameter zur Spezifikation der Matching-Domäne, Quelle der Personeninformation (Patient.meta.source), MPI-ID und Referenz-Identität müssen im E-PIX vorhanden sein.
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
