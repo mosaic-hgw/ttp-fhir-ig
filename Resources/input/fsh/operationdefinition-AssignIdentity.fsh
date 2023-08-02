@@ -7,19 +7,12 @@ Usage: #definition
 * title = "assignIdentity"
 * status = #draft
 * kind = #operation
-* description = "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Entrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben."
+* description = "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben."
 * affectsState = true
 * code = #assignIdentity
 * system = true
 * type = false
 * instance = false
-* parameter[+]
-  * name = #domain
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "Angabe der Matching-Domaene"
-  * type = #string
 * parameter[+]
   * name = #linkId
   * use = #in

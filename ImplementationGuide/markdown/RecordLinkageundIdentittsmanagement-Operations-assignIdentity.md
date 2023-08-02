@@ -2,15 +2,15 @@
 **Unterstützt ab TTP-FHIR Gateway Version 2023.2.0**
 
 ##### **Zweck**
-TODO
+Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result = possible Match) zu beheben.
 
 ##### **Voraussetzung**
-Die angegebenen Parameter zur Spezifikation der Matching-Domäne und der Datenquelle müssen im E-PIX konfiguriert sein.
+Verwendete Parameter-Werte müssen im E-PIX bekannt sein. 
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
-`<HOST>:<PORT>/ttp-fhir/fhir/epix/$mergePersons`
+`<HOST>:<PORT>/ttp-fhir/fhir/epix/$assignIdentity`
 
 Der Funktionsaufruf liefert eine OperationOutcome-Ressource zurück.
 
