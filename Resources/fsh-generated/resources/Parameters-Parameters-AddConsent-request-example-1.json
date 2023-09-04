@@ -176,6 +176,7 @@
         ],
         "resourceType": "DocumentReference",
         "description": "scan1.pdf",
+        "status": "current",
         "meta": {
           "lastUpdated": "2022-12-21T18:37:11.090+01:00",
           "profile": [

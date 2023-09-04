@@ -3,10 +3,9 @@
   "status": "draft",
   "name": "ConsentPolicyClass",
   "id": "ConsentPolicyClassVS",
-  "version": "2023.1.0",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyClass",
   "experimental": false,
-  "date": "2023-07-04",
+  "date": "2023-09-04",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

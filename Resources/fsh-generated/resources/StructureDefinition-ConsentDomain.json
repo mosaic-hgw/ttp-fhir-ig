@@ -2,12 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentDomain",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain",
-  "version": "2023.1.0",
   "name": "ConsentDomain",
   "title": "Consent Domain",
   "status": "draft",
   "experimental": false,
-  "date": "2023-07-04",
+  "date": "2023-09-04",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

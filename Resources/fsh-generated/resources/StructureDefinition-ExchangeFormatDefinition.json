@@ -1,23 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ExchangeFormatDefinition",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Foundation.Other"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "not-classified"
-    }
-  ],
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition",
-  "version": "2023.1.0",
   "name": "ExchangeFormatDefinition",
   "title": "ExchangeFormatDefinition",
   "status": "draft",
   "experimental": false,
-  "date": "2023-07-04",
+  "date": "2023-09-04",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

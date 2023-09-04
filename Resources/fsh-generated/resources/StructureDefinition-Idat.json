@@ -1,23 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Idat",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Individuals"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/dispatcher/Patient/Idat",
-  "version": "2023.1.0",
   "name": "Idat",
   "title": "IDAT",
   "status": "active",
   "experimental": false,
-  "date": "2023-07-04",
+  "date": "2023-09-04",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
