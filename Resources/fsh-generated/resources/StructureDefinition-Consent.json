@@ -100,6 +100,74 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Consent.category:consentCategoryCodes",
+        "path": "Consent.category",
+        "sliceName": "consentCategoryCodes",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category:consentCategoryCodes.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
+      },
+      {
+        "id": "Consent.category:consentCategoryCodes.coding.system",
+        "path": "Consent.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category:consentCategoryCodes.coding.code",
+        "path": "Consent.category.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category:aggregation",
+        "path": "Consent.category",
+        "sliceName": "aggregation",
+        "comment": "Information, ob die enthaltenen Einwilligungsinformationen aus allen vorliegenden Einwilligungsfragebögen aggregiert (errechnet) wurden oder lediglich den Inhalt eines Fragebogens von möglicherweise mehreren repräsentiert.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentCategoryAggregation"
+        }
+      },
+      {
+        "id": "Consent.category:aggregation.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
+      },
+      {
+        "id": "Consent.category:aggregation.coding.system",
+        "path": "Consent.category.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category:aggregation.coding.code",
+        "path": "Consent.category.coding.code",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

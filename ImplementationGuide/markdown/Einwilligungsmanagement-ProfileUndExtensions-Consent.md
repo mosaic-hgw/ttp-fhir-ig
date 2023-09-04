@@ -43,11 +43,17 @@ Er wird in der Regel gemeinsam mit weiteren Suchparametern verwendet. Beispiele 
 ### Kategorie
 Der Standard-Suchparameter **category** wird unterstützt (vgl. http://www.hl7.org/fhir/consent.html#search)
 
-Beispiel:
+Beispiel 1:
 ```
 GET [base]/Consent?domain:identifier=MIRACUM&category=2.16.840.1.113883.3.1937.777.24.2.184
 ```
 findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Consent (entsprechend der hier beispielhaften OID) entsprechen.
+
+Beispiel 2:
+```
+GET [base]/Consent?domain:identifier=MIRACUM&category=https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentCategoryAggregation|aggregated
+```
+findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) aggregierten Typs.
 
 ### Provision-Code
 Der Suchparameter **mii-provision-provision-code**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.

@@ -89,6 +89,14 @@
           "system": "http://loinc.org"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "code": "aggregated",
+          "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentCategoryAggregation"
+        }
+      ]
     }
   ],
   "patient": {

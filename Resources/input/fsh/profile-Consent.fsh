@@ -14,6 +14,21 @@ Description: "Einwilligungsinformationen"
 * extension[externalProperty].extension 2..
 * meta.extension contains
     Created named created 0..1 MS
+* category ^slicing.discriminator.type = #type
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains
+    consentCategoryCodes 1..* MS and
+    aggregation 0..1 MS
+* category[consentCategoryCodes]
+  * coding 1..1 MS
+    * system 1..1 MS
+    * code 1..1 MS
+* category[aggregation] from ConsentCategoryAggregation (required)
+  * coding 1..1 MS
+    * system 1..1 MS
+    * code 1..1 MS
+* category[aggregation] ^comment = "Information, ob die enthaltenen Einwilligungsinformationen aus allen vorliegenden Einwilligungsfragebögen aggregiert (errechnet) wurden oder lediglich den Inhalt eines Fragebogens von möglicherweise mehreren repräsentiert."
 
 
 Instance: Consent-example-1
@@ -26,7 +41,8 @@ Usage: #example
 * extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = ConsentCategoryAggregation#aggregated
 * patient = Reference(Patient/b5ad0847-597d-4825-bb6c-537d949159f8) "Pseudonym dic_1H51T"
 * dateTime = "2021-06-17T14:02:21+02:00"
 * sourceReference = Reference(QuestionnaireResponse/cde387ba-27df-43c2-9f8d-4a2157a16363)
@@ -53,7 +69,8 @@ Usage: #example
 * extension[externalProperty][=].extension[value].valueString = "Tue Nov 30 00:00:00 CET 2021"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#59284-0
+* category[+] = $loinc#59284-0
+* category[+] = ConsentCategoryAggregation#aggregated
 * patient = Reference(Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02) "Pseudonym aachen1"
 * dateTime = "2021-10-29T11:00:08+02:00"
 * organization.display = "MII"
@@ -130,7 +147,8 @@ Usage: #example
 * extension[domainReference].extension[status].valueCoding = $publication-status#active
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = ConsentCategoryAggregation#aggregated
 * patient = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"
