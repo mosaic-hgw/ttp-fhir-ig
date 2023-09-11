@@ -2,7 +2,7 @@
 
 # TTP-FHIR Gateway
 
-Stand: 26. Juli 2023
+Stand: 11. September 2023
 
 ## Inhalt
 {{index:current}}

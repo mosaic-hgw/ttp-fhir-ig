@@ -1,3 +1,0 @@
-#### ConsentCategoryAggregation
-
-{{render:ConsentCategoryAggregationCS}}
