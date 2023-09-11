@@ -7,6 +7,6 @@ Description: "Level of aggregation in the calculation of the Consent ressource's
 * ^caseSensitive = true
 * ^content = #complete
 * #aggregated "aggregated consent status based on one or more source documents"
-* #document "document-specific consent status based a single source document"
-* #module "module-specific consent status based a single source document"
-* #module "policy-specific consent status based a single source document"
+* #document "document-specific consent status based on a single source document"
+* #module "module-specific consent status based on a single source document"
+* #module "policy-specific consent status based on a single source document"
