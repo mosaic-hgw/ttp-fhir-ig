@@ -24,7 +24,7 @@ Description: "Einwilligungsinformationen"
   * coding 1..1 MS
     * system 1..1 MS
     * code 1..1 MS
-* category[aggregation] from ConsentCategoryAggregation (required)
+* category[aggregation] from ConsentAggregationLevel (required)
   * coding 1..1 MS
     * system 1..1 MS
     * code 1..1 MS
@@ -42,7 +42,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = ConsentCategoryAggregation#aggregated
+* category[+] = ConsentAggregationLevel#aggregated
 * patient = Reference(Patient/b5ad0847-597d-4825-bb6c-537d949159f8) "Pseudonym dic_1H51T"
 * dateTime = "2021-06-17T14:02:21+02:00"
 * sourceReference = Reference(QuestionnaireResponse/cde387ba-27df-43c2-9f8d-4a2157a16363)
@@ -70,7 +70,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#59284-0
-* category[+] = ConsentCategoryAggregation#aggregated
+* category[+] = ConsentAggregationLevel#aggregated
 * patient = Reference(Patient/65d4cbf1-f20a-4fd0-9585-53be76416b02) "Pseudonym aachen1"
 * dateTime = "2021-10-29T11:00:08+02:00"
 * organization.display = "MII"
@@ -148,7 +148,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = ConsentCategoryAggregation#aggregated
+* category[+] = ConsentAggregationLevel#aggregated
 * patient = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"

@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "ConsentCategoryAggregation",
-  "id": "ConsentCategoryAggregationVS",
-  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentCategoryAggregation",
+  "name": "ConsentAggregationLevel",
+  "id": "ConsentAggregationLevelVS",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentAggregationLevel",
   "experimental": false,
   "date": "2023-09-04",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -23,7 +23,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentCategoryAggregation"
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentAggregationLevel"
       }
     ]
   }
