@@ -87,6 +87,8 @@ Usage: #example
 * parameter[+].name = "identity"
 * parameter[=].resource.resourceType = "Patient"
 * parameter[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+* parameter[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
+* parameter[=].resource.identifier.value = "ABC_12345"
 * parameter[=].resource.name.family = "xxxxx"
 * parameter[=].resource.name.given = "Stefanie"
 * parameter[=].resource.birthDate = "1962-12-17"
@@ -117,7 +119,7 @@ Usage: #example
 * parameter.part[=].resource.id = "52"
 * parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
 * parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
-* parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+* parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/identifier/MPI"
 * parameter.part[=].resource.identifier.value = "1001000000066"
 * parameter.part[=].resource.managingOrganization.identifier.value = "MIRACUM"
 * parameter.part[=].resource.active = true
@@ -132,6 +134,8 @@ Usage: #example
 * parameter.part[=].resource.meta.source = "dummy_safe_source"
 * parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
 * parameter.part[=].resource.active = true
+* parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
+* parameter.part[=].resource.identifier.value = "ABC_12345"
 * parameter.part[=].resource.name.family = "xxxxx"
 * parameter.part[=].resource.name.given = "Stefanie"
 * parameter.part[=].resource.gender = #male
