@@ -66,7 +66,7 @@ Usage: #example
 * parameter[+]
   * name = "mpiId"
   * valueIdentifier
-    * system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+    * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * value = "1001000000066"
 * parameter[+]
   * name = "identityReference"
@@ -86,7 +86,7 @@ Usage: #example
     * id = "52"
     * meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
     * meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
-    * identifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+    * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * identifier.value = "1001000000066"
     * managingOrganization.identifier.value = "MIRACUM"
     * active = true
