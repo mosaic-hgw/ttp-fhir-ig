@@ -19,6 +19,12 @@
             "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
           ]
         },
+        "identifier": [
+          {
+            "system": "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
+            "value": "ABC_12345"
+          }
+        ],
         "name": [
           {
             "family": "xxxxx",

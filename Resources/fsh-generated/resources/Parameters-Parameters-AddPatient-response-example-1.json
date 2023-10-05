@@ -45,7 +45,7 @@
             },
             "identifier": [
               {
-                "system": "https://ths-greifswald.de/fhir/identifier/BeispielMpiId",
+                "system": "https://ths-greifswald.de/fhir/identifier/MPI",
                 "value": "1001000000066"
               }
             ],
@@ -84,6 +84,12 @@
               ]
             },
             "active": true,
+            "identifier": [
+              {
+                "system": "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
+                "value": "ABC_12345"
+              }
+            ],
             "name": [
               {
                 "family": "xxxxx",
