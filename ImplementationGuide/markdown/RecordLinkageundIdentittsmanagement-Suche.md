@@ -21,8 +21,8 @@ Eine PDQ/MPI Suche in Kombination mit Paging wird nicht unterstützt.
 
 Die Suche erfolgt auf dem Person-Endpoint mittels der folgenden Suchparameter der Person-Ressource bzw. der referenzierten Patient-Ressourcen (Chaining):
 
-* organization: enthält die Domäne
-* identifier: Identifikator der Person
+* organization: enthält die E-PIX-Domäne
+* identifier: Identifikator der Person (MPI, z.B. https://ths-greifswald.de/fhir/epix/identifier/MPI%7C0011000000011)
 * Chained Suchparameter auf Patient (patient.xxx): birthdate, family, gender, given (vgl. [FHIR-Spezifikation](http://www.hl7.org/fhir/r4/patient.html#search)).
 
 **Hinweis: Die Angabe des Suchparameters "organization" ist verpflichtend. Existiert dieser nicht im Request, wird der HTTP-Statuscode 400 zurück gegeben.**
@@ -31,6 +31,7 @@ Mit Hilfe der Include-Funktionalität der FHIR-Suche wird auch die gleichzeitige
 
 Eine direkte Suche auf dem Patient-Endpunkt des Servers wird nicht unterstützt und resultiert im HTTP-Statuscode 403.
 
+Etwaige lokale Identifier einer Identität (Patient) sind nicht Teil der Suchergebnismenge von Personen (Person). Die Person verweist jedoch auf die einzelnen Identitäten. Der Einzelaufruf der Identitäten ermöglicht dann das Ermitteln der zugeordneten lokalen Identifier.
 
 ##### **Beispiele**
 
