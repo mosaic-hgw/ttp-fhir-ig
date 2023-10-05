@@ -119,7 +119,7 @@ Usage: #example
 * parameter.part[=].resource.id = "52"
 * parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
 * parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
-* parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/identifier/MPI"
+* parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter.part[=].resource.identifier.value = "1001000000066"
 * parameter.part[=].resource.managingOrganization.identifier.value = "MIRACUM"
 * parameter.part[=].resource.active = true
