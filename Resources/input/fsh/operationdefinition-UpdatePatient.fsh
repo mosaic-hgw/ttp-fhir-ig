@@ -72,7 +72,7 @@ Usage: #example
 * parameter[+].name = "source"
 * parameter[=].valueString = "KlinikumXY"
 * parameter[+].name = "mpiIdentifier"
-* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].valueIdentifier.value = "1001000000066"
 * parameter[+].name = "identity"
 * parameter[=].resource.resourceType = "Patient"
@@ -95,7 +95,7 @@ Usage: #example
 * parameter[=].resource.id = "52"
 * parameter[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
 * parameter[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
-* parameter[=].resource.identifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+* parameter[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].resource.identifier.value = "1001000000066"
 * parameter[=].resource.managingOrganization.identifier.value = "MIRACUM"
 * parameter[=].resource.active = true
