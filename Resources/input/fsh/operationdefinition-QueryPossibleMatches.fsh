@@ -99,7 +99,7 @@ Usage: #example
 * parameter[0].name = "domain"
 * parameter[=].valueString = "MIRACUM"
 * parameter[+].name = "mpiId"
-* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/identifier/BeispielMpiId"
+* parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].valueIdentifier.value = "1001000000066"
 
 Instance: Parameters-QueryPossibleMatches-response-example-1
