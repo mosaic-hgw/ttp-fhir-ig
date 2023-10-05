@@ -44,7 +44,7 @@ GET [base]/Person?organization:identifier=MIRACUM&_include=Person:link
 Suche E-PIX-Personen sowie zugeordnete Identitäten zu einer bestimmten MPI-ID:
 
 `
-GET [base]/Person?organization:identifier=MIRACUM&identifier=https://ths-greifswald.de/fhir/identifier/BeispielMpiId|1001000000066&_include=Person:link
+GET [base]/Person?organization:identifier=MIRACUM&identifier=https://ths-greifswald.de/fhir/epix/identifier/MPI%7C1001000000066&_include=Person:link
 `
 
 Suche E-PIX-Personen sowie zugeordnete Identitäten zu bestimmten identifizierenden Patientendaten:
