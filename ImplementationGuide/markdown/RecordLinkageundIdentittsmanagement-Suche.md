@@ -19,7 +19,7 @@ Die Default-Sortierung im Bundle ist nach Person.id aufsteigend.
 
 Eine PDQ/MPI Suche in Kombination mit Paging wird nicht unterstützt.
 
-##### Suche zur Person (Person-Endpoint)
+##### **Suche zur Person (Person-Endpoint)**
 
 Eine Suche zur Person erfolgt mittels der folgenden Suchparameter der Person-Ressource bzw. der referenzierten Patient-Ressourcen (Chaining):
 
@@ -31,7 +31,7 @@ Eine Suche zur Person erfolgt mittels der folgenden Suchparameter der Person-Res
 
 Mit Hilfe der Include-Funktionalität der FHIR-Suche wird auch die gleichzeitige Rückgabe von Person- und Patient-Ressourcen unterstützt.
 
-##### Suche zur Identität (Patient-Endpoint)
+##### **Suche zur Identität (Patient-Endpoint)**
 
 Eine Suche zur Identität erfolgt mittels der folgenden Suchparameter der Patient-Ressource bzw. der referenzierenden Person-Ressource (Reverse Chaining und Reverse Include):
 
