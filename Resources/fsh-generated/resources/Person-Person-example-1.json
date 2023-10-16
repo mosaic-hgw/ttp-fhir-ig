@@ -9,7 +9,7 @@
   },
   "identifier": [
     {
-      "system": "https://ths-greifswald.de/fhir/identifier/BeispielMpiId",
+      "system": "https://ths-greifswald.de/fhir/epix/identifier/MPI",
       "value": "1001000000066"
     }
   ],
