@@ -13,6 +13,22 @@
       "valueAddress": {
         "city": "Musterhausen"
       }
+    },
+    {
+      "extension": [
+        {
+          "url": "code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:iso:std:iso:3166",
+                "code": "DE"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
     }
   ],
   "identifier": [
