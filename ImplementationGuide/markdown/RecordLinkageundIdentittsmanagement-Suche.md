@@ -19,7 +19,9 @@ Die Default-Sortierung im Bundle ist nach Person.id aufsteigend.
 
 Eine PDQ/MPI Suche in Kombination mit Paging wird nicht unterstützt.
 
-Die Suche erfolgt auf dem Person-Endpoint mittels der folgenden Suchparameter der Person-Ressource bzw. der referenzierten Patient-Ressourcen (Chaining):
+##### Suche zur Person (Person-Endpoint)
+
+Eine Suche zur Person erfolgt mittels der folgenden Suchparameter der Person-Ressource bzw. der referenzierten Patient-Ressourcen (Chaining):
 
 * organization: enthält die E-PIX-Domäne
 * identifier: Identifikator der Person (MPI, z.B. https://ths-greifswald.de/fhir/epix/identifier/MPI%7C0011000000011)
@@ -29,9 +31,17 @@ Die Suche erfolgt auf dem Person-Endpoint mittels der folgenden Suchparameter de
 
 Mit Hilfe der Include-Funktionalität der FHIR-Suche wird auch die gleichzeitige Rückgabe von Person- und Patient-Ressourcen unterstützt.
 
-Eine direkte Suche auf dem Patient-Endpunkt des Servers wird nicht unterstützt und resultiert im HTTP-Statuscode 403.
+##### Suche zur Identität (Patient-Endpoint)
 
-Etwaige lokale Identifier einer Identität (Patient) sind nicht Teil der Suchergebnismenge von Personen (Person). Die Person verweist jedoch auf die einzelnen Identitäten. Der Einzelaufruf der Identitäten ermöglicht dann das Ermitteln der zugeordneten lokalen Identifier.
+Eine Suche zur Identität erfolgt mittels der folgenden Suchparameter der Patient-Ressource bzw. der referenzierenden Person-Ressource (Reverse Chaining und Reverse Include):
+
+* _has:Person:link:organization:identifier: enthält die E-PIX-Domäne
+* identifier: (lokaler) Identifikator der Patient-Ressource (Identität)
+* Weitere Suchparameter auf Patient: birthdate, family, gender, give
+
+Bei dieser Suche wird die gefundene Patient-Ressource (Identität) sowie die hierauf verweisende Person-Ressource zurück gegegeben, nicht jedoch weitere Patient-Ressourcen mit anderen Identitäten der Person.
+
+**Hinweis: Die Angabe des reverse chained Suchparameters "_has:Person:link:organization:identifier" ist verpflichtend. Existiert dieser nicht im Request, wird der HTTP-Statuscode 400 zurück gegeben.**
 
 ##### **Beispiele**
 
@@ -56,4 +66,10 @@ GET [base]/Person?organization:identifier=MIRACUM&patient.family=Mustermann&pati
 Suche auf 10 Ergebnisse beschränkt und ab der 11. Ressource der Ergebnisliste:
 `
 GET [base]/Person?organization:identifier=MIRACUM&_include=Person:link&_count=10&_offset=10
+`
+
+Suche eine bestimmte E-PIX-Identität (FHIR: Patient) sowie die übergeordnete E-PIX-Person (FHIR: Person) zu einer bestimmten Domäne:
+
+`
+GET [base]/Patient?identifier=https://klinium-musterstadt.de/fhir/epix/identifier/SystemXY|ABC_12345&_has:Person:link:organization:identifier=MIRACUM&_revinclude=Person:link
 `
