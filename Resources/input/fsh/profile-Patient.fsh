@@ -107,6 +107,7 @@ Usage: #example
 * meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
 * meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
 * extension[birthPlace].valueAddress.city = "Musterhausen"
+* extension[nationality].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#DE
 * identifier
   * system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
   * value = "ABC_12345"
