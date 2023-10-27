@@ -110,6 +110,11 @@ Usage: #example
 * extension[nationality].extension[code].valueCodeableConcept.coding
   * system = "urn:iso:std:iso:3166"
   * code = #DE
+* extension[customIdatValues]
+  * extension[value1]
+    * valueString = "A38"
+  * extension[value2]
+    * valueBoolean = true
 * identifier
   * system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
   * value = "ABC_12345"

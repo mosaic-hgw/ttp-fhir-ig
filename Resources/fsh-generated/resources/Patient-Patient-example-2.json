@@ -29,6 +29,19 @@
         }
       ],
       "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+    },
+    {
+      "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues",
+      "extension": [
+        {
+          "url": "value1",
+          "valueString": "A38"
+        },
+        {
+          "url": "value2",
+          "valueBoolean": true
+        }
+      ]
     }
   ],
   "identifier": [
