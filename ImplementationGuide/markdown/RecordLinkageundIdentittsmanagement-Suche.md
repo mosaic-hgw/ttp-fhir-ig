@@ -15,6 +15,11 @@ Paging entsprechend der [FHIR Search API](http://hl7.org/fhir/r4/search.html) wi
 Der Default-Offset ist 0. Der Default-Count ist 100. Negative Werte für _offset und _count sind nicht erlaubt.
 Werden weder _count noch _offset angegeben, enthält das Bundle maximal 100 Ergebnisse (Default-Count=100, Default-Offset=0).
 
+Bei Inklusion anderer Ressourcen in die Suche (_include bzw. _has) gilt:
+* Das Element total gibt die Gesamtzahl Suchergebnisse der Ressource an, auf deren Endpoint die Suche ausgeführt wird
+* Die jeweils inkludierten sekundären Ressourcen werden jeweils in der selben Bundle-Page wie die primäre Ressource zurück gegegeben (z.B. alle Patient-Ressourcen zur Person), wie in der FHIR-Spezifikation empfohlen
+* Die Angaben zu _count und _offset ("Pagesize") beziehen sich ebenfalls auf die jeweils primäre Ressource, um den vorgenannten Punkt jederzeit zu gewährleisten
+
 Die Default-Sortierung im Bundle ist nach Person.id aufsteigend.
 
 Eine PDQ/MPI Suche in Kombination mit Paging wird nicht unterstützt.
