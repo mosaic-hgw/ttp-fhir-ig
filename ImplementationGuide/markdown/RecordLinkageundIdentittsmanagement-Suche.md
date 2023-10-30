@@ -38,6 +38,8 @@ Mit Hilfe der Include-Funktionalität der FHIR-Suche wird auch die gleichzeitige
 
 ##### **Suche zur Identität (Patient-Endpoint)**
 
+**Unterstützt ab TTP-FHIR Gateway Version 2024.1.0**
+
 Eine Suche zur Identität erfolgt mittels der folgenden Suchparameter der Patient-Ressource bzw. der referenzierenden Person-Ressource (Reverse Chaining und Reverse Include):
 
 * _has:Person:link:organization:identifier: enthält die E-PIX-Domäne
