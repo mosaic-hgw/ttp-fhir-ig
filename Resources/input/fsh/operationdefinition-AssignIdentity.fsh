@@ -14,6 +14,13 @@ Usage: #definition
 * type = false
 * instance = false
 * parameter[+]
+  * name = #domain
+  * use = #in
+  * min = 1
+  * max = "1"
+  * documentation = "Angabe der Einwilligungsdomaene"
+  * type = #string
+* parameter[+]
   * name = #linkId
   * use = #in
   * min = 1

@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
-  "id": "AssignIdentity",
-  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
+  "id": "AssignIdentityByIdentifier",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier",
   "version": "2023.2.0-DEVEL",
   "status": "draft",
   "date": "2023-09-04",
@@ -18,12 +18,12 @@
       ]
     }
   ],
-  "name": "AssignIdentity",
-  "title": "assignIdentity",
+  "name": "AssignIdentityByIdentifier",
+  "title": "assignIdentityByIdentifier",
   "kind": "operation",
-  "description": "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben.",
+  "description": "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität.",
   "affectsState": true,
-  "code": "assignIdentity",
+  "code": "assignIdentityByIdentifier",
   "system": true,
   "type": false,
   "instance": false,
@@ -37,20 +37,20 @@
       "type": "string"
     },
     {
-      "name": "linkId",
+      "name": "identityIdentifier",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Link-ID des Matches (Dubletteneintrag). Ermittelbar mittels Operation queryPossibleMatches.",
-      "type": "integer"
+      "documentation": "Identifier der zu verschiebenden Identität (Patient-Ressource).",
+      "type": "Identifier"
     },
     {
-      "name": "identityReference",
+      "name": "mpiIdentifier",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Referenz zur korrekten Ausprägung (Identität, Match-Item, Patient-Ressource), die das Ziel der Verschiebung ist.",
-      "type": "Reference"
+      "documentation": "Identifikator des MPI-Eintrags (MPI-ID)",
+      "type": "Identifier"
     },
     {
       "name": "comment",

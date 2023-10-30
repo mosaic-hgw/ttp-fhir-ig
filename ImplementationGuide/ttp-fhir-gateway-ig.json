@@ -86,6 +86,11 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-assignIdentityByIdentifier.md",
+                  "title": "assignIdentityByIdentifier",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-assignIdentity.md",
                   "title": "assignIdentity",
                   "generation": "markdown"

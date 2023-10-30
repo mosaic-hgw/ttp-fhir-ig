@@ -1,0 +1,24 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-AssignIdentityByIdentifier-request-example-1",
+  "parameter": [
+    {
+      "name": "comment",
+      "valueString": "Korrektur nach manueller Begutachtung."
+    },
+    {
+      "name": "identityIdentifier",
+      "valueIdentifier": {
+        "system": "https://ths-greifswald.de/fhir/epix/identifier/identity",
+        "value": "10010000006546"
+      }
+    },
+    {
+      "name": "mpiIdentifier",
+      "valueIdentifier": {
+        "system": "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+        "value": "1001000000066"
+      }
+    }
+  ]
+}

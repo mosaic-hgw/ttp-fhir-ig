@@ -1,0 +1,11 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "OperationOutcome-AssignIdentityByIdentifier-response-example-1",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "identity moved."
+    }
+  ]
+}
