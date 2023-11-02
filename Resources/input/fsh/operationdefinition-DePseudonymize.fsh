@@ -92,18 +92,12 @@ Usage: #example
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
 * parameter[=].part[+].name = "original"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "1001000000022"
-* parameter[+].name = "original"
 * parameter[=].part[0].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "MIRACUM"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_9GELEUVU"
-* parameter[=].part[+].name = "original"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "1001000000033"
 
 Instance: Parameters-DePseudonymize-response-example-1
 InstanceOf: Parameters
