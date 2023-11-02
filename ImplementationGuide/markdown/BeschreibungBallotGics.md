@@ -1,0 +1,14 @@
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
+
+### Einleitung
+
+Infrastrukturen für vernetzte medizinische Forschung sollen die Datenbestände der einzelnen Klinika für gemeinsame Verbundforschung verfügbar machen und somit die Bearbeitung komplexer und längsschnittlicher medizinischer Fragestellungen anhand von Daten aus der realen Versorgung ermöglichen.
+
+Die dafür notwendige Erhebung, Verarbeitung und Nutzung von medizinischen Forschungsdaten erfordert im Regelfall eine zweckbezogene informierte Einwilligung des Betroffenen, den sogenannten Informed Consent (IC) (vgl. Art. 6-11 DSGVO). Im Kontext stetig wachsender nationaler und internationaler Forschungsinitiativen, wie der [Medizininformatik-Initiative (MII)](https://www.medizininformatik-initiative.de/) und dem [Netzwerk Universitätsmedizin (NUM)](https://www.netzwerk-universitaetsmedizin.de/), ist ein zuverlässiges und effizientes Verfahren zur digitalen Verwaltung von Einwilligungen und Widerrufen unabdingbar.
+
+Zu diesem Zweck hat die [Treuhandstelle der Universitätsmedizin Greifswald](https://www.ths-greifswald.de) eine Open Source Lösung im Bereich des [Einwilligungsmanagements](https://www.ths-greifswald.de/gics) entwickelt und stellt diese für eine datenschutzkonforme Durchführung medizinischer Forschungsvorhaben bereit. 
+
+Ausgewählte Forschungsvorhaben und MII-Standorte in Deutschland setzen gICS bereits zur Verwaltung von Einwilligungen und Widerrufen ein. gICS® verfügt über eine FHIR-Facade (TTP-FHIR Gateway), um Einwilligungsinhalte und Einwilligungsstände gemäß den Vorgaben [HL7-Deutschland Arbeitsgruppe für Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/) abfragbar per FHIR-Endpunkt bereitzustellen. Seit [Mai 2023](https://www.ths-greifswald.de/gics/releasenotes) ist gICS zusätzlich kompatibel zum [MII-Kerndatensatzmodul Consent](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Consent/IGMIIKDSModulConsent.html), indem die Suche nach FHIR-Consent Ressourcen nach Vorgaben der Taskforce Consentumsetzung in Bezug auf zu verwendende Suchparameter (Schnittstelle) und erforderliche Profilvorgaben des Kerndatensatz Consent (Format) unterstützt wird.  
+
+### FHIR Implementierungsleitfaden für das Einwilligungsmanagement gICS
+Der hier vorgelegte Leitfaden beschreibt, wie die nötigen fachlichen Operationen zur *Realisierung ausgewählter gICS-Funktionalitäten* auf Basis von HL7 FHIR technisch abgebildet wurden. Erforderliche FHIR-Operations, Profile, Extensions und Terminologien werden in Form eines TTP-FHIR Gateway seit 2021 kontinuierlich weiterentwickelt und wurden bereits [publiziert](https://doi.org/10.21203/rs.3.rs-1053445/v1).
