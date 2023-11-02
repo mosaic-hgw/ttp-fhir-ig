@@ -91,7 +91,6 @@ Usage: #example
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
-* parameter[=].part[+].name = "original"
 * parameter[=].part[0].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "MIRACUM"
