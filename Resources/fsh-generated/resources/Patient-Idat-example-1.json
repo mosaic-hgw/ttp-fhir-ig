@@ -32,10 +32,6 @@
   ],
   "name": [
     {
-      "family": "Mustermann",
-      "given": [
-        "Martin"
-      ],
       "prefix": [
         "Dr. med."
       ],
@@ -48,6 +44,10 @@
             }
           ]
         }
+      ],
+      "family": "Mustermann",
+      "given": [
+        "Martin"
       ]
     }
   ],

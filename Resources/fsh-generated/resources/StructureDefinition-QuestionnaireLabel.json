@@ -50,6 +50,12 @@
     "element": [
       {
         "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          }
+        ],
         "path": "Extension",
         "max": "1"
       },

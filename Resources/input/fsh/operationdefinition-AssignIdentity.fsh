@@ -18,7 +18,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Angabe der Einwilligungsdomaene"
+  * documentation = "Angabe der Matching-Domäne"
   * type = #string
 * parameter[+]
   * name = #linkId

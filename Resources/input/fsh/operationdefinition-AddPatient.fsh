@@ -87,6 +87,11 @@ Usage: #example
 * parameter[+].name = "identity"
 * parameter[=].resource.resourceType = "Patient"
 * parameter[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+* parameter[=].resource.extension[customIdatValues]
+  * extension[value1]
+    * valueString = "A38"
+  * extension[value2]
+    * valueBoolean = true
 * parameter[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
 * parameter[=].resource.identifier.value = "ABC_12345"
 * parameter[=].resource.name.family = "xxxxx"
@@ -109,6 +114,11 @@ Usage: #example
 * parameter.part[0].name = "sourceIdentity"
 * parameter.part[=].resource.resourceType = "Patient"
 * parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+* parameter.part[=].resource.extension[customIdatValues]
+  * extension[value1]
+    * valueString = "A38"
+  * extension[value2]
+    * valueBoolean = true
 * parameter.part[=].resource.name.family = "xxxxx"
 * parameter.part[=].resource.name.given = "Stefanie"
 * parameter.part[=].resource.birthDate = "1962-12-17"
@@ -133,6 +143,11 @@ Usage: #example
 * parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
 * parameter.part[=].resource.meta.source = "dummy_safe_source"
 * parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+* parameter.part[=].resource.extension[customIdatValues]
+  * extension[value1]
+    * valueString = "A38"
+  * extension[value2]
+    * valueBoolean = true
 * parameter.part[=].resource.active = true
 * parameter.part[=].resource.identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"
 * parameter.part[=].resource.identifier.value = "ABC_12345"

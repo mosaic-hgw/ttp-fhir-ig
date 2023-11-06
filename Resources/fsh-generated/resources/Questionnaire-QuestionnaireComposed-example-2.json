@@ -105,7 +105,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/PATDAT_erheben_speichern_nutzen|1.5"
+            "reference": "Questionnaire/PATDAT_erheben_speichern_nutzen"
           }
         }
       ],
@@ -147,7 +147,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/KKDAT_retrospektiv_uebertragen_speichern_nutzen|1.5"
+            "reference": "Questionnaire/KKDAT_retrospektiv_uebertragen_speichern_nutzen"
           }
         }
       ],
@@ -225,7 +225,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/KKDAT_prospektiv_uebertragen_speichern_nutzen|1.5"
+            "reference": "Questionnaire/KKDAT_prospektiv_uebertragen_speichern_nutzen"
           }
         }
       ],
@@ -267,7 +267,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/BIOMAT_erheben_lagern_nutzen|1.5"
+            "reference": "Questionnaire/BIOMAT_erheben_lagern_nutzen"
           }
         }
       ],
@@ -296,7 +296,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/BIOMAT_Zusatzentnahme|1.5"
+            "reference": "Questionnaire/BIOMAT_Zusatzentnahme"
           }
         }
       ],
@@ -329,7 +329,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/Rekontaktierung_Ergaenzungen|1.5"
+            "reference": "Questionnaire/Rekontaktierung_Ergaenzungen"
           }
         }
       ],
@@ -358,7 +358,7 @@
         {
           "url": "http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire",
           "valueReference": {
-            "reference": "Questionnaire/Rekontaktierung_Zusatzbefund|1.5"
+            "reference": "Questionnaire/Rekontaktierung_Zusatzbefund"
           }
         }
       ],
