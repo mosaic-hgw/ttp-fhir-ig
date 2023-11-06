@@ -3,23 +3,16 @@
   "id": "Parameters-DePseudonymize-request-example-1",
   "parameter": [
     {
-      "name": "original",
-      "part": [
-        {
-          "name": "target",
-          "valueIdentifier": {
-            "system": "https://ths-greifswald.de/gpas",
-            "value": "MIRACUM"
-          }
-        },
-        {
-          "name": "pseudonym",
-          "valueIdentifier": {
-            "system": "https://ths-greifswald.de/gpas",
-            "value": "mrcm_9GELEUVU"
-          }
-        }
-      ]
+      "name": "target",
+      "valueString": "MIRACUM"
+    },
+    {
+      "name": "pseudonym",
+      "valueString": "mrcm_T0TYNV21"
+    },
+    {
+      "name": "pseudonym",
+      "valueString": "mrcm_9GELEUVU"
     }
   ]
 }

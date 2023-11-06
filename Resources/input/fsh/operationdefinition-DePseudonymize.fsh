@@ -84,24 +84,17 @@ Usage: #definition
 Instance: Parameters-DePseudonymize-request-example-1
 InstanceOf: Parameters
 Usage: #example
-* parameter[0].name = "original"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "MIRACUM"
-* parameter[=].part[+].name = "pseudonym"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
-* parameter[=].part[0].name = "target"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "MIRACUM"
-* parameter[=].part[+].name = "pseudonym"
-* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "mrcm_9GELEUVU"
+* parameter[0].name = "target"
+* parameter[=].valueString = "MIRACUM"
+* parameter[+].name = "pseudonym"
+* parameter[=].valueString = "mrcm_T0TYNV21"
+* parameter[+].name = "pseudonym"
+* parameter[=].valueString = "mrcm_9GELEUVU"
 
 Instance: Parameters-DePseudonymize-response-example-1
 InstanceOf: Parameters
 Usage: #example
-* parameter[0].name = "pseudonym"
+* parameter[0].name = "original"
 * parameter[=].part[0].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "MIRACUM"
@@ -111,7 +104,7 @@ Usage: #example
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
-* parameter[+].name = "pseudonym"
+* parameter[+].name = "original"
 * parameter[=].part[0].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "MIRACUM"
