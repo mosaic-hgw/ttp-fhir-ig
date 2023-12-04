@@ -1,0 +1,84 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Anonymize",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/anonymize",
+  "version": "2023.2.0-DEVEL",
+  "status": "draft",
+  "date": "2023-09-04",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "Anonymize",
+  "title": "anonymize",
+  "kind": "operation",
+  "description": "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne.",
+  "affectsState": false,
+  "code": "pseudonymize",
+  "comment": "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "target",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte eine Anonysierung durchgeführt werden soll.",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "original",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "documentation": "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "successStatus",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "documentation": "Status-Rückgabe der einzelnen Anonymisierungen",
+      "part": [
+        {
+          "name": "target",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Target-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "original",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "result-code",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Erfolgs- bzw. Fehlercode",
+          "type": "Coding"
+        }
+      ]
+    }
+  ]
+}
