@@ -7,8 +7,8 @@ Usage: #definition
 * title = "anonymize"
 * kind = #operation
 * description = "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
-* affectsState = false
-* code = #pseudonymize
+* affectsState = true
+* code = #anonymize
 * comment = "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
 * system = true
 * type = false
@@ -18,7 +18,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte eine Anonysierung durchgeführt werden soll."
+  * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte eine Anonymisierung durchgeführt werden soll."
   * type = #string
   * searchType = #string
 * parameter[+]
@@ -45,7 +45,7 @@ Usage: #definition
   * part[+]
     * name = #original
     * use = #out
-    * min = 0
+    * min = 1
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Identifier
