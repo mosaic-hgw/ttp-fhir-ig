@@ -26,7 +26,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "*"
-* documentation = "Angabe der Originalwerte für die in der angegebenen Domäne eine Anonymisierung durchgeführt werden soll."
+* documentation = "Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll."
   * type = #string
   * searchType = #string
 * parameter[+]
