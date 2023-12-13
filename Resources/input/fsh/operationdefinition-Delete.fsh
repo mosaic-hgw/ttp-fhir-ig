@@ -8,7 +8,7 @@ Usage: #definition
 * kind = #operation
 * comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
 * affectsState = true
-* code = #anonymize
+* code = #delete
 * comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
 * system = true
 * type = false
