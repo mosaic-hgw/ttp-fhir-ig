@@ -6,10 +6,10 @@ Usage: #definition
 * name = "Anonymize"
 * title = "anonymize"
 * kind = #operation
-* description = "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
+* description = "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht."
 * affectsState = true
 * code = #anonymize
-* comment = "Anonymisiert eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
+* comment = "Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht."
 * system = true
 * type = false
 * instance = false
@@ -18,7 +18,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte eine Anonymisierung durchgeführt werden soll."
+  * documentation = "Angabe der Domäne innerhalb derer für die angegebenen Originalwerte eine Anonymisierung durchgeführt werden soll."
   * type = #string
   * searchType = #string
 * parameter[+]
@@ -26,7 +26,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "*"
-  * documentation = "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird"
+  * documentation = "Angabe der Originalwerte für die in der angegebenen Domäne eine Anonymisierung durchgeführt werden soll."
   * type = #string
   * searchType = #string
 * parameter[+]
@@ -34,7 +34,7 @@ Usage: #definition
   * use = #out
   * min = 1
   * max = "*"
-  * documentation = "Status-Rückgabe der einzelnen Anonymisierungen"
+  * documentation = "Status-Rückgabe der einzelnen durchgeführten Anonymisierungen"
   * part[0]
     * name = #target
     * use = #out

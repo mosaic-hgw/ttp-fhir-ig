@@ -6,10 +6,10 @@ Usage: #definition
 * name = "Delete"
 * title = "delete"
 * kind = #operation
-* description = "Löscht eine gegebene Liste von 1-n Pseudonymen einer spezifische Domäne, sofern die Konfiguration dieser Domäne es erlaubt."
+* comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
 * affectsState = true
 * code = #anonymize
-* comment = "Löscht eine gegebene Liste von 1-n Pseudonymen einer spezifische Domäne, sofern die Konfiguration dieser Domäne es erlaubt."
+* comment = "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt."
 * system = true
 * type = false
 * instance = false
@@ -18,15 +18,15 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Angabe der Domäne, in der die Löschungen stattfinden sollen."
+* documentation = "Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden."
   * type = #string
   * searchType = #string
 * parameter[+]
-  * name = #pseudonym
+  * name = #original
   * use = #in
   * min = 1
   * max = "*"
-  * documentation = "Angabe der zu löschenden Pseudonyme."
+* documentation = "Angabe der Originalwerte für die in der angegebenen Domäne eine Anonymisierung durchgeführt werden soll."
   * type = #string
   * searchType = #string
 * parameter[+]
@@ -34,7 +34,7 @@ Usage: #definition
   * use = #out
   * min = 1
   * max = "*"
-  * documentation = "Status-Rückgabe der einzelnen Löschungen"
+  * documentation = "Status-Rückgabe der einzelnen durchgeführten Löschungen"
   * part[0]
     * name = #target
     * use = #out
@@ -43,7 +43,7 @@ Usage: #definition
     * documentation = "Target-Identifikator"
     * type = #Identifier
   * part[+]
-    * name = #pseudonym
+    * name = #original
     * use = #out
     * min = 1
     * max = "1"
