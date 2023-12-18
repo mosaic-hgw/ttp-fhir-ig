@@ -35,4 +35,4 @@ Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-DePseudonymize-response-example-1.json}}
 
 Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
-{{xml:Resources/fsh-generated/resources/Parameters-Parameters-Pseudonymize-response-example-2.json}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-DePseudonymize-response-example-2.json}}

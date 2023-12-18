@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
-  "id": "Delete",
-  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/delete",
+  "id": "DeletePseudonyms",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/deletePseudonyms",
   "version": "2023.2.0-DEVEL",
   "status": "draft",
   "date": "2023-09-04",
@@ -18,13 +18,12 @@
       ]
     }
   ],
-  "name": "Delete",
-  "title": "delete",
+  "name": "DeletePseudonyms",
+  "title": "deletePseudonyms",
   "kind": "operation",
-  "description": "Löscht eine gegebene Liste von 1-n Pseudonymen einer spezifische Domäne, sofern die Konfiguration dieser Domäne es erlaubt.",
+  "comment": "Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.",
   "affectsState": true,
-  "code": "anonymize",
-  "comment": "Löscht eine gegebene Liste von 1-n Pseudonymen einer spezifische Domäne, sofern die Konfiguration dieser Domäne es erlaubt.",
+  "code": "deletePseudonyms",
   "system": true,
   "type": false,
   "instance": false,
@@ -34,16 +33,16 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Angabe der Domäne, in der die Löschungen stattfinden sollen.",
+      "documentation": "Angabe der Domäne innerhalb derer die angegebenen Originalwerte gelöscht werden.",
       "type": "string",
       "searchType": "string"
     },
     {
-      "name": "pseudonym",
+      "name": "original",
       "use": "in",
       "min": 1,
       "max": "*",
-      "documentation": "Angabe der zu löschenden Pseudonyme.",
+      "documentation": "Angabe der Originalwerte für die in der angegebenen Domäne eine Löschung durchgeführt werden soll.",
       "type": "string",
       "searchType": "string"
     },
@@ -52,7 +51,7 @@
       "use": "out",
       "min": 1,
       "max": "*",
-      "documentation": "Status-Rückgabe der einzelnen Löschungen",
+      "documentation": "Status-Rückgabe der einzelnen durchgeführten Löschungen",
       "part": [
         {
           "name": "target",
@@ -63,7 +62,7 @@
           "type": "Identifier"
         },
         {
-          "name": "pseudonym",
+          "name": "original",
           "use": "out",
           "min": 1,
           "max": "1",
