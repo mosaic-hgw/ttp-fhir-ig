@@ -138,6 +138,16 @@
                   "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-dePseudonymize.md",
                   "title": "dePseudonymize",
                   "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-anonymizeOriginals.md",
+                  "title": "anonymizeOriginals",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-deletePseudonyms.md",
+                  "title": "deletePseudonyms",
+                  "generation": "markdown"
                 }
               ]
             }
