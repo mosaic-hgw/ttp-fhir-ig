@@ -9,9 +9,6 @@ Der FHIR-Endpunkt ([base]) für das Record Linkage und Identitätsmanagement ist
   <img width="500" src="https://www.ths-greifswald.de/wp-content/uploads/2022/10/fhirgw-epix.png">
 </p>
 
-### Übersicht der verfügbaren Operations
-{{index:ImplementationGuide-markdown-RecordLinkageundIdentittsmanagement-Operations}}
-
 ### Suche mittels E-PIX und FHIR
 Die Suche nach Personendatensätzen im E-PIX wird ebenfalls per FHIR umgesetzt. Eine Übersicht zulässiger Suchparameter ist hier zu finden:
 {{index:ImplementationGuide-markdown-RecordLinkageundIdentittsmanagement-Suche}}
