@@ -5,7 +5,7 @@
   "version": "2023.2.0.DEVEL",
   "name": "IG TTP-FHIR Gateway",
   "status": "draft",
-  "description": "Implementation Guide für die Verwendung der angepassten und erweiterten Profile / Extensions im Kontext von E-PIX, gPAS und gICS",
+  "description": "Implementation Guide für die Verwendung der angepassten und erweiterten Profile / Extensions im Kontext gICS",
   "packageId": "ths-greifswald.ttp-fhir-gw",
   "fhirVersion": [
     "4.0.1"
@@ -20,172 +20,13 @@
     ],
     "page": {
       "nameUrl": "ImplementationGuide/markdown/IGTTPFHIRGateway.md",
-      "title": "IG TTP FHIR Gateway",
+      "title": "IG TTP FHIR Gateway - gICS",
       "generation": "markdown",
       "page": [
         {
-          "nameUrl": "ImplementationGuide/markdown/Beschreibung.md",
+          "nameUrl": "ImplementationGuide/markdown/BeschreibungBallotGics.md",
           "title": "Beschreibung",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/Kontext.md",
-          "title": "Kontext",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/Vorgehen.md",
-          "title": "Vorgehen",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/TechnischeGrundlagen.md",
-          "title": "Technische Grundlagen",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement.md",
-          "title": "Record Linkage und Identitätsmanagement",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions.md",
-              "title": "Profile und Extensions",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions-Person.md",
-                  "title": "Person",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-ProfileUndExtensions-Patient.md",
-                  "title": "Patient",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations.md",
-              "title": "Operations",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-addPatient.md",
-                  "title": "addPatient",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-updatePatient.md",
-                  "title": "updatePatient",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-setReferenceIdentity.md",
-                  "title": "setReferenceIdentity",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-assignIdentity.md",
-                  "title": "assignIdentity",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-assignIdentityByIdentifier.md",
-                  "title": "assignIdentityByIdentifier",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-queryPossibleMatches.md",
-                  "title": "queryPossibleMatches",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-removePossibleMatches.md",
-                  "title": "removePossibleMatches",
-                  "generation": "markdown"
-                }
-              ]
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Suche.md",
-              "title": "Suche",
-              "generation": "markdown"
-            }
-          ]
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement.md",
-          "title": "Pseudonymmanagement",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations.md",
-              "title": "Operations",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-pseudonymizeAllowCreate.md",
-                  "title": "pseudonymizeAllowCreate",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-pseudonymize.md",
-                  "title": "pseudonymize",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-dePseudonymize.md",
-                  "title": "dePseudonymize",
-                  "generation": "markdown"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung.md",
-          "title": "Workflow-basierte Verwaltung",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-ProfileUndExtensions.md",
-              "title": "Profile und Extensions",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations.md",
-              "title": "Operations",
-              "generation": "markdown",
-              "page": [
-                {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md",
-                  "title": "requestPsnWorkflow",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md",
-                  "title": "requestPsnFromBfWorkflow",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md",
-                  "title": "requestTasks",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md",
-                  "title": "providePatientData",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md",
-                  "title": "updateBf",
-                  "generation": "markdown"
-                }
-              ]
-            }
-          ]
         },
         {
           "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement.md",
@@ -242,11 +83,6 @@
                 {
                   "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ConsentQualityControl.md",
                   "title": "ConsentQualityControl",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-ProfileUndExtensions-ExchangeFormatDefinition.md",
-                  "title": "ExchangeFormatDefinition",
                   "generation": "markdown"
                 }
               ]
@@ -331,18 +167,8 @@
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-IdatElements.md",
-                  "title": "IdatElements",
-                  "generation": "markdown"
-                },
-                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-IdMatchingType.md",
                   "title": "IdMatchingType",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-MatchStatus.md",
-                  "title": "MatchStatus",
                   "generation": "markdown"
                 },
                 {
@@ -369,16 +195,6 @@
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentPolicyPurpose.md",
                   "title": "ConsentPolicyPurpose",
                   "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentAggregationLevel.md",
-                  "title": "ConsentAggregationLevel",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-SaveAction.md",
-                  "title": "SaveAction",
-                  "generation": "markdown"
                 }
               ]
             },
@@ -398,18 +214,8 @@
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-IdatElements.md",
-                  "title": "IdatElements",
-                  "generation": "markdown"
-                },
-                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-IdMatchingType.md",
                   "title": "IdMatchingType",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-MatchStatus.md",
-                  "title": "MatchStatus",
                   "generation": "markdown"
                 },
                 {
@@ -435,16 +241,6 @@
                 {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyPurpose.md",
                   "title": "ConsentPolicyPurpose",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentCategoryAggregation.md",
-                  "title": "ConsentCategoryAggregation",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-SaveAction.md",
-                  "title": "SaveAction",
                   "generation": "markdown"
                 }
               ]
