@@ -1,0 +1,52 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-DePseudonymize-response-example-2",
+  "parameter": [
+    {
+      "name": "pseudonym",
+      "part": [
+        {
+          "name": "target",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "MIRACUM"
+          }
+        },
+        {
+          "name": "original",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "1001000000022"
+          }
+        },
+        {
+          "name": "pseudonym",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "mrcm_T0TYNV21"
+          }
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "part": [
+        {
+          "name": "original",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "10010000000XX"
+          }
+        },
+        {
+          "name": "error-code",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/issue-type",
+            "code": "not-found",
+            "display": "Not Found"
+          }
+        }
+      ]
+    }
+  ]
+}

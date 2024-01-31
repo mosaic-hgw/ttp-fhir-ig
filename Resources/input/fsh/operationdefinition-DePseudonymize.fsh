@@ -114,3 +114,25 @@ Usage: #example
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_9GELEUVU"
+
+Instance: Parameters-DePseudonymize-response-example-2
+InstanceOf: Parameters
+Usage: #example
+* parameter[0].name = "pseudonym"
+* parameter[=].part[0].name = "target"
+* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
+* parameter[=].part[=].valueIdentifier.value = "MIRACUM"
+* parameter[=].part[+].name = "original"
+* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
+* parameter[=].part[=].valueIdentifier.value = "1001000000022"
+* parameter[=].part[+].name = "pseudonym"
+* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
+* parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
+* parameter[+].name = "error"
+* parameter[=].part[+].name = "original"
+* parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
+* parameter[=].part[=].valueIdentifier.value = "10010000000XX"
+* parameter[=].part[+].name = "error-code"
+* parameter[=].part[=].valueCoding.system = "http://hl7.org/fhir/issue-type"
+* parameter[=].part[=].valueCoding.code = #not-found
+* parameter[=].part[=].valueCoding.display = "Not Found"
