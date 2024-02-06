@@ -3,7 +3,7 @@ Id: ConsentPolicyPurposeCS
 Description: "Expandable specification of the application context and/or scope of a consent policy or module"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
-* ^version = "1.1"
+* ^version = "1.2"
 * ^purpose = "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose"
 * ^caseSensitive = true
 * ^content = #complete
@@ -287,3 +287,53 @@ Description: "Expandable specification of the application context and/or scope o
 * #scientific  ^designation[+].language = #en-UK
 * #scientific  ^designation[=].use = $csSct#900000000000003001
 * #scientific  ^designation[=].value = "in a scientific context"
+* #highly_specific "highly_specific"
+* #highly_specific  ^designation[0].language = #de-DE
+* #highly_specific  ^designation[=].use = $csSct#900000000000003001
+* #highly_specific  ^designation[=].value = "in einer relevanten und hochspezifischen Weise"
+* #highly_specific  ^designation[+].language = #de-DE
+* #highly_specific  ^designation[=].use = $csSct#900000000000013009
+* #highly_specific  ^designation[=].value = "hochspezifisch"
+* #highly_specific  ^designation[+].language = #en-UK
+* #highly_specific  ^designation[=].use = $csSct#900000000000003001
+* #highly_specific  ^designation[=].value = "in a relevant highly specific way"
+* #legally_based_registry "legally_based_registry"
+* #legally_based_registry  ^designation[0].language = #de-DE
+* #legally_based_registry  ^designation[=].use = $csSct#900000000000003001
+* #legally_based_registry  ^designation[=].value = "im Rahmen eines Registers auf gesetzlicher Grundlage"
+* #legally_based_registry  ^designation[+].language = #de-DE
+* #legally_based_registry  ^designation[=].use = $csSct#900000000000013009
+* #legally_based_registry  ^designation[=].value = "gesetzliches_register"
+* #legally_based_registry  ^designation[+].language = #en-UK
+* #legally_based_registry  ^designation[=].use = $csSct#900000000000003001
+* #legally_based_registry  ^designation[=].value = "within the framework of a register on a legal basis"
+* #laboratory "laboratory"
+* #laboratory  ^designation[0].language = #de-DE
+* #laboratory  ^designation[=].use = $csSct#900000000000003001
+* #laboratory  ^designation[=].value = "in / aus einem Labor"
+* #laboratory  ^designation[+].language = #de-DE
+* #laboratory  ^designation[=].use = $csSct#900000000000013009
+* #laboratory  ^designation[=].value = "Labor"
+* #laboratory  ^designation[+].language = #en-UK
+* #laboratory  ^designation[=].use = $csSct#900000000000003001
+* #laboratory  ^designation[=].value = "in a / of a laboratory"
+* #genetic "genetic"
+* #genetic  ^designation[0].language = #de-DE
+* #genetic  ^designation[=].use = $csSct#900000000000003001
+* #genetic  ^designation[=].value = "genetisch"
+* #genetic  ^designation[+].language = #de-DE
+* #genetic  ^designation[=].use = $csSct#900000000000013009
+* #genetic  ^designation[=].value = "genetisch"
+* #genetic  ^designation[+].language = #en-UK
+* #genetic  ^designation[=].use = $csSct#900000000000003001
+* #genetic  ^designation[=].value = "genetic"
+* #authority "authority"
+* #authority  ^designation[0].language = #de-DE
+* #authority  ^designation[=].use = $csSct#900000000000003001
+* #authority  ^designation[=].value = "in einer /von einer / durch eine Behörde"
+* #authority  ^designation[+].language = #de-DE
+* #authority  ^designation[=].use = $csSct#900000000000013009
+* #authority  ^designation[=].value = "behörde"
+* #authority  ^designation[+].language = #en-UK
+* #authority  ^designation[=].use = $csSct#900000000000003001
+* #authority  ^designation[=].value = "in / from / by an authority"

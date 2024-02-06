@@ -3,7 +3,7 @@ Id: ConsentPolicyClassCS
 Description: "Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT')"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
-* ^version = "1.1"
+* ^version = "1.2"
 * ^purpose = "First axis 'Class' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.class"
 * ^caseSensitive = true
 * ^content = #complete
@@ -144,3 +144,13 @@ Description: "Extensible description of the application perspective of a Consent
 * #BIOMAT_metadata  ^designation[+].language = #en-UK
 * #BIOMAT_metadata  ^designation[=].use = $csSct#900000000000003001
 * #BIOMAT_metadata  ^designation[=].value = "metadata regarding biosamples such as storage and processing"
+* #PIDAT "PIDAT"
+* #PIDAT  ^designation[0].language = #de-DE
+* #PIDAT  ^designation[=].use = $csSct#900000000000003001
+* #PIDAT  ^designation[=].value = "Rentenversicherungsdaten"
+* #PIDAT  ^designation[+].language = #de-DE
+* #PIDAT  ^designation[=].use = $csSct#900000000000013009
+* #PIDAT  ^designation[=].value = "PIDAT"
+* #PIDAT  ^designation[+].language = #en-UK
+* #PIDAT  ^designation[=].use = $csSct#900000000000003001
+* #PIDAT  ^designation[=].value = "pension insurance data"

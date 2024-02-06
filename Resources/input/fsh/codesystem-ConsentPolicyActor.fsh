@@ -3,7 +3,7 @@ Id: ConsentPolicyActorCS
 Description: "Expandable categorisation of consumer/requestor of a consent enforcement request  related to a specific consent component (e.g. policy or module)"
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
-* ^version = "1.1"
+* ^version = "1.2"
 * ^purpose = "Axis 'actor' of the 'Semantic Consent Code (SCC)' for optional use"
 * ^caseSensitive = true
 * ^content = #complete
