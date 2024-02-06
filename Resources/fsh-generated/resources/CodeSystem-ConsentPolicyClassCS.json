@@ -410,6 +410,36 @@
           "value": "metadata regarding biosamples such as storage and processing"
         }
       ]
+    },
+    {
+      "code": "PIDAT",
+      "display": "PIDAT",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Rentenversicherungsdaten"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "PIDAT"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "pension insurance data"
+        }
+      ]
     }
   ],
   "experimental": false,
@@ -428,8 +458,8 @@
     }
   ],
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "version": "1.1",
+  "version": "1.2",
   "purpose": "First axis 'Class' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.class",
   "caseSensitive": true,
-  "count": 14
+  "count": 15
 }

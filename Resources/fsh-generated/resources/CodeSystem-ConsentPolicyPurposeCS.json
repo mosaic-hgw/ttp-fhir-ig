@@ -846,6 +846,156 @@
           "value": "in a scientific context"
         }
       ]
+    },
+    {
+      "code": "highly_specific",
+      "display": "highly_specific",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in einer relevanten und hochspezifischen Weise"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "hochspezifisch"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in a relevant highly specific way"
+        }
+      ]
+    },
+    {
+      "code": "legally_based_registry",
+      "display": "legally_based_registry",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "im Rahmen eines Registers auf gesetzlicher Grundlage"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "gesetzliches_register"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "within the framework of a register on a legal basis"
+        }
+      ]
+    },
+    {
+      "code": "laboratory",
+      "display": "laboratory",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in / aus einem Labor"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "Labor"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in a / of a laboratory"
+        }
+      ]
+    },
+    {
+      "code": "genetic",
+      "display": "genetic",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "genetisch"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "genetisch"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "genetic"
+        }
+      ]
+    },
+    {
+      "code": "authority",
+      "display": "authority",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in einer /von einer / durch eine Behörde"
+        },
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "behörde"
+        },
+        {
+          "language": "en-UK",
+          "use": {
+            "code": "900000000000003001",
+            "system": "http://snomed.info/sct"
+          },
+          "value": "in / from / by an authority"
+        }
+      ]
     }
   ],
   "experimental": false,
@@ -864,8 +1014,8 @@
     }
   ],
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "version": "1.1",
+  "version": "1.2",
   "purpose": "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose",
   "caseSensitive": true,
-  "count": 28
+  "count": 33
 }
