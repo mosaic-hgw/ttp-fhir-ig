@@ -195,45 +195,6 @@ Id: PolicyVS
 * ^expansion.contains[=].code = #Information_Arzt_Studienteilnahme
 * ^expansion.contains[=].display = "Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie"
 * ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_retro_uebertragen
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv übertragen "
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_retro_speichern_verarbeiten
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv speichern_verarbeiten in der verantwortlichen Stelle"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_retro_wissenschaftlich_nutzen
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre retrospektiv wissenschaftlich nutzen "
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_pro_uebertragen
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre prospektiv übertragen "
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_pro_speichern_verarbeiten
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre prospektiv speichern verarbeiten in der verantwortlichen Stelle"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #KKDAT_5J_pro_wissenschaftlich_nutzen
-* ^expansion.contains[=].display = "Krankenkassendaten (KKDAT) für 5 Jahre prospektiv wissenschaftlich nutzen "
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Rekontaktierung_Abfrage_Gesundheitszustand
-* ^expansion.contains[=].display = "Rekontaktierung des Teilnehmers zur Abfrage des Gesundheitszustandes"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Rekontaktierung_Verknuepfung_Datenbanken
-* ^expansion.contains[=].display = "Rekontaktierung zur Verknüpfung von PatDat mit Info anderer Dbs "
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Rekontaktierung_weitere_Studien
-* ^expansion.contains[=].display = "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Rekontaktierung_Zufallsbefund
-* ^expansion.contains[=].display = "Rekontaktierung des Teilnehmers zur Mitteilung von Zufallsbefunden"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Rekontaktierung_weitere_Erhebung
-* ^expansion.contains[=].display = "Rekontaktierung bezüglich Erhebung zusätzlicher Daten"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Information_Hausarzt_Studienteilnahme
-* ^expansion.contains[=].display = "Information des Hausarztes über die Teilnahme des Patienten an der Studie"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
-* ^expansion.contains[=].code = #Information_Arzt_Studienteilnahme
-* ^expansion.contains[=].display = "Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie"
-* ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
 * ^expansion.contains[=].code = #MDAT_retro_speichern_verarbeiten
 * ^expansion.contains[=].display = "Speicherung und retrospektive Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"
 * ^expansion.contains[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
