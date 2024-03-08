@@ -12,7 +12,7 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
     PolicyVersionFormat named policyVersionFormat 0..1 MS and
     ModuleVersionFormat named moduleVersionFormat 0..1 MS and
     TemplateVersionFormat named templateVersionFormat 0..1 MS and
-    Property named property 0..* MS and
+    ConfigurationProperties named configurationProperties 0..1 MS and
     ExternalProperty named externalProperty 0..* MS and
     ExpirationProperty named expirationProperty 0..* MS
 * extension[logo] ^label = "Logo"
@@ -27,9 +27,8 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 * extension[moduleVersionFormat] ^definition = "Versionierungsformat für Module einer Consent Domain"
 * extension[templateVersionFormat] ^short = "Versionierungsformat für Templates einer Consent Domain"
 * extension[templateVersionFormat] ^definition = "Versionierungsformat für Templates einer Consent Domain"
-* extension[property] ^label = "properties"
-* extension[property] ^short = "properties"
-* extension[property] ^definition = "Liste frei konfigurierbarer Properties nach dem KeyValuePrinzip zur Auswertung durch den gICS"
+* extension[configurationProperties] ^short = "Konfigurationsparameter im XML-Format"
+* extension[configurationProperties] ^definition = "Konfigurationsparameter im XML-Format"
 * extension[externalProperty] ^label = "externalProperties"
 * extension[externalProperty] ^short = "externalProperties"
 * extension[externalProperty] ^definition = "Liste frei konfigurierbarer external Properties nach dem KeyValuePrinzip zur Auswertung durch externe Anwendersysteme"
@@ -67,8 +66,6 @@ Usage: #example
 * extension[policyVersionFormat].valueString = "major.minor"
 * extension[moduleVersionFormat].valueString = "major.minor"
 * extension[templateVersionFormat].valueString = "major.minor.char"
-* extension[property][0].extension[key].valueString = "REVOKE_IS_PERMANENT"
-* extension[property][=].extension[value].valueString = "true"
 * extension[externalProperty][0].extension[key].valueString = "containsHtml"
 * extension[externalProperty][=].extension[value].valueString = "true"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/"
@@ -90,17 +87,6 @@ Usage: #example
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/patId"
 * extension[contextIdentifier][+].extension[resourceType].valueCoding = $resource-types#Patient
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/studyPSN"
-* extension[property][0].extension[key].valueString = "TAKE_HIGHEST_VERSION_INSTEAD_OF_NEWEST"
-* extension[property][=].extension[value].valueString = "false"
-* extension[property][+].extension[key].valueString = "REVOKE_IS_PERMANENT"
-* extension[property][=].extension[value].valueString = "false"
-* extension[property][+].extension[key].valueString = "SCANS_SIZE_LIMIT"
-* extension[property][=].extension[value].valueString = "15728640"
-* extension[property][+].extension[key].valueString = "SCANS_ARE_NOT_MANDATORY_FOR_ACCEPTED_CONSENTS"
-* extension[property][=].extension[value].valueString = "true"
-* extension[property][+].extension[key].valueString = "TAKE_MOST_SPECIFIC_PERIOD_OF_VALIDITY_INSTEAD_OF_SHORTEST"
-* extension[property][=].extension[value].valueString = "false"
-* extension[property][=].url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/"
 * identifier.value = "MII"
 * title = "MII"

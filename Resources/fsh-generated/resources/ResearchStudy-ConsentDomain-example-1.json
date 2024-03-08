@@ -61,19 +61,6 @@
       "extension": [
         {
           "url": "key",
-          "valueString": "REVOKE_IS_PERMANENT"
-        },
-        {
-          "url": "value",
-          "valueString": "true"
-        }
-      ],
-      "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property"
-    },
-    {
-      "extension": [
-        {
-          "url": "key",
           "valueString": "containsHtml"
         },
         {

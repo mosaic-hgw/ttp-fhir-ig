@@ -127,19 +127,18 @@
         "mustSupport": true
       },
       {
-        "id": "ResearchStudy.extension:property",
+        "id": "ResearchStudy.extension:configurationProperties",
         "path": "ResearchStudy.extension",
-        "sliceName": "property",
-        "label": "properties",
-        "short": "properties",
-        "definition": "Liste frei konfigurierbarer Properties nach dem KeyValuePrinzip zur Auswertung durch den gICS",
+        "sliceName": "configurationProperties",
+        "short": "Konfigurationsparameter im XML-Format",
+        "definition": "Konfigurationsparameter im XML-Format",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property"
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties"
             ]
           }
         ],
