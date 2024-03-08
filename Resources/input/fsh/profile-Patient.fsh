@@ -50,7 +50,21 @@ Description: "Patienten-Identität (Variante/Schreibweise) einer realen Person (
 * name.prefix.extension[academic].value[x] MS
 * name.suffix MS
 * name.period ..0
-* telecom ..0
+* telecom MS
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* telecom contains
+    email 0..* MS and
+    telefon 0..* MS
+* telecom[email] MS
+  * ^patternContactPoint.system = #email
+  * system 1..1 MS
+  * value 1..1 MS
+* telecom[telefon] MS
+  * ^patternContactPoint.system = #phone
+  * system 1..1 MS
+  * value 1..1 MS
 * gender MS
 * birthDate MS
 * deceased[x] ..0
@@ -121,6 +135,8 @@ Usage: #example
 * name
   * family = "Mustermann"
   * given = "Manfred"
+* telecom[email].value = "manfred.mustermann@example.org"
+* telecom[telefon].value = "012345/5555567"
 * gender = #male
 * birthDate = "1953-12-11"
 * address
