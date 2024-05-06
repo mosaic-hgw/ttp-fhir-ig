@@ -24,7 +24,21 @@ Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch 
 * name.prefix.extension[academic].value[x] = #AC (exactly)
 * name.prefix.extension[academic].value[x] MS
 * name.suffix MS
-* telecom ..0
+* telecom MS
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* telecom contains
+    email 0..* MS and
+    telefon 0..* MS
+* telecom[email] MS
+  * system = #email
+  * system 1..1 MS
+  * value 1..1 MS
+* telecom[telefon] MS
+  * system = #phone
+  * system 1..1 MS
+  * value 1..1 MS
 * gender MS
 * birthDate MS
 * address MS

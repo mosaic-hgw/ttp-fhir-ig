@@ -23,13 +23,6 @@
   "description": "Key Value Expiration Property Element zur Definition von Gültigkeitszeiträumen",
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

@@ -22,28 +22,6 @@
   "description": "Abbildung aller relevanten Information zur Verwaltung wiederverwendbarer Einwilligungspolicies mit gICS",
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "objimpl",
-      "uri": "http://hl7.org/fhir/object-implementation",
-      "name": "Object Implementation Information"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "ActivityDefinition",

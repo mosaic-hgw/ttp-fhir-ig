@@ -23,23 +23,6 @@
   "description": "Allgemeines Personen-Profil. Repräsentiert die reale Person (=> MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil).\nDie Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level.",
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Person",
@@ -145,7 +128,58 @@
       {
         "id": "Person.telecom",
         "path": "Person.telecom",
-        "max": "0"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:email",
+        "path": "Person.telecom",
+        "sliceName": "email",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:email.system",
+        "path": "Person.telecom.system",
+        "min": 1,
+        "patternCode": "email",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:email.value",
+        "path": "Person.telecom.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:telefon",
+        "path": "Person.telecom",
+        "sliceName": "telefon",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:telefon.system",
+        "path": "Person.telecom.system",
+        "min": 1,
+        "patternCode": "phone",
+        "mustSupport": true
+      },
+      {
+        "id": "Person.telecom:telefon.value",
+        "path": "Person.telecom.value",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Person.gender",

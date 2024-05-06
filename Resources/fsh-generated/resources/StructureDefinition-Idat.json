@@ -23,33 +23,6 @@
   "description": "Patienten-Profil zur Übermittlung von angeforderten IDAT an die fTTP für den Clearing-Prozess.",
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "cda",
-      "uri": "http://hl7.org/v3/cda",
-      "name": "CDA (R2)"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "loinc",
-      "uri": "http://loinc.org",
-      "name": "LOINC code for the element"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Patient",

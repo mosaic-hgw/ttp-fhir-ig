@@ -58,11 +58,11 @@ Description: "Patienten-Identität (Variante/Schreibweise) einer realen Person (
     email 0..* MS and
     telefon 0..* MS
 * telecom[email] MS
-  * ^patternContactPoint.system = #email
+  * system = #email
   * system 1..1 MS
   * value 1..1 MS
 * telecom[telefon] MS
-  * ^patternContactPoint.system = #phone
+  * system = #phone
   * system 1..1 MS
   * value 1..1 MS
 * gender MS
