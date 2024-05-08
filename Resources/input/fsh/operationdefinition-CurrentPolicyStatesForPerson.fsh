@@ -131,7 +131,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -155,7 +156,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -179,7 +181,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -204,7 +207,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -228,7 +232,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -252,7 +257,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -277,7 +283,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -302,7 +309,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -326,7 +334,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -351,7 +360,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -375,7 +385,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -400,7 +411,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -425,7 +437,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -450,7 +463,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -475,7 +489,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -499,7 +514,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -523,7 +539,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -548,7 +565,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -573,7 +591,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -597,7 +616,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -621,7 +641,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -646,7 +667,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -671,7 +693,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -695,7 +718,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -719,7 +743,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -744,7 +769,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -768,7 +794,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"

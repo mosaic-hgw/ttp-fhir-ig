@@ -86,6 +86,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -107,6 +108,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -128,6 +130,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -149,6 +152,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -169,6 +173,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -190,6 +195,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -210,6 +216,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -231,6 +238,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -252,6 +260,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -272,6 +281,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -292,6 +302,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -313,6 +324,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -333,6 +345,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)

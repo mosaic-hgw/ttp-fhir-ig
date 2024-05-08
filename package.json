@@ -6,7 +6,7 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.einwilligungsmanagement": "1.0.1",
+    "de.einwilligungsmanagement": "1.1.0-alpha.1",
     "de.medizininformatikinitiative.kerndatensatz.consent": "1.0.3"
   }
 }

@@ -1,6 +1,7 @@
 Alias: $cs0203 = http://hl7.org/fhir/v2/0203/
 Alias: $csIso3166 = urn:iso:std:iso:3166
 Alias: $csSct = http://snomed.info/sct
+Alias: $csResultType = http://fhir.de/ConsentManagement/CodeSystem/ResultType
 Alias: $extPatientBirthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $extPatientNationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $prEinwConsent = http://fhir.de/ConsentManagement/StructureDefinition/Consent
@@ -12,6 +13,7 @@ Alias: $prEinwTemplateModule = http://fhir.de/ConsentManagement/StructureDefinit
 Alias: $resPatient = http://hl7.org/fhir/StructureDefinition/Patient
 Alias: $resPerson = http://hl7.org/fhir/StructureDefinition/Person
 Alias: $vsPolicy = https://ths-greifswald.de/fhir/ValueSet/gics/Policy
+Alias: $vsResultType = http://fhir.de/ConsentManagement/ValueSet/ResultType
 Alias: $QuestionnaireComponents = http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type

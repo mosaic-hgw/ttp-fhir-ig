@@ -93,8 +93,8 @@
     {
       "coding": [
         {
-          "code": "aggregated",
-          "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentAggregationLevel"
+          "code": "consent-status",
+          "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
         }
       ]
     }

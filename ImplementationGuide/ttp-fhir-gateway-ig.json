@@ -371,11 +371,6 @@
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentAggregationLevel.md",
-                  "title": "ConsentAggregationLevel",
-                  "generation": "markdown"
-                },
-                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-SaveAction.md",
                   "title": "SaveAction",
                   "generation": "markdown"
@@ -435,11 +430,6 @@
                 {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentPolicyPurpose.md",
                   "title": "ConsentPolicyPurpose",
-                  "generation": "markdown"
-                },
-                {
-                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentCategoryAggregation.md",
-                  "title": "ConsentCategoryAggregation",
                   "generation": "markdown"
                 },
                 {

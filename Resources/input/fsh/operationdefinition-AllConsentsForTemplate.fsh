@@ -114,6 +114,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(6a49f9c8-9986-4bbf-9bb6-17a083b85515) "Pseudonym dic_1H51T"
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"

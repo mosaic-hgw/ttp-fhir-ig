@@ -200,6 +200,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category = $loinc#57016-8
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c) "Pseudonym studypsn1"
 * dateTime = "2022-12-21T00:00:00+01:00"
 * organization.display = "MII"

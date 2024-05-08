@@ -68,8 +68,8 @@
     "fshName": "Consent-Bundle-example-1",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 240,
-    "endLine": 251
+    "startLine": 234,
+    "endLine": 245
   },
   {
     "outputFile": "Bundle-CurrentPolicyStatesForPerson-response-example-1.json",
@@ -78,14 +78,6 @@
     "fshFile": "operationdefinition-CurrentPolicyStatesForPerson.fsh",
     "startLine": 62,
     "endLine": 119
-  },
-  {
-    "outputFile": "CodeSystem-ConsentAggregationLevelCS.json",
-    "fshName": "ConsentAggregationLevel",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystem-ConsentAggregationLevel.fsh",
-    "startLine": 1,
-    "endLine": 12
   },
   {
     "outputFile": "CodeSystem-ConsentComponentTypeCS.json",
@@ -188,24 +180,24 @@
     "fshName": "Consent-example-1",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 34,
-    "endLine": 54
+    "startLine": 28,
+    "endLine": 48
   },
   {
     "outputFile": "Consent-Consent-example-2.json",
     "fshName": "Consent-example-2",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 57,
-    "endLine": 137
+    "startLine": 51,
+    "endLine": 131
   },
   {
     "outputFile": "Consent-Consent-example-3.json",
     "fshName": "Consent-example-3",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 140,
-    "endLine": 237
+    "startLine": 134,
+    "endLine": 231
   },
   {
     "outputFile": "OperationDefinition-AddConsent.json",
@@ -957,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Consent.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-ConsentDomain.json",
@@ -1166,14 +1158,6 @@
     "fshFile": "extension-VersionLabel.fsh",
     "startLine": 1,
     "endLine": 14
-  },
-  {
-    "outputFile": "ValueSet-ConsentAggregationLevelVS.json",
-    "fshName": "ConsentAggregationLevel",
-    "fshType": "ValueSet",
-    "fshFile": "valueset-ConsentAggregationLevel.fsh",
-    "startLine": 1,
-    "endLine": 6
   },
   {
     "outputFile": "ValueSet-ConsentComponentTypeVS.json",

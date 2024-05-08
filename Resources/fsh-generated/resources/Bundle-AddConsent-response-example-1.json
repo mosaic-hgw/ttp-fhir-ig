@@ -164,6 +164,14 @@
                 "system": "http://loinc.org"
               }
             ]
+          },
+          {
+            "coding": [
+              {
+                "code": "consent-status",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
           }
         ],
         "patient": {

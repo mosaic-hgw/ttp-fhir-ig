@@ -51,9 +51,9 @@ findet alle Consent-Ressourcen, die einer beliebigen Version des MII Broad Conse
 
 Beispiel 2:
 ```
-GET [base]/Consent?domain:identifier=MIRACUM&category=https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentCategoryAggregation|aggregated
+GET [base]/Consent?domain:identifier=MIRACUM&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
 ```
-findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) aggregierten Typs.
+findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs.
 
 ### Provision-Code
 Der Suchparameter **mii-provision-provision-code**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
