@@ -68,8 +68,8 @@
     "fshName": "Consent-Bundle-example-1",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 234,
-    "endLine": 245
+    "startLine": 225,
+    "endLine": 236
   },
   {
     "outputFile": "Bundle-CurrentPolicyStatesForPerson-response-example-1.json",
@@ -180,24 +180,24 @@
     "fshName": "Consent-example-1",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 28,
-    "endLine": 48
+    "startLine": 19,
+    "endLine": 39
   },
   {
     "outputFile": "Consent-Consent-example-2.json",
     "fshName": "Consent-example-2",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 51,
-    "endLine": 131
+    "startLine": 42,
+    "endLine": 122
   },
   {
     "outputFile": "Consent-Consent-example-3.json",
     "fshName": "Consent-example-3",
     "fshType": "Instance",
     "fshFile": "profile-Consent.fsh",
-    "startLine": 134,
-    "endLine": 231
+    "startLine": 125,
+    "endLine": 222
   },
   {
     "outputFile": "OperationDefinition-AddConsent.json",
@@ -949,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Consent.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-ConsentDomain.json",
