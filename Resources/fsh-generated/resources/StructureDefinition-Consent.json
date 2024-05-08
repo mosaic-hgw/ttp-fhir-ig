@@ -78,6 +78,39 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Consent.category:consentCategory",
+        "path": "Consent.category",
+        "sliceName": "consentCategory"
+      },
+      {
+        "id": "Consent.category:consentCategory.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
+      },
+      {
+        "id": "Consent.category:resultType",
+        "path": "Consent.category",
+        "sliceName": "resultType"
+      },
+      {
+        "id": "Consent.category:resultType.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
       }
     ]
   }

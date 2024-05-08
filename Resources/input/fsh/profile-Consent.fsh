@@ -14,6 +14,17 @@ Description: "Einwilligungsinformationen"
 * extension[externalProperty].extension 2..
 * meta.extension contains
     Created named created 0..1 MS
+* category ^slicing.discriminator.type = #type
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category[consentCategory]
+  * coding 1..1 MS
+    * system 1..1 MS
+    * code 1..1 MS
+* category[resultType]
+  * coding 1..1 MS
+    * system 1..1 MS
+    * code 1..1 MS
 
 
 Instance: Consent-example-1
