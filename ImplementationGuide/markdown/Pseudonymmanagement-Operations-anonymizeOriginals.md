@@ -1,5 +1,5 @@
 #### anonymizeOriginals
-**Unterstützt ab TTP-FHIR Gateway Version 2024.1.0**
+**Konzeptarbeit. Noch nicht implementiert**
 
 Anonymisiert eine gegebene Liste von 1-n Originalwerten innerhalb der angegebenen Domäne. Dabei wird der Bezug von Originalwert und Pseudonym dauerhaft únd irreversibel gelöscht.
 

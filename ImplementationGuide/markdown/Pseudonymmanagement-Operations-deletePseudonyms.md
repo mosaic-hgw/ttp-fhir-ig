@@ -1,5 +1,5 @@
 #### deletePseudonyms
-**Unterstützt ab TTP-FHIR Gateway Version 2024.1.0**
+**Konzeptarbeit. Noch nicht implementiert**
 
 Löscht eine gegebene Liste von 1-n Einträgen (identifiziert durch den Originalwert) in der angegebenen Domäne, sofern die Konfiguration dieser Domäne dies erlaubt.
 
