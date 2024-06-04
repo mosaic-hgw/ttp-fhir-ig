@@ -27,7 +27,7 @@ Keycloak and Docker: R. Schuldt, FMM. Moser
 #### License ####
 
 **License:** AGPLv3, https://www.gnu.org/licenses/agpl-3.0.en.html<br>
-**Copyright:** 2021 - 2023 University Medicine Greifswald<br>
+**Copyright:** 2021 - 2024 University Medicine Greifswald<br>
 **Contact:** https://www.ths-greifswald.de/kontakt/
 
 #### Publications ####
