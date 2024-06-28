@@ -1,0 +1,42 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-AddConsentOptOut-request-example-1",
+  "parameter": [
+    {
+      "name": "patient",
+      "resource": {
+        "id": "1",
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ANON",
+                  "system": "http://hl7.org/fhir/v2/0203/",
+                  "display": "Anonymous identifier"
+                }
+              ]
+            },
+            "value": "studypsn1",
+            "system": "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-12-20T10:10:54.889+01:00",
+          "profile": [
+            "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+          ]
+        }
+      }
+    },
+    {
+      "name": "domain",
+      "valueString": "MII"
+    },
+    {
+      "name": "questionnaire",
+      "valueCanonical": "https://ths-greifswald.de/fhir/gics/QuestionnaireComposed/MII/Patienteneinwilligung+MII|1.6.f"
+    }
+  ]
+}

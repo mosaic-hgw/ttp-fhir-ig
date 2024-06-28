@@ -1,0 +1,442 @@
+{
+  "resourceType": "Bundle",
+  "id": "AddConsentOptOut-response-example-1",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Consent",
+        "id": "6d25073b-a7d7-44a3-bdf0-57449df2f46e",
+        "meta": {
+          "lastUpdated": "2023-02-28T16:59:47.654+01:00",
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference",
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/627163a2-ed92-41c7-91e3-0b134127b47b"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "57016-8",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "consent-status",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/71e9be08-86ef-4403-9770-fbbfcdd3589c",
+          "display": "Pseudonym studypsn1"
+        },
+        "dateTime": "2022-12-21T00:00:00+01:00",
+        "organization": [
+          {
+            "display": "MII"
+          }
+        ],
+        "sourceReference": {
+          "reference": "QuestionnaireResponse/bd56b7e3-336c-49a6-aa31-1987b02f26cf"
+        },
+        "policyRule": {
+          "text": "Patienteneinwilligung MII|1.6.d"
+        },
+        "provision": {
+          "type": "deny",
+          "period": {
+            "start": "2022-12-21T00:00:00+01:00",
+            "end": "2052-12-21T00:00:00+01:00"
+          },
+          "provision": [
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_bereitstellen_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Herausgabe identifizierender Daten (IDAT) an unabhängige Treuhandstelle zur weiteren Verarbeitung"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.5",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "IDAT_bereitstellen_EU_DSGVO_NIVEAU"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_erheben",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Erfassung neuer identifizierender Daten (IDAT)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.2",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "IDAT_erheben"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_speichern_verarbeiten",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.3",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "IDAT_speichern_verarbeiten"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_zusammenfuehren_Dritte",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Zusammenführung identifizierender Daten (IDAT) über die unabhängige Treuhandstelle mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.4",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "IDAT_zusammenfuehren_Dritte"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2027-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_erheben",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Erfassung medizinischer Daten (MDAT)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.6",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT_erheben"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_speichern_verarbeiten",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.7",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT_speichern_verarbeiten"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_zusammenfuehren_Dritte",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.9",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "MDAT_zusammenfuehren_Dritte"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_Ergebnisse_erheblicher_Bedeutung",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Rekontaktierung des Betroffenen bei Ergebnissen von erheblicher Bedeutung"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.37",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "Rekontaktierung_Ergebnisse_erheblicher_Bedeutung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_Verknuepfung_Datenbanken",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung zur Verknüpfung von Patientendaten mit Daten anderer Datenbanken"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.27",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "Rekontaktierung_Verknuepfung_Datenbanken"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_weitere_Erhebung",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung bezüglich Erhebung zusätzlicher Daten"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.28",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "Rekontaktierung_weitere_Erhebung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_weitere_Studien",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.29",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "Rekontaktierung_weitere_Studien"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2022-12-21T00:00:00+01:00",
+                "end": "2052-12-21T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_Zusatzbefund",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.31",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+                      "display": "Rekontaktierung_Zusatzbefund"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

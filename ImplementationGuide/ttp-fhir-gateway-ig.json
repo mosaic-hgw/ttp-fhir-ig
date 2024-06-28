@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "TtpFhirGatewayIg",
   "url": "/guide/ttp-fhir-gateway-ig?version=current",
-  "version": "2024.1.0.DEVEL",
+  "version": "2024.2.0.DEVEL",
   "name": "IG TTP-FHIR Gateway",
   "status": "draft",
   "description": "Implementation Guide für die Verwendung der angepassten und erweiterten Profile / Extensions im Kontext von E-PIX, gPAS und gICS",
@@ -259,6 +259,11 @@
                 {
                   "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-Operations-addConsent.md",
                   "title": "addConsent",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Einwilligungsmanagement-Operations-addConsentOptOut.md",
+                  "title": "addConsentOptOut",
                   "generation": "markdown"
                 },
                 {

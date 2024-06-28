@@ -32,6 +32,14 @@
     "endLine": 159
   },
   {
+    "outputFile": "Bundle-AddConsentOptOut-response-example-1.json",
+    "fshName": "AddConsentOptOut-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddConsentOptOut.fsh",
+    "startLine": 67,
+    "endLine": 71
+  },
+  {
     "outputFile": "Bundle-AllConsentsForDomain-response-example-1.json",
     "fshName": "AllConsentsForDomain-response-example-1",
     "fshType": "Instance",
@@ -214,6 +222,14 @@
     "fshFile": "operationdefinition-AddConsent.fsh",
     "startLine": 1,
     "endLine": 59
+  },
+  {
+    "outputFile": "OperationDefinition-AddConsentOptOut.json",
+    "fshName": "AddConsentOptOut",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddConsentOptOut.fsh",
+    "startLine": 1,
+    "endLine": 41
   },
   {
     "outputFile": "OperationDefinition-AddPatient.json",
@@ -542,6 +558,14 @@
     "fshFile": "operationdefinition-AddConsent.fsh",
     "startLine": 62,
     "endLine": 147
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddConsentOptOut-request-example-1.json",
+    "fshName": "Parameters-AddConsentOptOut-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddConsentOptOut.fsh",
+    "startLine": 44,
+    "endLine": 64
   },
   {
     "outputFile": "Parameters-Parameters-AddPatient-request-example-1.json",
