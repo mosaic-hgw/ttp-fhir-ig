@@ -246,6 +246,19 @@ Usage: #example
 * entry[+].fullUrl = "http://server:8080/ttp-fhir/fhir/gics/Consent/fab23c8e-6a94-49da-acfd-4df51098ca22"
 * entry[=].resource = fab23c8e-6a94-49da-acfd-4df51098ca22
 
+Instance: Consent-Bundle-example-2
+InstanceOf: Bundle
+Usage: #example
+* meta.lastUpdated = "2023-04-28T11:01:33.912+02:00"
+* type = #searchset
+* total = 1
+* link.relation = "self"
+* link.url = "http://server:8080/ttp-fhir/fhir/gics/Consent?provisionCode=urn%3Aoid%3A2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.8"
+* entry[0].fullUrl = "http://server:8080/ttp-fhir/fhir/gics/Consent/23db88b1-6e47-4907-8d9f-3fb4b2e97630"
+* entry[=].resource = 23db88b1-6e47-4907-8d9f-3fb4b2e97630
+* entry[+].fullUrl = "http://server:8080/ttp-fhir/fhir/gics/Provenance/40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419"
+* entry[=].resource = 40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419
+
 Instance: 23db88b1-6e47-4907-8d9f-3fb4b2e97630
 InstanceOf: Consent
 Usage: #inline

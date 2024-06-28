@@ -72,6 +72,14 @@
     "endLine": 247
   },
   {
+    "outputFile": "Bundle-Consent-Bundle-example-2.json",
+    "fshName": "Consent-Bundle-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 249,
+    "endLine": 260
+  },
+  {
     "outputFile": "Bundle-CurrentPolicyStatesForPerson-response-example-1.json",
     "fshName": "CurrentPolicyStatesForPerson-response-example-1",
     "fshType": "Instance",
@@ -814,6 +822,14 @@
     "fshFile": "profile-Person.fsh",
     "startLine": 67,
     "endLine": 78
+  },
+  {
+    "outputFile": "Provenance-40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419.json",
+    "fshName": "40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419",
+    "fshType": "Instance",
+    "fshFile": "profile-Provenance.fsh",
+    "startLine": 34,
+    "endLine": 53
   },
   {
     "outputFile": "Provenance-Provenance-example-1.json",

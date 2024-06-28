@@ -114,6 +114,17 @@ Beispiel:
 GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
 ```
 
+### Inkludieren der Provenance-Information
+Das Inkludieren der Herkunftsinformationen zu einer Consent-Ressource ist mittels reverse Include der entsprechenden Provenance-Ressource möglich.
+Die in diesem Kontext verwendeten UUIDs der Ressourcen sind volatil, d.h. es wird nicht garantiert, dass die entsprechenden Ressourcen im Anschluss an die Response unter Verwendung der betreffenden UUID abrufbar sind.
+Vgl. auch entsprechendes Response-Beispiel unten.
+
+Beispiel:
+```
+GET [base]/Consent?domain:identifier=MII&mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791&_revinclude=Provenance:target
+```
+
+
 ### Komplexere Beispiele
 
 Hinweis: die Pipe '|' wird HTML-codiert als '%7C' verwendet.
@@ -138,6 +149,10 @@ Je verwendetem Komparator unterscheidet sich das erwartete Suchergebnis. Details
 Searchset-Bundle mit FHIR Consent-Ressource je gültiger Policy **gemäß MII KDS Consent-Profil** und Patientenbezug (SignerIdType=Pseudonym). In diesem Fall n=2.
 
 {{xml:Resources/fsh-generated/resources/Bundle-Consent-Bundle-example-1.json}}
+
+#### Beispiel Response (Reverse Include der Provenance)
+
+{{xml:Resources/fsh-generated/resources/Bundle-Consent-Bundle-example-2.json}}
 
 ### Beispiel-Ressourcen FHIR Consent (angepasstes gICS-Profil)
 
