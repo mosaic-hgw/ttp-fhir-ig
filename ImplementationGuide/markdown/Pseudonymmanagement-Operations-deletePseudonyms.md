@@ -24,6 +24,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 400: Fehlende oder fehlerhafte Parameter.
 * 401: Fehlende Authentifizierung oder Autorisierung.
 * 422: Fehlende oder falsche Patienten-Attribute.
+* 500: Löschen von Pseudonymen in der Domain (target) nicht gestattet.
 
 
 ##### **Beispiel**
