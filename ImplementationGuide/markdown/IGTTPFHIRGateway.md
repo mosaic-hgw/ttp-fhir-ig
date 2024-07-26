@@ -2,7 +2,7 @@
 
 # TTP-FHIR Gateway
 
-Stand 31.05.2024
+Stand 26.07.2024
 
 ## Inhalt
 {{index:current}}
