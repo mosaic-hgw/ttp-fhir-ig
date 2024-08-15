@@ -1,6 +1,6 @@
 #### {{page-title}}
 
-**Unterstützt ab TTP-FHIR Gateway Version 2024.2.0**
+**Unterstützt ab TTP-FHIR Gateway Version 2024.3.0**
 
 Legt eine neue Einwilligung im gICS für ein spezifisches Forschungsvorhaben (Domain) mit Opt-Out-Kontext auf Basis der übermittelten Informationen gemäß den Profil-Vorgaben der [HL7 Deutschland Arbeitsgruppe "Einwilligungsmanagement"](https://ig.fhir.de/einwilligungsmanagement/stable/) an:
 - [Personenbezug](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html)
@@ -21,6 +21,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 400: Fehlende oder fehlerhafte Parameter.
 * 401: Fehlende Authentifizierung oder Autorisierung.
 * 422: Fehlende oder falsche Patienten-Attribute.
+* 404: Unbekannte Angaben in den Parametern   
 
 ##### **Beispiel**
 Beispielhafter Request-Body:
