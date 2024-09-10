@@ -5,6 +5,7 @@
   "name": "IdMatchingType",
   "id": "IdMatchingTypeCS",
   "description": "ID matching types used in consent management",
+  "version": "2023.2.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/IdMatchingType",
   "concept": [
     {

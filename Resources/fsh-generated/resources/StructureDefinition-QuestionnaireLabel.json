@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "QuestionnaireLabel",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel",
+  "version": "2023.2.0-DEVEL",
   "name": "QuestionnaireLabel",
   "title": "Questionnaire Label",
   "status": "draft",

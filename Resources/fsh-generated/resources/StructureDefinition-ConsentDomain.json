@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentDomain",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain",
+  "version": "2023.2.0-DEVEL",
   "name": "ConsentDomain",
   "title": "Consent Domain",
   "status": "draft",

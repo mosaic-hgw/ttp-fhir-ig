@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SignatureLocation",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SignatureLocation",
+  "version": "2023.2.0-DEVEL",
   "name": "SignatureLocation",
   "title": "SignatureLocation",
   "status": "draft",

@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConfigurationProperties",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties",
+  "version": "2023.2.0-DEVEL",
   "name": "ConfigurationProperties",
   "title": "ConfigurationProperties",
   "status": "draft",

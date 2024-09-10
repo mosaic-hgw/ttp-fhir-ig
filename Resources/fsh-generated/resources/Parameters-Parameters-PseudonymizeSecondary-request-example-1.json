@@ -1,0 +1,23 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-PseudonymizeSecondary-request-example-1",
+  "parameter": [
+    {
+      "name": "original",
+      "part": [
+        {
+          "name": "target",
+          "valueString": "MIRACUM"
+        },
+        {
+          "name": "value",
+          "valueString": "1001000000022"
+        }
+      ]
+    },
+    {
+      "name": "count",
+      "valueString": "2"
+    }
+  ]
+}

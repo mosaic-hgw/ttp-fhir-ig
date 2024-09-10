@@ -5,6 +5,7 @@
   "name": "DesignationUse",
   "id": "DesignationUseCS",
   "description": "Use codes (contexts) for terminology designations",
+  "version": "2023.2.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
   "concept": [
     {

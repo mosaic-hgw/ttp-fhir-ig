@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "SupportedVersion",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion",
+  "version": "2023.2.0-DEVEL",
   "name": "SupportedVersion",
   "title": "SupportedVersion",
   "status": "draft",

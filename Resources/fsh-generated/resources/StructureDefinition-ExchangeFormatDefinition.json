@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ExchangeFormatDefinition",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition",
+  "version": "2023.2.0-DEVEL",
   "name": "ExchangeFormatDefinition",
   "title": "ExchangeFormatDefinition",
   "status": "draft",

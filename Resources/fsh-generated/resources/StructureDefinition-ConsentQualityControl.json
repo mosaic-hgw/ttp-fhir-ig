@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentQualityControl",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl",
+  "version": "2023.2.0-DEVEL",
   "name": "ConsentQualityControl",
   "title": "Consent Quality Control",
   "status": "draft",

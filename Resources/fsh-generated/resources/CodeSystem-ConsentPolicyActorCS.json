@@ -5,6 +5,7 @@
   "name": "ConsentPolicyActor",
   "id": "ConsentPolicyActorCS",
   "description": "Expandable categorisation of consumer/requestor of a consent enforcement request  related to a specific consent component (e.g. policy or module)",
+  "version": "1.2",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor",
   "concept": [
     {
@@ -122,7 +123,6 @@
     }
   ],
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "version": "1.2",
   "purpose": "Axis 'actor' of the 'Semantic Consent Code (SCC)' for optional use",
   "caseSensitive": true,
   "count": 7

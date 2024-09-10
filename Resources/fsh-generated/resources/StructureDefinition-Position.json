@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Position",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Position",
+  "version": "2023.2.0-DEVEL",
   "name": "Position",
   "title": "Position",
   "status": "draft",

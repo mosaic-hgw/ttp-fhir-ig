@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentModule",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule",
+  "version": "2023.2.0-DEVEL",
   "name": "ConsentModule",
   "title": "Consent Module",
   "status": "draft",

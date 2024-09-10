@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Provenance",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance",
+  "version": "2023.2.0-DEVEL",
   "name": "Provenance",
   "title": "Herkunftsinformationen und Signatur",
   "status": "draft",

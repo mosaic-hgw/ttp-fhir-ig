@@ -368,6 +368,14 @@
     "endLine": 75
   },
   {
+    "outputFile": "OperationDefinition-PseudonymizeSecondary.json",
+    "fshName": "PseudonymizeSecondary",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
+    "startLine": 1,
+    "endLine": 83
+  },
+  {
     "outputFile": "OperationDefinition-QueryPossibleMatches.json",
     "fshName": "QueryPossibleMatches",
     "fshType": "Instance",
@@ -702,6 +710,22 @@
     "fshFile": "operationdefinition-PseudonymizeAllowCreate.fsh",
     "startLine": 88,
     "endLine": 110
+  },
+  {
+    "outputFile": "Parameters-Parameters-PseudonymizeSecondary-request-example-1.json",
+    "fshName": "Parameters-PseudonymizeSecondary-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
+    "startLine": 86,
+    "endLine": 99
+  },
+  {
+    "outputFile": "Parameters-Parameters-PseudonymizeSecondary-response-example-1.json",
+    "fshName": "Parameters-PseudonymizeSecondary-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
+    "startLine": 102,
+    "endLine": 136
   },
   {
     "outputFile": "Parameters-Parameters-QueryPossibleMatches-request-example-1.json",

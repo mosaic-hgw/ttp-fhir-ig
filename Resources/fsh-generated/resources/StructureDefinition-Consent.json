@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Consent",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
+  "version": "2023.2.0-DEVEL",
   "name": "Consent",
   "title": "Einwilligungsinformationen",
   "status": "draft",

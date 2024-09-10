@@ -5,6 +5,7 @@
   "name": "ConsentPolicyAction",
   "id": "ConsentPolicyActionCS",
   "description": "Extensible description of the permissible (data processing-) action resulting from consented module or policy.",
+  "version": "1.2",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction",
   "concept": [
     {
@@ -444,7 +445,6 @@
     }
   ],
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "version": "1.2",
   "purpose": "Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action",
   "caseSensitive": true,
   "count": 14

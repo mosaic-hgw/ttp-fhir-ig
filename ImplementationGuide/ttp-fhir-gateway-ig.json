@@ -130,6 +130,11 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-pseudonymizeSecondary.md",
+                  "title": "pseudonymize-secondary",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-dePseudonymize.md",
                   "title": "dePseudonymize",
                   "generation": "markdown"

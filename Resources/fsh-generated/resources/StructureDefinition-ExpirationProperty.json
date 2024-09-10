@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ExpirationProperty",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty",
+  "version": "2023.2.0-DEVEL",
   "name": "ExpirationProperty",
   "title": "Expiration Property",
   "status": "draft",

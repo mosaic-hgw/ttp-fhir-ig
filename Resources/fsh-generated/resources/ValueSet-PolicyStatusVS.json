@@ -3,6 +3,7 @@
   "status": "draft",
   "name": "PolicyStatus",
   "id": "PolicyStatusVS",
+  "version": "2023.2.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus",
   "experimental": false,
   "date": "2023-09-04",

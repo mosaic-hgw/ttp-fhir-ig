@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "VersionLabel",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/VersionLabel",
+  "version": "2023.2.0-DEVEL",
   "name": "VersionLabel",
   "title": "Version Label",
   "status": "draft",

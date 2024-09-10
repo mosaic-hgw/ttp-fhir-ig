@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "CustomIdatValues",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues",
+  "version": "2023.2.0-DEVEL",
   "name": "CustomIdatValues",
   "title": "Custom IDAT Values",
   "status": "draft",

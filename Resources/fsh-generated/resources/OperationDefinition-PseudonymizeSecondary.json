@@ -1,0 +1,115 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "PseudonymizeSecondary",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymize-secondary",
+  "version": "2023.2.0-DEVEL",
+  "status": "draft",
+  "date": "2023-09-04",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "name": "PseudonymizeSecondary",
+  "title": "pseudonymize-secondary",
+  "kind": "operation",
+  "description": "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "affectsState": false,
+  "code": "pseudonymize-secondary",
+  "comment": "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert.",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "original",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Originalwerte",
+      "part": [
+        {
+          "name": "target",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen.",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "count",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Anzahl der zu erzeugenden Sekundärpseudonyme.",
+      "type": "integer"
+    },
+    {
+      "name": "target",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Pseudonymisierungskontext (Teil des Requests).",
+      "type": "string"
+    },
+    {
+      "name": "original",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Original-Identifikator (Teil des Requests).",
+      "type": "string"
+    },
+    {
+      "name": "secondarypseudonym",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "documentation": "erzeugte SekundärPersonenpseudonyme",
+      "part": [
+        {
+          "name": "target",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Pseudonymisierungskontext.",
+          "type": "Identifier"
+        },
+        {
+          "name": "original",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Original-Identifikator (in der Regel Personen-Pseudonym).",
+          "type": "Identifier"
+        },
+        {
+          "name": "value",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Sekundär-Pseudonym.",
+          "type": "Identifier"
+        }
+      ]
+    }
+  ]
+}

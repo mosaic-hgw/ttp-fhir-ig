@@ -5,6 +5,7 @@
   "name": "ConsentComponentType",
   "id": "ConsentComponentTypeCS",
   "description": "Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium",
+  "version": "2023.2.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
   "concept": [
     {

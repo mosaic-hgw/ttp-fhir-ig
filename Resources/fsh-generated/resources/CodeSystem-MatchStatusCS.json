@@ -5,6 +5,7 @@
   "name": "MatchStatus",
   "id": "MatchStatusCS",
   "description": "Possible match statuses in the context of adding patient identities.",
+  "version": "2023.2.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus",
   "concept": [
     {

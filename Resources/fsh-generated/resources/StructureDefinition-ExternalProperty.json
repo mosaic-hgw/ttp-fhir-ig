@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ExternalProperty",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty",
+  "version": "2023.2.0-DEVEL",
   "name": "ExternalProperty",
   "title": "External Property Element",
   "status": "draft",
