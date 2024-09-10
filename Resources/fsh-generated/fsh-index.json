@@ -336,6 +336,14 @@
     "endLine": 52
   },
   {
+    "outputFile": "OperationDefinition-InsertValuePseudonymPairs.json",
+    "fshName": "InsertValuePseudonymPairs",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
+    "startLine": 1,
+    "endLine": 80
+  },
+  {
     "outputFile": "OperationDefinition-IsConsented.json",
     "fshName": "IsConsented",
     "fshType": "Instance",
@@ -662,6 +670,30 @@
     "fshFile": "operationdefinition-DeletePseudonyms.fsh",
     "startLine": 72,
     "endLine": 94
+  },
+  {
+    "outputFile": "Parameters-Parameters-InsertValuePseudonymPairs-request-example-1.json",
+    "fshName": "Parameters-InsertValuePseudonymPairs-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
+    "startLine": 83,
+    "endLine": 91
+  },
+  {
+    "outputFile": "Parameters-Parameters-InsertValuePseudonymPairs-response-example-1.json",
+    "fshName": "Parameters-InsertValuePseudonymPairs-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
+    "startLine": 93,
+    "endLine": 105
+  },
+  {
+    "outputFile": "Parameters-Parameters-InsertValuePseudonymPairs-response-example-2.json",
+    "fshName": "Parameters-InsertValuePseudonymPairs-response-example-2",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
+    "startLine": 107,
+    "endLine": 117
   },
   {
     "outputFile": "Parameters-Parameters-ProvidePatientData-request-example-1.json",

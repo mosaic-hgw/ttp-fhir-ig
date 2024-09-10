@@ -131,7 +131,12 @@
                 },
                 {
                   "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-pseudonymizeSecondary.md",
-                  "title": "pseudonymize-secondary",
+                  "title": "pseudonymizeSecondary",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Pseudonymmanagement-Operations-insertValuePseudonymPairs.md",
+                  "title": "insertValuePseudonymPairs",
                   "generation": "markdown"
                 },
                 {

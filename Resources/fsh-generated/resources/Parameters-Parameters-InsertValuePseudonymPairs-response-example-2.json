@@ -1,0 +1,26 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-InsertValuePseudonymPairs-response-example-2",
+  "parameter": [
+    {
+      "name": "error",
+      "part": [
+        {
+          "name": "original",
+          "valueIdentifier": {
+            "system": "https://ths-greifswald.de/gpas",
+            "value": "10010000000XX"
+          }
+        },
+        {
+          "name": "error-code",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/issue-type",
+            "code": "not-found",
+            "display": "Not Found"
+          }
+        }
+      ]
+    }
+  ]
+}
