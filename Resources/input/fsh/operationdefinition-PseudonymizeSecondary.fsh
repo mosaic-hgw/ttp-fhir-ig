@@ -17,14 +17,14 @@ Usage: #definition
   * name = #original
   * use = #in
   * min = 1
-  * max = "1"
+  * max = "*"
   * documentation = "Originalwerte"
   * part[+]
     * name = #target
     * use = #in
     * min = 1
     * max = "1"
-    * documentation = "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen."
+    * documentation = "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance."
     * type = #string
   * part[+]
     * name = #value
@@ -33,13 +33,13 @@ Usage: #definition
     * max = "1"
     * documentation = "Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen."
     * type = #string
-* parameter[+]
-  * name = #count
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "Anzahl der zu erzeugenden Sekundärpseudonyme."
-  * type = #integer
+  * part[+]
+    * name = #count
+    * use = #in
+    * min = 1
+    * max = "1"
+    * documentation = "Anzahl der zu erzeugenden Sekundärpseudonyme."
+    * type = #integer
 * parameter[+]
   * name = #target
   * use = #out
@@ -94,9 +94,9 @@ Usage: #example
   * part[+]
     * name = "value"
     * valueString = "1001000000022"
-* parameter[+]
-  * name = "count"
-  * valueString = "2"
+  * part[+]
+    * name = "count"
+    * valueString = "2"
 
 
 Instance: Parameters-PseudonymizeSecondary-response-example-1

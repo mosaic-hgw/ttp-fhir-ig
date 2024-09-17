@@ -33,7 +33,7 @@
       "name": "original",
       "use": "in",
       "min": 1,
-      "max": "1",
+      "max": "*",
       "documentation": "Originalwerte",
       "part": [
         {
@@ -41,7 +41,7 @@
           "use": "in",
           "min": 1,
           "max": "1",
-          "documentation": "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen.",
+          "documentation": "Pseudonymisierungskontext auf Basis dessen für den angegebenen Original-Identifikator n Sekundärpseudonyme erzeugt werden sollen. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
           "type": "string"
         },
         {
@@ -51,16 +51,16 @@
           "max": "1",
           "documentation": "Original-Identifikator für den n Sekundärpseudonyme erzeugt werden sollen.",
           "type": "string"
+        },
+        {
+          "name": "count",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Anzahl der zu erzeugenden Sekundärpseudonyme.",
+          "type": "integer"
         }
       ]
-    },
-    {
-      "name": "count",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Anzahl der zu erzeugenden Sekundärpseudonyme.",
-      "type": "integer"
     },
     {
       "name": "target",

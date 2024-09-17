@@ -12,12 +12,12 @@
         {
           "name": "value",
           "valueString": "1001000000022"
+        },
+        {
+          "name": "count",
+          "valueString": "2"
         }
       ]
-    },
-    {
-      "name": "count",
-      "valueString": "2"
     }
   ]
 }
