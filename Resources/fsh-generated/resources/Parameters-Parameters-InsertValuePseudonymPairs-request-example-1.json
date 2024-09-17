@@ -3,16 +3,21 @@
   "id": "Parameters-InsertValuePseudonymPairs-request-example-1",
   "parameter": [
     {
-      "name": "target",
-      "valueString": "MIRACUM"
-    },
-    {
-      "name": "original",
-      "valueString": "1001000000022"
-    },
-    {
       "name": "pseudonym",
-      "valueString": "mrcm_T0TYNV21"
+      "part": [
+        {
+          "name": "target",
+          "valueString": "MIRACUM"
+        },
+        {
+          "name": "original",
+          "valueString": "1001000000022"
+        },
+        {
+          "name": "pseudonym",
+          "valueString": "mrcm_T0TYNV21"
+        }
+      ]
     }
   ]
 }

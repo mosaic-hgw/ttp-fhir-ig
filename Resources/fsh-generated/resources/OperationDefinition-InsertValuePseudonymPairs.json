@@ -22,7 +22,7 @@
   "title": "insertValuePseudonymPairs",
   "kind": "operation",
   "description": "TODO",
-  "affectsState": false,
+  "affectsState": true,
   "code": "insert-value-pseudonym-pairs",
   "comment": "TODO",
   "system": true,
@@ -30,29 +30,38 @@
   "instance": false,
   "parameter": [
     {
-      "name": "target",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird",
-      "type": "string",
-      "searchType": "string"
-    },
-    {
-      "name": "original",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird",
-      "type": "string",
-      "searchType": "string"
-    },
-    {
       "name": "pseudonym",
       "use": "in",
       "min": 1,
       "max": "*",
-      "documentation": "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym"
+      "documentation": "Tripel mit den Angaben zu Original und zu setzendem Pseudonym.",
+      "part": [
+        {
+          "name": "target",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird. Ist bei allen Tripeln eines Requests der target-Parameter identisch erfolgt die interne Verarbeitung mit erhöhter Performance.",
+          "type": "string",
+          "searchType": "string"
+        },
+        {
+          "name": "original",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird",
+          "type": "string",
+          "searchType": "string"
+        },
+        {
+          "name": "pseudonym",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym"
+        }
+      ]
     },
     {
       "name": "pseudonym",
