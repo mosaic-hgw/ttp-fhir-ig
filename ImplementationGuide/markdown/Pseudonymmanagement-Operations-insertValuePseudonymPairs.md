@@ -1,9 +1,13 @@
 #### insertValuePseudonymPairs
 
-TODO
+**Konzeptarbeit. Noch nicht implementiert**
+
+Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen.
+Das Pseudonym muss den konfigurierten Vorgaben der Zieldomäne entsprechend und wird im Regelfall vor dem Einfügen durch den gPAS validiert.
 
 ##### **Voraussetzung**
-TODO
+- Domäne muss konfiguriert sein
+- Pseudonym muss den Vorgaben der Domäne entsprechen und wird vor dem Einfügen im Regelfall validiert.
 
 ##### **Aufruf und Rückgabe**
 {{render:InsertValuePseudonymPairs}}
@@ -26,6 +30,6 @@ Beispielhafter Request-Body:
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-1.json}}
 
-Auftretende Fehler (z.B. angegebenes Pseudonym ist unbekannt) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
+Auftretende Fehler (z.B. angegebene Domain ist unbekannt oder Pseudonym ist nicht valide) werden im Einzelnen entsprechend per Coding vom Typ [Issue-Type](http://hl7.org/fhir/issue-type) signalisiert.
 
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-InsertValuePseudonymPairs-response-example-2.json}}

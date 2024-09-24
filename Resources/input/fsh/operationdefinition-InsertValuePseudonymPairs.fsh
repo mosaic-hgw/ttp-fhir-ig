@@ -6,7 +6,7 @@ Usage: #definition
 * name = "InsertValuePseudonymPairs"
 * title = "insertValuePseudonymPairs"
 * kind = #operation
-* description = "TODO"
+* description = "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen"
 * affectsState = true
 * code = #insert-value-pseudonym-pairs
 * comment = "TODO"
@@ -24,7 +24,7 @@ Usage: #definition
     * use = #in
     * min = 1
     * max = "1"
-    * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance."
+    * documentation = "Angabe der Domäne, in welche das Wertepaare Original-Wert & Pseudonym eingefügt werden soll. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance."
     * type = #string
     * searchType = #string
   * part[+]
@@ -32,7 +32,7 @@ Usage: #definition
     * use = #in
     * min = 1
     * max = "1"
-    * documentation = "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird"
+    * documentation = "Angabe des Originalwertes des Werte-Paares"
     * type = #string
     * searchType = #string
   * part[+]
@@ -40,7 +40,7 @@ Usage: #definition
     * use = #in
     * min = 1
     * max = "1"
-    * documentation = "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym"
+    * documentation = "Angabe des Pseudonyms des Werte-Paares. Das Pseudonym muss den konfigurierten Vorgaben der Zieldomäne entsprechend und wird im Regelfall vor dem Einfügen durch den gPAS validiert."
 * parameter[+]
   * name = #pseudonym
   * use = #out
@@ -88,6 +88,13 @@ Usage: #definition
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Identifier
+   * part[+]
+    * name = #pseudonym
+    * use = #out
+    * min = 0
+    * max = "1"
+    * documentation = "Pseudonym"
+* type = #Identifier
   * part[+]
     * name = #error-code
     * use = #out
@@ -136,9 +143,9 @@ Usage: #example
 * parameter[+]
   * name = "error"
   * part[+]
-    * name = "original"
+    * name = "target"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
-    * valueIdentifier.value = "10010000000XX"
+    * valueIdentifier.value = "DOMAINXY"
   * part[+]
     * name = "error-code"
     * valueCoding.system = "http://hl7.org/fhir/issue-type"
