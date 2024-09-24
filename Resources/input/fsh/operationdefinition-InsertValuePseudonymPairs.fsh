@@ -9,7 +9,7 @@ Usage: #definition
 * description = "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen"
 * affectsState = true
 * code = #insert-value-pseudonym-pairs
-* comment = "TODO"
+* comment = ""
 * system = true
 * type = false
 * instance = false
@@ -41,6 +41,8 @@ Usage: #definition
     * min = 1
     * max = "1"
     * documentation = "Angabe des Pseudonyms des Werte-Paares. Das Pseudonym muss den konfigurierten Vorgaben der Zieldomäne entsprechend und wird im Regelfall vor dem Einfügen durch den gPAS validiert."
+    * type = #string
+    * searchType = #string
 * parameter[+]
   * name = #pseudonym
   * use = #out
