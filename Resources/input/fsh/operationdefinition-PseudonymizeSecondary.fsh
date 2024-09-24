@@ -41,20 +41,6 @@ Usage: #definition
     * documentation = "Anzahl der zu erzeugenden Sekundärpseudonyme."
     * type = #integer
 * parameter[+]
-  * name = #target
-  * use = #out
-  * min = 1
-  * max = "1"
-  * documentation = "Pseudonymisierungskontext (Teil des Requests)."
-  * type = #string
-* parameter[+]
-  * name = #original
-  * use = #out
-  * min = 1
-  * max = "1"
-  * documentation = "Original-Identifikator (Teil des Requests)."
-  * type = #string
-* parameter[+]
   * name = #secondarypseudonym
   * use = #out
   * min = 1
@@ -65,14 +51,14 @@ Usage: #definition
     * use = #out
     * min = 1
     * max = "1"
-    * documentation = "Pseudonymisierungskontext."
+    * documentation = "Pseudonymisierungskontext (Teil des Requests)."
     * type = #Identifier
   * part[+]
     * name = #original
     * use = #out
     * min = 1
     * max = "1"
-    * documentation = "Original-Identifikator (in der Regel Personen-Pseudonym)."
+    * documentation = "Original-Identifikator (Teil des Requests)."
     * type = #Identifier
   * part[+]
     * name = #value
@@ -90,10 +76,10 @@ Usage: #example
   * name = "original"
   * part[+]
     * name = "target"
-    * valueString = "MIRACUM"
+    * valueString = "Datensatz-Ebene"
   * part[+]
     * name = "value"
-    * valueString = "1001000000022"
+    * valueString = "H3RAU56A8E"
   * part[+]
     * name = "count"
     * valueString = "2"
@@ -103,34 +89,36 @@ Instance: Parameters-PseudonymizeSecondary-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
-  * name = "target"
-  * valueString = "MIRACUM"
-* parameter[+]
-  * name = "original"
-  * valueString = "1001000000022"
-* parameter[+]
   * name = "secondarypseudonym"
   * part[+]
     * name = "target"
-    * valueString = "MIRACUM"
+    * valueIdentifier
+     * system = "https://sample/psn-system"
+     * value = "Datensatz-Ebene"
   * part[+]
     * name = "original"
-    * valueString = "1001000000022"
+    * valueIdentifier
+     * system = "https://sample/psn-system"
+     * value = "H3RAU56A8E"
   * part[+]
     * name = "value"
     * valueIdentifier
       * system = "https://ths-greifswald.de/gpas"
-      * value = "1001000000033"
+      * value = "53KUNDA3RP5N1"
 * parameter[+]
   * name = "secondarypseudonym"
-  * part[+]
+   * part[+]
     * name = "target"
-    * valueString = "MIRACUM"
+    * valueIdentifier
+     * system = "https://sample/psn-system"
+     * value = "Datensatz-Ebene"
   * part[+]
     * name = "original"
-    * valueString = "1001000000022"
+    * valueIdentifier
+     * system = "https://sample/psn-system"
+     * value = "H3RAU56A8E"
   * part[+]
     * name = "value"
     * valueIdentifier
-      * system = "https://ths-greifswald.de/gpas"
-      * value = "1001000000444"
+      * system = "https://sample/psn-system"
+      * value = "53KUNDA3RP5N2"
