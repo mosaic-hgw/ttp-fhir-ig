@@ -90,13 +90,13 @@ Usage: #definition
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Identifier
-   * part[+]
+  * part[+]
     * name = #pseudonym
     * use = #out
     * min = 0
     * max = "1"
     * documentation = "Pseudonym"
-* type = #Identifier
+    * type = #Identifier
   * part[+]
     * name = #error-code
     * use = #out

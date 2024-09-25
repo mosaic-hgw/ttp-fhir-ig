@@ -1,0 +1,80 @@
+{
+  "resourceType": "Bundle",
+  "id": "PseudonymizePatient-Bundle-response-example-1",
+  "type": "batch-response",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Parameters",
+        "id": "PseudonymizePatient-Bundle-response-example-1-Par1",
+        "parameter": [
+          {
+            "name": "externalPatientId",
+            "valueId": "aaaaaaaa-8a1e-4442-af99-50abc27d6f52"
+          },
+          {
+            "name": "target",
+            "valueIdentifier": {
+              "system": "http://my.fhir.domain.local/fhir/sid/domains",
+              "value": "MyStudy-Domain1"
+            }
+          },
+          {
+            "name": "pseudonym",
+            "valueIdentifier": {
+              "system": "http://my.fhir.domain.local/fhir/sid/pseudonyms",
+              "value": "56464986521"
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": "200",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "id": "PseudonymizePatient-Bundle-response-example-1-Par1OpO",
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "diagnostics": "Operation completed successfully."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Parameters",
+        "id": "PseudonymizePatient-Bundle-response-example-1-Par2",
+        "parameter": [
+          {
+            "name": "externalPatientId",
+            "valueId": "bbbbbbbb-e258-4471-9ac3-6dfdfac35a6e"
+          },
+          {
+            "name": "target",
+            "valueIdentifier": {
+              "system": "http://my.fhir.domain.local/fhir/sid/domains",
+              "value": "NotMyStudy-Domain15"
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": "403",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "id": "PseudonymizePatient-Bundle-response-example-1-Par2OpO",
+          "issue": [
+            {
+              "severity": "fatal",
+              "code": "security",
+              "diagnostics": "You do not have access to the specified target domain or the specified target domain does not exist."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

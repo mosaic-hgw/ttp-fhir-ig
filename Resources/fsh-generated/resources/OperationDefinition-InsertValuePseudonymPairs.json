@@ -21,10 +21,10 @@
   "name": "InsertValuePseudonymPairs",
   "title": "insertValuePseudonymPairs",
   "kind": "operation",
-  "description": "TODO",
+  "description": "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen",
   "affectsState": true,
   "code": "insert-value-pseudonym-pairs",
-  "comment": "TODO",
+  "comment": "",
   "system": true,
   "type": false,
   "instance": false,
@@ -41,7 +41,7 @@
           "use": "in",
           "min": 1,
           "max": "1",
-          "documentation": "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
+          "documentation": "Angabe der Domäne, in welche das Wertepaare Original-Wert & Pseudonym eingefügt werden soll. Ist bei allen Tripeln eines Requests der target-Parameter identisch, erfolgt die interne Verarbeitung mit erhöhter Performance.",
           "type": "string",
           "searchType": "string"
         },
@@ -50,7 +50,7 @@
           "use": "in",
           "min": 1,
           "max": "1",
-          "documentation": "Angabe der Originalwerte für die in der angegebenen Domäne nach vorhandenen zugeordneten Pseudonymen gesucht wird",
+          "documentation": "Angabe des Originalwertes des Werte-Paares",
           "type": "string",
           "searchType": "string"
         },
@@ -59,7 +59,9 @@
           "use": "in",
           "min": 1,
           "max": "1",
-          "documentation": "Ermitteltes bzw. generiertes studien- und standort-spezifisches Pseudonym"
+          "documentation": "Angabe des Pseudonyms des Werte-Paares. Das Pseudonym muss den konfigurierten Vorgaben der Zieldomäne entsprechend und wird im Regelfall vor dem Einfügen durch den gPAS validiert.",
+          "type": "string",
+          "searchType": "string"
         }
       ]
     },
@@ -117,6 +119,14 @@
           "min": 0,
           "max": "1",
           "documentation": "Original-Identifikator",
+          "type": "Identifier"
+        },
+        {
+          "name": "pseudonym",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Pseudonym",
           "type": "Identifier"
         },
         {

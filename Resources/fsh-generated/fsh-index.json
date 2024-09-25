@@ -96,6 +96,22 @@
     "endLine": 119
   },
   {
+    "outputFile": "Bundle-PseudonymizePatient-Bundle-request-example-1.json",
+    "fshName": "PseudonymizePatient-Bundle-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizePatient.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "Bundle-PseudonymizePatient-Bundle-response-example-1.json",
+    "fshName": "PseudonymizePatient-Bundle-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizePatient.fsh",
+    "startLine": 80,
+    "endLine": 93
+  },
+  {
     "outputFile": "CodeSystem-ConsentComponentTypeCS.json",
     "fshName": "ConsentComponentType",
     "fshType": "CodeSystem",
@@ -341,7 +357,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
     "startLine": 1,
-    "endLine": 97
+    "endLine": 106
   },
   {
     "outputFile": "OperationDefinition-IsConsented.json",
@@ -381,7 +397,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
     "startLine": 1,
-    "endLine": 83
+    "endLine": 69
   },
   {
     "outputFile": "OperationDefinition-QueryPossibleMatches.json",
@@ -676,24 +692,24 @@
     "fshName": "Parameters-InsertValuePseudonymPairs-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
-    "startLine": 100,
-    "endLine": 113
+    "startLine": 109,
+    "endLine": 122
   },
   {
     "outputFile": "Parameters-Parameters-InsertValuePseudonymPairs-response-example-1.json",
     "fshName": "Parameters-InsertValuePseudonymPairs-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
-    "startLine": 115,
-    "endLine": 131
+    "startLine": 124,
+    "endLine": 140
   },
   {
     "outputFile": "Parameters-Parameters-InsertValuePseudonymPairs-response-example-2.json",
     "fshName": "Parameters-InsertValuePseudonymPairs-response-example-2",
     "fshType": "Instance",
     "fshFile": "operationdefinition-InsertValuePseudonymPairs.fsh",
-    "startLine": 133,
-    "endLine": 146
+    "startLine": 142,
+    "endLine": 155
   },
   {
     "outputFile": "Parameters-Parameters-ProvidePatientData-request-example-1.json",
@@ -748,16 +764,16 @@
     "fshName": "Parameters-PseudonymizeSecondary-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
-    "startLine": 86,
-    "endLine": 99
+    "startLine": 72,
+    "endLine": 85
   },
   {
     "outputFile": "Parameters-Parameters-PseudonymizeSecondary-response-example-1.json",
     "fshName": "Parameters-PseudonymizeSecondary-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizeSecondary.fsh",
-    "startLine": 102,
-    "endLine": 136
+    "startLine": 88,
+    "endLine": 124
   },
   {
     "outputFile": "Parameters-Parameters-QueryPossibleMatches-request-example-1.json",

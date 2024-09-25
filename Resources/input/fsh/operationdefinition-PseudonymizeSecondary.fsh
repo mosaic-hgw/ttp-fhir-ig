@@ -93,13 +93,13 @@ Usage: #example
   * part[+]
     * name = "target"
     * valueIdentifier
-     * system = "https://sample/psn-system"
-     * value = "Datensatz-Ebene"
+      * system = "https://sample/psn-system"
+      * value = "Datensatz-Ebene"
   * part[+]
     * name = "original"
     * valueIdentifier
-     * system = "https://sample/psn-system"
-     * value = "H3RAU56A8E"
+      * system = "https://sample/psn-system"
+      * value = "H3RAU56A8E"
   * part[+]
     * name = "value"
     * valueIdentifier
@@ -107,16 +107,16 @@ Usage: #example
       * value = "53KUNDA3RP5N1"
 * parameter[+]
   * name = "secondarypseudonym"
-   * part[+]
+  * part[+]
     * name = "target"
     * valueIdentifier
-     * system = "https://sample/psn-system"
-     * value = "Datensatz-Ebene"
+      * system = "https://sample/psn-system"
+      * value = "Datensatz-Ebene"
   * part[+]
     * name = "original"
     * valueIdentifier
-     * system = "https://sample/psn-system"
-     * value = "H3RAU56A8E"
+      * system = "https://sample/psn-system"
+      * value = "H3RAU56A8E"
   * part[+]
     * name = "value"
     * valueIdentifier

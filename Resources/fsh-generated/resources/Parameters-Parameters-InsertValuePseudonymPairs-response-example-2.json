@@ -6,10 +6,10 @@
       "name": "error",
       "part": [
         {
-          "name": "original",
+          "name": "target",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "10010000000XX"
+            "value": "DOMAINXY"
           }
         },
         {

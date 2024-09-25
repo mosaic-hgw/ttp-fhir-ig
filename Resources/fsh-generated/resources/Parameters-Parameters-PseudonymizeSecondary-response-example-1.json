@@ -3,29 +3,27 @@
   "id": "Parameters-PseudonymizeSecondary-response-example-1",
   "parameter": [
     {
-      "name": "target",
-      "valueString": "MIRACUM"
-    },
-    {
-      "name": "original",
-      "valueString": "1001000000022"
-    },
-    {
       "name": "secondarypseudonym",
       "part": [
         {
           "name": "target",
-          "valueString": "MIRACUM"
+          "valueIdentifier": {
+            "system": "https://sample/psn-system",
+            "value": "Datensatz-Ebene"
+          }
         },
         {
           "name": "original",
-          "valueString": "1001000000022"
+          "valueIdentifier": {
+            "system": "https://sample/psn-system",
+            "value": "H3RAU56A8E"
+          }
         },
         {
           "name": "value",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "1001000000033"
+            "value": "53KUNDA3RP5N1"
           }
         }
       ]
@@ -35,17 +33,23 @@
       "part": [
         {
           "name": "target",
-          "valueString": "MIRACUM"
+          "valueIdentifier": {
+            "system": "https://sample/psn-system",
+            "value": "Datensatz-Ebene"
+          }
         },
         {
           "name": "original",
-          "valueString": "1001000000022"
+          "valueIdentifier": {
+            "system": "https://sample/psn-system",
+            "value": "H3RAU56A8E"
+          }
         },
         {
           "name": "value",
           "valueIdentifier": {
-            "system": "https://ths-greifswald.de/gpas",
-            "value": "1001000000444"
+            "system": "https://sample/psn-system",
+            "value": "53KUNDA3RP5N2"
           }
         }
       ]
