@@ -100,16 +100,16 @@
     "fshName": "PseudonymizePatient-Bundle-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
-    "startLine": 1,
-    "endLine": 14
+    "startLine": 60,
+    "endLine": 73
   },
   {
     "outputFile": "Bundle-PseudonymizePatient-Bundle-response-example-1.json",
     "fshName": "PseudonymizePatient-Bundle-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
-    "startLine": 80,
-    "endLine": 93
+    "startLine": 139,
+    "endLine": 152
   },
   {
     "outputFile": "CodeSystem-ConsentComponentTypeCS.json",
@@ -390,6 +390,14 @@
     "fshFile": "operationdefinition-PseudonymizeAllowCreate.fsh",
     "startLine": 1,
     "endLine": 75
+  },
+  {
+    "outputFile": "OperationDefinition-PseudonymizePatient.json",
+    "fshName": "PseudonymizePatient",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-PseudonymizePatient.fsh",
+    "startLine": 1,
+    "endLine": 57
   },
   {
     "outputFile": "OperationDefinition-PseudonymizeSecondary.json",

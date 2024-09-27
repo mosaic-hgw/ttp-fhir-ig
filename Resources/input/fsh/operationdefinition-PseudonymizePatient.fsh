@@ -1,3 +1,62 @@
+Instance: PseudonymizePatient
+InstanceOf: OperationDefinition
+Usage: #definition
+* insert meta-instance
+* url = "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizePatient"
+* name = "PseudonymizePatient"
+* title = "pseudonymizePatient"
+* kind = #operation
+* description = ""
+* affectsState = true
+* code = #pseudonymize-patient
+* comment = "Abfrage je eines Pseudonym-Wertes für eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
+* system = true
+* type = false
+* instance = false
+* parameter[+]
+  * name = #study
+  * use = #in
+  * min = 1
+  * max = "1"
+  * type = #string
+  * documentation = "Angabe der Studie auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird"
+* parameter[+]
+  * name = #patient
+  * use = #in
+  * min = 1
+  * max = "1"
+  * type = #Patient
+  * documentation = "Patienten-Ressource des Patienten, der pseudonymisiert werden soll"
+* parameter[+]
+  * name = #target
+  * use = #in
+  * min = 1
+  * max = "1"
+  * type = #string
+  * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird"
+* parameter[+]
+  * name = #externalPatientId
+  * use = #out
+  * min = 1
+  * max = "1"
+  * type = #string
+  * documentation = "Vom Server vergebene ID der Patient-Ressource zum Zweck der Rückreferenzierung"
+* parameter[+]
+  * name = #target
+  * use = #out
+  * min = 1
+  * max = "1"
+  * type = #Identifier
+  * documentation = "Angabe der Domäne (entspricht dem beim Request übermittelten Wert) zum Zweck der Rückreferenzierung"
+* parameter[+]
+  * name = #pseudonym
+  * use = #out
+  * min = 0
+  * max = "1"
+  * type = #Identifier
+  * documentation = "Das erzeugte Pseudonym (wird nur im Erfolgsfall übermittelt)"
+
+
 Instance: PseudonymizePatient-Bundle-request-example-1
 InstanceOf: Bundle
 Usage: #example
