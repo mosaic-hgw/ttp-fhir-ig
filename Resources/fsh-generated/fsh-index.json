@@ -1280,6 +1280,14 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-identifier-bloomfilter.json",
+    "fshName": "IdentifierBloomfilter",
+    "fshType": "Profile",
+    "fshFile": "profile-Identifier-bloomfilter.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
     "outputFile": "ValueSet-ConsentComponentTypeVS.json",
     "fshName": "ConsentComponentType",
     "fshType": "ValueSet",
