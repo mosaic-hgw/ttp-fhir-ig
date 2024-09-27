@@ -9,7 +9,7 @@ Usage: #definition
 * description = ""
 * affectsState = true
 * code = #pseudonymize-patient
-* comment = "Abfrage je eines Pseudonym-Wertes für eine gegebene Liste von 1-n Originalwerten und eine spezifische Domäne."
+* comment = "Abfrage je eines Pseudonym-Wertes für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen."
 * system = true
 * type = false
 * instance = false
@@ -40,7 +40,7 @@ Usage: #definition
   * min = 1
   * max = "1"
   * type = #string
-  * documentation = "Vom Server vergebene ID der Patient-Ressource zum Zweck der Rückreferenzierung"
+  * documentation = "ID der Patient-Ressource zum Zweck der Rückreferenzierung. Es wird die vom Client übermittelte ID (Element Patient.id) verwendet, in Anlehnung an das Konzept 'Update as Create' as der FHIR-Spezifikation."
 * parameter[+]
   * name = #target
   * use = #out
