@@ -20,6 +20,6 @@ Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funkt
 
 ### Übersicht der generalisierten fTTP-Operations
 
-| Operation                                                                                                          | Zweck                                                  |
---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------
-| {{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-Operations-pseudonymizePatient.md}} | Erzeugung von Pseudonym(en) für eine Patient-Ressource |
+| Operation                                                                                               | Zweck                                                  |
+---------------------------------------------------------------------------------------------------------|--------------------------------------------------------
+| {{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-pseudonymizePatient.md}} | Erzeugung von Pseudonym(en) für eine Patient-Ressource |
