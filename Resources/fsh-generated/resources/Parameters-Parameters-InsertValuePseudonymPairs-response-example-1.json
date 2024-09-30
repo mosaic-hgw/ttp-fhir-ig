@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "pseudonym",
+          "name": "value",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
             "value": "mrcm_T0TYNV21"

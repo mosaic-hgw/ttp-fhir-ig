@@ -2,13 +2,13 @@ Instance: InsertValuePseudonymPairs
 InstanceOf: OperationDefinition
 Usage: #definition
 * insert meta-instance
-* url = "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insert-value-pseudonym-pairs"
+* url = "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs"
 * name = "InsertValuePseudonymPairs"
 * title = "insertValuePseudonymPairs"
 * kind = #operation
 * description = "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen"
 * affectsState = true
-* code = #insert-value-pseudonym-pairs
+* code = #insertValuePseudonymPairs
 * comment = ""
 * system = true
 * type = false
@@ -36,7 +36,7 @@ Usage: #definition
     * type = #string
     * searchType = #string
   * part[+]
-    * name = #pseudonym
+    * name = #value
     * use = #in
     * min = 1
     * max = "1"
@@ -64,7 +64,7 @@ Usage: #definition
     * documentation = "Target-Identifikator"
     * type = #Identifier
   * part[+]
-    * name = #pseudonym
+    * name = #value
     * use = #out
     * min = 1
     * max = "1"
@@ -118,7 +118,7 @@ Usage: #example
     * name = "original"
     * valueString = "1001000000022"
   * part[+]
-    * name = "pseudonym"
+    * name = "value"
     * valueString = "mrcm_T0TYNV21"
 
 Instance: Parameters-InsertValuePseudonymPairs-response-example-1
@@ -135,7 +135,7 @@ Usage: #example
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
     * valueIdentifier.value = "1001000000022"
   * part[+]
-    * name = "pseudonym"
+    * name = "value"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
     * valueIdentifier.value = "mrcm_T0TYNV21"
 

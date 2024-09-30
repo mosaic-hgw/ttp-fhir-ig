@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "InsertValuePseudonymPairs",
-  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insert-value-pseudonym-pairs",
+  "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/insertValuePseudonymPairs",
   "version": "2023.2.0-DEVEL",
   "status": "draft",
   "date": "2023-09-04",
@@ -23,7 +23,7 @@
   "kind": "operation",
   "description": "Fügt ein Wertepaar bestehend aus Originalwert und Pseudonym in eine vorkonfigurierte Domäne ein, z.B. für die Migration von Bestandspseudonymen",
   "affectsState": true,
-  "code": "insert-value-pseudonym-pairs",
+  "code": "insertValuePseudonymPairs",
   "comment": "",
   "system": true,
   "type": false,
@@ -55,7 +55,7 @@
           "searchType": "string"
         },
         {
-          "name": "pseudonym",
+          "name": "value",
           "use": "in",
           "min": 1,
           "max": "1",
@@ -89,7 +89,7 @@
           "type": "Identifier"
         },
         {
-          "name": "pseudonym",
+          "name": "value",
           "use": "out",
           "min": 1,
           "max": "1",
