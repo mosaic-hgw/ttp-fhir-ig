@@ -1,7 +1,7 @@
 ![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
-## Workflow-basierte Verwaltung
+## Übergreifende Schnittstellen
 
-Der FHIR-Endpunkt ([base]) für die Workflow-basierte Verwaltung lautet
+Der FHIR-Endpunkt ([base]) für die übergreifende Schnittstelle lautet
 
 <strong>```http[s]://\<host\>:\<port\>/ttp-fhir/fhir/dispatcher```</strong>
 
@@ -16,3 +16,10 @@ Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funkt
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md}}|Wahrscheinlichkeit|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}|Wahrscheinlichkeit/Clearing|
 |{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md}}|Clearing|
+
+
+### Übersicht der generalisierten fTTP-Operations
+
+| Operation                                                                                                   | Zweck                                                  |
+-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------
+| pseudonymizePatient                                                                                         | Erzeugung von Pseudonym(en) für eine Patient-Ressource |

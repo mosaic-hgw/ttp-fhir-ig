@@ -159,43 +159,48 @@
           ]
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung.md",
-          "title": "Workflow-basierte Verwaltung",
+          "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen.md",
+          "title": "Übergreifende Schnittstellen",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-ProfileUndExtensions.md",
+              "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-ProfileUndExtensions.md",
               "title": "Profile und Extensions",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations.md",
+              "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations.md",
               "title": "Operations",
               "generation": "markdown",
               "page": [
                 {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md",
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestPsnWorkflow.md",
                   "title": "requestPsnWorkflow",
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md",
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestPsnFromBfWorkflow.md",
                   "title": "requestPsnFromBfWorkflow",
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md",
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestTasks.md",
                   "title": "requestTasks",
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md",
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-providePatientData.md",
                   "title": "providePatientData",
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md",
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-updateBf.md",
                   "title": "updateBf",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-pseudonymizePatient.md",
+                  "title": "pseudonymizePatient",
                   "generation": "markdown"
                 }
               ]
