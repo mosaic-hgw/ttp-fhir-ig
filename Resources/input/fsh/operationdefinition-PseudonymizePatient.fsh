@@ -8,7 +8,7 @@ Usage: #definition
 * kind = #operation
 * description = ""
 * affectsState = true
-* code = #pseudonymize-patient
+* code = #pseudonymizePatient
 * comment = "Abfrage je eines Pseudonym-Wertes für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen."
 * system = true
 * type = false
@@ -65,12 +65,12 @@ Usage: #example
   * resource = PseudonymizePatient-Bundle-request-example-1-Par1
   * request
     * method = #POST
-    * url = "$pseudonymize-patient"
+    * url = "$pseudonymizePatient"
 * entry[+]
   * resource = PseudonymizePatient-Bundle-request-example-1-Par2
   * request
     * method = #POST
-    * url = "$pseudonymize-patient"
+    * url = "$pseudonymizePatient"
 
 Instance: PseudonymizePatient-Bundle-request-example-1-Par1
 InstanceOf: Parameters
@@ -100,9 +100,6 @@ Usage: #inline
 * identifier[+]
   * system = "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
   * value = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
-* name
-  * given = "Max"
-  * family = "Mustermann"
 
 Instance: PseudonymizePatient-Bundle-request-example-1-Par2
 InstanceOf: Parameters
@@ -129,9 +126,6 @@ Usage: #inline
 * identifier[+]
   * system = "http://fhir.de/sid/gkv/kvid-10"
   * value = "Z987654321"
-* identifier[+]
-  * system = "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
-  * value = "SwagIGJpbiBlubbgQmxvb21maWx0ZXIuIFZlcnNwcm9jaGeier=="
 * name
   * given = "Herbert"
   * family = "Hinterlist"
