@@ -3,16 +3,11 @@
 ##### **Zweck**
 //TODO
 
-<p align="center">
-  <img width="700" src="https://www.ths-greifswald.de/wp-content/uploads/2023/02/fhirgw-providePatientData.png">
-</p>
-
 ##### **Voraussetzung**
 - API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein.
 //TODO
 
 ##### **Aufruf und Rückgabe**
-//TODO @SL
 
 {{render:PseudonymizePatient}}
 
@@ -24,8 +19,8 @@
 
 
 ##### **Beispiel**
-Beispielhafter Request-Body:
-//TODO verweis auf Beispiel
+Beispielhafter Request-Body als Bundle:
+{{xml:Resources/fsh-generated/resources/Bundle-PseudonymizePatient-Bundle-request-example-1.json}}
 
-Beispielhafter Response-Body:
-//TODO verweis auf Beispiel
+Beispielhafter Response-Body als Bundle:
+{{xml:Resources/fsh-generated/resources/Bundle-PseudonymizePatient-Bundle-response-example-1.json}}
