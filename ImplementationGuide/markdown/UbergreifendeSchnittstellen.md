@@ -11,15 +11,15 @@ Nachfolgende Tabelle listet die zum aktuellen Zeitpunkt gültigen **fTTP**-Funkt
 
 | Operation|erforderlich für fTTP-Modul|
 -- | ---
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnWorkflow.md}}|Wahrscheinlichkeit|
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestPsnFromBfWorkflow.md}}|Wahrscheinlichkeit|
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-updateBf.md}}|Wahrscheinlichkeit|
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-requestTasks.md}}|Wahrscheinlichkeit/Clearing|
-|{{pagelink:ImplementationGuide/markdown/WorkflowBasierteVerwaltung-Operations-providePatientData.md}}|Clearing|
+|{{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestPsnWorkflow.md}}|Wahrscheinlichkeit|
+|{{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestPsnFromBfWorkflow.md}}|Wahrscheinlichkeit|
+|{{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-updateBf.md}}|Wahrscheinlichkeit|
+|{{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-requestTasks.md}}|Wahrscheinlichkeit/Clearing|
+|{{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-providePatientData.md}}|Clearing|
 
 
 ### Übersicht der generalisierten fTTP-Operations
 
-| Operation                                                                                                   | Zweck                                                  |
--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------
-| pseudonymizePatient                                                                                         | Erzeugung von Pseudonym(en) für eine Patient-Ressource |
+| Operation                                                                                                          | Zweck                                                  |
+--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------
+| {{pagelink:ImplementationGuide/markdown/UbergreifendeSchnittstellen-Operations-Operations-pseudonymizePatient.md}} | Erzeugung von Pseudonym(en) für eine Patient-Ressource |
