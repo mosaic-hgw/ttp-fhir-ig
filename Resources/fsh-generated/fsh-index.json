@@ -920,6 +920,14 @@
     "endLine": 145
   },
   {
+    "outputFile": "Patient-PatientGpas-example-1.json",
+    "fshName": "PatientGpas-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Patient-gpas.fsh",
+    "startLine": 27,
+    "endLine": 31
+  },
+  {
     "outputFile": "Person-Person-example-1.json",
     "fshName": "Person-example-1",
     "fshType": "Instance",
@@ -1190,6 +1198,14 @@
     "fshFile": "profile-Patient.fsh",
     "startLine": 1,
     "endLine": 106
+  },
+  {
+    "outputFile": "StructureDefinition-PatientGpas.json",
+    "fshName": "PatientGpas",
+    "fshType": "Profile",
+    "fshFile": "profile-Patient-gpas.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-Person.json",

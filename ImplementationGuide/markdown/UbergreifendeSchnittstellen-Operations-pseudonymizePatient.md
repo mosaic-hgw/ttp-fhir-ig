@@ -11,12 +11,13 @@
 
 {{render:PseudonymizePatient}}
 
-//TODO SL weitere hinweise
+//TODO SL weitere Hinweise
 
-//TODO TREE auf neues PatientProfil 
+Im Kontext dieser Operation wird das folgende Patient-Profil verwendet:
 
-//TODO Fehler
+{{tree:PatientGpas}}
 
+Im Fehlerfall wird eine OperationOutcome-Ressource mit entsprechenden Informationen zurückgegeben. Bei Verwendung innerhalb eines Batch-Bundles (siehe Beispiele) wird in der Batch-Response neben diesem OperationOutcome auch eine Parameters-Ressource zurückgegeben, die auf die betroffene PatientId sowie das Target verweist.
 
 ##### **Beispiel**
 Beispielhafter Request-Body als Bundle:

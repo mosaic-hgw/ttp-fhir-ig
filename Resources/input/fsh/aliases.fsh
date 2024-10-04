@@ -4,6 +4,7 @@ Alias: $csSct = http://snomed.info/sct
 Alias: $csResultType = http://fhir.de/ConsentManagement/CodeSystem/ResultType
 Alias: $extPatientBirthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $extPatientNationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Alias: $nsKvid10 = http://fhir.de/sid/gkv/kvid-10
 Alias: $prEinwConsent = http://fhir.de/ConsentManagement/StructureDefinition/Consent
 Alias: $prEinwPatient = http://fhir.de/ConsentManagement/StructureDefinition/Patient
 Alias: $prEinwProvenance = http://fhir.de/ConsentManagement/StructureDefinition/Provenance
