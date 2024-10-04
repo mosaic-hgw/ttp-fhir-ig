@@ -256,6 +256,14 @@
     "endLine": 77
   },
   {
+    "outputFile": "OperationDefinition-AddPossibleMatch.json",
+    "fshName": "AddPossibleMatch",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
     "outputFile": "OperationDefinition-AllConsentsForDomain.json",
     "fshName": "AllConsentsForDomain",
     "fshType": "Instance",
@@ -622,6 +630,22 @@
     "fshFile": "operationdefinition-AddPatient.fsh",
     "startLine": 110,
     "endLine": 169
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatch-request-example-1.json",
+    "fshName": "Parameters-AddPossibleMatch-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 81,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatch-response-example-1.json",
+    "fshName": "Parameters-AddPossibleMatch-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 98,
+    "endLine": 133
   },
   {
     "outputFile": "Parameters-Parameters-AnonymizeOriginals-request-example-1.json",

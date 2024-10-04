@@ -96,6 +96,11 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-addPossibleMatch.md",
+                  "title": "addPossibleMatch",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-removePossibleMatches.md",
                   "title": "removePossibleMatches",
                   "generation": "markdown"
