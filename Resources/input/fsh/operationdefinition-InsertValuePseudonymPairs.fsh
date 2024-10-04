@@ -44,7 +44,7 @@ Usage: #definition
     * type = #string
     * searchType = #string
 * parameter[+]
-  * name = #pseudonym
+  * name = #successStatus
   * use = #out
   * min = 0
   * max = "*"
@@ -70,6 +70,14 @@ Usage: #definition
     * max = "1"
     * documentation = "Pseudonym"
     * type = #Identifier
+  * part[+]
+    * name = #successStatus
+    * use = #out
+    * min = 1
+    * max = "1"
+    * documentation = "Erfolgsstatus"
+    * type = #Coding
+
 * parameter[+]
   * name = #error
   * use = #out
@@ -125,7 +133,7 @@ Instance: Parameters-InsertValuePseudonymPairs-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0]
-  * name = "pseudonym"
+  * name = "successStatus"
   * part[+]
     * name = "target"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
@@ -138,6 +146,10 @@ Usage: #example
     * name = "value"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
     * valueIdentifier.value = "mrcm_T0TYNV21"
+  * part[+]
+    * name = "successStatus"
+    * valueCoding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
+    * valueCoding.code = #MSG_CREATED
 
 Instance: Parameters-InsertValuePseudonymPairs-response-example-2
 InstanceOf: Parameters

@@ -3,7 +3,7 @@
   "id": "Parameters-InsertValuePseudonymPairs-response-example-1",
   "parameter": [
     {
-      "name": "pseudonym",
+      "name": "successStatus",
       "part": [
         {
           "name": "target",
@@ -24,6 +24,13 @@
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
             "value": "mrcm_T0TYNV21"
+          }
+        },
+        {
+          "name": "successStatus",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/operation-outcome",
+            "code": "MSG_CREATED"
           }
         }
       ]
