@@ -36,6 +36,19 @@
       ]
     },
     {
+      "code": "ACCEPTED_OPT_OUT",
+      "display": "ACCEPTED_OPT_OUT",
+      "designation": [
+        {
+          "use": {
+            "code": "consent",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
+          },
+          "value": "Ja (Opt-Out)"
+        }
+      ]
+    },
+    {
       "code": "DECLINED",
       "display": "DECLINED",
       "designation": [
@@ -137,6 +150,19 @@
     {
       "code": "EXPIRED",
       "display": "EXPIRED"
+    },
+    {
+      "code": "OBJECTED",
+      "display": "OBJECTED",
+      "designation": [
+        {
+          "use": {
+            "code": "consent",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
+          },
+          "value": "Widersprechen"
+        }
+      ]
     }
   ],
   "experimental": false,
@@ -156,5 +182,5 @@
   ],
   "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "caseSensitive": true,
-  "count": 9
+  "count": 11
 }

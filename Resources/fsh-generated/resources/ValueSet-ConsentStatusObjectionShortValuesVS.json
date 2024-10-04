@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ConsentStatusObjectionShortValues",
+  "id": "ConsentStatusObjectionShortValuesVS",
+  "version": "2023.2.0-DEVEL",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionShortValues",
+  "experimental": false,
+  "date": "2023-09-04",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "compose": {
+    "include": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "concept": [
+          {
+            "code": "OBJECTED"
+          }
+        ]
+      }
+    ]
+  },
+  "expansion": {
+    "timestamp": "2024-10-04T12:00:00Z",
+    "total": 1,
+    "contains": [
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "code": "OBJECTED",
+        "display": "Widersprechen"
+      }
+    ]
+  }
+}

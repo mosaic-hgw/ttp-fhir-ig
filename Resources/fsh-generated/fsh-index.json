@@ -157,7 +157,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystem-ConsentStatus.fsh",
     "startLine": 1,
-    "endLine": 49
+    "endLine": 55
   },
   {
     "outputFile": "CodeSystem-DesignationUseCS.json",
@@ -1376,12 +1376,44 @@
     "endLine": 29
   },
   {
+    "outputFile": "ValueSet-ConsentStatusConsentOptOutFullValuesVS.json",
+    "fshName": "ConsentStatusConsentOptOutFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentOptOutFullValues.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusConsentOptOutShortValuesVS.json",
+    "fshName": "ConsentStatusConsentOptOutShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentOptOutShortValues.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "ValueSet-ConsentStatusConsentShortValuesVS.json",
     "fshName": "ConsentStatusConsentShortValues",
     "fshType": "ValueSet",
     "fshFile": "valueset-ConsentStatusConsentShortValues.fsh",
     "startLine": 1,
     "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusObjectionFullValuesVS.json",
+    "fshName": "ConsentStatusObjectionFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusObjectionFullValues.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusObjectionShortValuesVS.json",
+    "fshName": "ConsentStatusObjectionShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusObjectionShortValues.fsh",
+    "startLine": 1,
+    "endLine": 11
   },
   {
     "outputFile": "ValueSet-ConsentStatusRefusalFullValuesVS.json",
@@ -1405,7 +1437,7 @@
     "fshType": "ValueSet",
     "fshFile": "valueset-ConsentStatus.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 41
   },
   {
     "outputFile": "ValueSet-ConsentStatusWithdrawalFullValuesVS.json",

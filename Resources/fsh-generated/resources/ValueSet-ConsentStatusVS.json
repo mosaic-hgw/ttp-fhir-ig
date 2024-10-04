@@ -30,12 +30,17 @@
   },
   "expansion": {
     "timestamp": "2021-04-12T12:00:00Z",
-    "total": 9,
+    "total": 11,
     "contains": [
       {
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
         "code": "ACCEPTED",
         "display": "ACCEPTED"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "code": "ACCEPTED_OPT_OUT",
+        "display": "ACCEPTED_OPT_OUT"
       },
       {
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
@@ -76,6 +81,11 @@
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
         "code": "EXPIRED",
         "display": "EXPIRED"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "code": "OBJECTED",
+        "display": "OBJECTED"
       }
     ]
   }
