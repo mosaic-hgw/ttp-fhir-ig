@@ -49,7 +49,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -138,7 +138,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -227,7 +227,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -316,7 +316,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -405,7 +405,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -494,7 +494,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -583,7 +583,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -672,7 +672,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -761,7 +761,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -842,7 +842,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -923,7 +923,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -1012,7 +1012,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]
@@ -1101,7 +1101,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "policy",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]

@@ -194,7 +194,7 @@
           {
             "coding": [
               {
-                "code": "consent-status",
+                "code": "document",
                 "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
               }
             ]

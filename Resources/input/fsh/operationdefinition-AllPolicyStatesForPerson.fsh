@@ -27,6 +27,12 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Einwilligungsdomaene"
 * parameter[=].type = #string
+* parameter[+].name = #resultType
+* parameter[=].use = #in
+* parameter[=].min = 0
+* parameter[=].max = "1"
+* parameter[=].documentation = "Code für die Art des Ergebnistyps ('policy' liefert je SignedPolicy eine Consent-Ressource. 'consent-status' liefert eine Consent-Resource mit n Level-2-Provisions für Signed Policies). Als Defaultwert gilt 'policy'."
+* parameter[=].type = #code
 * parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 0
@@ -43,6 +49,8 @@ Usage: #example
 * parameter[=].valueIdentifier.value = "dic_GCC83"
 * parameter[+].name = "domain"
 * parameter[=].valueString = "MII"
+* parameter[+].name = "resultType"
+* parameter[=].valueCode = #policy
 
 Instance: AllPolicyStatesForPerson-response-example-1
 InstanceOf: Bundle
@@ -85,8 +93,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -107,8 +115,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -129,8 +137,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -151,8 +159,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -172,8 +180,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -194,8 +202,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -215,8 +223,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -237,8 +245,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -259,8 +267,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -280,8 +288,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -301,8 +309,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -323,8 +331,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
@@ -344,8 +352,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#policy
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)

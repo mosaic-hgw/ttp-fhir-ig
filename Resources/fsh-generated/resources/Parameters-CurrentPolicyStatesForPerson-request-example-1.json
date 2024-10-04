@@ -39,6 +39,10 @@
           }
         ]
       }
+    },
+    {
+      "name": "resultType",
+      "valueCode": "policy"
     }
   ]
 }

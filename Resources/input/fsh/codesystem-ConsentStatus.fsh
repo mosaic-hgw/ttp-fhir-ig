@@ -39,7 +39,7 @@ Description: " consent states are used to depict the participant’s will. There
 * #NOT_CHOSEN ^designation[=].value = "Überspringen"
 * #NOT_CHOSEN ^designation[+].use.system = "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
 * #NOT_CHOSEN ^designation[=].use = $DesignationUse#refusal
-* #NOT_CHOSEN ^designation[=].value = "Nein"
+* #NOT_CHOSEN ^designation[=].value = "Nicht gefragt"
 * #NOT_CHOSEN ^designation[+].use.system = "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
 * #NOT_CHOSEN ^designation[=].use = $DesignationUse#withdrawal
 * #NOT_CHOSEN ^designation[=].value = "Nein"

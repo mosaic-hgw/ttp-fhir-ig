@@ -115,7 +115,7 @@
             "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse",
             "code": "refusal"
           },
-          "value": "Nein"
+          "value": "Nicht gefragt"
         },
         {
           "use": {

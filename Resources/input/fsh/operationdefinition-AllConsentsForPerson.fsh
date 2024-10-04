@@ -116,8 +116,8 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#document
 * patient = Reference(719ff1a3-ccac-4189-86f4-97793684b8e3) "Pseudonym dic_1H51T"
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"
