@@ -108,8 +108,8 @@
     "fshName": "PseudonymizePatient-Bundle-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
-    "startLine": 139,
-    "endLine": 152
+    "startLine": 133,
+    "endLine": 146
   },
   {
     "outputFile": "CodeSystem-ConsentComponentTypeCS.json",

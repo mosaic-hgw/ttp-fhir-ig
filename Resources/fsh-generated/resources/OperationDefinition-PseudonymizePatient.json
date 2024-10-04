@@ -23,7 +23,7 @@
   "kind": "operation",
   "description": "",
   "affectsState": true,
-  "code": "pseudonymize-patient",
+  "code": "pseudonymizePatient",
   "comment": "Abfrage je eines Pseudonym-Wertes für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen.",
   "system": true,
   "type": false,
