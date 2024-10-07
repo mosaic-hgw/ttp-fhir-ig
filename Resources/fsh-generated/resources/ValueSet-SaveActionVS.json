@@ -3,10 +3,10 @@
   "status": "draft",
   "name": "SaveAction",
   "id": "SaveActionVS",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction",
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "compose": {
     "include": [
       {

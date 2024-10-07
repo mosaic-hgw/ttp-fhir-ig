@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "Property",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Property",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "name": "Property",
   "title": "Property Element",
   "status": "draft",
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "description": "Key Value Property Element für Properties zur Individualisierung von Domains, Policies, Modules und Templates",
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

@@ -5,7 +5,7 @@
   "name": "ConsentStatus",
   "id": "ConsentStatusCS",
   "description": " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
   "concept": [
     {
@@ -166,7 +166,7 @@
     }
   ],
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -180,7 +180,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "caseSensitive": true,
   "count": 11
 }

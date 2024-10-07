@@ -1,8 +1,8 @@
-![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"} 
+![](https://www.ths-greifswald.de/wp-content/uploads/2019/01/Design-Logo-THS-deutsch-271-padding.png){: align="right" width="200px"}
 
 # TTP-FHIR Gateway
 
-Stand 15.08.2024
+Stand 07.10.2024
 
 ## Inhalt
 {{index:current}}
