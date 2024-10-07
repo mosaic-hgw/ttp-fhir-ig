@@ -16,3 +16,11 @@ Daher sind die nachfolgenden weiteren kontextabhängigen Value Sets definiert, d
 {{render:ConsentStatusWithdrawalFullValuesVS}}
 
 {{render:ConsentStatusWithdrawalShortValuesVS}}
+
+{{render:ConsentStatusObjectionFullValues}}
+
+{{render:ConsentStatusObjectionShortValues}}
+
+{{render:ConsentStatusConsentOptOutFullValues}}
+
+{{render:ConsentStatusConsentOptOutShortValues}}
