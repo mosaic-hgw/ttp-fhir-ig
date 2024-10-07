@@ -142,7 +142,7 @@ Usage: #example
 * entry[+]
   * resource = PseudonymizePatient-Bundle-response-example-1-Par2
   * response
-    * status = "403"
+    * status = "404"
     * outcome = PseudonymizePatient-Bundle-response-example-1-Par2OpO
 
 Instance: PseudonymizePatient-Bundle-response-example-1-Par1
@@ -188,4 +188,4 @@ Usage: #inline
 * issue[+]
   * severity = #fatal
   * code = #security
-  * diagnostics = "You do not have access to the specified target domain or the specified target domain does not exist."
+  * diagnostics = "Target domain 'NotMyStudy-Domain15' not found."

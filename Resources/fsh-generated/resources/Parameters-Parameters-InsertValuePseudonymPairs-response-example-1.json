@@ -27,7 +27,7 @@
           }
         },
         {
-          "name": "successStatus",
+          "name": "result-code",
           "valueCoding": {
             "system": "http://terminology.hl7.org/CodeSystem/operation-outcome",
             "code": "MSG_CREATED"

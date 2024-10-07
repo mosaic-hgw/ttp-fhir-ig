@@ -75,7 +75,7 @@
         {
           "name": "original",
           "use": "out",
-          "min": 1,
+          "min": 0,
           "max": "1",
           "documentation": "Original-Identifikator",
           "type": "Identifier"
@@ -83,7 +83,7 @@
         {
           "name": "target",
           "use": "out",
-          "min": 1,
+          "min": 0,
           "max": "1",
           "documentation": "Target-Identifikator",
           "type": "Identifier"
@@ -91,58 +91,17 @@
         {
           "name": "value",
           "use": "out",
-          "min": 1,
+          "min": 0,
           "max": "1",
           "documentation": "Pseudonym",
           "type": "Identifier"
         },
         {
-          "name": "successStatus",
+          "name": "result-code",
           "use": "out",
           "min": 1,
           "max": "1",
           "documentation": "Erfolgsstatus",
-          "type": "Coding"
-        }
-      ]
-    },
-    {
-      "name": "error",
-      "use": "out",
-      "min": 0,
-      "max": "*",
-      "documentation": "Fehlerrückgabe bei Teil-Fehlern",
-      "part": [
-        {
-          "name": "target",
-          "use": "out",
-          "min": 0,
-          "max": "1",
-          "documentation": "Target-Identifikator",
-          "type": "Identifier"
-        },
-        {
-          "name": "original",
-          "use": "out",
-          "min": 0,
-          "max": "1",
-          "documentation": "Original-Identifikator",
-          "type": "Identifier"
-        },
-        {
-          "name": "pseudonym",
-          "use": "out",
-          "min": 0,
-          "max": "1",
-          "documentation": "Pseudonym",
-          "type": "Identifier"
-        },
-        {
-          "name": "error-code",
-          "use": "out",
-          "min": 1,
-          "max": "1",
-          "documentation": "Fehlercode",
           "type": "Coding"
         }
       ]
