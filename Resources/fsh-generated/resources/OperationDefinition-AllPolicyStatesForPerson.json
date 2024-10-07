@@ -48,14 +48,6 @@
       "type": "string"
     },
     {
-      "name": "resultType",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Code für die Art des Ergebnistyps ('policy' liefert je SignedPolicy eine Consent-Ressource. 'consent-status' liefert eine Consent-Resource mit n Level-2-Provisions für Signed Policies). Als Defaultwert gilt 'policy'.",
-      "type": "code"
-    },
-    {
       "name": "return",
       "use": "out",
       "min": 0,

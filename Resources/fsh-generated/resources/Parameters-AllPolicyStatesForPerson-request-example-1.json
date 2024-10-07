@@ -12,10 +12,6 @@
     {
       "name": "domain",
       "valueString": "MII"
-    },
-    {
-      "name": "resultType",
-      "valueCode": "policy"
     }
   ]
 }

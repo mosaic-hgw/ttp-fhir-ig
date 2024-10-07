@@ -68,8 +68,8 @@
     "fshName": "AllPolicyStatesForPerson-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-AllPolicyStatesForPerson.fsh",
-    "startLine": 55,
-    "endLine": 84
+    "startLine": 47,
+    "endLine": 76
   },
   {
     "outputFile": "Bundle-Consent-Bundle-example-1.json",
@@ -92,8 +92,8 @@
     "fshName": "CurrentPolicyStatesForPerson-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-CurrentPolicyStatesForPerson.fsh",
-    "startLine": 71,
-    "endLine": 128
+    "startLine": 63,
+    "endLine": 120
   },
   {
     "outputFile": "Bundle-PseudonymizePatient-Bundle-request-example-1.json",
@@ -293,7 +293,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-AllPolicyStatesForPerson.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 35
   },
   {
     "outputFile": "OperationDefinition-AnonymizeOriginals.json",
@@ -333,7 +333,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-CurrentPolicyStatesForPerson.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 40
   },
   {
     "outputFile": "OperationDefinition-DePseudonymize.json",
@@ -540,8 +540,8 @@
     "fshName": "AllPolicyStatesForPerson-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-AllPolicyStatesForPerson.fsh",
-    "startLine": 44,
-    "endLine": 53
+    "startLine": 38,
+    "endLine": 45
   },
   {
     "outputFile": "Parameters-CurrentConsentForPersonAndTemplate-request-example-1.json",
@@ -556,8 +556,8 @@
     "fshName": "CurrentPolicyStatesForPerson-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-CurrentPolicyStatesForPerson.fsh",
-    "startLine": 49,
-    "endLine": 68
+    "startLine": 43,
+    "endLine": 60
   },
   {
     "outputFile": "Parameters-GetAllConsentedIdsFor-request-example-1.json",

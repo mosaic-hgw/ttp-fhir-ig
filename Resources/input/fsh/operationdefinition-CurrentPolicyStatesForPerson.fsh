@@ -32,12 +32,6 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].type = #Parameters
-* parameter[+].name = #resultType
-* parameter[=].use = #in
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Code für die Art des Ergebnistyps ('policy' liefert je SignedPolicy eine Consent-Ressource. 'consent-status' liefert eine Consent-Resource mit n Level-2-Provisions für Signed Policies). Als Defaultwert gilt 'policy'."
-* parameter[=].type = #code
 * parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 0
@@ -64,8 +58,6 @@ Usage: #example
 * parameter[=].resource.parameter[=].valueBoolean = false
 * parameter[=].resource.parameter[+].name = "requestDate"
 * parameter[=].resource.parameter[=].valueDate = "2022-01-13"
-* parameter[+].name = "resultType"
-* parameter[=].valueCode = #policy
 
 
 Instance: CurrentPolicyStatesForPerson-response-example-1
@@ -141,7 +133,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -166,7 +158,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -191,7 +183,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -217,7 +209,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -242,7 +234,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -267,7 +259,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -293,7 +285,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -319,7 +311,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -344,7 +336,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -370,7 +362,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -395,7 +387,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -421,7 +413,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -447,7 +439,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -473,7 +465,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -499,7 +491,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -524,7 +516,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -549,7 +541,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -575,7 +567,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -601,7 +593,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -626,7 +618,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -651,7 +643,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -677,7 +669,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -703,7 +695,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -728,7 +720,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -753,7 +745,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -779,7 +771,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
@@ -804,7 +796,7 @@ Usage: #inline
 * status = #active
 * scope = $consentscope#research
 * category[+] = $loinc#57016-8
-* category[+] = $csResultType#policy
+* category[+] = $csResultType#consent-status
 * patient = Reference(Patient/cf39df7c-d88d-46fe-ac8d-4553d43a14f4) "Pseudonym dic_1H51T"
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"

@@ -27,12 +27,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Einwilligungsdomaene"
 * parameter[=].type = #string
-* parameter[+].name = #resultType
-* parameter[=].use = #in
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Code für die Art des Ergebnistyps ('policy' liefert je SignedPolicy eine Consent-Ressource. 'consent-status' liefert eine Consent-Resource mit n Level-2-Provisions für Signed Policies). Als Defaultwert gilt 'policy'."
-* parameter[=].type = #code
 * parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 0
@@ -49,8 +43,6 @@ Usage: #example
 * parameter[=].valueIdentifier.value = "dic_GCC83"
 * parameter[+].name = "domain"
 * parameter[=].valueString = "MII"
-* parameter[+].name = "resultType"
-* parameter[=].valueCode = #policy
 
 Instance: AllPolicyStatesForPerson-response-example-1
 InstanceOf: Bundle
