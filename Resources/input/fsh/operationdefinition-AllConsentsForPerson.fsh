@@ -122,6 +122,7 @@ Usage: #inline
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"
 * sourceReference = Reference(dfd5edc6-3a8a-4796-a9bb-f9572cf15c96)
+* policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
 * provision.type = #deny
 * provision.period.start = "2021-05-19T17:50:22+02:00"
 * provision.period.end = "2051-05-19T17:50:23+02:00"

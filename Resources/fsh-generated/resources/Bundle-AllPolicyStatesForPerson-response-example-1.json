@@ -63,6 +63,15 @@
         "sourceReference": {
           "reference": "QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56"
         },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "IDAT_bereitstellen_EU_DSGVO_NIVEAU",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"
+            }
+          ]
+        },
         "provision": {
           "type": "permit",
           "period": {
@@ -177,6 +186,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "IDAT_erheben",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Erfassung neuer identifizierender Daten (IDAT)"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:68148751-1a10-4e5a-84cd-2290950c3793"
@@ -264,6 +282,15 @@
                   "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
                 }
               ]
+            }
+          ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "IDAT_speichern_verarbeiten",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"
             }
           ]
         }
@@ -355,6 +382,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "IDAT_zusammenfuehren_Dritte",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:343a8482-a00f-4ae4-974b-884932bdf44a"
@@ -442,6 +478,15 @@
                   "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
                 }
               ]
+            }
+          ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_erheben",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Erfassung medizinischer Daten"
             }
           ]
         }
@@ -533,6 +578,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_GECCO83_bereitstellen_NUM_CODEX",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:7159f7db-a76f-41a5-b831-10c972a3a282"
@@ -620,6 +674,15 @@
                   "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
                 }
               ]
+            }
+          ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben"
             }
           ]
         }
@@ -711,6 +774,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:29e8f702-9949-48d0-82b8-64afae92354e"
@@ -792,6 +864,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+              "display": "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:7726b2ea-ea25-4848-a666-2135bf384cff"
@@ -871,6 +952,15 @@
                   "display": "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"
                 }
               ]
+            }
+          ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+              "display": "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"
             }
           ]
         }
@@ -962,6 +1052,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_speichern_verarbeiten",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:9d317d12-e34f-4b4f-a9c1-693ecf7e1615"
@@ -1051,6 +1150,15 @@
               ]
             }
           ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "
+            }
+          ]
         }
       },
       "fullUrl": "urn:uuid:8fead334-f5a9-4025-b604-5e38f9ad44c3"
@@ -1138,6 +1246,15 @@
                   "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
                 }
               ]
+            }
+          ]
+        },
+        "policyRule": {
+          "coding": [
+            {
+              "code": "MDAT_zusammenfuehren_Dritte",
+              "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+              "display": "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"
             }
           ]
         }

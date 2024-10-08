@@ -90,6 +90,7 @@ Usage: #inline
 * patient = Reference(Patient/34d195ef-179f-48dd-b830-d52ea9347157) "Pseudonym dic_GCC83"
 * dateTime = "2021-06-03T00:00:00+02:00"
 * sourceReference = Reference(QuestionnaireResponse/5cfc1218-618f-4408-9e3d-a1af7a25aa56)
+* policyRule = $Policy#IDAT_bereitstellen_EU_DSGVO_NIVEAU "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
@@ -115,6 +116,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#IDAT_erheben "Erfassung neuer identifizierender Daten (IDAT)"
 * provision.code[0] = $Policy#IDAT_erheben "Erfassung neuer identifizierender Daten (IDAT)"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.2
 
@@ -137,6 +139,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#IDAT_speichern_verarbeiten "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"
 * provision.code[0] = $Policy#IDAT_speichern_verarbeiten "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.3
 
@@ -159,6 +162,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#IDAT_zusammenfuehren_Dritte "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"
 * provision.code[0] = $Policy#IDAT_zusammenfuehren_Dritte "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.4
 
@@ -180,6 +184,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2026-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_erheben "Erfassung medizinischer Daten"
 * provision.code[0] = $Policy#MDAT_erheben "Erfassung medizinischer Daten"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6
 
@@ -202,6 +207,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_GECCO83_bereitstellen_NUM_CODEX "Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen"
 * provision.code[0] = $Policy#MDAT_GECCO83_bereitstellen_NUM_CODEX "Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.33
 
@@ -223,6 +229,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU "Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben"
 * provision.code[0] = $Policy#MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU "Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.36
 
@@ -245,6 +252,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX "Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten"
 * provision.code[0] = $Policy#MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX "Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.34
 
@@ -267,6 +275,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $MII#MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung"
 * provision.code = $MII#MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die COVID-19-Forschung"
 
 Instance: 3fc1cb1f-e37c-4c5a-9b46-c6edc1459aa6
@@ -288,6 +297,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $MII#MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"
 * provision.code = $MII#MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform "Nutzung des Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform für die Pandemie-Forschung"
 
 Instance: 9d317d12-e34f-4b4f-a9c1-693ecf7e1615
@@ -309,6 +319,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_speichern_verarbeiten "Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"
 * provision.code[0] = $Policy#MDAT_speichern_verarbeiten "Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.7
 
@@ -331,6 +342,7 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU "Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "
 * provision.code[0] = $Policy#MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU "Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung "
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8
 
@@ -352,5 +364,6 @@ Usage: #inline
 * provision.type = #permit
 * provision.period.start = "2021-06-03T09:47:47+02:00"
 * provision.period.end = "2051-06-03T09:47:47+02:00"
+* policyRule = $Policy#MDAT_zusammenfuehren_Dritte "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"
 * provision.code[0] = $Policy#MDAT_zusammenfuehren_Dritte "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern"
 * provision.code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.9

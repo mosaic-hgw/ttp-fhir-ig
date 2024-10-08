@@ -205,7 +205,7 @@ Usage: #inline
 * dateTime = "2022-12-21T00:00:00+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(bd56b7e3-336c-49a6-aa31-1987b02f26cf)
-* policyRule.text = "Patienteneinwilligung MII|1.6.d"
+* policy.uri = "urn:uuid:627163a2-ed92-41c7-91e3-0b134127b47b"
 * provision.type = #deny
 * provision.period.start = "2022-12-21T00:00:00+01:00"
 * provision.period.end = "2052-12-21T00:00:00+01:00"

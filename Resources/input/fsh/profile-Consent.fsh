@@ -42,7 +42,7 @@ Usage: #example
 * patient = Reference(Patient/b5ad0847-597d-4825-bb6c-537d949159f8) "Pseudonym dic_1H51T"
 * dateTime = "2021-06-17T14:02:21+02:00"
 * sourceReference = Reference(QuestionnaireResponse/cde387ba-27df-43c2-9f8d-4a2157a16363)
-* policyRule = $Policy#MDAT_erheben "Erfassung medizinischer Daten"
+* policy.uri = "urn:uuid:593d66f3-3654-4e8a-9524-3bcd78a363bb"
 * provision.type = #permit
 * provision.period.start = "2021-06-17T14:02:21+02:00"
 * provision.period.end = "2026-06-17T14:02:21+02:00"
@@ -71,7 +71,7 @@ Usage: #example
 * dateTime = "2021-10-29T11:00:08+02:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1)
-* policyRule.text = "Patienteneinwilligung MII|1.6.f"
+* policy.uri = "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"
 * provision.type = #deny
 * provision.period.start = "2021-10-29T11:00:08+02:00"
 * provision.period.end = "2021-11-30T00:00:00+01:00"
@@ -149,7 +149,7 @@ Usage: #example
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96)
-* policyRule.text = "Patienteneinwilligung MII|1.6.f"
+* policy.uri = "urn:uuid:593d66f3-3654-4e8a-9524-3bcd78a363bb"
 * provision.type = #deny
 * provision.period.start = "2021-05-19T17:50:22+02:00"
 * provision.period.end = "2051-05-19T17:50:23+02:00"
