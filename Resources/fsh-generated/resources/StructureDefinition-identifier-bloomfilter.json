@@ -32,15 +32,45 @@
   "differential": {
     "element": [
       {
+        "id": "Identifier.type",
+        "path": "Identifier.type",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gpas/BloomfilterType"
+        }
+      },
+      {
+        "id": "Identifier.type.coding",
+        "path": "Identifier.type.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Identifier.type.coding.system",
+        "path": "Identifier.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Identifier.type.coding.code",
+        "path": "Identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Identifier.system",
         "path": "Identifier.system",
         "min": 1,
-        "patternUri": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
+        "patternUri": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
+        "mustSupport": true
       },
       {
         "id": "Identifier.value",
         "path": "Identifier.value",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

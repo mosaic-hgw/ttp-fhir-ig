@@ -28,4 +28,6 @@ Instance: PatientGpas-example-1
 InstanceOf: PatientGpas
 Usage: #example
 * identifier[kvid10].value = "A123456789"
-* identifier[bloomfilter].value = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
+* identifier[bloomfilter]
+  * type = BloomfilterTypeCS#A
+  * value = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="

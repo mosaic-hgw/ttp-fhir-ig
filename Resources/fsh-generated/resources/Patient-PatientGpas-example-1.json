@@ -13,6 +13,14 @@
     },
     {
       "system": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
+      "type": {
+        "coding": [
+          {
+            "code": "A",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/gpas/BloomfilterType"
+          }
+        ]
+      },
       "value": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
     }
   ]

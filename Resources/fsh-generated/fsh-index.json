@@ -112,6 +112,14 @@
     "endLine": 146
   },
   {
+    "outputFile": "CodeSystem-BloomfilterTypeCS.json",
+    "fshName": "BloomfilterType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-BloomfilterType.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "CodeSystem-ConsentComponentTypeCS.json",
     "fshName": "ConsentComponentType",
     "fshType": "CodeSystem",
@@ -949,7 +957,7 @@
     "fshType": "Instance",
     "fshFile": "profile-Patient-gpas.fsh",
     "startLine": 27,
-    "endLine": 31
+    "endLine": 33
   },
   {
     "outputFile": "Person-Person-example-1.json",
@@ -1325,7 +1333,15 @@
     "fshType": "Profile",
     "fshFile": "profile-Identifier-bloomfilter.fsh",
     "startLine": 1,
-    "endLine": 9
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-BloomfilterTypeVS.json",
+    "fshName": "BloomfilterType",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-BloomfilterType.fsh",
+    "startLine": 1,
+    "endLine": 5
   },
   {
     "outputFile": "ValueSet-ConsentComponentTypeVS.json",
