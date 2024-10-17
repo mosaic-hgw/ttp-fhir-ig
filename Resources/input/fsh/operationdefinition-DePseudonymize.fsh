@@ -129,9 +129,9 @@ Usage: #example
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "mrcm_T0TYNV21"
 * parameter[+].name = "error"
-* parameter[=].part[+].name = "original"
+* parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "10010000000XX"
+* parameter[=].part[=].valueIdentifier.value = "mrcm_UNKPSN123"
 * parameter[=].part[+].name = "error-code"
 * parameter[=].part[=].valueCoding.system = "http://hl7.org/fhir/issue-type"
 * parameter[=].part[=].valueCoding.code = #not-found
