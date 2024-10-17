@@ -59,6 +59,7 @@ Usage: #example
 * parameter[=].resource.parameter[+].name = "requestDate"
 * parameter[=].resource.parameter[=].valueDate = "2022-01-13"
 
+
 Instance: CurrentPolicyStatesForPerson-response-example-1
 InstanceOf: Bundle
 Usage: #example
@@ -137,7 +138,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_Analysedaten_zusammenfuehren_Dritte "Zusammenführen von auf Biomaterialien (BIOMAT) basierenden Analysedaten mit Analysedaten Dritter, sofern dort ebenfalls eine Einwilligung vorliegt"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -162,7 +163,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_Eigentum_uebertragen "Eigentumsübertragung der BIOMAT an den Träger der Biobank"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -187,7 +188,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_Zusatzmengen_entnehmen "Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT) in den in der Einwilligung beschriebenen Grenzen"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2027-01-13T13:55:12+01:00"
@@ -213,7 +214,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_erheben "Gewinnung von Biomaterialien (BIOMAT)"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2027-01-13T13:55:12+01:00"
@@ -238,7 +239,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_lagern_verarbeiten "Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT)"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -263,7 +264,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU "Bereitstellung umcodierter Biomaterialien (BIOMAT)  für wissenschaftliche Nutzung  und Analysen zu Zwecken med. Forschung an ext. Forscher"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -289,7 +290,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#IDAT_bereitstellen_EU_DSGVO_NIVEAU "Herausgabe identifizierender Daten (IDAT) an unabhängige Treuhandstelle zur weiteren Verarbeitung"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -315,7 +316,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#IDAT_erheben "Erfassung neuer identifizierender Daten (IDAT)"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -340,7 +341,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#IDAT_speichern_verarbeiten "Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -366,7 +367,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#IDAT_zusammenfuehren_Dritte "Zusammenführung identifizierender Daten (IDAT) über die unabhängige Treuhandstelle mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -391,7 +392,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_pro_speichern_verarbeiten "Prospektive Krankenkassendaten (KKDAT) aus fünf Jahren ab Einwilligung speichern und codiert verarbeiten zu Zwecken der med. Forschung in der verantwortlichen Stelle"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -417,7 +418,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_pro_uebertragen "Prospektive Krankenkassendaten (KKDAT) für fünf Kalenderjahre nach Datum Unterschrift übertragen"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2027-01-13T13:55:12+01:00"
@@ -443,7 +444,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_pro_wissenschaftlich_nutzen "Bereitstellung umcodierter prospektiver Krankenkassendaten (KKDAT) aus fünf Jahren ab Einwilligung zu Zwecken med. Forschung an ext. Forscher"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -469,7 +470,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_retro_speichern_verarbeiten "Retrospektive Krankenkassendaten (KKDAT) aus fünf Jahren vor Einwilligung speichern und codiert verarbeiten zu Zwecken med. Forschung in der verantwortlichen Stelle"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -495,7 +496,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_retro_uebertragen "Krankenkassendaten (KKDAT) der letzten fünf Kalenderjahre vor Datum Unterschrift übertragen"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -520,7 +521,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#KDAT_retro_wissenschaftlich_nutzen "Bereitstellung umcodierter retrospektiver Krankenkassendaten (KKDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -545,7 +546,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $MII#KKDAT_KVNR_5J_pro_uebertragen "Erlaubnis zur prospektiven Übermittlung der KVNr., MII-Pseudonym und Zeitraum Datenübermittlung (von: Datum Unterschrift; bis: max. 5 Kalenderjahre nach Unterschrift) an zuständige Stelle"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2027-01-13T13:55:12+01:00"
@@ -571,7 +572,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $MII#KKDAT_KVNR_5J_retro_uebertragen "Erlaubnis zur retrospektiven Übermittlung der KVNr., MII-Pseudonym und Zeitraum Datenübermittlung (von:5 Jahre vor Datum Unterschrift; bis: Datum Unterschrift) an zuständige Stelle"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -597,7 +598,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#MDAT_erheben "Erfassung medizinischer Daten (MDAT)"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2027-01-13T13:55:12+01:00"
@@ -622,7 +623,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#MDAT_speichern_verarbeiten "Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -647,7 +648,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU "Bereitstellung umcodierter medizinischer Daten (MDAT) für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -673,7 +674,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#MDAT_zusammenfuehren_Dritte "Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern, sofern dort eine Einwilligung vorliegt"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -699,7 +700,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $MII#Rekontaktierung_Ergebnisse_erheblicher_Bedeutung "Rekontaktierung des Betroffenen bei Ergebnissen von erheblicher Bedeutung"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #permit
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -724,7 +725,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#Rekontaktierung_Verknuepfung_Datenbanken "Rekontaktierung zur Verknüpfung von Patientendaten mit Daten anderer Datenbanken"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -749,7 +750,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $MII#Rekontaktierung_Zusatzbefund "Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -775,7 +776,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#Rekontaktierung_weitere_Erhebung "Rekontaktierung bezüglich Erhebung zusätzlicher Daten"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"
@@ -800,7 +801,7 @@ Usage: #inline
 * dateTime = "2022-01-13T13:55:12+01:00"
 * organization.display = "MII"
 * sourceReference = Reference(QuestionnaireResponse/80b4f763-2511-438c-be92-9beb2c6ea8e6)
-* policyRule = $Policy#Rekontaktierung_weitere_Studien "Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien"
+* policy.uri = "urn:uuid:5213d78f-2008-4b9e-9f0e-42ec38a1d518"
 * provision.type = #deny
 * provision.period.start = "2022-01-13T13:55:12+01:00"
 * provision.period.end = "2052-01-13T13:55:12+01:00"

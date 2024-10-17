@@ -2,9 +2,9 @@
   "resourceType": "OperationDefinition",
   "id": "PseudonymizePatient",
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizePatient",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "status": "draft",
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -23,7 +23,7 @@
   "kind": "operation",
   "description": "",
   "affectsState": true,
-  "code": "pseudonymize-patient",
+  "code": "pseudonymizePatient",
   "comment": "Abfrage je eines Pseudonym-Wertes für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen.",
   "system": true,
   "type": false,

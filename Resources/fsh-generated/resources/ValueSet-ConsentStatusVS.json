@@ -3,10 +3,10 @@
   "status": "draft",
   "name": "ConsentStatus",
   "id": "ConsentStatusVS",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatus",
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "compose": {
     "include": [
       {
@@ -30,12 +30,17 @@
   },
   "expansion": {
     "timestamp": "2021-04-12T12:00:00Z",
-    "total": 9,
+    "total": 11,
     "contains": [
       {
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
         "code": "ACCEPTED",
         "display": "ACCEPTED"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "code": "ACCEPTED_OPT_OUT",
+        "display": "ACCEPTED_OPT_OUT"
       },
       {
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
@@ -76,6 +81,11 @@
         "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
         "code": "EXPIRED",
         "display": "EXPIRED"
+      },
+      {
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus",
+        "code": "OBJECTED",
+        "display": "OBJECTED"
       }
     ]
   }

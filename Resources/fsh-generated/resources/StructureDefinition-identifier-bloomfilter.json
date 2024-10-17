@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "identifier-bloomfilter",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/identifier-bloomfilter",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "name": "IdentifierBloomfilter",
   "title": "Identifier-Profil für die Abbildung einer Bloomfilters",
   "status": "draft",
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "description": "Identifier-Profil für die Abbildung einer Bloomfilters",
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -32,15 +32,45 @@
   "differential": {
     "element": [
       {
+        "id": "Identifier.type",
+        "path": "Identifier.type",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gpas/BloomfilterType"
+        }
+      },
+      {
+        "id": "Identifier.type.coding",
+        "path": "Identifier.type.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Identifier.type.coding.system",
+        "path": "Identifier.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Identifier.type.coding.code",
+        "path": "Identifier.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Identifier.system",
         "path": "Identifier.system",
         "min": 1,
-        "patternUri": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
+        "patternUri": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
+        "mustSupport": true
       },
       {
         "id": "Identifier.value",
         "path": "Identifier.value",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

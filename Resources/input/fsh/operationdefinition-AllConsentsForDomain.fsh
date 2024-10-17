@@ -100,12 +100,13 @@ Usage: #inline
 * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
 * status = #active
 * scope = $consentscope#research
-* category = $loinc#57016-8
-* category[+] = $csResultType#consent-status
+* category[+] = $loinc#57016-8
+* category[+] = $csResultType#document
 * patient = Reference(d4c9a2fe-0eea-4a84-899d-3dbd9dc5c7f1) "Pseudonym dic_1H51T"
 * dateTime = "2021-05-19T00:00:00+02:00"
 * organization.display = "MII"
 * sourceReference = Reference(dfd5edc6-3a8a-4796-a9bb-f9572cf15c96)
+* policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
 * provision.type = #deny
 * provision.period.start = "2021-05-19T17:50:22+02:00"
 * provision.period.end = "2051-05-19T17:50:23+02:00"

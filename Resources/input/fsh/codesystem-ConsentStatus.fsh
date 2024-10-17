@@ -12,6 +12,9 @@ Description: " consent states are used to depict the participant’s will. There
 * #ACCEPTED ^designation[=].value = "Einwilligen"
 * #ACCEPTED ^designation[+].use = $DesignationUse#withdrawal
 * #ACCEPTED ^designation[=].value = "Erneut einwilligen"
+* #ACCEPTED_OPT_OUT "ACCEPTED_OPT_OUT"
+* #ACCEPTED_OPT_OUT ^designation[0].use = $DesignationUse#consent
+* #ACCEPTED_OPT_OUT ^designation[=].value = "Ja (Opt-Out)"
 * #DECLINED "DECLINED"
 * #DECLINED ^designation[0].use.system = "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
 * #DECLINED ^designation[=].use = $DesignationUse#consent
@@ -36,7 +39,7 @@ Description: " consent states are used to depict the participant’s will. There
 * #NOT_CHOSEN ^designation[=].value = "Überspringen"
 * #NOT_CHOSEN ^designation[+].use.system = "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
 * #NOT_CHOSEN ^designation[=].use = $DesignationUse#refusal
-* #NOT_CHOSEN ^designation[=].value = "Nein"
+* #NOT_CHOSEN ^designation[=].value = "Nicht gefragt"
 * #NOT_CHOSEN ^designation[+].use.system = "https://ths-greifswald.de/fhir/CodeSystem/gics/DesignationUse"
 * #NOT_CHOSEN ^designation[=].use = $DesignationUse#withdrawal
 * #NOT_CHOSEN ^designation[=].value = "Nein"
@@ -47,3 +50,6 @@ Description: " consent states are used to depict the participant’s will. There
 * #INVALIDATED "INVALIDATED"
 * #REFUSED "REFUSED"
 * #EXPIRED "EXPIRED"
+* #OBJECTED "OBJECTED"
+* #OBJECTED ^designation[0].use = $DesignationUse#consent
+* #OBJECTED ^designation[=].value = "Widersprechen"

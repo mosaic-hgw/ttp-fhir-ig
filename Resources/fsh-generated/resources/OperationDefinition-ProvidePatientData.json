@@ -2,9 +2,9 @@
   "resourceType": "OperationDefinition",
   "id": "ProvidePatientData",
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/dispatcher/providePatientData",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "status": "active",
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

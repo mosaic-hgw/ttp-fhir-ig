@@ -69,15 +69,11 @@
   "sourceReference": {
     "reference": "QuestionnaireResponse/cde387ba-27df-43c2-9f8d-4a2157a16363"
   },
-  "policyRule": {
-    "coding": [
-      {
-        "code": "MDAT_erheben",
-        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
-        "display": "Erfassung medizinischer Daten"
-      }
-    ]
-  },
+  "policy": [
+    {
+      "uri": "urn:uuid:593d66f3-3654-4e8a-9524-3bcd78a363bb"
+    }
+  ],
   "provision": {
     "type": "permit",
     "period": {

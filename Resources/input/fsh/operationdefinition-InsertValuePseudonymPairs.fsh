@@ -44,7 +44,7 @@ Usage: #definition
     * type = #string
     * searchType = #string
 * parameter[+]
-  * name = #pseudonym
+  * name = #successStatus
   * use = #out
   * min = 0
   * max = "*"
@@ -52,57 +52,30 @@ Usage: #definition
   * part[+]
     * name = #original
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Original-Identifikator"
     * type = #Identifier
   * part[+]
     * name = #target
     * use = #out
-    * min = 1
+    * min = 0
     * max = "1"
     * documentation = "Target-Identifikator"
     * type = #Identifier
   * part[+]
     * name = #value
     * use = #out
-    * min = 1
-    * max = "1"
-    * documentation = "Pseudonym"
-    * type = #Identifier
-* parameter[+]
-  * name = #error
-  * use = #out
-  * min = 0
-  * max = "*"
-  * documentation = "Fehlerrückgabe bei Teil-Fehlern"
-  * part[+]
-    * name = #target
-    * use = #out
-    * min = 0
-    * max = "1"
-    * documentation = "Target-Identifikator"
-    * type = #Identifier
-  * part[+]
-    * name = #original
-    * use = #out
-    * min = 0
-    * max = "1"
-    * documentation = "Original-Identifikator"
-    * type = #Identifier
-  * part[+]
-    * name = #pseudonym
-    * use = #out
     * min = 0
     * max = "1"
     * documentation = "Pseudonym"
     * type = #Identifier
   * part[+]
-    * name = #error-code
+    * name = #result-code
     * use = #out
     * min = 1
     * max = "1"
-    * documentation = "Fehlercode"
+    * documentation = "Erfolgsstatus"
     * type = #Coding
 
 
@@ -125,7 +98,7 @@ Instance: Parameters-InsertValuePseudonymPairs-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0]
-  * name = "pseudonym"
+  * name = "successStatus"
   * part[+]
     * name = "target"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
@@ -138,18 +111,22 @@ Usage: #example
     * name = "value"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
     * valueIdentifier.value = "mrcm_T0TYNV21"
+  * part[+]
+    * name = "result-code"
+    * valueCoding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
+    * valueCoding.code = #MSG_CREATED
 
 Instance: Parameters-InsertValuePseudonymPairs-response-example-2
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
-  * name = "error"
+  * name = "successStatus"
   * part[+]
     * name = "target"
     * valueIdentifier.system = "https://ths-greifswald.de/gpas"
     * valueIdentifier.value = "DOMAINXY"
   * part[+]
-    * name = "error-code"
+    * name = "result-code"
     * valueCoding.system = "http://hl7.org/fhir/issue-type"
     * valueCoding.code = #not-found
     * valueCoding.display = "Not Found"

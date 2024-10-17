@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentModule",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentModule",
-  "version": "2023.2.0-DEVEL",
+  "version": "2024.3.0-DEVEL",
   "name": "ConsentModule",
   "title": "Consent Module",
   "status": "draft",
   "experimental": false,
-  "date": "2023-09-04",
+  "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -23,7 +23,7 @@
   ],
   "description": "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften",
   "purpose": "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften",
-  "copyright": "Copyright 2020-2023 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

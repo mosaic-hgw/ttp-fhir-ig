@@ -96,6 +96,11 @@
                   "generation": "markdown"
                 },
                 {
+                  "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-addPossibleMatch.md",
+                  "title": "addPossibleMatch",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/RecordLinkageundIdentittsmanagement-Operations-removePossibleMatches.md",
                   "title": "removePossibleMatches",
                   "generation": "markdown"
@@ -413,7 +418,7 @@
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide/markdown/ConsentStatusundpartielleValueSets.md",
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentStatusundpartielleValueSets.md",
                   "title": "ConsentStatus und partielle Value Sets",
                   "generation": "markdown"
                 },

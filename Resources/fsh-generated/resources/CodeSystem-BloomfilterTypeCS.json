@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "BloomfilterType",
+  "id": "BloomfilterTypeCS",
+  "description": "Types of Bloomfilters.",
+  "version": "2024.3.0-DEVEL",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/gpas/BloomfilterType",
+  "concept": [
+    {
+      "code": "A",
+      "display": "Dummy-Bloomfilter A"
+    },
+    {
+      "code": "B",
+      "display": "Dummy-Bloomfilter B"
+    }
+  ],
+  "experimental": false,
+  "date": "2024-10-07",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "caseSensitive": true,
+  "count": 2
+}

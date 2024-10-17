@@ -62,7 +62,7 @@
         ]
       },
       "response": {
-        "status": "403",
+        "status": "404",
         "outcome": {
           "resourceType": "OperationOutcome",
           "id": "PseudonymizePatient-Bundle-response-example-1-Par2OpO",
@@ -70,7 +70,7 @@
             {
               "severity": "fatal",
               "code": "security",
-              "diagnostics": "You do not have access to the specified target domain or the specified target domain does not exist."
+              "diagnostics": "Target domain 'NotMyStudy-Domain15' not found."
             }
           ]
         }

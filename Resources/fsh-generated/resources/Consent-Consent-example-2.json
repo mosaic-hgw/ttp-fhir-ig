@@ -112,9 +112,11 @@
   "sourceReference": {
     "reference": "QuestionnaireResponse/0f1ccc50-9b24-4f12-a998-49f80d5285c1"
   },
-  "policyRule": {
-    "text": "Patienteneinwilligung MII|1.6.f"
-  },
+  "policy": [
+    {
+      "uri": "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"
+    }
+  ],
   "provision": {
     "type": "deny",
     "period": {

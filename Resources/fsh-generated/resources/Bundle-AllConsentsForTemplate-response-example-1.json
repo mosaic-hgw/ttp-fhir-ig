@@ -200,7 +200,7 @@
                 {
                   "coding": [
                     {
-                      "code": "consent-status",
+                      "code": "document",
                       "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
                     }
                   ]
@@ -219,6 +219,11 @@
               "sourceReference": {
                 "reference": "QuestionnaireResponse/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
               },
+              "policy": [
+                {
+                  "uri": "urn:oid:2.16.840.1.113883.3.1937.777.24.2.184"
+                }
+              ],
               "provision": {
                 "type": "deny",
                 "period": {
