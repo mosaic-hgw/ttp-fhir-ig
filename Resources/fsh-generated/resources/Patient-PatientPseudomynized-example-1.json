@@ -12,6 +12,7 @@
       "value": "A123456789"
     },
     {
+      "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
       "type": {
         "coding": [
           {

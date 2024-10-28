@@ -83,6 +83,14 @@
         "sliceName": "bloomfilter",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/identifier-bloomfilter"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

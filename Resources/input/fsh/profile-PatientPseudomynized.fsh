@@ -18,7 +18,7 @@ Description: "Patienten-Profil im Kontext der Pseudonymisierung."
   * system 1.. MS
   * system = $nsKvid10
   * value 1.. MS
-* identifier[bloomfilter] MS
+* identifier[bloomfilter] only IdentifierBloomfilter
 
 
 Instance: PatientPseudomynized-example-1
