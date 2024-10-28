@@ -38,7 +38,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/gpas/BloomfilterType"
+          "valueSet": "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType"
         }
       },
       {

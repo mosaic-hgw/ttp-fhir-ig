@@ -952,10 +952,10 @@
     "endLine": 145
   },
   {
-    "outputFile": "Patient-PatientGpas-example-1.json",
-    "fshName": "PatientGpas-example-1",
+    "outputFile": "Patient-PatientPseudomynized-example-1.json",
+    "fshName": "PatientPseudomynized-example-1",
     "fshType": "Instance",
-    "fshFile": "profile-Patient-gpas.fsh",
+    "fshFile": "profile-PatientPseudomynized.fsh",
     "startLine": 27,
     "endLine": 33
   },
@@ -1232,10 +1232,10 @@
     "endLine": 106
   },
   {
-    "outputFile": "StructureDefinition-PatientGpas.json",
-    "fshName": "PatientGpas",
+    "outputFile": "StructureDefinition-PatientPseudomynized.json",
+    "fshName": "PatientPseudomynized",
     "fshType": "Profile",
-    "fshFile": "profile-Patient-gpas.fsh",
+    "fshFile": "profile-PatientPseudomynized.fsh",
     "startLine": 1,
     "endLine": 24
   },

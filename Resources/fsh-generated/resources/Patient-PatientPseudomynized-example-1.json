@@ -1,9 +1,9 @@
 {
   "resourceType": "Patient",
-  "id": "PatientGpas-example-1",
+  "id": "PatientPseudomynized-example-1",
   "meta": {
     "profile": [
-      "https://ths-greifswald.de/fhir/StructureDefinition/gpas/Patient"
+      "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudomynized"
     ]
   },
   "identifier": [
@@ -17,7 +17,7 @@
         "coding": [
           {
             "code": "A",
-            "system": "https://ths-greifswald.de/fhir/CodeSystem/gpas/BloomfilterType"
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"
           }
         ]
       },

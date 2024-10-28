@@ -4,7 +4,7 @@
   "name": "BloomfilterType",
   "id": "BloomfilterTypeVS",
   "version": "2024.3.0-DEVEL",
-  "url": "https://ths-greifswald.de/fhir/ValueSet/gpas/BloomfilterType",
+  "url": "https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType",
   "experimental": false,
   "date": "2024-10-07",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://ths-greifswald.de/fhir/CodeSystem/gpas/BloomfilterType"
+        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"
       }
     ]
   }

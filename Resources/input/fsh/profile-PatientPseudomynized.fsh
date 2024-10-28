@@ -1,10 +1,10 @@
-Profile: PatientGpas
+Profile: PatientPseudomynized
 Parent: $resPatient
-Id: PatientGpas
-Title: "Patient (GPAS)"
+Id: PatientPseudomynized
+Title: "Patient pseudonymisiert"
 Description: "Patienten-Profil im Kontext der Pseudonymisierung."
 * insert meta-profile
-* ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gpas/Patient"
+* ^url = "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudomynized"
 * . ^short = "Patienten-Profil im Kontext der Pseudonymisierung."
 * id 1.. MS
 * identifier MS
@@ -24,8 +24,8 @@ Description: "Patienten-Profil im Kontext der Pseudonymisierung."
   * value 1.. MS
 
 
-Instance: PatientGpas-example-1
-InstanceOf: PatientGpas
+Instance: PatientPseudomynized-example-1
+InstanceOf: PatientPseudomynized
 Usage: #example
 * identifier[kvid10].value = "A123456789"
 * identifier[bloomfilter]

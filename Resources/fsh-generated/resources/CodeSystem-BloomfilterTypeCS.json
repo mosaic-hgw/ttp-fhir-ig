@@ -6,7 +6,7 @@
   "id": "BloomfilterTypeCS",
   "description": "Types of Bloomfilters.",
   "version": "2024.3.0-DEVEL",
-  "url": "https://ths-greifswald.de/fhir/CodeSystem/gpas/BloomfilterType",
+  "url": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
   "concept": [
     {
       "code": "A",
