@@ -19,9 +19,6 @@ Description: "Patienten-Profil im Kontext der Pseudonymisierung."
   * system = $nsKvid10
   * value 1.. MS
 * identifier[bloomfilter] MS
-  * system 1.. MS
-  * system = "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
-  * value 1.. MS
 
 
 Instance: PatientPseudomynized-example-1

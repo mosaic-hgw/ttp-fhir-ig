@@ -10,5 +10,5 @@ Description: "Identifier-Profil für die Abbildung einer Bloomfilters"
     * system 1.. MS
     * code 1.. MS
 * system 1.. MS
-* system = "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
+* system = "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"
 * value 1.. MS

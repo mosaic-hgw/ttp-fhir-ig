@@ -12,7 +12,6 @@
       "value": "A123456789"
     },
     {
-      "system": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
       "type": {
         "coding": [
           {

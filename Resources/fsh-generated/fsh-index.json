@@ -956,8 +956,8 @@
     "fshName": "PatientPseudomynized-example-1",
     "fshType": "Instance",
     "fshFile": "profile-PatientPseudomynized.fsh",
-    "startLine": 27,
-    "endLine": 33
+    "startLine": 24,
+    "endLine": 30
   },
   {
     "outputFile": "Person-Person-example-1.json",
@@ -1237,7 +1237,7 @@
     "fshType": "Profile",
     "fshFile": "profile-PatientPseudomynized.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-Person.json",

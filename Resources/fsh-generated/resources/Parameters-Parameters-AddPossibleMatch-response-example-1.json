@@ -6,7 +6,7 @@
       "name": "match",
       "part": [
         {
-          "name": "matchItem",
+          "name": "item",
           "resource": {
             "resourceType": "Patient",
             "id": "52",
@@ -32,7 +32,7 @@
           }
         },
         {
-          "name": "matchItem",
+          "name": "item",
           "resource": {
             "resourceType": "Patient",
             "id": "53",
@@ -58,11 +58,11 @@
           }
         },
         {
-          "name": "matchScore",
+          "name": "score",
           "valueDecimal": 0.965
         },
         {
-          "name": "matchResult",
+          "name": "result",
           "valueDecimal": 0.952
         },
         {
@@ -71,7 +71,7 @@
         },
         {
           "name": "comment",
-          "valueString": "Dieser Match wurde manuell durchgeführt!"
+          "valueString": "This match was added manually!"
         }
       ]
     }

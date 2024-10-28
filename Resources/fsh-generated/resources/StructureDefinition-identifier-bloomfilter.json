@@ -63,7 +63,7 @@
         "id": "Identifier.system",
         "path": "Identifier.system",
         "min": 1,
-        "patternUri": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
+        "patternUri": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType",
         "mustSupport": true
       },
       {

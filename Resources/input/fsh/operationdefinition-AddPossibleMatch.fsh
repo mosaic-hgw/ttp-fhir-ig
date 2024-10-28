@@ -9,7 +9,7 @@ Usage: #definition
 * kind = #operation
 * description = "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu."
 * affectsState = true
-* code = #add-possible-match
+* code = #addPossibleMatch
 * comment = "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu."
 * system = true
 * type = false
@@ -42,21 +42,21 @@ Usage: #definition
   * max = "1"
   * documentation = "Match-Informationen zu zwei Identitäten."
   * part[+]
-    * name = #matchItem
+    * name = #item
     * use = #out
     * min = 2
     * max = "2"
     * documentation = "Die beiden matchenden Identitäten wie im Request übergeben."
     * type = #Patient
   * part[+]
-    * name = #matchScore
+    * name = #score
     * use = #out
     * min = 1
     * max = "1"
     * documentation = "Matching-Score"
     * type = #decimal
   * part[+]
-    * name = #matchResult
+    * name = #result
     * use = #out
     * min = 1
     * max = "1"
@@ -99,7 +99,7 @@ Instance: Parameters-AddPossibleMatch-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter.name = "match"
-* parameter.part[0].name = "matchItem"
+* parameter.part[0].name = "item"
 * parameter.part[=].resource.resourceType = "Patient"
 * parameter.part[=].resource.id = "52"
 * parameter.part[=].resource.meta.versionId = "1"
@@ -111,7 +111,7 @@ Usage: #example
 * parameter.part[=].resource.name.given = "Stefanie"
 * parameter.part[=].resource.gender = #male
 * parameter.part[=].resource.birthDate = "1962-12-17"
-* parameter.part[+].name = "matchItem"
+* parameter.part[+].name = "item"
 * parameter.part[=].resource.resourceType = "Patient"
 * parameter.part[=].resource.id = "53"
 * parameter.part[=].resource.meta.versionId = "1"
@@ -123,11 +123,11 @@ Usage: #example
 * parameter.part[=].resource.name.given = "Stefanie"
 * parameter.part[=].resource.gender = #male
 * parameter.part[=].resource.birthDate = "1962-12-16"
-* parameter.part[+].name = "matchScore"
+* parameter.part[+].name = "score"
 * parameter.part[=].valueDecimal = 0.965
-* parameter.part[+].name = "matchResult"
+* parameter.part[+].name = "result"
 * parameter.part[=].valueDecimal = 0.952
 * parameter.part[+].name = "linkId"
 * parameter.part[=].valueInteger = 5654986
 * parameter.part[+].name = "comment"
-* parameter.part[=].valueString = "Dieser Match wurde manuell durchgeführt!"
+* parameter.part[=].valueString = "This match was added manually!"
