@@ -346,6 +346,11 @@
               "generation": "markdown",
               "page": [
                 {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-BloomfilterType.md",
+                  "title": "BloomfilterType",
+                  "generation": "markdown"
+                },
+                {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-Codesysteme-ConsentComponentType.md",
                   "title": "ConsentComponentType",
                   "generation": "markdown"
@@ -412,6 +417,11 @@
               "title": "Value Sets",
               "generation": "markdown",
               "page": [
+                {
+                  "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-BloomfilterType.md",
+                  "title": "BloomfilterType",
+                  "generation": "markdown"
+                },
                 {
                   "nameUrl": "ImplementationGuide/markdown/Terminologie-ValueSets-ConsentComponentType.md",
                   "title": "ConsentComponentType",

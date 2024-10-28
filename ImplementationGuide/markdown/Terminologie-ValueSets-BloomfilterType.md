@@ -1,0 +1,3 @@
+#### BloomfilterType
+
+{{render:BloomfilterTypeVS}}
