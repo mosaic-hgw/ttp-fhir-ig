@@ -98,6 +98,7 @@ Usage: #inline
   * system = "http://fhir.de/sid/gkv/kvid-10"
   * value = "A123456789"
 * identifier[+]
+  * type = BloomfilterTypeCS#A
   * system = "https://ths-greifswald.de/fhir/sid/epix/bloomfilter"
   * value = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 

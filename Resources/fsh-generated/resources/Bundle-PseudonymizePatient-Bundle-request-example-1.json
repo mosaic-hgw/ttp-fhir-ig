@@ -40,6 +40,14 @@
                   "value": "A123456789"
                 },
                 {
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "A",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"
+                      }
+                    ]
+                  },
                   "system": "https://ths-greifswald.de/fhir/sid/epix/bloomfilter",
                   "value": "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
                 }

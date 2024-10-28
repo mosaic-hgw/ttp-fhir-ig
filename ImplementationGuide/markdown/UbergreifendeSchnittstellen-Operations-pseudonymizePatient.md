@@ -15,7 +15,7 @@
 
 Im Kontext dieser Operation wird das folgende Patient-Profil verwendet:
 
-{{tree:PatientGpas}}
+{{tree:PatientPseudonymized}}
 
 Im Fehlerfall wird eine OperationOutcome-Ressource mit entsprechenden Informationen zurückgegeben. Bei Verwendung innerhalb eines Batch-Bundles (siehe Beispiele) wird in der Batch-Response neben diesem OperationOutcome auch eine Parameters-Ressource zurückgegeben, die auf die betroffene PatientId sowie das Target verweist.
 
