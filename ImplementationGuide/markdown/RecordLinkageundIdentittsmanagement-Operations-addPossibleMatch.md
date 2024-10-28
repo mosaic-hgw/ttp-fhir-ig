@@ -30,4 +30,4 @@ Beispielhafter Request-Body:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-request-example-1.json}}
 
 Beispielhafte Response:
-{{xml:Resources/fsh-generated/resources/OperationOutcome-OperationOutcome-AddPossibleMatch-response-example-1.json}}
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-response-example-1.json}}
