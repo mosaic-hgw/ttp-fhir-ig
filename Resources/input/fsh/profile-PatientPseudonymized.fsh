@@ -1,10 +1,10 @@
-Profile: PatientPseudomynized
+Profile: PatientPseudonymized
 Parent: $resPatient
-Id: PatientPseudomynized
+Id: PatientPseudonymized
 Title: "Patient pseudonymisiert"
 Description: "Patienten-Profil im Kontext der Pseudonymisierung."
 * insert meta-profile
-* ^url = "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudomynized"
+* ^url = "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
 * . ^short = "Patienten-Profil im Kontext der Pseudonymisierung."
 * id 1.. MS
 * identifier MS
@@ -21,8 +21,8 @@ Description: "Patienten-Profil im Kontext der Pseudonymisierung."
 * identifier[bloomfilter] only IdentifierBloomfilter
 
 
-Instance: PatientPseudomynized-example-1
-InstanceOf: PatientPseudomynized
+Instance: PatientPseudonymized-example-1
+InstanceOf: PatientPseudonymized
 Usage: #example
 * identifier[kvid10].value = "A123456789"
 * identifier[bloomfilter]

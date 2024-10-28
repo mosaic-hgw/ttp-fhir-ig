@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "PatientPseudomynized",
-  "url": "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudomynized",
+  "id": "PatientPseudonymized",
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized",
   "version": "2024.3.0-DEVEL",
-  "name": "PatientPseudomynized",
+  "name": "PatientPseudonymized",
   "title": "Patient pseudonymisiert",
   "status": "draft",
   "experimental": false,

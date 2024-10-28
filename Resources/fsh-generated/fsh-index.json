@@ -952,10 +952,10 @@
     "endLine": 145
   },
   {
-    "outputFile": "Patient-PatientPseudomynized-example-1.json",
-    "fshName": "PatientPseudomynized-example-1",
+    "outputFile": "Patient-PatientPseudonymized-example-1.json",
+    "fshName": "PatientPseudonymized-example-1",
     "fshType": "Instance",
-    "fshFile": "profile-PatientPseudomynized.fsh",
+    "fshFile": "profile-PatientPseudonymized.fsh",
     "startLine": 24,
     "endLine": 30
   },
@@ -1232,10 +1232,10 @@
     "endLine": 106
   },
   {
-    "outputFile": "StructureDefinition-PatientPseudomynized.json",
-    "fshName": "PatientPseudomynized",
+    "outputFile": "StructureDefinition-PatientPseudonymized.json",
+    "fshName": "PatientPseudonymized",
     "fshType": "Profile",
-    "fshFile": "profile-PatientPseudomynized.fsh",
+    "fshFile": "profile-PatientPseudonymized.fsh",
     "startLine": 1,
     "endLine": 21
   },

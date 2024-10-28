@@ -1,9 +1,9 @@
 {
   "resourceType": "Patient",
-  "id": "PatientPseudomynized-example-1",
+  "id": "PatientPseudonymized-example-1",
   "meta": {
     "profile": [
-      "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudomynized"
+      "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
     ]
   },
   "identifier": [
