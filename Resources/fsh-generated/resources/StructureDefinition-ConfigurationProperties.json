@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "description": "Configuration Properties (Parameters) in XML format.",
+  "description": "Configuration Properties (Parameters) in XML format, base64 encoded.",
   "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

@@ -131,8 +131,8 @@
         "id": "ResearchStudy.extension:configurationProperties",
         "path": "ResearchStudy.extension",
         "sliceName": "configurationProperties",
-        "short": "Konfigurationsparameter im XML-Format",
-        "definition": "Konfigurationsparameter im XML-Format",
+        "short": "Konfigurationsparameter im XML-Format, Base64-codiert",
+        "definition": "Konfigurationsparameter im XML-Format, Base64-codiert",
         "min": 0,
         "max": "1",
         "type": [
@@ -178,6 +178,25 @@
             "code": "Extension",
             "profile": [
               "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:validFromProperty",
+        "path": "ResearchStudy.extension",
+        "sliceName": "validFromProperty",
+        "label": "validFromProperty",
+        "short": "validFromProperty",
+        "definition": "Beginn des Gültigkeitszeitraums der Domäne",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty"
             ]
           }
         ],
