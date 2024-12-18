@@ -2,14 +2,14 @@
 
 # TTP-FHIR Gateway
 
-Stand 07.10.2024
+Stand 17.12.2024
 
 ## Inhalt
 {{index:current}}
 
 ## Implementierung
 
-Peter Penndorf, Martin Bialke, Christoper Hampf, Lars Geidel, Frank Michael Moser
+Peter Penndorf, Martin Bialke, Christoper Hampf, Frank Michael Moser
 
 ## Autoren
 
