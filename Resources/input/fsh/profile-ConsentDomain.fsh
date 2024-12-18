@@ -14,7 +14,8 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
     TemplateVersionFormat named templateVersionFormat 0..1 MS and
     ConfigurationProperties named configurationProperties 0..1 MS and
     ExternalProperty named externalProperty 0..* MS and
-    ExpirationProperty named expirationProperty 0..* MS
+    ExpirationProperty named expirationProperty 0..* MS and
+    ValidFromProperty named validFromProperty 0..1 MS
 * extension[logo] ^label = "Logo"
 * extension[logo] ^short = "Logo der Studie/des Vorhabens"
 * extension[logo] ^definition = "Logo zur Darstellung auf Einwilligungsvorlagen"
@@ -27,8 +28,8 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 * extension[moduleVersionFormat] ^definition = "Versionierungsformat für Module einer Consent Domain"
 * extension[templateVersionFormat] ^short = "Versionierungsformat für Templates einer Consent Domain"
 * extension[templateVersionFormat] ^definition = "Versionierungsformat für Templates einer Consent Domain"
-* extension[configurationProperties] ^short = "Konfigurationsparameter im XML-Format"
-* extension[configurationProperties] ^definition = "Konfigurationsparameter im XML-Format"
+* extension[configurationProperties] ^short = "Konfigurationsparameter im XML-Format, Base64-codiert"
+* extension[configurationProperties] ^definition = "Konfigurationsparameter im XML-Format, Base64-codiert"
 * extension[externalProperty] ^label = "externalProperties"
 * extension[externalProperty] ^short = "externalProperties"
 * extension[externalProperty] ^definition = "Liste frei konfigurierbarer external Properties nach dem KeyValuePrinzip zur Auswertung durch externe Anwendersysteme"
@@ -36,6 +37,9 @@ Description: "Erweitertes Profil der Consent Management Domain Research Study (A
 * extension[expirationProperty] ^short = "expirationProperties"
 * extension[expirationProperty] ^definition = "Liste von automatisierbaren Ablaufeigenschaften der nach dem KeyValuePrinzip"
 * extension[expirationProperty] ^min = 0
+* extension[validFromProperty] ^label = "validFromProperty"
+* extension[validFromProperty] ^short = "validFromProperty"
+* extension[validFromProperty] ^definition = "Beginn des Gültigkeitszeitraums der Domäne"
 * identifier ^short = "Domänen-Name"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/" (exactly)
 * identifier.system ^short = "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens"
@@ -66,8 +70,10 @@ Usage: #example
 * extension[policyVersionFormat].valueString = "major.minor"
 * extension[moduleVersionFormat].valueString = "major.minor"
 * extension[templateVersionFormat].valueString = "major.minor.char"
+* extension[configurationProperties].valueBase64Binary = "IDxxdWFsaXR5LWNvbnRyb2wgZGVmYXVsdC10eXBlPSJub3RfY2hlY2tlZCI+CiAgICAgICAgPHR5cGUgaWQ9Im5vdF9jaGVja2VkIiBzdGF0dXM9IlZBTElEIj4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iTm90IHlldCBjaGVja2VkIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJkZSIgdmFsdWU9Ik5vY2ggbmljaHQga29udHJvbGxpZXJ0Ii8+CiAgICAgICAgPC90eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUgaWQ9InByb2JsZW0td2l0aC1uYW1lIiBlcnJvcj0iSU5DT05TSVNURU5UIiBmaWVsZD0iSURBVF9MQVNUTkFNRSIgb2NjdXJyZW5jZT0iQk9USCIgYWN0aW9uPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iUHJvYmxlbSBtaXQgZGVtIE5hbWVuIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJlbiIgdmFsdWU9IlByb2JsZW0gd2l0aCB0aGUgbmFtZSIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUtYWN0aW9uIGlkPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iRml4IHF1aWNrbHkiLz4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iU2NobmVsbCBmaXhlbiIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlLWFjdGlvbj4KICAgIDwvcXVhbGl0eS1jb250cm9sPgo="
 * extension[externalProperty][0].extension[key].valueString = "containsHtml"
 * extension[externalProperty][=].extension[value].valueString = "true"
+* extension[validFromProperty][+].valueDate = "2020-01-01"
 * identifier.system = "https://ths-greifswald.de/fhir/gics/"
 * identifier.value = "MIRACUM"
 * title = "MIRACUM"
@@ -87,6 +93,7 @@ Usage: #example
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/patId"
 * extension[contextIdentifier][+].extension[resourceType].valueCoding = $resource-types#Patient
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/studyPSN"
+* extension[configurationProperties].valueBase64Binary = "IDxxdWFsaXR5LWNvbnRyb2wgZGVmYXVsdC10eXBlPSJub3RfY2hlY2tlZCI+CiAgICAgICAgPHR5cGUgaWQ9Im5vdF9jaGVja2VkIiBzdGF0dXM9IlZBTElEIj4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iTm90IHlldCBjaGVja2VkIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJkZSIgdmFsdWU9Ik5vY2ggbmljaHQga29udHJvbGxpZXJ0Ii8+CiAgICAgICAgPC90eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUgaWQ9InByb2JsZW0td2l0aC1uYW1lIiBlcnJvcj0iSU5DT05TSVNURU5UIiBmaWVsZD0iSURBVF9MQVNUTkFNRSIgb2NjdXJyZW5jZT0iQk9USCIgYWN0aW9uPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iUHJvYmxlbSBtaXQgZGVtIE5hbWVuIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJlbiIgdmFsdWU9IlByb2JsZW0gd2l0aCB0aGUgbmFtZSIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUtYWN0aW9uIGlkPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iRml4IHF1aWNrbHkiLz4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iU2NobmVsbCBmaXhlbiIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlLWFjdGlvbj4KICAgIDwvcXVhbGl0eS1jb250cm9sPgo="
 * identifier.system = "https://ths-greifswald.de/fhir/gics/"
 * identifier.value = "MII"
 * title = "MII"
@@ -104,6 +111,7 @@ Usage: #example
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/PatId"
 * extension[contextIdentifier][+].extension[resourceType].valueCoding = $resource-types#Patient
 * extension[contextIdentifier][=].extension[system].valueUri = "https://ths-greifswald.de/fhir/gics/identifiers/SapId"
+* extension[configurationProperties].valueBase64Binary = "IDxxdWFsaXR5LWNvbnRyb2wgZGVmYXVsdC10eXBlPSJub3RfY2hlY2tlZCI+CiAgICAgICAgPHR5cGUgaWQ9Im5vdF9jaGVja2VkIiBzdGF0dXM9IlZBTElEIj4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iTm90IHlldCBjaGVja2VkIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJkZSIgdmFsdWU9Ik5vY2ggbmljaHQga29udHJvbGxpZXJ0Ii8+CiAgICAgICAgPC90eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUgaWQ9InByb2JsZW0td2l0aC1uYW1lIiBlcnJvcj0iSU5DT05TSVNURU5UIiBmaWVsZD0iSURBVF9MQVNUTkFNRSIgb2NjdXJyZW5jZT0iQk9USCIgYWN0aW9uPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iUHJvYmxlbSBtaXQgZGVtIE5hbWVuIi8+CiAgICAgICAgICAgIDxsYWJlbCBsYW5nPSJlbiIgdmFsdWU9IlByb2JsZW0gd2l0aCB0aGUgbmFtZSIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlPgogICAgICAgIDxwcm9ibGVtLXR5cGUtYWN0aW9uIGlkPSJmaXgtbm93Ij4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImVuIiB2YWx1ZT0iRml4IHF1aWNrbHkiLz4KICAgICAgICAgICAgPGxhYmVsIGxhbmc9ImRlIiB2YWx1ZT0iU2NobmVsbCBmaXhlbiIvPgogICAgICAgIDwvcHJvYmxlbS10eXBlLWFjdGlvbj4KICAgIDwvcXVhbGl0eS1jb250cm9sPgo="
 * identifier.system = "https://ths-greifswald.de/fhir/gics/"
 * identifier.value = "MIRACUM"
 * title = "MIRACUM"

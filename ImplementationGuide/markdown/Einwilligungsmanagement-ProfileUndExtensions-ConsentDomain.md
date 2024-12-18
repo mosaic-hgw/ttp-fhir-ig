@@ -6,6 +6,9 @@
 ##### Zweck
 Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domain-Infos für gICS über entsprechende Extensions
 
+##### Hinweis
+In der Extension "configurationProperties" kann die Konfiguration der Domäne im XML-Format repräsentiert werden. Diese XML-Struktur ist base64-codiert enthalten.
+
 ##### Suchparameter
 
 |Name|Typ|Beschreibung|Pfad|

@@ -1,7 +1,7 @@
 Extension: ConfigurationProperties
 Id: ConfigurationProperties
 Title: "ConfigurationProperties"
-Description: "Configuration Properties (Parameters) in XML format."
+Description: "Configuration Properties (Parameters) in XML format, base64 encoded."
 * insert meta-profile
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties"
 * ^context[+].type = #element
