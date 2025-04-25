@@ -1,12 +1,12 @@
 {
   "name": "ttpfhirig",
-  "version": "2023.1.0",
+  "version": "2025.1.0",
   "description": "Put a description here",
   "fhirVersions": [
     "4.0.1"
   ],
   "dependencies": {
-    "de.einwilligungsmanagement": "1.1.0-alpha.1",
-    "de.medizininformatikinitiative.kerndatensatz.consent": "1.0.3"
+    "de.einwilligungsmanagement": "2.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.1"
   }
 }
