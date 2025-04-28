@@ -2,9 +2,9 @@
   "resourceType": "OperationDefinition",
   "id": "PseudonymizeAllowCreate",
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/gpas/pseudonymizeAllowCreate",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL.1",
   "status": "draft",
-  "date": "2024-10-07",
+  "date": "2025-04-28",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

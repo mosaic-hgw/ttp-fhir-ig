@@ -1,7 +1,7 @@
 {
-  "updated": "2024-05-08T11:35:08.6347796+02:00",
+  "updated": "2025-04-28T12:02:58.8715601+02:00",
   "dependencies": {
-    "de.einwilligungsmanagement": "1.1.0-alpha.1",
+    "de.einwilligungsmanagement": "2.0.0",
     "hl7.fhir.r4.core": "4.0.1",
     "de.medizininformatikinitiative.kerndatensatz.consent": "1.0.3"
   },

@@ -5,7 +5,7 @@
   "name": "ConsentComponentType",
   "id": "ConsentComponentTypeCS",
   "description": "Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium",
-  "version": "2025.1.0-DEVEL",
+  "version": "2025.1.0-DEVEL.1",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType",
   "concept": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "experimental": false,
-  "date": "2024-10-07",
+  "date": "2025-04-28",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -36,7 +36,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "caseSensitive": true,
   "count": 3
 }

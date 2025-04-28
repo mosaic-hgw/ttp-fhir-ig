@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Consent",
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
+  "version": "2025.1.0-DEVEL.1",
+  "name": "Consent",
+  "title": "Einwilligungsinformationen",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-04-28",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Einwilligungsinformationen",
+  "purpose": "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://fhir.de/ConsentManagement/StructureDefinition/Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent.meta.extension:created",
+        "path": "Consent.meta.extension",
+        "sliceName": "created",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.extension:externalProperty",
+        "path": "Consent.extension",
+        "sliceName": "externalProperty",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.extension:expirationProperty",
+        "path": "Consent.extension",
+        "sliceName": "expirationProperty",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Consent.category:consentCategory",
+        "path": "Consent.category",
+        "sliceName": "consentCategory"
+      },
+      {
+        "id": "Consent.category:consentCategory.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
+      },
+      {
+        "id": "Consent.category:resultType",
+        "path": "Consent.category",
+        "sliceName": "resultType"
+      },
+      {
+        "id": "Consent.category:resultType.coding",
+        "path": "Consent.category.coding",
+        "max": "1"
+      }
+    ]
+  }
+}

@@ -1000,7 +1000,7 @@
     }
   ],
   "experimental": false,
-  "date": "2024-10-07",
+  "date": "2025-04-28",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -1014,7 +1014,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "purpose": "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose",
   "caseSensitive": true,
   "count": 33

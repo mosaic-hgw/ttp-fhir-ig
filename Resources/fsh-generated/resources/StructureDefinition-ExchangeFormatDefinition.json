@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "ExchangeFormatDefinition",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition",
-  "version": "2025.1.0-DEVEL",
+  "version": "2025.1.0-DEVEL.1",
   "name": "ExchangeFormatDefinition",
   "title": "ExchangeFormatDefinition",
   "status": "draft",
   "experimental": false,
-  "date": "2024-10-07",
+  "date": "2025-04-28",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -22,7 +22,7 @@
     }
   ],
   "description": "Die in diesem Bundle enthaltenen FHIR-Ressourcen definieren in ihrer Gesamtheit ein oder mehrere Einwiliigungs-Vorlagen (Templates, FHIR-Questionnaires) zu einem bestimmten Kontext.",
-  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

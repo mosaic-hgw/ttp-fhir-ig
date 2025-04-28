@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ConsentDomain",
+  "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentDomain",
+  "version": "2025.1.0-DEVEL.1",
+  "name": "ConsentDomain",
+  "title": "Consent Domain",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-04-28",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domänen-Infos für gICS über entsprechende Extensions",
+  "purpose": "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domänen-Infos für gICS",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ResearchStudy",
+  "baseDefinition": "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ResearchStudy.meta.extension:created",
+        "path": "ResearchStudy.meta.extension",
+        "sliceName": "created",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.meta.lastUpdated",
+        "path": "ResearchStudy.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension",
+        "path": "ResearchStudy.extension",
+        "min": 1
+      },
+      {
+        "id": "ResearchStudy.extension:logo",
+        "path": "ResearchStudy.extension",
+        "sliceName": "logo",
+        "label": "Logo",
+        "short": "Logo der Studie/des Vorhabens",
+        "definition": "Logo zur Darstellung auf Einwilligungsvorlagen"
+      },
+      {
+        "id": "ResearchStudy.extension:contextIdentifier",
+        "path": "ResearchStudy.extension",
+        "sliceName": "contextIdentifier",
+        "label": "SignerIDTypes",
+        "short": "Herstellung des Patientenbezugs je Kontext"
+      },
+      {
+        "id": "ResearchStudy.extension:policyVersionFormat",
+        "path": "ResearchStudy.extension",
+        "sliceName": "policyVersionFormat",
+        "short": "Versionierungsformat für Policies einer Consent Domain",
+        "definition": "Versionierungsformat für Policies einer Consent Domain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:moduleVersionFormat",
+        "path": "ResearchStudy.extension",
+        "sliceName": "moduleVersionFormat",
+        "short": "Versionierungsformat für Module einer Consent Domain",
+        "definition": "Versionierungsformat für Module einer Consent Domain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ModuleVersionFormat"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:templateVersionFormat",
+        "path": "ResearchStudy.extension",
+        "sliceName": "templateVersionFormat",
+        "short": "Versionierungsformat für Templates einer Consent Domain",
+        "definition": "Versionierungsformat für Templates einer Consent Domain",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:configurationProperties",
+        "path": "ResearchStudy.extension",
+        "sliceName": "configurationProperties",
+        "short": "Konfigurationsparameter im XML-Format, Base64-codiert",
+        "definition": "Konfigurationsparameter im XML-Format, Base64-codiert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ConfigurationProperties"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:externalProperty",
+        "path": "ResearchStudy.extension",
+        "sliceName": "externalProperty",
+        "label": "externalProperties",
+        "short": "externalProperties",
+        "definition": "Liste frei konfigurierbarer external Properties nach dem KeyValuePrinzip zur Auswertung durch externe Anwendersysteme",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExternalProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:expirationProperty",
+        "path": "ResearchStudy.extension",
+        "sliceName": "expirationProperty",
+        "label": "expirationProperties",
+        "short": "expirationProperties",
+        "definition": "Liste von automatisierbaren Ablaufeigenschaften der nach dem KeyValuePrinzip",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.extension:validFromProperty",
+        "path": "ResearchStudy.extension",
+        "sliceName": "validFromProperty",
+        "label": "validFromProperty",
+        "short": "validFromProperty",
+        "definition": "Beginn des Gültigkeitszeitraums der Domäne",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier",
+        "path": "ResearchStudy.identifier",
+        "short": "Domänen-Name"
+      },
+      {
+        "id": "ResearchStudy.identifier.system",
+        "path": "ResearchStudy.identifier.system",
+        "short": "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens",
+        "definition": "Instanzspezifischer Gültigkeitsbereich des Domänen-Namens",
+        "fixedUri": "https://ths-greifswald.de/fhir/gics/"
+      },
+      {
+        "id": "ResearchStudy.identifier.value",
+        "path": "ResearchStudy.identifier.value",
+        "label": "Domänen-Name",
+        "short": "Name der Consent Domain",
+        "definition": "Maschinenlesbarer Name der Consent Domain, innerhalb der gICS Instanz eindeutig"
+      },
+      {
+        "id": "ResearchStudy.title",
+        "path": "ResearchStudy.title",
+        "label": "Domänen-Label",
+        "short": "Label der Consent Domain",
+        "definition": "Menschenlesbarer Name der Consent Domain, sollte innerhalb der gICS Instanz eindeutig sein."
+      },
+      {
+        "id": "ResearchStudy.status",
+        "path": "ResearchStudy.status",
+        "label": "Finalized",
+        "short": "active | in-review",
+        "definition": "Finalisierungsstatus der Consent Domain Configuration. (Finalized=true ->status=active; Finalized=false->status=in-review)"
+      },
+      {
+        "id": "ResearchStudy.description",
+        "path": "ResearchStudy.description",
+        "label": "Comment",
+        "definition": "Administrativer Kommentar zur Zweckbeschreibung der Consent Domain"
+      }
+    ]
+  }
+}
