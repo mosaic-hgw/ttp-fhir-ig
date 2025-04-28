@@ -193,84 +193,8 @@
     {
       "name": "provenance",
       "resource": {
-        "target": [
-          {
-            "reference": "QuestionnaireResponse/2"
-          }
-        ],
-        "signature": [
-          {
-            "extension": [
-              {
-                "valueString": "Greifswald"
-              }
-            ],
-            "when": "2022-12-21T00:00:00.000+01:00",
-            "type": [
-              {
-                "code": "1.2.840.10065.1.12.1.7",
-                "system": "urn:iso-astm:E1762-95:2013",
-                "display": "Consent Signature"
-              }
-            ],
-            "who": {
-              "reference": "Patient/1",
-              "display": "Pseudonym studypsn1"
-            },
-            "_data": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                  "valueCode": "error"
-                }
-              ]
-            }
-          },
-          {
-            "extension": [
-              {
-                "valueString": "Greifswald"
-              }
-            ],
-            "when": "2022-12-21T00:00:00.000+01:00",
-            "type": [
-              {
-                "code": "1.2.840.10065.1.12.1.5",
-                "system": "urn:iso-astm:E1762-95:2013",
-                "display": "Verification Signature"
-              }
-            ],
-            "who": {
-              "display": "Dr. Stephen Strange"
-            },
-            "_data": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                  "valueCode": "error"
-                }
-              ]
-            }
-          }
-        ],
         "id": "fa414092-934e-45eb-a827-6c96b1371c29",
-        "entity": [
-          {
-            "role": "source",
-            "what": {
-              "reference": "DocumentReference/3"
-            }
-          }
-        ],
-        "recorded": "2022-12-21T18:39:02.076+01:00",
         "resourceType": "Provenance",
-        "agent": [
-          {
-            "who": {
-              "display": "https://ths-greifswald.de/gics"
-            }
-          }
-        ],
         "meta": {
           "profile": [
             "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"

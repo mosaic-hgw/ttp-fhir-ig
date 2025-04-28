@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Patient",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL",
   "name": "Patient",
   "title": "Patient",
   "status": "draft",

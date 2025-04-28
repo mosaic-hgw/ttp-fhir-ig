@@ -3,7 +3,7 @@
   "status": "draft",
   "name": "ConsentStatusConsentShortValues",
   "id": "ConsentStatusConsentShortValuesVS",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentShortValues",
   "experimental": false,
   "date": "2024-10-07",

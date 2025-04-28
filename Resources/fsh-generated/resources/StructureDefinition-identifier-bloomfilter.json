@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "identifier-bloomfilter",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/identifier-bloomfilter",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL",
   "name": "IdentifierBloomfilter",
   "title": "Identifier-Profil für die Abbildung einer Bloomfilters",
   "status": "draft",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Comment",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL",
   "name": "Comment",
   "title": "Comment",
   "status": "draft",

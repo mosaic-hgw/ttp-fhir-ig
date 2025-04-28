@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "PatientPseudonymized",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL",
   "name": "PatientPseudonymized",
   "title": "Patient pseudonymisiert",
   "status": "draft",

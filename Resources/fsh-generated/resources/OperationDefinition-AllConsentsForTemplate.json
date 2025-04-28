@@ -52,7 +52,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist das Consent-Profil der HL7-D AG Einwilligungsmanagement",
+      "documentation": "Angabe um Ausgabeprofil festzulegen.\r\nDefault ist die gics-Variante; alternativ das Profil aus dem IG Einwilligungsmanagement.",
       "type": "canonical"
     },
     {

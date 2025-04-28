@@ -9,7 +9,7 @@ Usage: #definition
 * description = ""
 * affectsState = true
 * code = #pseudonymizePatient
-* comment = "Abfrage je eines Pseudonym-Wertes für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen."
+* comment = "Abfrage von 1-n eines Pseudonym-Werten für einen Originalwert und eine spezifische Domäne. Eine gleichzeitige Verarbeitung von mehreren Pseudonymisierungen kann durch Übergabe mehrerer entsprechender Requests in einem FHIR-Batch-Bundle erfolgen."
 * system = true
 * type = false
 * instance = false
@@ -19,21 +19,28 @@ Usage: #definition
   * min = 1
   * max = "1"
   * type = #string
-  * documentation = "Angabe der Studie auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird"
+  * documentation = "Angabe der Studie auf Basis derer für die angegebenen Originalwerte vorhandene Pseudonyme gesucht und ggf. erzeugt werden"
 * parameter[+]
   * name = #patient
   * use = #in
   * min = 1
   * max = "1"
   * type = #Patient
-  * documentation = "Patienten-Ressource des Patienten, der pseudonymisiert werden soll"
+  * documentation = "Patienten-Ressource des Patienten, für die 1-n Pseudonyme erzeugt werden sollen"
 * parameter[+]
   * name = #target
   * use = #in
   * min = 1
   * max = "1"
   * type = #string
-  * documentation = "Angabe der Domäne auf Basis derer für die angegebenen Originalwerte ein vorhandenens eindeutiges Pseudonym gesucht wird"
+  * documentation = "Angabe der Pseudonymisierungs-Domäne in welcher nach vorhandenen Pseudonymen gesucht wird oder neue Pseudonyme erzeugt werden sollen."
+* parameter[+]
+  * name = #target
+  * use = #in
+  * min = 0
+  * max = "1"
+  * type = #integer
+  * documentation = "Angabe der Anzahl zu erzeugender Pseudonyme innerhalb der Domäne. Default = 1."
 * parameter[+]
   * name = #externalPatientId
   * use = #out
@@ -52,9 +59,9 @@ Usage: #definition
   * name = #pseudonym
   * use = #out
   * min = 0
-  * max = "1"
+  * max = "*"
   * type = #Identifier
-  * documentation = "Das erzeugte Pseudonym (wird nur im Erfolgsfall übermittelt)"
+  * documentation = "Das erzeugte Pseudonym (wird nur im Erfolgsfall übermittelt)."
 
 
 Instance: PseudonymizePatient-Bundle-request-example-1
