@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "SupportedVersion",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion",
-  "version": "2024.3.0-DEVEL",
+  "version": "2025.1.0-DEVEL.1",
   "name": "SupportedVersion",
   "title": "SupportedVersion",
   "status": "draft",
   "experimental": false,
-  "date": "2024-10-07",
+  "date": "2025-04-28",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "copyright": "Copyright 2020-2024 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright": "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
