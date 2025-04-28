@@ -55,6 +55,11 @@ GET [base]/Consent?domain:identifier=MIRACUM&category=http://fhir.de/ConsentMana
 ```
 findet Consent-Ressourcen des (ggf. aus mehreren Einwilligungs-Fragebögen errechneten) Consent-Status-Typs.
 
+### Änderungen mit dem Release 2024.3.0 
+- Es wird Consent.Category *ResultType" unterstützt. Dies ist abwärtskompatibel. Default ist  *ResultType.POLICY*.
+- Umstellung internes *DEFAULT-CONSENT-Profile* ist das [Consent-Profil der HL7-D AG Einwilligungsmanagement](https://simplifier.net/guide/Einwilligungsmanagement/Consent?version=current). Bisheriger Default war das gICS-Consent-Profil.
+- Das gewünschte Ausgabe-Profil für Consent-Resourcen kann auf Domain und Template-Ebene mittels externalProperty *fhirForceProfileConsent* forciert werden. Mehr dazu in der dem Release beiliengenden ReadMe.
+
 ### Provision-Code
 Der Suchparameter **mii-provision-provision-code**, definiert im [Implementierungsleitfaden Consent der MII](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent/TechnischeImplementierung/FHIRProfile/Consent.guide.md?version=current), wird unterstützt.
 
