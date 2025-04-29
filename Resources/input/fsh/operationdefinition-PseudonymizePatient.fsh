@@ -35,7 +35,7 @@ Usage: #definition
   * type = #string
   * documentation = "Angabe der Pseudonymisierungs-Domäne in welcher nach vorhandenen Pseudonymen gesucht wird oder neue Pseudonyme erzeugt werden sollen."
 * parameter[+]
-  * name = #target
+  * name = #count
   * use = #in
   * min = 0
   * max = "1"
