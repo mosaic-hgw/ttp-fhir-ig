@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Created",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/Created",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0-devel",
   "name": "Created",
   "title": "Created",
   "status": "draft",

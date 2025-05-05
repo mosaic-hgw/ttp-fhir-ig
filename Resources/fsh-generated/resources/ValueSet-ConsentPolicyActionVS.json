@@ -3,7 +3,7 @@
   "status": "draft",
   "name": "ConsentPolicyAction",
   "id": "ConsentPolicyActionVS",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0-devel",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentPolicyAction",
   "experimental": false,
   "date": "2025-04-28",

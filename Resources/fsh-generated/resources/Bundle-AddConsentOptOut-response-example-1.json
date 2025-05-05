@@ -1,0 +1,119 @@
+{
+  "resourceType": "Bundle",
+  "id": "AddConsentOptOut-response-example-1",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Consent",
+        "id": "8821edd5-5bb7-11ef-9800-0242ac130002",
+        "meta": {
+          "lastUpdated": "2024-08-16T12:08:49.282+02:00",
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent",
+            "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
+          ]
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/7fca337a-e69c-11ee-943e-0242ac1c0002"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ],
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "57016-8",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "document",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "CONSENT-OPT-OUT",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/881fc35f-5bb7-11ef-9800-0242ac130002",
+          "display": "studyPSN fhir_1"
+        },
+        "dateTime": "2024-08-16T12:08:49+02:00",
+        "organization": [
+          {
+            "display": "opt-out"
+          }
+        ],
+        "sourceReference": {
+          "reference": "QuestionnaireResponse/8821edd5-5bb7-11ef-9800-0242ac130002"
+        },
+        "policy": [
+          {
+            "uri": "urn:uuid:7cbe82e6-3886-11ef-8dbb-0242ac130002"
+          }
+        ],
+        "provision": {
+          "type": "permit",
+          "period": {
+            "start": "2024-08-16T12:08:49+02:00",
+            "end": "3000-01-01T00:00:00+01:00"
+          },
+          "provision": [
+            {
+              "type": "permit",
+              "period": {
+                "start": "2024-08-16T12:08:49+02:00",
+                "end": "3000-01-01T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "p-opt-out",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/opt-out"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -24,20 +24,92 @@
     "endLine": 138
   },
   {
+    "outputFile": "Bundle-AddConsent-response-example-1.json",
+    "fshName": "AddConsent-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddConsent.fsh",
+    "startLine": 150,
+    "endLine": 159
+  },
+  {
+    "outputFile": "Bundle-AddConsentOptOut-response-example-1.json",
+    "fshName": "AddConsentOptOut-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddConsentOptOut.fsh",
+    "startLine": 67,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Bundle-AllConsentsForDomain-response-example-1.json",
+    "fshName": "AllConsentsForDomain-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AllConsentsForDomain.fsh",
+    "startLine": 46,
+    "endLine": 57
+  },
+  {
+    "outputFile": "Bundle-AllConsentsForPerson-response-example-1.json",
+    "fshName": "AllConsentsForPerson-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AllConsentsForPerson.fsh",
+    "startLine": 53,
+    "endLine": 58
+  },
+  {
+    "outputFile": "Bundle-AllConsentsForTemplate-response-example-1.json",
+    "fshName": "AllConsentsForTemplate-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AllConsentsForTemplate.fsh",
+    "startLine": 52,
+    "endLine": 57
+  },
+  {
+    "outputFile": "Bundle-AllPolicyStatesForPerson-response-example-1.json",
+    "fshName": "AllPolicyStatesForPerson-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AllPolicyStatesForPerson.fsh",
+    "startLine": 47,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Bundle-Consent-Bundle-example-1.json",
+    "fshName": "Consent-Bundle-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 236,
+    "endLine": 247
+  },
+  {
+    "outputFile": "Bundle-Consent-Bundle-example-2.json",
+    "fshName": "Consent-Bundle-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 249,
+    "endLine": 260
+  },
+  {
+    "outputFile": "Bundle-CurrentPolicyStatesForPerson-response-example-1.json",
+    "fshName": "CurrentPolicyStatesForPerson-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-CurrentPolicyStatesForPerson.fsh",
+    "startLine": 63,
+    "endLine": 120
+  },
+  {
     "outputFile": "Bundle-PseudonymizePatient-Bundle-request-example-1.json",
     "fshName": "PseudonymizePatient-Bundle-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
-    "startLine": 67,
-    "endLine": 80
+    "startLine": 79,
+    "endLine": 92
   },
   {
     "outputFile": "Bundle-PseudonymizePatient-Bundle-response-example-1.json",
     "fshName": "PseudonymizePatient-Bundle-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
-    "startLine": 141,
-    "endLine": 154
+    "startLine": 168,
+    "endLine": 181
   },
   {
     "outputFile": "CodeSystem-BloomfilterTypeCS.json",
@@ -142,6 +214,30 @@
     "fshFile": "codesystem-SaveAction.fsh",
     "startLine": 1,
     "endLine": 11
+  },
+  {
+    "outputFile": "Consent-Consent-example-1.json",
+    "fshName": "Consent-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 30,
+    "endLine": 50
+  },
+  {
+    "outputFile": "Consent-Consent-example-2.json",
+    "fshName": "Consent-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 53,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Consent-Consent-example-3.json",
+    "fshName": "Consent-example-3",
+    "fshType": "Instance",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 136,
+    "endLine": 233
   },
   {
     "outputFile": "OperationDefinition-AddConsent.json",
@@ -317,7 +413,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-PseudonymizePatient.fsh",
     "startLine": 1,
-    "endLine": 64
+    "endLine": 76
   },
   {
     "outputFile": "OperationDefinition-PseudonymizeSecondary.json",
@@ -840,6 +936,14 @@
     "endLine": 89
   },
   {
+    "outputFile": "Patient-Patient-example-1.json",
+    "fshName": "Patient-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Patient.fsh",
+    "startLine": 109,
+    "endLine": 116
+  },
+  {
     "outputFile": "Patient-Patient-example-2.json",
     "fshName": "Patient-example-2",
     "fshType": "Instance",
@@ -864,6 +968,46 @@
     "endLine": 78
   },
   {
+    "outputFile": "Provenance-40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419.json",
+    "fshName": "40f2f2a3-38c4-4c5b-bed4-8cf80a3f8419",
+    "fshType": "Instance",
+    "fshFile": "profile-Provenance.fsh",
+    "startLine": 34,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Provenance-Provenance-example-1.json",
+    "fshName": "Provenance-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Provenance.fsh",
+    "startLine": 13,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Questionnaire-ConsentModule-example-1.json",
+    "fshName": "ConsentModule-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentModule.fsh",
+    "startLine": 36,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Questionnaire-ConsentModule-example-2.json",
+    "fshName": "ConsentModule-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentModule.fsh",
+    "startLine": 80,
+    "endLine": 112
+  },
+  {
+    "outputFile": "Questionnaire-ConsentTemplate-example-1.json",
+    "fshName": "ConsentTemplate-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentTemplate.fsh",
+    "startLine": 28,
+    "endLine": 224
+  },
+  {
     "outputFile": "Questionnaire-QuestionnaireComposed-example-1.json",
     "fshName": "QuestionnaireComposed-example-1",
     "fshType": "Instance",
@@ -886,6 +1030,30 @@
     "fshFile": "profile-QuestionnaireResponse.fsh",
     "startLine": 1,
     "endLine": 30
+  },
+  {
+    "outputFile": "ResearchStudy-ConsentDomain-example-1.json",
+    "fshName": "ConsentDomain-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentDomain.fsh",
+    "startLine": 60,
+    "endLine": 81
+  },
+  {
+    "outputFile": "ResearchStudy-ConsentDomain-example-2.json",
+    "fshName": "ConsentDomain-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentDomain.fsh",
+    "startLine": 83,
+    "endLine": 101
+  },
+  {
+    "outputFile": "ResearchStudy-ConsentDomain-example-3.json",
+    "fshName": "ConsentDomain-example-3",
+    "fshType": "Instance",
+    "fshFile": "profile-ConsentDomain.fsh",
+    "startLine": 103,
+    "endLine": 119
   },
   {
     "outputFile": "SearchParameter-ActivityDefinitionCode.json",
@@ -936,6 +1104,30 @@
     "endLine": 12
   },
   {
+    "outputFile": "StructureDefinition-Consent.json",
+    "fshName": "Consent",
+    "fshType": "Profile",
+    "fshFile": "profile-Consent.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentDomain.json",
+    "fshName": "ConsentDomain",
+    "fshType": "Profile",
+    "fshFile": "profile-ConsentDomain.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentModule.json",
+    "fshName": "ConsentModule",
+    "fshType": "Profile",
+    "fshFile": "profile-ConsentModule.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
     "outputFile": "StructureDefinition-ConsentPolicy.json",
     "fshName": "ConsentPolicy",
     "fshType": "Profile",
@@ -958,6 +1150,14 @@
     "fshFile": "profile-ConsentQualityControl.fsh",
     "startLine": 1,
     "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentTemplate.json",
+    "fshName": "ConsentTemplate",
+    "fshType": "Profile",
+    "fshFile": "profile-ConsentTemplate.fsh",
+    "startLine": 1,
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-Created.json",
@@ -1070,6 +1270,14 @@
     "fshFile": "extension-Property.fsh",
     "startLine": 1,
     "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-Provenance.json",
+    "fshName": "Provenance",
+    "fshType": "Profile",
+    "fshFile": "profile-Provenance.fsh",
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "StructureDefinition-QuestionnaireLabel.json",

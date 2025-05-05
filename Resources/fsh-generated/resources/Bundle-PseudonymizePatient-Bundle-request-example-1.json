@@ -55,8 +55,30 @@
             }
           },
           {
-            "name": "target",
-            "valueString": "MyStudy-Domain1"
+            "name": "context",
+            "part": [
+              {
+                "name": "target",
+                "valueString": "MyStudy-Domain1"
+              },
+              {
+                "name": "count",
+                "valueInteger": 1
+              }
+            ]
+          },
+          {
+            "name": "context",
+            "part": [
+              {
+                "name": "target",
+                "valueString": "MyStudy-Domain2"
+              },
+              {
+                "name": "count",
+                "valueInteger": 1
+              }
+            ]
           }
         ]
       },
@@ -113,8 +135,13 @@
             }
           },
           {
-            "name": "target",
-            "valueString": "NotMyStudy-Domain15"
+            "name": "context",
+            "part": [
+              {
+                "name": "target",
+                "valueString": "NotMyStudy-Domain15"
+              }
+            ]
           }
         ]
       },

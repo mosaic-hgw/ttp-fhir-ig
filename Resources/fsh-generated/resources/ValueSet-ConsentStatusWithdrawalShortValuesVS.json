@@ -3,7 +3,7 @@
   "status": "draft",
   "name": "ConsentStatusWithdrawalShortValues",
   "id": "ConsentStatusWithdrawalShortValuesVS",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0-devel",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusWithdrawalShortValues",
   "experimental": false,
   "date": "2025-04-28",

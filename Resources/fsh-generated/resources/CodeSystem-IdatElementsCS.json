@@ -5,7 +5,7 @@
   "name": "IdatElements",
   "id": "IdatElementsCS",
   "description": "Element names for use in $requestTasks operation.",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0-devel",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/dispatcher/IdatElements",
   "concept": [
     {

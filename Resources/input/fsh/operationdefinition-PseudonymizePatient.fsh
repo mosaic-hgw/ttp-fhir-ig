@@ -28,19 +28,25 @@ Usage: #definition
   * type = #Patient
   * documentation = "Patienten-Ressource des Patienten, für die 1-n Pseudonyme erzeugt werden sollen"
 * parameter[+]
-  * name = #target
+  * name = #context
   * use = #in
   * min = 1
-  * max = "1"
-  * type = #string
-  * documentation = "Angabe der Pseudonymisierungs-Domäne in welcher nach vorhandenen Pseudonymen gesucht wird oder neue Pseudonyme erzeugt werden sollen."
-* parameter[+]
-  * name = #count
-  * use = #in
-  * min = 0
-  * max = "1"
-  * type = #integer
-  * documentation = "Angabe der Anzahl zu erzeugender Pseudonyme innerhalb der Domäne. Default = 1."
+  * max = "*"
+  * documentation = "Kontext der zu generierenden oder zu suchenden Pseudonyme."
+  * part[+]
+    * name = #target
+    * use = #in
+    * min = 1
+    * max = "1"
+    * type = #string
+    * documentation = "Angabe der Pseudonymisierungs-Domäne in welcher nach vorhandenen Pseudonymen gesucht wird oder neue Pseudonyme erzeugt werden sollen."
+  * part[+]
+    * name = #count
+    * use = #in
+    * min = 0
+    * max = "1"
+    * type = #integer
+    * documentation = "Angabe der Anzahl zu erzeugender Pseudonyme innerhalb der Domäne. Default = 1."
 * parameter[+]
   * name = #externalPatientId
   * use = #out
@@ -49,19 +55,25 @@ Usage: #definition
   * type = #string
   * documentation = "ID der Patient-Ressource zum Zweck der Rückreferenzierung. Es wird die vom Client übermittelte ID (Element Patient.id) verwendet, in Anlehnung an das Konzept 'Update as Create' as der FHIR-Spezifikation."
 * parameter[+]
-  * name = #target
-  * use = #out
-  * min = 1
-  * max = "1"
-  * type = #Identifier
-  * documentation = "Angabe der Domäne (entspricht dem beim Request übermittelten Wert) zum Zweck der Rückreferenzierung"
-* parameter[+]
   * name = #pseudonym
   * use = #out
-  * min = 0
+  * min = 1
   * max = "*"
-  * type = #Identifier
-  * documentation = "Das erzeugte Pseudonym (wird nur im Erfolgsfall übermittelt)."
+  * documentation = "Gruppierung der domänenspezifischen Pseudonyme."
+  * part[+]
+    * name = #target
+    * use = #out
+    * min = 1
+    * max = "1"
+    * type = #Identifier
+    * documentation = "Angabe der Domäne (entspricht dem beim Request übermittelten Wert) zum Zweck der Rückreferenzierung"
+  * part[+]
+    * name = #value
+    * use = #out
+    * min = 0
+    * max = "*"
+    * type = #Identifier
+    * documentation = "Das erzeugte Pseudonym (wird nur im Erfolgsfall übermittelt)."
 
 
 Instance: PseudonymizePatient-Bundle-request-example-1
@@ -89,8 +101,21 @@ Usage: #inline
   * name = "patient"
   * resource = aaaaaaaa-8a1e-4442-af99-50abc27d6f52
 * parameter[+]
-  * name = "target"
-  * valueString = "MyStudy-Domain1"
+  * name = "context"
+  * part[+]
+    * name = "target"
+    * valueString = "MyStudy-Domain1"
+  * part[+]
+    * name = "count"
+    * valueInteger = 1
+* parameter[+]
+  * name = "context"
+  * part[+]
+    * name = "target"
+    * valueString = "MyStudy-Domain2"
+  * part[+]
+    * name = "count"
+    * valueInteger = 1
 
 Instance: aaaaaaaa-8a1e-4442-af99-50abc27d6f52
 InstanceOf: Patient
@@ -119,8 +144,10 @@ Usage: #inline
   * name = "patient"
   * resource = bbbbbbbb-e258-4471-9ac3-6dfdfac35a6e
 * parameter[+]
-  * name = "target"
-  * valueString = "NotMyStudy-Domain15"
+  * name = "context"
+  * part[+]
+    * name = "target"
+    * valueString = "NotMyStudy-Domain15"
 
 Instance: bbbbbbbb-e258-4471-9ac3-6dfdfac35a6e
 InstanceOf: Patient
@@ -160,15 +187,29 @@ Usage: #inline
   * name = "externalPatientId"
   * valueId = "aaaaaaaa-8a1e-4442-af99-50abc27d6f52"
 * parameter[+]
-  * name = "target"
-  * valueIdentifier
-    * system = "http://my.fhir.domain.local/fhir/sid/domains"
-    * value = "MyStudy-Domain1"
+  * name = "pseudonym"
+  * part[+]
+    * name = "target"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/domains"
+      * value = "MyStudy-Domain1"
+  * part[+]
+    * name = "value"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/pseudonyms"
+      * value = "56464986521"
 * parameter[+]
   * name = "pseudonym"
-  * valueIdentifier
-    * system = "http://my.fhir.domain.local/fhir/sid/pseudonyms"
-    * value = "56464986521"
+  * part[+]
+    * name = "target"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/domains"
+      * value = "MyStudy-Domain2"
+  * part[+]
+    * name = "value"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/pseudonyms"
+      * value = "8976834765347"
 
 Instance: PseudonymizePatient-Bundle-response-example-1-Par1OpO
 InstanceOf: OperationOutcome
@@ -185,10 +226,17 @@ Usage: #inline
   * name = "externalPatientId"
   * valueId = "bbbbbbbb-e258-4471-9ac3-6dfdfac35a6e"
 * parameter[+]
-  * name = "target"
-  * valueIdentifier
-    * system = "http://my.fhir.domain.local/fhir/sid/domains"
-    * value = "NotMyStudy-Domain15"
+  * name = "pseudonym"
+  * part[+]
+    * name = "target"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/domains"
+      * value = "MyStudy-Domain15"
+  * part[+]
+    * name = "value"
+    * valueIdentifier
+      * system = "http://my.fhir.domain.local/fhir/sid/pseudonyms"
+      * value = "8976834765347"
 
 Instance: PseudonymizePatient-Bundle-response-example-1-Par2OpO
 InstanceOf: OperationOutcome

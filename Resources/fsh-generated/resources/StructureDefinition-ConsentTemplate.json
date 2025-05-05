@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentTemplate",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/ConsentTemplate",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0-devel",
   "name": "ConsentTemplate",
   "title": "Consent Template",
   "status": "draft",

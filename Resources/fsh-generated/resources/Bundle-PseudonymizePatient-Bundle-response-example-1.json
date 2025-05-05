@@ -13,18 +13,42 @@
             "valueId": "aaaaaaaa-8a1e-4442-af99-50abc27d6f52"
           },
           {
-            "name": "target",
-            "valueIdentifier": {
-              "system": "http://my.fhir.domain.local/fhir/sid/domains",
-              "value": "MyStudy-Domain1"
-            }
+            "name": "pseudonym",
+            "part": [
+              {
+                "name": "target",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/domains",
+                  "value": "MyStudy-Domain1"
+                }
+              },
+              {
+                "name": "value",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/pseudonyms",
+                  "value": "56464986521"
+                }
+              }
+            ]
           },
           {
             "name": "pseudonym",
-            "valueIdentifier": {
-              "system": "http://my.fhir.domain.local/fhir/sid/pseudonyms",
-              "value": "56464986521"
-            }
+            "part": [
+              {
+                "name": "target",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/domains",
+                  "value": "MyStudy-Domain2"
+                }
+              },
+              {
+                "name": "value",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/pseudonyms",
+                  "value": "8976834765347"
+                }
+              }
+            ]
           }
         ]
       },
@@ -53,11 +77,23 @@
             "valueId": "bbbbbbbb-e258-4471-9ac3-6dfdfac35a6e"
           },
           {
-            "name": "target",
-            "valueIdentifier": {
-              "system": "http://my.fhir.domain.local/fhir/sid/domains",
-              "value": "NotMyStudy-Domain15"
-            }
+            "name": "pseudonym",
+            "part": [
+              {
+                "name": "target",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/domains",
+                  "value": "MyStudy-Domain15"
+                }
+              },
+              {
+                "name": "value",
+                "valueIdentifier": {
+                  "system": "http://my.fhir.domain.local/fhir/sid/pseudonyms",
+                  "value": "8976834765347"
+                }
+              }
+            ]
           }
         ]
       },
