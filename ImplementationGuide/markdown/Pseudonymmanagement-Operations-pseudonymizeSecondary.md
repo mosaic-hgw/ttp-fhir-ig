@@ -3,12 +3,17 @@
 Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert
 
 ##### **Voraussetzung**
-Der erforderliche Pseudonymisierungskontext (target) wurde im Vorfeld bereits konfiguriert und ist vorhanden
+- Der oder die erforderlichen Pseudonymisierungskontexte (target) wurden im Vorfeld bereits konfiguriert und sind vorhanden
+- Die target-Domänen sind als "MultiPsn"-Domänen konfiguriert (mehrere Pseudonyme pro Originalwert innerhalb derselben Domäne gestattet)
+
 
 ##### **Aufruf und Rückgabe**
 {{render:PseudonymizeSecondary}}
 
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
+
+Je nach Werteangaben (target, count) erfolgt bei der Verarbeitung intern eine Gruppierung der angefragten Werte, um die Vorteile des Batch-Processing nutzen zu können.
+Einheitliche count- und target-Angaben führen zu besserer Performance.
 
 `<HOST>:<PORT>/ttp-fhir/fhir/gpas/$pseudonymize-secondary`
 
@@ -26,3 +31,6 @@ Beispielhafter Request-Body:
 
 Eine beispielhafte Rückmeldung kann wie folgt aussehen:
 {{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-1.json}}
+
+Eine beispielhafte Fehlermeldung (hier: unbekannte target-Angabe):
+{{xml:Resources/fsh-generated/resources/Parameters-Parameters-PseudonymizeSecondary-response-example-2.json}}

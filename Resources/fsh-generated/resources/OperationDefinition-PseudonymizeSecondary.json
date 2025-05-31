@@ -92,6 +92,39 @@
           "max": "1",
           "documentation": "Sekundär-Pseudonym.",
           "type": "Identifier"
+        },
+        {
+          "name": "result-code",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Erfolgsstatus",
+          "type": "Coding"
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Aufgetretene Fehler",
+      "part": [
+        {
+          "name": "target",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Fehlerhafte Domänenangabe",
+          "type": "Identifier"
+        },
+        {
+          "name": "error-code",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "Fehlerdetails",
+          "type": "Coding"
         }
       ]
     }

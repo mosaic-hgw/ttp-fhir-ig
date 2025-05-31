@@ -67,7 +67,33 @@ Usage: #definition
     * max = "1"
     * documentation = "Sekundär-Pseudonym."
     * type = #Identifier
-
+  * part[+]
+    * name = #result-code
+    * use = #out
+    * min = 0
+    * max = "1"
+    * documentation = "Erfolgsstatus"
+    * type = #Coding
+* parameter[+]
+  * name = #error
+  * use = #out
+  * min = 0
+  * max = "*"
+  * documentation = "Aufgetretene Fehler"
+  * part[+]
+    * name = #target
+    * use = #out
+    * min = 1
+    * max = "1"
+    * documentation = "Fehlerhafte Domänenangabe"
+    * type = #Identifier
+  * part[+]
+    * name = #error-code
+    * use = #out
+    * min = 0
+    * max = "1"
+    * documentation = "Fehlerdetails"
+    * type = #Coding
 
 Instance: Parameters-PseudonymizeSecondary-request-example-1
 InstanceOf: Parameters
@@ -83,7 +109,6 @@ Usage: #example
   * part[+]
     * name = "count"
     * valueString = "2"
-
 
 Instance: Parameters-PseudonymizeSecondary-response-example-1
 InstanceOf: Parameters
@@ -122,3 +147,23 @@ Usage: #example
     * valueIdentifier
       * system = "https://sample/psn-system"
       * value = "53KUNDA3RP5N2"
+  * part[+]
+    * name = "result-code"
+    * valueCoding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
+    * valueCoding.code = #MSG_CREATED
+
+
+Instance: Parameters-PseudonymizeSecondary-response-example-2
+InstanceOf: Parameters
+Usage: #example
+* parameter[+]
+  * name = "error"
+  * part[+]
+    * name = "target"
+    * valueIdentifier.system = "https://ths-greifswald.de/gpas"
+    * valueIdentifier.value = "DOMAINXY"
+  * part[+]
+    * name = "error-code"
+    * valueCoding.system = "http://hl7.org/fhir/issue-type"
+    * valueCoding.code = #not-found
+    * valueCoding.display = "Not Found"
