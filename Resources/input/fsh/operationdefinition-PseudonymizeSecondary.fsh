@@ -7,7 +7,7 @@ Usage: #definition
 * title = "pseudonymize-secondary"
 * kind = #operation
 * description = "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert."
-* affectsState = false
+* affectsState = true
 * code = #pseudonymize-secondary
 * comment = "Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert."
 * system = true
