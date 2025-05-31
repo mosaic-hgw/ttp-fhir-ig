@@ -130,6 +130,10 @@ Usage: #example
     * valueIdentifier
       * system = "https://ths-greifswald.de/gpas"
       * value = "53KUNDA3RP5N1"
+  * part[+]
+    * name = "result-code"
+    * valueCoding.system = "http://terminology.hl7.org/CodeSystem/operation-outcome"
+    * valueCoding.code = #MSG_CREATED
 * parameter[+]
   * name = "secondarypseudonym"
   * part[+]

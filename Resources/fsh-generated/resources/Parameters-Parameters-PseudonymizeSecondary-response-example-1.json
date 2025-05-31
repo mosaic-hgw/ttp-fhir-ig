@@ -25,6 +25,13 @@
             "system": "https://ths-greifswald.de/gpas",
             "value": "53KUNDA3RP5N1"
           }
+        },
+        {
+          "name": "result-code",
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/operation-outcome",
+            "code": "MSG_CREATED"
+          }
         }
       ]
     },
