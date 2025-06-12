@@ -3,7 +3,7 @@
   "status": "active",
   "name": "Policy",
   "id": "PolicyVS",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/Policy",
   "experimental": false,
   "date": "2025-06-12",

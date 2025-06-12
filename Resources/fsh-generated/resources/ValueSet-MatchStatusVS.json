@@ -3,7 +3,7 @@
   "status": "active",
   "name": "MatchStatus",
   "id": "MatchStatusVS",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "url": "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus",
   "experimental": false,
   "date": "2025-06-12",

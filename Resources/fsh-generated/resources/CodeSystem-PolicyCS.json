@@ -5,7 +5,7 @@
   "name": "Policy",
   "id": "PolicyCS",
   "description": "Policies used in consent management",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
   "concept": [
     {

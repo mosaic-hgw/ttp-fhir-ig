@@ -5,7 +5,7 @@
   "name": "SaveAction",
   "id": "SaveActionCS",
   "description": "Possible save actions in the context of adding patient identities.",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "url": "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction",
   "concept": [
     {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ShortText",
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "name": "ShortText",
   "title": "Short Text",
   "status": "active",

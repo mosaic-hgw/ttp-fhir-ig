@@ -3,7 +3,7 @@
   "status": "active",
   "name": "ConsentStatusObjectionShortValues",
   "id": "ConsentStatusObjectionShortValuesVS",
-  "version": "2025.1.0-devel",
+  "version": "2025.1.0",
   "url": "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionShortValues",
   "experimental": false,
   "date": "2025-06-12",

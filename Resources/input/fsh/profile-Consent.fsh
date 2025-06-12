@@ -7,6 +7,7 @@ Description: "Einwilligungsinformationen"
 * ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
 * ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung"
+* meta.lastUpdated MS N
 * extension ^min = 0
 * extension contains
     ExternalProperty named externalProperty 0..* MS and
