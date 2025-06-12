@@ -7,7 +7,7 @@
   "title": "Consent Module",
   "status": "draft",
   "experimental": false,
-  "date": "2025-04-28",
+  "date": "2025-06-12",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {
@@ -132,6 +132,42 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.text.extension:renderingMarkdown",
+        "path": "Questionnaire.item.text.extension",
+        "sliceName": "renderingMarkdown"
+      },
+      {
+        "id": "Questionnaire.item.text.extension:renderingMarkdown.value[x]",
+        "path": "Questionnaire.item.text.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Questionnaire.item.text.extension:renderingXhtml",
+        "path": "Questionnaire.item.text.extension",
+        "sliceName": "renderingXhtml"
+      },
+      {
+        "id": "Questionnaire.item.text.extension:renderingXhtml.value[x]",
+        "path": "Questionnaire.item.text.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
       }
     ]
   }

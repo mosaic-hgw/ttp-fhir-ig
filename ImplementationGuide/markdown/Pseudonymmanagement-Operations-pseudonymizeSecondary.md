@@ -1,5 +1,7 @@
 #### pseudonymizeSecondary
 
+**Unterstützt ab TTP-FHIR Gateway Version 2025.1.0**                             
+
 Erzeugung einer spezifischen Anzahl von Pseudonymen in einem vorhandenen Pseudonymisierungskontext bei gleichzeitiger Zuordnung zum übermittelten Originalwert
 
 ##### **Voraussetzung**

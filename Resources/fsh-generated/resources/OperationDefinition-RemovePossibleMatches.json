@@ -2,9 +2,9 @@
   "resourceType": "OperationDefinition",
   "id": "RemovePossibleMatches",
   "url": "https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches",
-  "version": "2025.1.0-DEVEL.1",
+  "version": "2025.1.0",
   "status": "draft",
-  "date": "2025-04-28",
+  "date": "2025-06-12",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact": [
     {

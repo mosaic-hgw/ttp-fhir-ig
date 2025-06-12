@@ -129,7 +129,7 @@ Usage: #example
 * name = "Patienteneinwilligung MII [mit PDF]"
 * title = "<h1>Einwilligungserklärung</h1>"
 * derivedFrom = "https://ths-greifswald.de/fhir/gics/MII%7CPatienteneinwilligung+MII+%5Bmit+PDF%5D%7C1.6.d"
-* status = #draft
+* status = #active
 * useContext.code = $QuestionnaireComponents#QuestionnaireComposed
 * useContext.valueReference = Reference(ResearchStudy/MII)
 * purpose = "Version 1.6d der MII Vorlage, Stand: 27.04.2020, allgemeine Version (PatDat,KKDat,BioMat) mit Platzhaltern  und den OIDs der ArtDecor Version von Dez 2020 gemäß http://art-decor.org/decor/services/RetrieveValueSet?id=2.16.840.1.113883.3.1937.7"

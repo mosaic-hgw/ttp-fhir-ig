@@ -54,7 +54,7 @@
   "derivedFrom": [
     "https://ths-greifswald.de/fhir/gics/MII%7CPatienteneinwilligung+MII+%5Bmit+PDF%5D%7C1.6.d"
   ],
-  "status": "draft",
+  "status": "active",
   "useContext": [
     {
       "code": {
