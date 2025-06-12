@@ -4,7 +4,7 @@
   "url": "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy",
   "version": "2025.1.0-devel",
   "name": "ConsentPolicy",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2025-06-12",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

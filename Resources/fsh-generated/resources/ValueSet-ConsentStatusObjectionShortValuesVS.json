@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "ConsentStatusObjectionShortValues",
   "id": "ConsentStatusObjectionShortValuesVS",
   "version": "2025.1.0-devel",

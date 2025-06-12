@@ -3,6 +3,7 @@ Id: ShortText
 Title: "Short Text"
 Description: "Kurztext zum Item"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ShortText"
 * ^context[0].type = #element
 * ^context[=].expression = "Questionnaire.item"

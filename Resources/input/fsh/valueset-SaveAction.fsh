@@ -1,6 +1,7 @@
 ValueSet: SaveAction
 Id: SaveActionVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"
 * ^expansion.timestamp = "2021-10-28T12:00:00.000+02:00"

@@ -3,6 +3,7 @@ Id: VersionLabel
 Title: "Version Label"
 Description: "Versions-Label"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/VersionLabel"
 * ^context.type = #element
 * ^context.expression = "Questionnaire"

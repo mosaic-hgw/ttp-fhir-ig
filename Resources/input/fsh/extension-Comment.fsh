@@ -3,6 +3,7 @@ Id: Comment
 Title: "Comment"
 Description: "ergänzender Kommentar"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Comment"
 * ^context.type = #element
 * ^context.expression = "Resource"

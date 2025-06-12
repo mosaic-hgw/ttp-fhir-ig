@@ -4,6 +4,7 @@ Id: Consent
 Title: "Einwilligungsinformationen"
 Description: "Einwilligungsinformationen"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
 * ^purpose = "Strukturierte, maschinenverarbeitbare Abbildung der Einwilligungserklärung"
 * extension ^min = 0

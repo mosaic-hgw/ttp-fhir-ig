@@ -3,6 +3,7 @@ Id: QuestionnaireLabel
 Title: "Questionnaire Label"
 Description: "Erweiterung für Vergabe eines Labels in Questionnaires"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/QuestionnaireLabel"
 * ^purpose = "Erweiterung für Vergabe eines Labels in Questionnaires"
 * ^context[0].type = #element

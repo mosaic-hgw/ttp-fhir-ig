@@ -5,6 +5,7 @@ Title: "Person"
 Description: """Allgemeines Personen-Profil. Repräsentiert die reale Person (=> MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil).
 Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level."""
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
 * meta.lastUpdated MS
 * extension contains CustomIdatValues named customIdatValues 0..* MS

@@ -2,6 +2,7 @@ CodeSystem: ConsentPolicyAction
 Id: ConsentPolicyActionCS
 Description: "Extensible description of the permissible (data processing-) action resulting from consented module or policy."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
 * ^version = "1.2"
 * ^purpose = "Second axis 'action' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.action"

@@ -4,6 +4,7 @@ Id: ExchangeFormatDefinition
 Title: "ExchangeFormatDefinition"
 Description: "Die in diesem Bundle enthaltenen FHIR-Ressourcen definieren in ihrer Gesamtheit ein oder mehrere Einwiliigungs-Vorlagen (Templates, FHIR-Questionnaires) zu einem bestimmten Kontext."
 * insert meta-profile
+* ^status = #draft
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Bundle/ExchangeFormatDefinition"
 * type = #collection (exactly)
 * type MS N

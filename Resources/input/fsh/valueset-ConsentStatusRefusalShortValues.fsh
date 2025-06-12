@@ -1,6 +1,7 @@
 ValueSet: ConsentStatusRefusalShortValues
 Id: ConsentStatusRefusalShortValuesVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalShortValues"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"
 * ^compose.include[=].concept[0].code = #ACCEPTED

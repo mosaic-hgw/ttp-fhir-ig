@@ -2,6 +2,7 @@ CodeSystem: ConsentPolicyPurpose
 Id: ConsentPolicyPurposeCS
 Description: "Expandable specification of the application context and/or scope of a consent policy or module"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
 * ^version = "1.2"
 * ^purpose = "Third axis 'purpose' of the 'Semantic Consent Code (SCC)' for use as Consent.provision.purpose"

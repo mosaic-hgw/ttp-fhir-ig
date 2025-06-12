@@ -2,6 +2,7 @@ CodeSystem: SaveAction
 Id: SaveActionCS
 Description: "Possible save actions in the context of adding patient identities."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"
 * ^caseSensitive = true
 * ^content = #complete

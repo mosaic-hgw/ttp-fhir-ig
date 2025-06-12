@@ -3,6 +3,7 @@ Id: FreeTextDefAttributes
 Title: "FreeTextDef Attributes"
 Description: "gics-spezifische Attribute von frei definierten Eingaben"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/FreeTextDefAttributes"
 * ^context.type = #element
 * ^context.expression = "Questionnaire.item"

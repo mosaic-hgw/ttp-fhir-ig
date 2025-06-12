@@ -1,6 +1,7 @@
 ValueSet: MatchStatus
 Id: MatchStatusVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"
 * ^expansion.timestamp = "2021-10-28T12:00:00.000+02:00"

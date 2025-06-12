@@ -1,6 +1,7 @@
 ValueSet: PolicyStatus
 Id: PolicyStatusVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus"
 * ^compose.include[0].system = "http://hl7.org/fhir/ValueSet/consent-provision-type"
 * ^compose.include[+].system = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"

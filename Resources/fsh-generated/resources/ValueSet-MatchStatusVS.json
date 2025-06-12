@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "MatchStatus",
   "id": "MatchStatusVS",
   "version": "2025.1.0-devel",

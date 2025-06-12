@@ -4,6 +4,7 @@ Id: Provenance
 Title: "Herkunftsinformationen und Signatur"
 Description: "Herkunftsinformationen und Signatur"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Provenance"
 * extension ^min = 0
 * signature.extension contains

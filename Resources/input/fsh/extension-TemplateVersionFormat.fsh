@@ -3,6 +3,7 @@ Id: TemplateVersionFormat
 Title: "Template Version Format"
 Description: "Versionierungsformat der Templates einer Consent Domain, basierend auf Vorarbeiten der AG Einwilligungsmanagement des InteropForums"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/TemplateVersionFormat"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"

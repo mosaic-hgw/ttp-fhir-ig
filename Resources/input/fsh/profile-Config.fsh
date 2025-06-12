@@ -4,6 +4,7 @@ Id: Config
 Title: "gics client definable configuration Config"
 Description: "giCS client definable configuration parameters for use as input parameters in multiple giCS operations."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Parameters/Config"
 * parameter 1..4 N
 * parameter ^slicing.discriminator.type = #value

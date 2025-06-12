@@ -4,6 +4,7 @@ Id: PatientPseudonymized
 Title: "Patient pseudonymisiert"
 Description: "Patienten-Profil im Kontext der Pseudonymisierung."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
 * . ^short = "Patienten-Profil im Kontext der Pseudonymisierung."
 * id 1.. MS

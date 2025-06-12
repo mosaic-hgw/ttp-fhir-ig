@@ -3,6 +3,7 @@ Id: ModuleVersionFormat
 Title: "Module Version Format"
 Description: "Versionierungsformat der Module einer Consent Domain, basierend auf Vorarbeiten der AG Einwilligungsmanagement des InteropForums"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ModuleVersionFormat"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"

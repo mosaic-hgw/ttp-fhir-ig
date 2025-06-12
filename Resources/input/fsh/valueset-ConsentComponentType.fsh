@@ -1,6 +1,7 @@
 ValueSet: ConsentComponentType
 Id: ConsentComponentTypeVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentComponentType"
 * ^compose.include[0].system = "http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents"
 * ^compose.include[+].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentComponentType"

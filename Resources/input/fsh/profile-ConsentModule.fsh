@@ -4,6 +4,7 @@ Id: ConsentModule
 Title: "Consent Module"
 Description: "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
 * insert meta-profile
+* ^status = #active
 * ^purpose = "Wiederverwendbares Consent Module auf Basis des ConsentManagementTemplateModules erweitertet um ausgewählte gICS Eigenschaften"
 * meta.extension contains
     Created named created 0..1 MS

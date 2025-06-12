@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "draft",
+  "status": "active",
   "name": "ConsentComponentType",
   "id": "ConsentComponentTypeVS",
   "version": "2025.1.0-devel",

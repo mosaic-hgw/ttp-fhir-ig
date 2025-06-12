@@ -1,6 +1,7 @@
 ValueSet: ConsentStatusRefusalFullValues
 Id: ConsentStatusRefusalFullValuesVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalFullValues"
 * ^compose.include[0].system = "FIXME"
 * ^compose.include[=].concept[0].code = #ACCEPTED

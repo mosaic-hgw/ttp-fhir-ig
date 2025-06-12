@@ -4,6 +4,7 @@ Id: ConsentDomain
 Title: "Consent Domain"
 Description: "Erweitertes Profil der Consent Management Domain Research Study (Arbeitsgruppe Einwilligungsmanagement) zur Abbildung aller relevanten Domänen-Infos für gICS über entsprechende Extensions"
 * insert meta-profile
+* ^status = #active
 * ^purpose = "Erweitertes Profil der Arbeitsgruppe Einwilligungsmanagement zur Abbildung aller relevanten Domänen-Infos für gICS"
 * meta.lastUpdated MS N
 * meta.extension contains

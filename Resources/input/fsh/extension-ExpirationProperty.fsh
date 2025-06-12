@@ -3,6 +3,7 @@ Id: ExpirationProperty
 Title: "Expiration Property"
 Description: "Key Value Expiration Property Element zur Definition von Gültigkeitszeiträumen"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ExpirationProperty"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"

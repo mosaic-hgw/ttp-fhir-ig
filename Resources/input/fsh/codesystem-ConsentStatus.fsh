@@ -2,6 +2,7 @@ CodeSystem: ConsentStatus
 Id: ConsentStatusCS
 Description: " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"
 * ^caseSensitive = true
 * ^content = #complete

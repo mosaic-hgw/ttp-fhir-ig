@@ -3,6 +3,7 @@ Parent: ActivityDefinition
 Id: ConsentPolicy
 Description: "Abbildung aller relevanten Information zur Verwaltung wiederverwendbarer Einwilligungspolicies mit gICS"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ActivityDefinition/ConsentPolicy"
 * . ^short = "Consent Policy"
 * . ^definition = "Atomare Aussage zu der eine Person seine Einwilligung erteilen kann"

@@ -2,6 +2,7 @@ CodeSystem: Policy
 Id: PolicyCS
 Description: "Policies used in consent management"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"
 * ^caseSensitive = true
 * ^content = #complete

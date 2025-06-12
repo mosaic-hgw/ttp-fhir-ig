@@ -3,6 +3,7 @@ Id: PolicyVersionFormat
 Title: "Policy Version Format"
 Description: "Versionierungsformat der Policies einer Consent Domain, basierend auf Vorarbeiten der AG Einwilligungsmanagement des InteropForums"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/PolicyVersionFormat"
 * ^context[0].type = #element
 * ^context[=].expression = "ResearchStudy"

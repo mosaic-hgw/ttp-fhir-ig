@@ -4,6 +4,7 @@ Title: "Position"
 Description: """Ordered position of an item.
 Redundant in the context of FHIR, but relevant"""
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/Position"
 * ^context.type = #element
 * ^context.expression = "Questionnaire.item"

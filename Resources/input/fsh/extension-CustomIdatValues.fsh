@@ -3,6 +3,7 @@ Id: CustomIdatValues
 Title: "Custom IDAT Values"
 Description: "Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
 * ^context[0].type = #element
 * ^context[=].expression = "Patient"

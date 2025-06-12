@@ -1,6 +1,7 @@
 ValueSet: ConsentStatusConsentOptOutShortValues
 Id: ConsentStatusConsentOptOutShortValuesVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentOptOutShortValues"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"
 * ^compose.include[=].concept[+].code = #ACCEPTED_OPT_OUT

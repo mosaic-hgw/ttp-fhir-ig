@@ -4,6 +4,7 @@ Id: ConsentQualityControl
 Title: "Consent Quality Control"
 Description: "Status and additional Information about quality control of a Consent instance"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/VerificationResult/ConsentQualityControl"
 * extension contains
     Comment named comment 0..1 MS and

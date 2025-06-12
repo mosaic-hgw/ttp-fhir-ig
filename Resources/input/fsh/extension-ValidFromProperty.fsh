@@ -3,6 +3,7 @@ Id: ValidFromProperty
 Title: "ValidFromProperty"
 Description: "Specifies the point in time from which the domain is valid."
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/ValidFromProperty"
 * ^context[+].type = #element
 * ^context[=].expression = "ResearchStudy"

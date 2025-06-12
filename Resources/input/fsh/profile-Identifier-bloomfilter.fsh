@@ -4,6 +4,7 @@ Id: identifier-bloomfilter
 Title: "Identifier-Profil für die Abbildung einer Bloomfilters"
 Description: "Identifier-Profil für die Abbildung einer Bloomfilters"
 * insert meta-profile
+* ^status = #draft
 * type from BloomfilterTypeVS
 * type 1.. MS
   * coding 1.. MS

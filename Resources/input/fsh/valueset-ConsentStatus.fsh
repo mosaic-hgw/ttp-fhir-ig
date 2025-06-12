@@ -1,6 +1,7 @@
 ValueSet: ConsentStatus
 Id: ConsentStatusVS
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatus"
 * ^compose.include[0].system = "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentStatus"
 * ^expansion.timestamp = "2021-04-12T12:00:00Z"

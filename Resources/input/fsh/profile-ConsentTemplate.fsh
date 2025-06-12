@@ -4,6 +4,7 @@ Id: ConsentTemplate
 Title: "Consent Template"
 Description: "Einwilligungsvorlage auf Basis des ConsentManagementTemplateFrame erweitertet um ausgewählte gICS Eigenschaften"
 * insert meta-profile
+* ^status = #active
 * extension contains
     Created named created 0..1 MS and
     ExternalProperty named externalProperty 0..* MS N and

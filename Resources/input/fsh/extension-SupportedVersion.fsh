@@ -2,6 +2,7 @@ Extension: SupportedVersion
 Id: SupportedVersion
 Title: "SupportedVersion"
 * insert meta-profile
+* ^status = #active
 * ^url = "https://ths-greifswald.de/fhir/StructureDefinition/gics/SupportedVersion"
 * ^context.type = #element
 * ^context.expression = "Bundle.type"
