@@ -86,19 +86,6 @@
         "mustSupport": true
       },
       {
-        "id": "Consent.category",
-        "path": "Consent.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Consent.category:consentCategory",
         "path": "Consent.category",
         "sliceName": "consentCategory"
