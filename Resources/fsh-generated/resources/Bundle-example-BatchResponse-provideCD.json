@@ -1,0 +1,5 @@
+{
+  "resourceType": "Bundle",
+  "id": "example-BatchResponse-provideCD",
+  "type": "batch-response"
+}
