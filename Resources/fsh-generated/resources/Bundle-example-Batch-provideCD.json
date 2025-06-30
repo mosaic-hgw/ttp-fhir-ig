@@ -404,7 +404,118 @@
           "type": "permit",
           "period": {
             "start": "2025-03-04T15:16:17+02:00"
-          }
+          },
+          "provision": [
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "TTP",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "TTP Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "collect",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "class": [
+                {
+                  "code": "PII",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            },
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "DIC",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "Datenintegrationszentrum Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "collect",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "class": [
+                {
+                  "code": "MDAT",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            },
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "DTU",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "Transferstelle der Universitätsmedizin Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "provide",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "purpose": [
+                {
+                  "code": "EU_GDPR_LEVEL",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
+                },
+                {
+                  "code": "timely_unrestricted",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
+                }
+              ],
+              "class": [
+                {
+                  "code": "MDAT",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            }
+          ]
         }
       },
       "request": {

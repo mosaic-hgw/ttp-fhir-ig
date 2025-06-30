@@ -135,5 +135,26 @@ Usage: #inline
 * dateTime = "2025-06-26T13:14:15+02:00"
 * organization.display = "EPA"
 * policy.uri = "https://www.gesetze-im-internet.de/sgb_5/__342.html"
-* provision.type = #permit
-* provision.period.start = "2025-03-04T15:16:17+02:00"
+* provision
+  * type = #permit
+  * period.start = "2025-03-04T15:16:17+02:00"
+  * provision[+]
+    * actor
+      * role = ConsentPolicyActor#TTP
+      * reference.display = "TTP Greifswald"
+    * action = ConsentPolicyAction#collect
+    * class = ConsentPolicyClass#PII
+  * provision[+]
+    * actor
+      * role = ConsentPolicyActor#DIC
+      * reference.display = "Datenintegrationszentrum Greifswald"
+    * action = ConsentPolicyAction#collect
+    * class = ConsentPolicyClass#MDAT
+  * provision[+]
+    * actor
+      * role = ConsentPolicyActor#DTU
+      * reference.display = "Transferstelle der Universitätsmedizin Greifswald"
+    * action = ConsentPolicyAction#provide
+    * purpose[+] = ConsentPolicyPurpose#EU_GDPR_LEVEL
+    * purpose[+] = ConsentPolicyPurpose#timely_unrestricted
+    * class = ConsentPolicyClass#MDAT
