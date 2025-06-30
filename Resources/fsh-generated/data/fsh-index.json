@@ -133,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "example-Batch-provide-consent-data.fsh",
     "startLine": 37,
-    "endLine": 40
+    "endLine": 82
   },
   {
     "outputFile": "Bundle-example-BatchResponse-verify-consent-state.json",

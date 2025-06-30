@@ -38,6 +38,48 @@ Instance: example-BatchResponse-provideCD
 InstanceOf: Bundle
 Usage: #example
 * type = #batch-response
+* entry[+]
+  * resource = example-provideCD-patient1
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient1"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
+* entry[+]
+  * resource = example-provideCD-patient2
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient2"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
+* entry[+]
+  * resource = example-provideCD-patient3
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient3"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
+* entry[+]
+  * resource = example-provideCD-consent1
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent1"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
+* entry[+]
+  * resource = example-provideCD-consent2
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent2"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
+* entry[+]
+  * resource = example-provideCD-consent3
+  * response
+    * status = "201"
+    * location = "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent3"
+    * etag = "W/\"1\""
+    * lastModified = "2025-06-30T12:34:56Z"
 
 
 Instance: example-provideCD-patient1
