@@ -1,0 +1,539 @@
+{
+  "resourceType": "Bundle",
+  "id": "example-BatchResponse-provideCD",
+  "type": "batch-response",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example-provideCD-patient1",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://my-hospital.de/sid/psn",
+            "value": "dic1_PSN1"
+          }
+        ]
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient1",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example-provideCD-patient2",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://my-hospital.de/sid/psn",
+            "value": "dic2_PSN2"
+          }
+        ]
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient2",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example-provideCD-patient3",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/fttp/PatientPseudonymized"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://my-hospital.de/sid/psn",
+            "value": "dic3_PSN3"
+          }
+        ]
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Patient/example-provideCD-patient3",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Consent",
+        "id": "example-provideCD-consent1",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference",
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/REGISTERA"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "59284-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "document",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "CONSENT-OPT-IN",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/example-provideCD-patient1"
+        },
+        "dateTime": "2025-06-26T13:14:15+02:00",
+        "organization": [
+          {
+            "display": "Testorganisation"
+          }
+        ],
+        "policy": [
+          {
+            "uri": "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"
+          }
+        ],
+        "provision": {
+          "type": "deny",
+          "period": {
+            "start": "2021-10-29T11:00:08+02:00",
+            "end": "2021-11-30T00:00:00+01:00"
+          },
+          "provision": [
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-10-29T11:00:08+02:00",
+                "end": "2021-11-30T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_bereitstellen_EU_DSGVO_NIVEAU",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-10-29T11:00:08+02:00",
+                "end": "2021-11-30T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_erheben",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Erfassung neuer identifizierender Daten (IDAT)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-10-29T11:00:08+02:00",
+                "end": "2021-11-30T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_speichern_verarbeiten",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-10-29T11:00:08+02:00",
+                "end": "2021-11-30T00:00:00+01:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_zusammenfuehren_Dritte",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent1",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Consent",
+        "id": "example-provideCD-consent2",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference",
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/REGISTERA"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "59284-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "document",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "WITHDRAWAL",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/example-provideCD-patient2"
+        },
+        "dateTime": "2025-06-26T13:14:15+02:00",
+        "organization": [
+          {
+            "display": "Testorganisation"
+          }
+        ],
+        "policy": [
+          {
+            "uri": "urn:uuid:b0b83c00-e230-4c52-8d3a-cbb882e0a72f"
+          }
+        ],
+        "provision": {
+          "type": "deny",
+          "period": {
+            "start": "2021-11-01T13:00:08+02:00",
+            "end": "2021-11-30T00:00:00+01:00"
+          }
+        }
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent2",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Consent",
+        "id": "example-provideCD-consent3",
+        "meta": {
+          "profile": [
+            "https://ths-greifswald.de/fhir/StructureDefinition/gics/Consent"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference",
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/EPA"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "treatment",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "59284-0",
+                "system": "http://loinc.org"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "document",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "CONSENT-OPT-OUT",
+                "system": "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/example-provideCD-patient3"
+        },
+        "dateTime": "2025-06-26T13:14:15+02:00",
+        "organization": [
+          {
+            "display": "EPA"
+          }
+        ],
+        "policy": [
+          {
+            "uri": "https://www.gesetze-im-internet.de/sgb_5/__342.html"
+          }
+        ],
+        "provision": {
+          "type": "permit",
+          "period": {
+            "start": "2025-03-04T15:16:17+02:00"
+          },
+          "provision": [
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "TTP",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "TTP Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "collect",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "class": [
+                {
+                  "code": "PII",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            },
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "DIC",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "Datenintegrationszentrum Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "collect",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "class": [
+                {
+                  "code": "MDAT",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            },
+            {
+              "actor": [
+                {
+                  "role": {
+                    "coding": [
+                      {
+                        "code": "DTU",
+                        "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyActor"
+                      }
+                    ]
+                  },
+                  "reference": {
+                    "display": "Transferstelle der Universitätsmedizin Greifswald"
+                  }
+                }
+              ],
+              "action": [
+                {
+                  "coding": [
+                    {
+                      "code": "provide",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyAction"
+                    }
+                  ]
+                }
+              ],
+              "purpose": [
+                {
+                  "code": "EU_GDPR_LEVEL",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
+                },
+                {
+                  "code": "timely_unrestricted",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyPurpose"
+                }
+              ],
+              "class": [
+                {
+                  "code": "MDAT",
+                  "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/ConsentPolicyClass"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "response": {
+        "status": "201",
+        "location": "https://fhir-server.my-hospital.de/fhir/Consent/example-provideCD-consent3",
+        "etag": "W/\"1\"",
+        "lastModified": "2025-06-30T12:34:56Z"
+      }
+    }
+  ]
+}

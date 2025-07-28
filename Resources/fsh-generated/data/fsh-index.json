@@ -112,6 +112,38 @@
     "endLine": 181
   },
   {
+    "outputFile": "Bundle-example-Batch-provideCD.json",
+    "fshName": "example-Batch-provideCD",
+    "fshType": "Instance",
+    "fshFile": "example-Batch-provide-consent-data.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Bundle-example-Batch-verify-consent-state.json",
+    "fshName": "example-Batch-verify-consent-state",
+    "fshType": "Instance",
+    "fshFile": "example-Batch-verify-consent-state.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Bundle-example-BatchResponse-provideCD.json",
+    "fshName": "example-BatchResponse-provideCD",
+    "fshType": "Instance",
+    "fshFile": "example-Batch-provide-consent-data.fsh",
+    "startLine": 37,
+    "endLine": 82
+  },
+  {
+    "outputFile": "Bundle-example-BatchResponse-verify-consent-state.json",
+    "fshName": "example-BatchResponse-verify-consent-state",
+    "fshType": "Instance",
+    "fshFile": "example-Batch-verify-consent-state.fsh",
+    "startLine": 15,
+    "endLine": 26
+  },
+  {
     "outputFile": "CodeSystem-BloomfilterTypeCS.json",
     "fshName": "BloomfilterType",
     "fshType": "CodeSystem",
