@@ -15,6 +15,7 @@ Die Zuordnung von eingehender Patienten-Ressource und Ergebnis-Pseudonym(en) erf
 - Die Patient-Ressource muss den Profilvorgaben _PseudonymizePatient_ entsprechen.
 - Die angegebene Pseudonym-Domäne muss konfiguriert sein.
 - Im Fall von **count > 1**: Die angegebene Pseudonym-Domäne muss in der Lage sein mehre Pseudonyme für einen Originalwert zu verwalten (Multi-Psn-Domäne).
+- Es wird nur der Bundle.Type **batch** unterstützt.
 
 ##### **Aufruf und Rückgabe**
 
