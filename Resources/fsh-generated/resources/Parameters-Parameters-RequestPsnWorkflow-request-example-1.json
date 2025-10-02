@@ -20,7 +20,7 @@
     },
     {
       "name": "event",
-      "valueString": "num.getCodexPsn_codex"
+      "valueString": "fttp.getMiiPsn_eyematics"
     }
   ]
 }

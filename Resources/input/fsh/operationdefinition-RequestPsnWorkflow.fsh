@@ -109,7 +109,7 @@ Usage: #example
   * valueString = "eyematics"
 * parameter[+]
   * name = "event"
-  * valueString = "num.getCodexPsn_codex"
+  * valueString = "fttp.getMiiPsn_eyematics"
 
 Instance: Parameters-RequestPsnWorkflow-response-example-1
 InstanceOf: Parameters
@@ -123,7 +123,7 @@ Usage: #example
 * parameter[=].part[=].valueIdentifier.value = "eyematics"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex_6348Q7"
+* parameter[=].part[=].valueIdentifier.value = "eyematics_6348Q7"
 * parameter[+].name = "error"
 * parameter[=].part[0].name = "original"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
