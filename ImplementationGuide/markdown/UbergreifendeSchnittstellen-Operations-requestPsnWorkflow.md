@@ -14,10 +14,10 @@ Die Rückgabe der generierten standort- und studienspezifischen Pseudonyme erfol
 </p>
 
 ##### **Voraussetzung**
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein. Der API-KEY wird im Request-Header übermittelt.
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die spezifizierte Quell-Domäne (source) muss im Zielsystem bekannt und angelegt sein.
 - Die standortspezifische Domäne (target) muss im Zielsystem bekannt und angelegt sein.
-- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein.
 - Das angegebene Event muss bekannt sein und der API-Key dafür autorisiert sein.
 
 ##### **Aufruf und Rückgabe**

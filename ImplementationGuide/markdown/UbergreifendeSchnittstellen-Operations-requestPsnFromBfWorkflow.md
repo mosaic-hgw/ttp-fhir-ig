@@ -8,9 +8,9 @@ Anlegen und Matching von Patienten rein auf Basis von Bloomfiltern (PPRL) für e
 </p>
 
 ##### **Voraussetzung**
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein. Der API-KEY wird im Request-Header übermittelt.
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die übermittelten Bloomfilter müssen valide sein.
-- Der spezifizierte API-Key muss valide sein und über die nötigen Rechte zum Aufruf der Funktion verfügen.
 - Die standortspezifische Domäne (target) muss im Zielsystem bekannt und angelegt sein.
 
 ##### **Aufruf und Rückgabe**

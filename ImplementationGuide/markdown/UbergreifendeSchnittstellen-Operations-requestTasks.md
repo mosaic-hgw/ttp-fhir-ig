@@ -17,9 +17,9 @@ wird der auslösende Prozess abgebrochen (z.B. Clearing-Prozess).
 </p>
 
 ##### **Voraussetzung**
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein. Der API-KEY wird im Request-Header übermittelt.
 - Die spezifizierte Studie muss im Zielsystem bekannt und angelegt sein.
 - Die standortspezifische Ziel-Domäne (target) muss im Zielsystem bekannt und angelegt sein.
-- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein.
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.

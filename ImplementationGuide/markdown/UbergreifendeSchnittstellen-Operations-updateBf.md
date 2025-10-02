@@ -8,10 +8,10 @@ Aktualisierung eines bestehenden Bloomfilters (z.B. bei geänderter Konfiguratio
 </p>
 
 ##### **Voraussetzung**
+- API-Key: Der spezifizierte API-Key muss valide und zum Aufruf der Methode autorisiert sein. Der API-KEY wird im Request-Header übermittelt.
 - Die spezifizierte Studie (study) muss im Zielsystem bekannt und angelegt sein.
 - Die spezifizierte Quell-Domäne (source) muss im Zielsystem bekannt und angelegt sein.
 - Das spezifizierte Pseudonym (pseudonym) muss im Zielsystem bekannt und angelegt sein.
-- API-KEY: Der spezifizierte API-KEY muss valide und zum Aufruf der Methode autorisiert sein.
 
 ##### **Aufruf und Rückgabe**
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
