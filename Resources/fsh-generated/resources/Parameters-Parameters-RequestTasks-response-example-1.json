@@ -13,14 +13,14 @@
           "name": "target",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex"
+            "value": "eyematics"
           }
         },
         {
           "name": "pseudonym",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex_6348Q7"
+            "value": "mii_6348Q7"
           }
         }
       ]
@@ -40,7 +40,7 @@
           "name": "pseudonym",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex_1244Q2"
+            "value": "mii_1244Q2"
           }
         },
         {
@@ -94,7 +94,7 @@
           "name": "study",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "num"
+            "value": "mii"
           }
         },
         {
@@ -105,7 +105,7 @@
           "name": "target",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex"
+            "value": "eyematics"
           }
         }
       ]

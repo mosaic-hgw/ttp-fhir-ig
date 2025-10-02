@@ -4,15 +4,11 @@
   "parameter": [
     {
       "name": "study",
-      "valueString": "num"
+      "valueString": "mii"
     },
     {
       "name": "target",
-      "valueString": "codex"
-    },
-    {
-      "name": "apikey",
-      "valueString": "abcdef12345"
+      "valueString": "eyematics"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "parameter": [
     {
       "name": "study",
-      "valueString": "num"
+      "valueString": "mii"
     },
     {
       "name": "bloomfilter",
@@ -12,11 +12,7 @@
     },
     {
       "name": "target",
-      "valueString": "dic_erlangen"
-    },
-    {
-      "name": "apikey",
-      "valueString": "abcdef12345"
+      "valueString": "dic_muenster"
     }
   ]
 }

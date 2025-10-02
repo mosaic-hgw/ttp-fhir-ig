@@ -70,14 +70,6 @@
       "type": "string"
     },
     {
-      "name": "apikey",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager",
-      "type": "string"
-    },
-    {
       "name": "pseudonym-bf",
       "use": "out",
       "min": 0,

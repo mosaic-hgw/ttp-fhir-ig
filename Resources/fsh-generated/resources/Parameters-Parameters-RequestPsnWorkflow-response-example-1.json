@@ -16,7 +16,7 @@
           "name": "target",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex"
+            "value": "eyematics"
           }
         },
         {
@@ -42,7 +42,7 @@
           "name": "target",
           "valueIdentifier": {
             "system": "https://ths-greifswald.de/gpas",
-            "value": "codex"
+            "value": "eyematics"
           }
         },
         {

@@ -4,7 +4,7 @@
   "parameter": [
     {
       "name": "study",
-      "valueString": "num"
+      "valueString": "mii"
     },
     {
       "name": "original",
@@ -12,15 +12,11 @@
     },
     {
       "name": "source",
-      "valueString": "dic_erlangen"
+      "valueString": "dic_muenster"
     },
     {
       "name": "target",
-      "valueString": "codex"
-    },
-    {
-      "name": "apikey",
-      "valueString": "abcdef12345"
+      "valueString": "eyematics"
     },
     {
       "name": "event",
