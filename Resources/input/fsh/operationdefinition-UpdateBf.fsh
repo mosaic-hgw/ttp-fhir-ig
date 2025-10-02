@@ -37,12 +37,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Das Pseudonym, dessen Bloomfilter aktualisiert werden soll."
 * parameter[=].type = #string
-* parameter[+].name = #apikey
-* parameter[=].use = #in
-* parameter[=].min = 1
-* parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
-* parameter[=].type = #string
 * parameter[+].name = #bfVersion
 * parameter[=].use = #in
 * parameter[=].min = 1
@@ -61,15 +55,13 @@ Instance: Parameters-UpdateBf-request-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0].name = "study"
-* parameter[=].valueString = "num"
+* parameter[=].valueString = "mii"
 * parameter[+].name = "bloomfilter"
 * parameter[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[+].name = "source"
-* parameter[=].valueString = "dic_erlangen"
+* parameter[=].valueString = "dic_muenster"
 * parameter[+].name = "pseudonym"
 * parameter[=].valueString = "dic_2Q42E"
-* parameter[+].name = "apikey"
-* parameter[=].valueString = "abcdef12345"
 * parameter[+].name = "bfVersion"
 * parameter[=].valueString = "2"
 

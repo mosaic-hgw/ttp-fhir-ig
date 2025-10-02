@@ -43,12 +43,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe des Bloomfilter sendenden Standorts (Ziel-Domäne)"
 * parameter[=].type = #string
-* parameter[+].name = #apikey
-* parameter[=].use = #in
-* parameter[=].min = 1
-* parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
-* parameter[=].type = #string
 * parameter[+].name = #pseudonym-bf
 * parameter[=].use = #out
 * parameter[=].min = 0
@@ -101,13 +95,11 @@ Instance: Parameters-RequestPsnFromBfWorkflow-request-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0].name = "study"
-* parameter[=].valueString = "num"
+* parameter[=].valueString = "mii"
 * parameter[+].name = "bloomfilter"
 * parameter[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[+].name = "target"
-* parameter[=].valueString = "dic_erlangen"
-* parameter[+].name = "apikey"
-* parameter[=].valueString = "abcdef12345"
+* parameter[=].valueString = "dic_muenster"
 
 Instance: Parameters-RequestPsnFromBfWorkflow-response-example-1
 InstanceOf: Parameters
@@ -117,7 +109,7 @@ Usage: #example
 * parameter[=].part[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "dic_erlangen"
+* parameter[=].part[=].valueIdentifier.value = "dic_muenster"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "dic_1H51T"
@@ -126,6 +118,6 @@ Usage: #example
 * parameter[=].part[=].valueBase64Binary = "ZHVtbXk="
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "dic_erlangen"
+* parameter[=].part[=].valueIdentifier.value = "dic_muenster"
 * parameter[=].part[+].name = "error-code"
 * parameter[=].part[=].valueCoding = $issue-type#not-found "Not Found"

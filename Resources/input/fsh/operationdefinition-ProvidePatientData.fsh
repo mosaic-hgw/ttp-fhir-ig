@@ -26,12 +26,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Ziel-Domäne bzw. des abrufenden Standorts"
 * parameter[=].type = #string
-* parameter[+].name = #apikey
-* parameter[=].use = #in
-* parameter[=].min = 1
-* parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
-* parameter[=].type = #string
 * parameter[+].name = #patient
 * parameter[=].use = #in
 * parameter[=].min = 1
@@ -53,9 +47,7 @@ Usage: #example
 * parameter[0].name = "taskId"
 * parameter[=].valueId = "064ddebf-b20e-468a-97fd-88097bcdbc11"
 * parameter[+].name = "target"
-* parameter[=].valueString = "codex"
-* parameter[+].name = "apikey"
-* parameter[=].valueString = "abcdef12345"
+* parameter[=].valueString = "eyematics"
 * parameter[+].name = "patient"
 * parameter[=].resource.resourceType = "Patient"
 * parameter[=].resource.extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"

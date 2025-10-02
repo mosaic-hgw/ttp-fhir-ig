@@ -38,12 +38,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Ziel-Domäne"
 * parameter[=].type = #string
-* parameter[+].name = #apikey
-* parameter[=].use = #in
-* parameter[=].min = 1
-* parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
-* parameter[=].type = #string
 * parameter[+].name = #event
 * parameter[=].use = #in
 * parameter[=].min = 0
@@ -103,19 +97,16 @@ InstanceOf: Parameters
 Usage: #example
 * parameter[+]
   * name = "study"
-  * valueString = "num"
+  * valueString = "mii"
 * parameter[+]
   * name = "original"
   * valueString = "dic_1H51T"
 * parameter[+]
   * name = "source"
-  * valueString = "dic_erlangen"
+  * valueString = "dic_muenster"
 * parameter[+]
   * name = "target"
-  * valueString = "codex"
-* parameter[+]
-  * name = "apikey"
-  * valueString = "abcdef12345"
+  * valueString = "eyematics"
 * parameter[+]
   * name = "event"
   * valueString = "num.getCodexPsn_codex"
@@ -129,7 +120,7 @@ Usage: #example
 * parameter[=].part[=].valueIdentifier.value = "dic_1H51T"
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex"
+* parameter[=].part[=].valueIdentifier.value = "eyematics"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
 * parameter[=].part[=].valueIdentifier.value = "codex_6348Q7"
@@ -139,6 +130,6 @@ Usage: #example
 * parameter[=].part[=].valueIdentifier.value = "dic_2Q42E"
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex"
+* parameter[=].part[=].valueIdentifier.value = "eyematics"
 * parameter[=].part[+].name = "error-code"
 * parameter[=].part[=].valueCoding = $issue-type#not-found "Not Found"

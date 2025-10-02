@@ -26,12 +26,6 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Ziel-Domäne bzw. des abrufenden Standorts"
 * parameter[=].type = #string
-* parameter[+].name = #apikey
-* parameter[=].use = #in
-* parameter[=].min = 1
-* parameter[=].max = "1"
-* parameter[=].documentation = "Gültiger API-Key zur Authentifizierung und Authorisierung des aufrufenden Systems gegenüber dem verarbeitenden Workflow-Manager"
-* parameter[=].type = #string
 * parameter[+].name = #dic_psn_available
 * parameter[=].use = #out
 * parameter[=].min = 0
@@ -133,11 +127,9 @@ Instance: Parameters-RequestTasks-request-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[0].name = "study"
-* parameter[=].valueString = "num"
+* parameter[=].valueString = "mii"
 * parameter[+].name = "target"
-* parameter[=].valueString = "codex"
-* parameter[+].name = "apikey"
-* parameter[=].valueString = "abcdef12345"
+* parameter[=].valueString = "eyematics"
 
 Instance: Parameters-RequestTasks-response-example-1
 InstanceOf: Parameters
@@ -147,10 +139,10 @@ Usage: #example
 * parameter[=].part[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex"
+* parameter[=].part[=].valueIdentifier.value = "eyematics"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex_6348Q7"
+* parameter[=].part[=].valueIdentifier.value = "mii_6348Q7"
 * parameter[+].name = "send_idat"
 * parameter[=].part[0].name = "expires"
 * parameter[=].part[=].valueInstant = "2021-05-28T13:00:00.00+02:00"
@@ -158,7 +150,7 @@ Usage: #example
 * parameter[=].part[=].valueId = "064ddebf-b20e-468a-97fd-88097bcdbc11"
 * parameter[=].part[+].name = "pseudonym"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex_1244Q2"
+* parameter[=].part[=].valueIdentifier.value = "mii_1244Q2"
 * parameter[=].part[+].name = "element"
 * parameter[=].part[=].valueCoding = $IdatElements#given
 * parameter[=].part[+].name = "element"
@@ -174,9 +166,9 @@ Usage: #example
 * parameter[+].name = "repeat_request"
 * parameter[=].part[0].name = "study"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "num"
+* parameter[=].part[=].valueIdentifier.value = "mii"
 * parameter[=].part[+].name = "bloomfilter"
 * parameter[=].part[=].valueBase64Binary = "SWNoIGJpbiBlaW4gQmxvb21maWx0ZXIuIFZlcnNwcm9jaGVuLg=="
 * parameter[=].part[+].name = "target"
 * parameter[=].part[=].valueIdentifier.system = "https://ths-greifswald.de/gpas"
-* parameter[=].part[=].valueIdentifier.value = "codex"
+* parameter[=].part[=].valueIdentifier.value = "eyematics"
