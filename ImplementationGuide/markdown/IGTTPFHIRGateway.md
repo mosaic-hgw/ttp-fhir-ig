@@ -4,9 +4,9 @@
 
 Stand 30.10.2025
 
-## WICHTIG – Dieses Simplifier-Projekt wird nicht mehr weitergeführt.
+## WICHTIG – Dieses Simplifier-Projekt ist umgezogen.
 
-Dieses Simplifier-Projekt und der Implementierungsleitfaden wurden von 2021 bis Oktober 2025 kontinuierlich entwickelt. Aufgrund organisatorischer und technischer Rahmenbedingungen wurde im Oktober 2025 ein Wechsel von Simplifier zu IG Publisher vorgenommen. Die IGs und Pakete für E-PIX, gICS, gPAS, Dispatcher und die erforderliche Terminologie wurden im Rahmen dieses Prozesses getrennt.
+Dieses Simplifier-Projekt und der Implementierungsleitfaden wurden von 2021 bis Oktober 2025 mit Simplifier kontinuierlich entwickelt. Aufgrund organisatorischer und technischer Rahmenbedingungen wurde im Oktober 2025 ein Wechsel von Simplifier zu IG Publisher vorgenommen. Die IGs und Pakete für E-PIX, gICS, gPAS, Dispatcher und die erforderliche Terminologie wurden im Rahmen dieses Prozesses getrennt.
 
 Die kompilierten Versionen der neuen Implementierungsleitfäden und Packages werden ab November 2025 online unter folgender Adresse verfügbar sein: http://ths-greifswald.de/fhir
 
