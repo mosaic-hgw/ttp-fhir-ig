@@ -4,12 +4,12 @@
 
 Description files and examples for the simplifier project "https://simplifier.net/ths-greifswald".
                                                          
-## IMPORTANT - This IG is no longer maintained.
-This Implementation Guide was maintained from 2021 until October 2025.
+## IMPORTANT - This IG has moved. No longer maintained at this location.
+This Implementation Guide was maintained on simplifier from 2021 until October 2025.
 Due to organisational and technical issues a switch from simplifier to IG Publisher was performed in October 2025.
 The IGs for E-PIX, gICS, gPAS, Dispatcher and necessary Terminology were separated within the process.
 
-The compiled versions of the **new implementation** guides will be online available from **November 2025** from here: http://ths-greifswald.de/fhir
+The latest compiled versions of the **new implementation** guides will be online available from **November 2025** from here: http://ths-greifswald.de/fhir
 
 ---
 ## Additional Information
